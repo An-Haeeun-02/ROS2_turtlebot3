@@ -1,0 +1,38 @@
+[0.058s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.160s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.676s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.707s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.877s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.893s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.912s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.956s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.019s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.243s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.249s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.226s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.810s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.971s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.275s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[3.495s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.797s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.112s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.113s] -- Configured cppcheck include dirs: 
+[4.113s] -- Configured cppcheck exclude dirs and/or files: 
+[4.117s] -- Added test 'lint_cmake' to check CMake code style
+[4.125s] -- Added test 'uncrustify' to check C / C++ code style
+[4.125s] -- Configured uncrustify additional arguments: 
+[4.127s] -- Added test 'xmllint' to check XML markup files
+[4.132s] -- Configuring done
+[4.198s] -- Generating done
+[4.207s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_go_pkg
+[4.314s] [35m[1mConsolidate compiler generated dependencies of target go[0m
+[4.416s] [ 33%] [32mBuilding CXX object CMakeFiles/go.dir/src/test.cpp.o[0m
+[4.417s] [ 66%] [32mBuilding CXX object CMakeFiles/go.dir/src/scan.cpp.o[0m
+[41.758s] [100%] [32m[1mLinking CXX executable go[0m
+[42.133s] /usr/bin/ld: CMakeFiles/go.dir/src/scan.cpp.o: in function `main':
+[42.150s] scan.cpp:(.text+0x80): multiple definition of `main'; CMakeFiles/go.dir/src/test.cpp.o:test.cpp:(.text+0x2a4): first defined here
+[44.779s] collect2: error: ld returned 1 exit status
+[44.784s] gmake[2]: *** [CMakeFiles/go.dir/build.make:199: go] Error 1
+[44.785s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/go.dir/all] Error 2
+[44.786s] gmake: *** [Makefile:146: all] Error 2
+[44.794s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

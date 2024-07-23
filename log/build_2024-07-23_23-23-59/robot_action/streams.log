@@ -1,0 +1,46 @@
+[0.048s] Invoking command in '/home/hae/robot_ws/src/build/robot_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_action -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_action
+[0.302s] -- The C compiler identification is GNU 11.4.0
+[0.553s] -- The CXX compiler identification is GNU 11.4.0
+[0.586s] -- Detecting C compiler ABI info
+[0.900s] -- Detecting C compiler ABI info - done
+[0.925s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.926s] -- Detecting C compile features
+[0.928s] -- Detecting C compile features - done
+[0.939s] -- Detecting CXX compiler ABI info
+[1.282s] -- Detecting CXX compiler ABI info - done
+[1.309s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.311s] -- Detecting CXX compile features
+[1.312s] -- Detecting CXX compile features - done
+[1.335s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.042s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.311s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.562s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.005s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.012s] -- Added test 'lint_cmake' to check CMake code style
+[3.016s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.038s] -- Added test 'xmllint' to check XML markup files
+[3.046s] -- Configuring done
+[3.065s] -- Generating done
+[3.070s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_action
+[3.085s] Invoked command in '/home/hae/robot_ws/src/build/robot_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_action -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_action
+[3.096s] Invoking command in '/home/hae/robot_ws/src/build/robot_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action -- -j4 -l4
+[3.238s] Invoked command in '/home/hae/robot_ws/src/build/robot_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action -- -j4 -l4
+[3.391s] Invoking command in '/home/hae/robot_ws/src/build/robot_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_action
+[3.417s] -- Install configuration: ""
+[3.418s] -- Execute custom install script
+[3.420s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/package_run_dependencies/robot_action
+[3.454s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/parent_prefix_path/robot_action
+[3.487s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/ament_prefix_path.sh
+[3.520s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/ament_prefix_path.dsv
+[3.553s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/path.sh
+[3.587s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/path.dsv
+[3.619s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.bash
+[3.650s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.sh
+[3.683s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.zsh
+[3.716s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.dsv
+[3.747s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/package.dsv
+[3.779s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/packages/robot_action
+[3.812s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_actionConfig.cmake
+[3.844s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_actionConfig-version.cmake
+[3.875s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/package.xml
+[3.914s] Invoked command in '/home/hae/robot_ws/src/build/robot_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_action

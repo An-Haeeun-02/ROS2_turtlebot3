@@ -1,0 +1,28 @@
+[0.055s] Invoking command in '/home/hae/robot_ws/src/build/robot_action_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action_pkg -- -j4 -l4
+[0.281s] [ 11%] Built target robot_action_pkg__rosidl_generator_c
+[0.283s] [ 15%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/action_client.cpp.o[0m
+[0.288s] [ 19%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/action_server.cpp.o[0m
+[0.293s] [ 23%] Built target robot_action_pkg__cpp
+[0.332s] [ 26%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[0.352s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.144s] [01m[K/home/hae/robot_ws/src/robot_action_pkg/src/action_client.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Krobot_action_pkg/action/move.hpp: No such file or directory
+[2.151s]     3 | #include [01;31m[K<robot_action_pkg/action/move.hpp>[m[K
+[2.157s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.161s] compilation terminated.
+[2.166s] gmake[2]: *** [CMakeFiles/action_client.dir/build.make:76: CMakeFiles/action_client.dir/src/action_client.cpp.o] Error 1
+[2.173s] gmake[1]: *** [CMakeFiles/Makefile2:423: CMakeFiles/action_client.dir/all] Error 2
+[2.178s] gmake[1]: *** Waiting for unfinished jobs....
+[2.223s] [01m[K/home/hae/robot_ws/src/robot_action_pkg/src/action_server.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Krobot_action_pkg/action/move.acton: No such file or directory
+[2.228s]     3 | #include [01;31m[K<robot_action_pkg/action/move.acton>[m[K
+[2.232s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.233s] compilation terminated.
+[2.234s] gmake[2]: *** [CMakeFiles/action_server.dir/build.make:76: CMakeFiles/action_server.dir/src/action_server.cpp.o] Error 1
+[2.235s] gmake[1]: *** [CMakeFiles/Makefile2:397: CMakeFiles/action_server.dir/all] Error 2
+[2.235s] [ 34%] [32mBuilding C object CMakeFiles/robot_action_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_action_pkg/action/detail/move__type_support.c.o[0m
+[2.254s] [ 38%] [32mBuilding CXX object CMakeFiles/robot_action_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_action_pkg/action/detail/move__type_support_c.cpp.o[0m
+[2.482s] [ 42%] [32m[1mLinking C shared library librobot_action_pkg__rosidl_typesupport_introspection_c.so[0m
+[2.612s] [ 42%] Built target robot_action_pkg__rosidl_typesupport_introspection_c
+[3.917s] [ 46%] [32m[1mLinking CXX shared library librobot_action_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[4.248s] [ 46%] Built target robot_action_pkg__rosidl_typesupport_fastrtps_c
+[4.252s] gmake: *** [Makefile:146: all] Error 2
+[4.259s] Invoked command in '/home/hae/robot_ws/src/build/robot_action_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action_pkg -- -j4 -l4

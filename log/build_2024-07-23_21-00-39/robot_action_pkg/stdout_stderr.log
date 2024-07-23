@@ -1,0 +1,32 @@
+[  7%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/action_server.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/action_client.cpp.o[0m
+[ 11%] Built target robot_action_pkg__cpp
+[ 23%] Built target robot_action_pkg__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target robot_action_pkg__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target robot_action_pkg__rosidl_typesupport_fastrtps_cpp[0m
+[ 34%] Built target robot_action_pkg__rosidl_typesupport_cpp
+[ 46%] Built target robot_action_pkg__rosidl_typesupport_fastrtps_cpp
+[35m[1mConsolidate compiler generated dependencies of target robot_action_pkg__rosidl_typesupport_introspection_c[0m
+[ 50%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 61%] Built target robot_action_pkg__rosidl_typesupport_introspection_c
+[ 65%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/robot_action_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_action_pkg/action/move__type_support.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/robot_action_pkg/src/action_client.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Krobot_action_pkg/action/move.action: No such file or directory
+    3 | #include [01;31m[K<robot_action_pkg/action/move.action>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/action_client.dir/build.make:76: CMakeFiles/action_client.dir/src/action_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:423: CMakeFiles/action_client.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[K/home/hae/robot_ws/src/robot_action_pkg/src/action_server.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Krobot_action_pkg/action/move.acton: No such file or directory
+    3 | #include [01;31m[K<robot_action_pkg/action/move.acton>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/action_server.dir/build.make:76: CMakeFiles/action_server.dir/src/action_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:397: CMakeFiles/action_server.dir/all] Error 2
+[ 73%] [32m[1mLinking CXX shared library librobot_action_pkg__rosidl_typesupport_c.so[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/robot_action_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_action_pkg/action/detail/move__type_support.cpp.o[0m
+[ 76%] Built target robot_action_pkg__rosidl_typesupport_c
+[ 80%] [32m[1mLinking CXX shared library librobot_action_pkg__rosidl_typesupport_introspection_cpp.so[0m
+[ 80%] Built target robot_action_pkg__rosidl_typesupport_introspection_cpp
+gmake: *** [Makefile:146: all] Error 2

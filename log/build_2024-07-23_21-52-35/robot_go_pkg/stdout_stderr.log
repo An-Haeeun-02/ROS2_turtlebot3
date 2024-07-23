@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target go[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/go.dir/src/test.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:[m[K In member function ‘[01m[Kvoid OdomDistanceCalculator::handle_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:37:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitialized_[m[K’ was not declared in this scope
+   37 |     if (![01;31m[Kinitialized_[m[K) {
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/go.dir/build.make:76: CMakeFiles/go.dir/src/test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/go.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

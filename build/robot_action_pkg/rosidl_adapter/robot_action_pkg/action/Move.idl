@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from robot_action_pkg/action/Move.action
+// generated code does not contain a copyright notice
+
+
+module robot_action_pkg {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct Move_Goal {
+      double distance;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct Move_Result {
+      double traveled_distance;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct Move_Feedback {
+      double current_distance;
+    };
+  };
+};

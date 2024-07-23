@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hae/robot_ws/src/build/robot_action_pkg/action_server" "/home/hae/robot_ws/src/build/robot_action_pkg/action_client" "TARGETS" "action_server" "action_client" "DESTINATION" "lib/robot_action_pkg")

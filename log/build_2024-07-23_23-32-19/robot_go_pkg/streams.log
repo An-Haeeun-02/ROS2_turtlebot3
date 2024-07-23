@@ -1,0 +1,18 @@
+[0.053s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.279s] [ 25%] [32mBuilding CXX object CMakeFiles/server_node.dir/src/actionsever.cpp.o[0m
+[0.290s] [ 50%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/actioncli.cpp.o[0m
+[1.906s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/actioncli.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Krobot_action/action/move.hpp: No such file or directory
+[1.907s]     3 | #include [01;31m[K"robot_action/action/move.hpp"[m[K
+[1.907s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.908s] compilation terminated.
+[1.913s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/actionsever.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Krobot_action/action/move.hpp: No such file or directory
+[1.913s]     3 | #include [01;31m[K"robot_action/action/move.hpp"[m[K
+[1.914s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.915s] compilation terminated.
+[1.919s] gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/actioncli.cpp.o] Error 1
+[1.920s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/cli_node.dir/all] Error 2
+[1.920s] gmake[1]: *** Waiting for unfinished jobs....
+[1.924s] gmake[2]: *** [CMakeFiles/server_node.dir/build.make:76: CMakeFiles/server_node.dir/src/actionsever.cpp.o] Error 1
+[1.925s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server_node.dir/all] Error 2
+[1.925s] gmake: *** [Makefile:146: all] Error 2
+[1.932s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

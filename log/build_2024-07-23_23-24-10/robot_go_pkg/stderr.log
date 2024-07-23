@@ -1,0 +1,15 @@
+[31mCMake Error at CMakeLists.txt:39 (add_executable):
+  add_executable cannot create target "server_node" because another target
+  with the same name already exists.  The existing target is an executable
+  created in source directory "/home/hae/robot_ws/src/robot_go_pkg".  See
+  documentation for policy CMP0002 for more details.
+
+[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake:67 (message):
+  ament_cmake_symlink_install_targets() 'test_node' is not a target
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake:37 (ament_cmake_symlink_install_targets)
+  CMakeLists.txt:42 (install)
+
+[0m
+gmake: *** [Makefile:349: cmake_check_build_system] Error 1

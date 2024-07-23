@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/go.dir/src/scan.cpp.o: in function `main':
+scan.cpp:(.text+0x80): multiple definition of `main'; CMakeFiles/go.dir/src/test.cpp.o:test.cpp:(.text+0x2a4): first defined here
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/go.dir/build.make:199: go] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/go.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.001372] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.001672] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.001803] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.001937] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.002613] (-) EventReactorShutdown: {}

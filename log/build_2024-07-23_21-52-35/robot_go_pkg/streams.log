@@ -1,0 +1,11 @@
+[0.056s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.229s] [35m[1mConsolidate compiler generated dependencies of target go[0m
+[0.320s] [ 50%] [32mBuilding CXX object CMakeFiles/go.dir/src/test.cpp.o[0m
+[10.136s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:[m[K In member function ‘[01m[Kvoid OdomDistanceCalculator::handle_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[10.136s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:37:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitialized_[m[K’ was not declared in this scope
+[10.137s]    37 |     if (![01;31m[Kinitialized_[m[K) {
+[10.137s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[18.370s] gmake[2]: *** [CMakeFiles/go.dir/build.make:76: CMakeFiles/go.dir/src/test.cpp.o] Error 1
+[18.372s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/go.dir/all] Error 2
+[18.373s] gmake: *** [Makefile:146: all] Error 2
+[18.378s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target server_node[0m
+[35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/actioncli.cpp.o[0m
+[ 75%] Built target server_node
