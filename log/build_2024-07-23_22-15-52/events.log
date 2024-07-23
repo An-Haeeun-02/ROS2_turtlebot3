@@ -1,0 +1,204 @@
+[0.000000] (-) TimerEvent: {}
+[0.002026] (-) JobUnselected: {'identifier': 'robot_action_pkg'}
+[0.002714] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.003277] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.003498] (robot_go_pkg) JobQueued: {'identifier': 'robot_go_pkg', 'dependencies': OrderedDict()}
+[0.003626] (robot_go_pkg) JobStarted: {'identifier': 'robot_go_pkg'}
+[0.042740] (robot_go_pkg) JobProgress: {'identifier': 'robot_go_pkg', 'progress': 'cmake'}
+[0.046461] (robot_go_pkg) JobProgress: {'identifier': 'robot_go_pkg', 'progress': 'build'}
+[0.050129] (robot_go_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/robot_go_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/robot_go_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 50291 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hae/robot_ws/src/install:/home/hae/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '19'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/install/robot_move_pkg:/home/hae/install/robot_cleaner_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/hae/robot_ws/src/build/robot_go_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 50291 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/install/robot_move_pkg:/home/hae/install/robot_cleaner_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099210] (-) TimerEvent: {}
+[0.200118] (-) TimerEvent: {}
+[0.233567] (robot_go_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target go\x1b[0m\n'}
+[0.300306] (-) TimerEvent: {}
+[0.329746] (robot_go_pkg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/go.dir/src/test.cpp.o\x1b[0m\n'}
+[0.332496] (robot_go_pkg) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/go.dir/src/scan.cpp.o\x1b[0m\n'}
+[0.400529] (-) TimerEvent: {}
+[0.501516] (-) TimerEvent: {}
+[0.602376] (-) TimerEvent: {}
+[0.703194] (-) TimerEvent: {}
+[0.803994] (-) TimerEvent: {}
+[0.905194] (-) TimerEvent: {}
+[1.006158] (-) TimerEvent: {}
+[1.107444] (-) TimerEvent: {}
+[1.208612] (-) TimerEvent: {}
+[1.309931] (-) TimerEvent: {}
+[1.411159] (-) TimerEvent: {}
+[1.512378] (-) TimerEvent: {}
+[1.613548] (-) TimerEvent: {}
+[1.714713] (-) TimerEvent: {}
+[1.803694] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/scan.cpp:2:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksensor_msgs/msg/laser_scan.hpp: No such file or directory\n'}
+[1.804671] (robot_go_pkg) StderrLine: {'line': b'    2 | #include \x1b[01;31m\x1b[K<sensor_msgs/msg/laser_scan.hpp>\x1b[m\x1b[K\n'}
+[1.805387] (robot_go_pkg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.806290] (robot_go_pkg) StderrLine: {'line': b'compilation terminated.\n'}
+[1.814895] (-) TimerEvent: {}
+[1.817664] (robot_go_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/go.dir/build.make:90: CMakeFiles/go.dir/src/scan.cpp.o] Error 1\n'}
+[1.818307] (robot_go_pkg) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.915100] (-) TimerEvent: {}
+[2.015981] (-) TimerEvent: {}
+[2.116855] (-) TimerEvent: {}
+[2.217798] (-) TimerEvent: {}
+[2.318666] (-) TimerEvent: {}
+[2.419482] (-) TimerEvent: {}
+[2.520368] (-) TimerEvent: {}
+[2.621397] (-) TimerEvent: {}
+[2.722267] (-) TimerEvent: {}
+[2.823161] (-) TimerEvent: {}
+[2.924064] (-) TimerEvent: {}
+[3.024886] (-) TimerEvent: {}
+[3.125853] (-) TimerEvent: {}
+[3.226710] (-) TimerEvent: {}
+[3.327516] (-) TimerEvent: {}
+[3.428333] (-) TimerEvent: {}
+[3.529140] (-) TimerEvent: {}
+[3.630105] (-) TimerEvent: {}
+[3.730921] (-) TimerEvent: {}
+[3.831786] (-) TimerEvent: {}
+[3.932646] (-) TimerEvent: {}
+[4.033526] (-) TimerEvent: {}
+[4.134414] (-) TimerEvent: {}
+[4.235236] (-) TimerEvent: {}
+[4.336141] (-) TimerEvent: {}
+[4.436985] (-) TimerEvent: {}
+[4.537993] (-) TimerEvent: {}
+[4.638825] (-) TimerEvent: {}
+[4.739728] (-) TimerEvent: {}
+[4.840572] (-) TimerEvent: {}
+[4.941447] (-) TimerEvent: {}
+[5.042277] (-) TimerEvent: {}
+[5.143140] (-) TimerEvent: {}
+[5.243984] (-) TimerEvent: {}
+[5.344954] (-) TimerEvent: {}
+[5.445898] (-) TimerEvent: {}
+[5.546779] (-) TimerEvent: {}
+[5.647603] (-) TimerEvent: {}
+[5.748566] (-) TimerEvent: {}
+[5.849519] (-) TimerEvent: {}
+[5.950340] (-) TimerEvent: {}
+[6.051251] (-) TimerEvent: {}
+[6.152134] (-) TimerEvent: {}
+[6.252957] (-) TimerEvent: {}
+[6.353890] (-) TimerEvent: {}
+[6.454950] (-) TimerEvent: {}
+[6.555871] (-) TimerEvent: {}
+[6.656697] (-) TimerEvent: {}
+[6.757550] (-) TimerEvent: {}
+[6.858406] (-) TimerEvent: {}
+[6.959240] (-) TimerEvent: {}
+[7.060069] (-) TimerEvent: {}
+[7.160954] (-) TimerEvent: {}
+[7.261879] (-) TimerEvent: {}
+[7.362771] (-) TimerEvent: {}
+[7.463636] (-) TimerEvent: {}
+[7.564474] (-) TimerEvent: {}
+[7.665361] (-) TimerEvent: {}
+[7.766164] (-) TimerEvent: {}
+[7.867019] (-) TimerEvent: {}
+[7.967890] (-) TimerEvent: {}
+[8.068733] (-) TimerEvent: {}
+[8.170597] (-) TimerEvent: {}
+[8.271672] (-) TimerEvent: {}
+[8.372763] (-) TimerEvent: {}
+[8.473698] (-) TimerEvent: {}
+[8.574684] (-) TimerEvent: {}
+[8.675592] (-) TimerEvent: {}
+[8.776479] (-) TimerEvent: {}
+[8.877360] (-) TimerEvent: {}
+[8.978232] (-) TimerEvent: {}
+[9.079160] (-) TimerEvent: {}
+[9.180048] (-) TimerEvent: {}
+[9.280933] (-) TimerEvent: {}
+[9.381871] (-) TimerEvent: {}
+[9.482762] (-) TimerEvent: {}
+[9.583622] (-) TimerEvent: {}
+[9.684441] (-) TimerEvent: {}
+[9.785365] (-) TimerEvent: {}
+[9.886176] (-) TimerEvent: {}
+[9.987050] (-) TimerEvent: {}
+[10.087945] (-) TimerEvent: {}
+[10.153628] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:43:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kpublic\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.154586] (robot_go_pkg) StderrLine: {'line': b'   43 | \x1b[01;31m\x1b[Kpublic\x1b[m\x1b[K:\n'}
+[10.155102] (robot_go_pkg) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[10.155568] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:44:84:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.156033] (robot_go_pkg) StderrLine: {'line': b'   44 |   OdomDistanceCalculator() : Node("odom_distance_calculator"), total_distance_{0.0}\x1b[01;31m\x1b[K,\x1b[m\x1b[K initialized_{false}\n'}
+[10.156509] (robot_go_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.156964] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:44:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected constructor, destructor, or type conversion before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.157525] (robot_go_pkg) StderrLine: {'line': b'   44 |   OdomDistanceCalculator() : Node("odom_distance_calculator"), total_distance_{0.0}, initialized_\x1b[01;31m\x1b[K{\x1b[m\x1b[Kfalse}\n'}
+[10.158010] (robot_go_pkg) StderrLine: {'line': b'      |                                                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.158467] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:45:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[10.158959] (robot_go_pkg) StderrLine: {'line': b'   45 |   \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[10.159372] (robot_go_pkg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.188191] (-) TimerEvent: {}
+[10.289132] (-) TimerEvent: {}
+[10.390030] (-) TimerEvent: {}
+[10.490916] (-) TimerEvent: {}
+[10.591722] (-) TimerEvent: {}
+[10.692532] (-) TimerEvent: {}
+[10.793382] (-) TimerEvent: {}
+[10.894171] (-) TimerEvent: {}
+[10.995083] (-) TimerEvent: {}
+[11.095998] (-) TimerEvent: {}
+[11.196838] (-) TimerEvent: {}
+[11.297711] (-) TimerEvent: {}
+[11.398562] (-) TimerEvent: {}
+[11.499494] (-) TimerEvent: {}
+[11.600392] (-) TimerEvent: {}
+[11.701307] (-) TimerEvent: {}
+[11.802109] (-) TimerEvent: {}
+[11.882845] (robot_go_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[11.883689] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[11.884174] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[11.884629] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[11.885069] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:1\x1b[m\x1b[K:\n'}
+[11.886036] (robot_go_pkg) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = OdomDistanceCalculator; _Args = {}; _Tp = OdomDistanceCalculator]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.886596] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = OdomDistanceCalculator; _Args = {}; _Tp = OdomDistanceCalculator; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<OdomDistanceCalculator>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.887148] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = OdomDistanceCalculator; _Alloc = std::allocator<OdomDistanceCalculator>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.887610] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = OdomDistanceCalculator; _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.888123] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}; _Tp = OdomDistanceCalculator; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.888600] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}; _Tp = OdomDistanceCalculator]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.889115] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = OdomDistanceCalculator; _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.889785] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = OdomDistanceCalculator; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.890245] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:82:56:\x1b[m\x1b[K   required from here\n'}
+[11.890676] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KOdomDistanceCalculator::OdomDistanceCalculator()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.891179] (robot_go_pkg) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[11.891603] (robot_go_pkg) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.892038] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:7:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOdomDistanceCalculator::OdomDistanceCalculator()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[11.892486] (robot_go_pkg) StderrLine: {'line': b'    7 | class \x1b[01;36m\x1b[KOdomDistanceCalculator\x1b[m\x1b[K : public rclcpp::Node\n'}
+[11.892933] (robot_go_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.893540] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:7:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.894015] (robot_go_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[11.894449] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[11.894882] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.895312] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:1\x1b[m\x1b[K:\n'}
+[11.895754] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.896239] (robot_go_pkg) StderrLine: {'line': b' 1294 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[11.896655] (robot_go_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.897052] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[11.897685] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.898143] (robot_go_pkg) StderrLine: {'line': b'  101 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[11.898575] (robot_go_pkg) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.898978] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[11.899380] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.899802] (robot_go_pkg) StderrLine: {'line': b'   89 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[11.900215] (robot_go_pkg) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.900649] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[11.902280] (-) TimerEvent: {}
+[12.003047] (-) TimerEvent: {}
+[12.103967] (-) TimerEvent: {}
+[12.204805] (-) TimerEvent: {}
+[12.305668] (-) TimerEvent: {}
+[12.406550] (-) TimerEvent: {}
+[12.507373] (-) TimerEvent: {}
+[12.608335] (-) TimerEvent: {}
+[12.709198] (-) TimerEvent: {}
+[12.810151] (-) TimerEvent: {}
+[12.911014] (-) TimerEvent: {}
+[13.011888] (-) TimerEvent: {}
+[13.050010] (robot_go_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/go.dir/build.make:76: CMakeFiles/go.dir/src/test.cpp.o] Error 1\n'}
+[13.050930] (robot_go_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/go.dir/all] Error 2\n'}
+[13.051963] (robot_go_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.058010] (robot_go_pkg) CommandEnded: {'returncode': 2}
+[13.112065] (-) TimerEvent: {}
+[13.213293] (-) TimerEvent: {}
+[13.239314] (robot_go_pkg) JobEnded: {'identifier': 'robot_go_pkg', 'rc': 2}
+[13.250942] (-) EventReactorShutdown: {}

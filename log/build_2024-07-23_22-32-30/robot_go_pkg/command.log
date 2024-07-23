@@ -1,0 +1,4 @@
+Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_go_pkg
+Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_go_pkg

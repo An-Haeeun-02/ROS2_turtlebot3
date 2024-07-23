@@ -1,0 +1,11 @@
+[  3%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/action_server.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/action_client.cpp.o[0m
+[ 19%] Built target robot_action_pkg__rosidl_generator_c
+[ 23%] Built target robot_action_pkg__cpp
+[ 34%] Built target robot_action_pkg__rosidl_typesupport_introspection_c
+[ 46%] Built target robot_action_pkg__rosidl_typesupport_fastrtps_c
+[ 57%] Built target robot_action_pkg__rosidl_typesupport_c
+[ 69%] Built target robot_action_pkg__rosidl_typesupport_introspection_cpp
+[ 80%] Built target robot_action_pkg__rosidl_typesupport_cpp
+[ 92%] Built target robot_action_pkg__rosidl_typesupport_fastrtps_cpp
+[ 92%] Built target robot_action_pkg

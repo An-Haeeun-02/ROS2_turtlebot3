@@ -1,0 +1,27 @@
+[0.050s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.161s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.682s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.715s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.888s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.898s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.922s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.969s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.031s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.258s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.264s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.250s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.835s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.996s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.300s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[3.521s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.824s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.111s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[4.111s]   ament_target_dependencies() the first argument must be a valid target name
+[4.112s] Call Stack (most recent call first):
+[4.112s]   CMakeLists.txt:29 (ament_target_dependencies)
+[4.112s] 
+[4.113s] [0m
+[4.113s] -- Configuring incomplete, errors occurred!
+[4.114s] See also "/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles/CMakeOutput.log".
+[4.142s] gmake: *** [Makefile:294: cmake_check_build_system] Error 1
+[4.150s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

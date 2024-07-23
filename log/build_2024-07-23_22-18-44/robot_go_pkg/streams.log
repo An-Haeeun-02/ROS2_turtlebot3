@@ -1,0 +1,13 @@
+[0.060s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.226s] [35m[1mConsolidate compiler generated dependencies of target go[0m
+[0.323s] [ 33%] [32mBuilding CXX object CMakeFiles/go.dir/src/test.cpp.o[0m
+[0.326s] [ 66%] [32mBuilding CXX object CMakeFiles/go.dir/src/scan.cpp.o[0m
+[1.842s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/scan.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/laser_scan.hpp: No such file or directory
+[1.842s]     2 | #include [01;31m[K<sensor_msgs/msg/laser_scan.hpp>[m[K
+[1.843s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.844s] compilation terminated.
+[1.851s] gmake[2]: *** [CMakeFiles/go.dir/build.make:90: CMakeFiles/go.dir/src/scan.cpp.o] Error 1
+[1.852s] gmake[2]: *** Waiting for unfinished jobs....
+[32.863s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/go.dir/all] Error 2
+[32.868s] gmake: *** [Makefile:146: all] Error 2
+[32.872s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

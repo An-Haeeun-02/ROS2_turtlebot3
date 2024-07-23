@@ -1,0 +1,6 @@
+Invoking command in '/home/hae/robot_ws/src/build/robot_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_action -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_action
+Invoked command in '/home/hae/robot_ws/src/build/robot_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_action -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_action
+Invoking command in '/home/hae/robot_ws/src/build/robot_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action -- -j4 -l4
+Invoked command in '/home/hae/robot_ws/src/build/robot_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action -- -j4 -l4
+Invoking command in '/home/hae/robot_ws/src/build/robot_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_action
+Invoked command in '/home/hae/robot_ws/src/build/robot_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_action

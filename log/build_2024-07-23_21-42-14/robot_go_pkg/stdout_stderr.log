@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/go.dir/src/test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable go[0m
+[100%] Built target go
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/go
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/package_run_dependencies/robot_go_pkg
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/parent_prefix_path/robot_go_pkg
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/ament_prefix_path.sh
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/ament_prefix_path.dsv
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/path.sh
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/path.dsv
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.bash
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.sh
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.zsh
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.dsv
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/package.dsv
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/packages/robot_go_pkg
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/cmake/robot_go_pkgConfig.cmake
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/cmake/robot_go_pkgConfig-version.cmake
+-- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/package.xml

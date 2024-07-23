@@ -1,0 +1,10 @@
+# 목표
+float64 distance
+
+---
+# 결과
+bool success
+
+---
+# 피드백
+float64 current_distance

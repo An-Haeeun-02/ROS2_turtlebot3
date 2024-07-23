@@ -1,0 +1,98 @@
+[0.000000] (-) TimerEvent: {}
+[0.001805] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.002470] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.003079] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.003302] (robot_action_pkg) JobQueued: {'identifier': 'robot_action_pkg', 'dependencies': OrderedDict()}
+[0.003741] (robot_action_pkg) JobStarted: {'identifier': 'robot_action_pkg'}
+[0.040285] (robot_action_pkg) JobProgress: {'identifier': 'robot_action_pkg', 'progress': 'cmake'}
+[0.043783] (robot_action_pkg) JobProgress: {'identifier': 'robot_action_pkg', 'progress': 'build'}
+[0.047162] (robot_action_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/robot_action_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/robot_action_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 50291 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae/robot_ws'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hae/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '19'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/install/robot_move_pkg:/home/hae/install/robot_cleaner_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/hae/robot_ws/src/build/robot_action_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 50291 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/install/robot_move_pkg:/home/hae/install/robot_cleaner_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099049] (-) TimerEvent: {}
+[0.199923] (-) TimerEvent: {}
+[0.279285] (robot_action_pkg) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/action_server.dir/src/action_server.cpp.o\x1b[0m\n'}
+[0.285121] (robot_action_pkg) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/action_client.dir/src/action_client.cpp.o\x1b[0m\n'}
+[0.292388] (robot_action_pkg) StdoutLine: {'line': b'[ 11%] Built target robot_action_pkg__cpp\n'}
+[0.297566] (robot_action_pkg) StdoutLine: {'line': b'[ 23%] Built target robot_action_pkg__rosidl_generator_c\n'}
+[0.301806] (-) TimerEvent: {}
+[0.327551] (robot_action_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_action_pkg__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.371545] (robot_action_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_action_pkg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.402038] (-) TimerEvent: {}
+[0.417321] (robot_action_pkg) StdoutLine: {'line': b'[ 34%] Built target robot_action_pkg__rosidl_typesupport_cpp\n'}
+[0.451061] (robot_action_pkg) StdoutLine: {'line': b'[ 46%] Built target robot_action_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[0.464697] (robot_action_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_action_pkg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.502218] (-) TimerEvent: {}
+[0.509340] (robot_action_pkg) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[0.532398] (robot_action_pkg) StdoutLine: {'line': b'[ 61%] Built target robot_action_pkg__rosidl_typesupport_introspection_c\n'}
+[0.580374] (robot_action_pkg) StdoutLine: {'line': b'[ 65%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[0.602448] (-) TimerEvent: {}
+[0.704325] (-) TimerEvent: {}
+[0.806278] (-) TimerEvent: {}
+[0.908285] (-) TimerEvent: {}
+[1.010155] (-) TimerEvent: {}
+[1.111418] (-) TimerEvent: {}
+[1.212894] (-) TimerEvent: {}
+[1.314831] (-) TimerEvent: {}
+[1.416139] (-) TimerEvent: {}
+[1.517407] (-) TimerEvent: {}
+[1.618674] (-) TimerEvent: {}
+[1.719952] (-) TimerEvent: {}
+[1.821368] (-) TimerEvent: {}
+[1.923534] (-) TimerEvent: {}
+[1.969184] (robot_action_pkg) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/robot_action_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_action_pkg/action/move__type_support.cpp.o\x1b[0m\n'}
+[2.023761] (-) TimerEvent: {}
+[2.068748] (robot_action_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_action_pkg/src/action_client.cpp:3:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Krobot_action_pkg/action/move.action: No such file or directory\n'}
+[2.073893] (robot_action_pkg) StderrLine: {'line': b'    3 | #include \x1b[01;31m\x1b[K<robot_action_pkg/action/move.action>\x1b[m\x1b[K\n'}
+[2.078469] (robot_action_pkg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.084583] (robot_action_pkg) StderrLine: {'line': b'compilation terminated.\n'}
+[2.088189] (robot_action_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/action_client.dir/build.make:76: CMakeFiles/action_client.dir/src/action_client.cpp.o] Error 1\n'}
+[2.091751] (robot_action_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:423: CMakeFiles/action_client.dir/all] Error 2\n'}
+[2.095338] (robot_action_pkg) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.123989] (-) TimerEvent: {}
+[2.130755] (robot_action_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_action_pkg/src/action_server.cpp:3:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Krobot_action_pkg/action/move.acton: No such file or directory\n'}
+[2.135514] (robot_action_pkg) StderrLine: {'line': b'    3 | #include \x1b[01;31m\x1b[K<robot_action_pkg/action/move.acton>\x1b[m\x1b[K\n'}
+[2.140035] (robot_action_pkg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.145272] (robot_action_pkg) StderrLine: {'line': b'compilation terminated.\n'}
+[2.150217] (robot_action_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/action_server.dir/build.make:76: CMakeFiles/action_server.dir/src/action_server.cpp.o] Error 1\n'}
+[2.152923] (robot_action_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:397: CMakeFiles/action_server.dir/all] Error 2\n'}
+[2.224451] (-) TimerEvent: {}
+[2.256035] (robot_action_pkg) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library librobot_action_pkg__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.324689] (-) TimerEvent: {}
+[2.349806] (robot_action_pkg) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/robot_action_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_action_pkg/action/detail/move__type_support.cpp.o\x1b[0m\n'}
+[2.421313] (robot_action_pkg) StdoutLine: {'line': b'[ 76%] Built target robot_action_pkg__rosidl_typesupport_c\n'}
+[2.424930] (-) TimerEvent: {}
+[2.525770] (-) TimerEvent: {}
+[2.626588] (-) TimerEvent: {}
+[2.727446] (-) TimerEvent: {}
+[2.828339] (-) TimerEvent: {}
+[2.929272] (-) TimerEvent: {}
+[3.030232] (-) TimerEvent: {}
+[3.131206] (-) TimerEvent: {}
+[3.232048] (-) TimerEvent: {}
+[3.332928] (-) TimerEvent: {}
+[3.433826] (-) TimerEvent: {}
+[3.534624] (-) TimerEvent: {}
+[3.635424] (-) TimerEvent: {}
+[3.736313] (-) TimerEvent: {}
+[3.837118] (-) TimerEvent: {}
+[3.937959] (-) TimerEvent: {}
+[4.038918] (-) TimerEvent: {}
+[4.139733] (-) TimerEvent: {}
+[4.240556] (-) TimerEvent: {}
+[4.341367] (-) TimerEvent: {}
+[4.442354] (-) TimerEvent: {}
+[4.543153] (-) TimerEvent: {}
+[4.644005] (-) TimerEvent: {}
+[4.744811] (-) TimerEvent: {}
+[4.845649] (-) TimerEvent: {}
+[4.852345] (robot_action_pkg) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library librobot_action_pkg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.945964] (-) TimerEvent: {}
+[5.046993] (-) TimerEvent: {}
+[5.148128] (-) TimerEvent: {}
+[5.150861] (robot_action_pkg) StdoutLine: {'line': b'[ 80%] Built target robot_action_pkg__rosidl_typesupport_introspection_cpp\n'}
+[5.155185] (robot_action_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.160916] (robot_action_pkg) CommandEnded: {'returncode': 2}
+[5.248421] (-) TimerEvent: {}
+[5.349347] (-) TimerEvent: {}
+[5.450402] (-) TimerEvent: {}
+[5.458944] (robot_action_pkg) JobEnded: {'identifier': 'robot_action_pkg', 'rc': 2}
+[5.470747] (-) EventReactorShutdown: {}

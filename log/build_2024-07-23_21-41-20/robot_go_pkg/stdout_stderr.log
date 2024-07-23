@@ -1,0 +1,62 @@
+[35m[1mConsolidate compiler generated dependencies of target go[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/go.dir/src/test.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:[m[K In constructor ‘[01m[KOdomDistanceCalculator::OdomDistanceCalculator()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:9:64:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::Point_(<brace-enclosed initializer list>)[m[K’
+    9 |   OdomDistanceCalculator() : Node("odom_distance_calculator"), [01;31m[Klast_position_{0.0, 0.0, 0.0}[m[K, total_distance_{0.0}
+      |                                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:47:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Point_<ContainerAllocator>::Point_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   47 |   explicit [01;36m[KPoint_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:47:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:36:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Point_<ContainerAllocator>::Point_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+   36 |   explicit [01;36m[KPoint_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:36:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >::Point_(const geometry_msgs::msg::Point_<std::allocator<void> >&)[m[K’
+   32 | struct [01;36m[KPoint_[m[K
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >::Point_(geometry_msgs::msg::Point_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:21:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KOdomDistanceCalculator::create_wall_timer(int, OdomDistanceCalculator::OdomDistanceCalculator()::<lambda()>)[m[K’
+   21 |     timer_ = [01;31m[Kthis->create_wall_timer([m[K
+      |              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   22 | [01;31m[K      1, // 1초마다 호출[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~[m[K             
+   23 | [01;31m[K      [this]() {[m[K
+      |       [01;31m[K~~~~~~~~~~[m[K                     
+   24 | [01;31m[K        RCLCPP_INFO(this->get_logger(), "Total Distance: %.2f meters", total_distance_);[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;31m[K      }[m[K
+      |       [01;31m[K~[m[K                              
+   26 | [01;31m[K    )[m[K;
+      |     [01;31m[K~[m[K                                
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  238 |   [01;36m[Kcreate_wall_timer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:21:37:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::chrono::duration<_Rep1, _Period1>[m[K’ and ‘[01m[Kint[m[K’
+   21 |     timer_ = [01;36m[Kthis->create_wall_timer([m[K
+      |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   22 | [01;36m[K      1, // 1초마다 호출[m[K
+      |       [01;36m[K~~~~~~~~~~~~~~~~~~[m[K             
+   23 | [01;36m[K      [this]() {[m[K
+      |       [01;36m[K~~~~~~~~~~[m[K                     
+   24 | [01;36m[K        RCLCPP_INFO(this->get_logger(), "Total Distance: %.2f meters", total_distance_);[m[K
+      |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   25 | [01;36m[K      }[m[K
+      |       [01;36m[K~[m[K                              
+   26 | [01;36m[K    )[m[K;
+      |     [01;36m[K~[m[K                                
+gmake[2]: *** [CMakeFiles/go.dir/build.make:76: CMakeFiles/go.dir/src/test.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/go.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,17 @@
+/home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/server_node
+/home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/cli_node
+/home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/package_run_dependencies/robot_go_pkg
+/home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/parent_prefix_path/robot_go_pkg
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/ament_prefix_path.sh
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/ament_prefix_path.dsv
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/path.sh
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/path.dsv
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.bash
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.sh
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.zsh
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.dsv
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/package.dsv
+/home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/packages/robot_go_pkg
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/cmake/robot_go_pkgConfig.cmake
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/cmake/robot_go_pkgConfig-version.cmake
+/home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/package.xml

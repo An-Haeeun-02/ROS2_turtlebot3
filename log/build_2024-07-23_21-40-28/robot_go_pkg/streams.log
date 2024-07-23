@@ -1,0 +1,59 @@
+[0.050s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_go_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_go_pkg
+[0.095s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.615s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.648s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.819s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.830s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.854s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.897s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.959s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.182s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.188s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.160s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.751s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.930s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.251s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[3.478s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.795s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.796s] -- Configured cppcheck include dirs: 
+[3.796s] -- Configured cppcheck exclude dirs and/or files: 
+[3.800s] -- Added test 'lint_cmake' to check CMake code style
+[3.809s] -- Added test 'uncrustify' to check C / C++ code style
+[3.809s] -- Configured uncrustify additional arguments: 
+[3.812s] -- Added test 'xmllint' to check XML markup files
+[3.820s] -- Configuring done
+[3.879s] -- Generating done
+[3.886s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_go_pkg
+[3.918s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_go_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_go_pkg
+[3.929s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[4.167s] [ 50%] [32mBuilding CXX object CMakeFiles/go.dir/src/test.cpp.o[0m
+[13.984s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:[m[K In constructor ‘[01m[KOdomDistanceCalculator::OdomDistanceCalculator()[m[K’:
+[13.985s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:9:64:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::Point_(<brace-enclosed initializer list>)[m[K’
+[13.985s]     9 |   OdomDistanceCalculator() : Node("odom_distance_calculator"), [01;31m[Klast_position_{0.0, 0.0, 0.0}[m[K, total_distance_{0.0}
+[13.986s]       |                                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.986s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+[13.987s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+[13.990s]                  from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+[13.990s]                  from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+[13.991s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:2[m[K:
+[13.992s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:47:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Point_<ContainerAllocator>::Point_(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[13.993s]    47 |   explicit [01;36m[KPoint_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[13.993s]       |            [01;36m[K^~~~~~[m[K
+[13.993s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:47:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[13.994s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:36:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kgeometry_msgs::msg::Point_<ContainerAllocator>::Point_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[13.994s]    36 |   explicit [01;36m[KPoint_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+[13.995s]       |            [01;36m[K^~~~~~[m[K
+[13.995s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:36:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[13.996s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >::Point_(const geometry_msgs::msg::Point_<std::allocator<void> >&)[m[K’
+[13.996s]    32 | struct [01;36m[KPoint_[m[K
+[13.997s]       |        [01;36m[K^~~~~~[m[K
+[13.997s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[13.998s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::msg::Point_<std::allocator<void> >::Point_(geometry_msgs::msg::Point_<std::allocator<void> >&&)[m[K’
+[13.998s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:32:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[14.009s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/test.cpp:22:7:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+[14.010s]    22 |       [01;31m[K1s[m[K, // 1초마다 호출
+[14.010s]       |       [01;31m[K^~[m[K
+[22.303s] gmake[2]: *** [CMakeFiles/go.dir/build.make:76: CMakeFiles/go.dir/src/test.cpp.o] Error 1
+[22.305s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/go.dir/all] Error 2
+[22.305s] gmake: *** [Makefile:146: all] Error 2
+[22.313s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.001635] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.002250] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.002849] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.003055] (robot_go_pkg) JobQueued: {'identifier': 'robot_go_pkg', 'dependencies': OrderedDict([('robot_action', '/home/hae/robot_ws/src/install/robot_action')])}
+[0.003246] (robot_go_pkg) JobStarted: {'identifier': 'robot_go_pkg'}
+[0.098918] (-) TimerEvent: {}
+[0.200009] (-) TimerEvent: {}
+[0.241935] (robot_go_pkg) JobEnded: {'identifier': 'robot_go_pkg', 'rc': 1}
+[0.253421] (-) EventReactorShutdown: {}

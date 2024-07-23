@@ -1,0 +1,12 @@
+[ 11%] Built target robot_action_pkg__rosidl_generator_c
+[ 15%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/action_client.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/action_server.dir/src/action_server.cpp.o[0m
+[ 23%] Built target robot_action_pkg__cpp
+[ 26%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 34%] [32mBuilding C object CMakeFiles/robot_action_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_action_pkg/action/detail/move__type_support.c.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/robot_action_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_action_pkg/action/detail/move__type_support_c.cpp.o[0m
+[ 42%] [32m[1mLinking C shared library librobot_action_pkg__rosidl_typesupport_introspection_c.so[0m
+[ 42%] Built target robot_action_pkg__rosidl_typesupport_introspection_c
+[ 46%] [32m[1mLinking CXX shared library librobot_action_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[ 46%] Built target robot_action_pkg__rosidl_typesupport_fastrtps_c

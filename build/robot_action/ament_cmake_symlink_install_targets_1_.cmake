@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/robot_action_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" "TARGETS" "robot_action__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/robot_action")
