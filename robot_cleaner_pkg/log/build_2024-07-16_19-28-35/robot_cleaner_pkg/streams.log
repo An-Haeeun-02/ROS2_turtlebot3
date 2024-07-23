@@ -1,0 +1,15 @@
+[0.057s] Invoking command in '/home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg -- -j4 -l4
+[0.231s] [35m[1mConsolidate compiler generated dependencies of target cleaner[0m
+[0.328s] [ 50%] [32mBuilding CXX object CMakeFiles/cleaner.dir/src/cleaner.cpp.o[0m
+[11.255s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:[m[K In lambda function:
+[11.256s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:88:42:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignal_number[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[11.256s]    88 |         auto signal_handler = [this]([01;35m[Kint signal_number[m[K) {
+[11.257s]       |                                      [01;35m[K~~~~^~~~~~~~~~~~~[m[K
+[11.257s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::setup_signals()[m[K’:
+[11.258s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:96:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::utilities[m[K’ has not been declared
+[11.258s]    96 |         rclcpp::[01;31m[Kutilities[m[K::add_signal_handler(signal_handler);
+[11.259s]       |                 [01;31m[K^~~~~~~~~[m[K
+[19.890s] gmake[2]: *** [CMakeFiles/cleaner.dir/build.make:76: CMakeFiles/cleaner.dir/src/cleaner.cpp.o] Error 1
+[19.891s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cleaner.dir/all] Error 2
+[19.892s] gmake: *** [Makefile:146: all] Error 2
+[19.898s] Invoked command in '/home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg -- -j4 -l4

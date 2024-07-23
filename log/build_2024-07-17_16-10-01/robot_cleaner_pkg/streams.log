@@ -1,0 +1,26 @@
+[0.057s] Invoking command in '/home/hae/robot_ws/src/build/robot_cleaner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_cleaner_pkg -- -j4 -l4
+[0.228s] [35m[1mConsolidate compiler generated dependencies of target cleaner[0m
+[0.321s] [ 50%] [32mBuilding CXX object CMakeFiles/cleaner.dir/src/cleaner.cpp.o[0m
+[33.602s] [100%] [32m[1mLinking CXX executable cleaner[0m
+[35.555s] [100%] Built target cleaner
+[35.596s] Invoked command in '/home/hae/robot_ws/src/build/robot_cleaner_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_cleaner_pkg -- -j4 -l4
+[35.746s] Invoking command in '/home/hae/robot_ws/src/build/robot_cleaner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_cleaner_pkg
+[35.772s] -- Install configuration: ""
+[35.775s] -- Execute custom install script
+[35.777s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/lib/robot_cleaner_pkg/cleaner
+[35.810s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/ament_index/resource_index/package_run_dependencies/robot_cleaner_pkg
+[35.842s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/ament_index/resource_index/parent_prefix_path/robot_cleaner_pkg
+[35.875s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/environment/ament_prefix_path.sh
+[35.908s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/environment/ament_prefix_path.dsv
+[35.945s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/environment/path.sh
+[35.989s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/environment/path.dsv
+[36.042s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/local_setup.bash
+[36.078s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/local_setup.sh
+[36.122s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/local_setup.zsh
+[36.154s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/local_setup.dsv
+[36.187s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/package.dsv
+[36.222s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/ament_index/resource_index/packages/robot_cleaner_pkg
+[36.256s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/cmake/robot_cleaner_pkgConfig.cmake
+[36.302s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/cmake/robot_cleaner_pkgConfig-version.cmake
+[36.342s] -- Symlinking: /home/hae/robot_ws/src/install/robot_cleaner_pkg/share/robot_cleaner_pkg/package.xml
+[36.382s] Invoked command in '/home/hae/robot_ws/src/build/robot_cleaner_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_cleaner_pkg

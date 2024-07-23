@@ -1,0 +1,4 @@
+Invoking command in '/home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg -- -j4 -l4
+Invoked command in '/home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg -- -j4 -l4
+Invoking command in '/home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg
+Invoked command in '/home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg

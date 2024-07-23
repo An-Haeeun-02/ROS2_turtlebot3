@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/cleaner.dir/src/cleaner.cpp.o[0m
+[100%] [32m[1mLinking CXX executable cleaner[0m
+[100%] Built target cleaner
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/lib/robot_cleaner_pkg/cleaner
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/ament_index/resource_index/package_run_dependencies/robot_cleaner_pkg
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/ament_index/resource_index/parent_prefix_path/robot_cleaner_pkg
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/environment/path.sh
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/environment/path.dsv
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/local_setup.bash
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/local_setup.sh
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/local_setup.zsh
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/local_setup.dsv
+-- Symlinking: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/package.dsv
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/ament_index/resource_index/packages/robot_cleaner_pkg
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/cmake/robot_cleaner_pkgConfig.cmake
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/cmake/robot_cleaner_pkgConfig-version.cmake
+-- Up-to-date symlink: /home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg/share/robot_cleaner_pkg/package.xml

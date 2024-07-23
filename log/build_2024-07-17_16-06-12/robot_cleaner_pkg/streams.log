@@ -1,0 +1,1106 @@
+[0.049s] Invoking command in '/home/hae/robot_ws/src/build/robot_cleaner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_cleaner_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_cleaner_pkg
+[0.306s] -- The C compiler identification is GNU 11.4.0
+[0.578s] -- The CXX compiler identification is GNU 11.4.0
+[0.612s] -- Detecting C compiler ABI info
+[0.974s] -- Detecting C compiler ABI info - done
+[1.000s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.002s] -- Detecting C compile features
+[1.003s] -- Detecting C compile features - done
+[1.016s] -- Detecting CXX compiler ABI info
+[1.395s] -- Detecting CXX compiler ABI info - done
+[1.420s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.421s] -- Detecting CXX compile features
+[1.423s] -- Detecting CXX compile features - done
+[1.447s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.266s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.603s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.901s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[3.280s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.327s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.390s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.482s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.616s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.040s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.064s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.664s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.919s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.358s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.440s] -- Looking for pthread.h
+[5.774s] -- Looking for pthread.h - found
+[5.781s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.135s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.139s] -- Found Threads: TRUE  
+[6.864s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[7.079s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.891s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.892s] -- Configured cppcheck include dirs: 
+[7.893s] -- Configured cppcheck exclude dirs and/or files: 
+[7.926s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.986s] -- Added test 'lint_cmake' to check CMake code style
+[8.017s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.269s] -- Added test 'uncrustify' to check C / C++ code style
+[8.270s] -- Configured uncrustify additional arguments: 
+[8.302s] -- Added test 'xmllint' to check XML markup files
+[8.313s] -- Configuring done
+[8.380s] -- Generating done
+[8.389s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_cleaner_pkg
+[8.434s] Invoked command in '/home/hae/robot_ws/src/build/robot_cleaner_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_cleaner_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_cleaner_pkg
+[8.444s] Invoking command in '/home/hae/robot_ws/src/build/robot_cleaner_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_cleaner_pkg -- -j4 -l4
+[8.655s] [ 50%] [32mBuilding CXX object CMakeFiles/cleaner.dir/src/cleaner.cpp.o[0m
+[19.419s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[19.422s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:40:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::basic_ostream<char>[m[K’ and ‘[01m[K<unresolved overloaded function type>[m[K’)
+[19.423s]    27 |             [01;31m[Kcout << "터틀봇 작동중..." << end[m[K
+[19.423s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[19.425s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.427s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.430s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.432s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.433s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.434s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.434s] [01m[K/usr/include/c++/11/ostream:108:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.435s]   108 |       [01;36m[Koperator[m[K<<(__ostream_type& (*__pf)(__ostream_type&))
+[19.435s]       |       [01;36m[K^~~~~~~~[m[K
+[19.436s] [01m[K/usr/include/c++/11/ostream:108:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)[m[K’}
+[19.437s]   108 |       operator<<([01;36m[K__ostream_type& (*__pf)(__ostream_type&)[m[K)
+[19.437s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.438s] [01m[K/usr/include/c++/11/ostream:117:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>][m[K’
+[19.438s]   117 |       [01;36m[Koperator[m[K<<(__ios_type& (*__pf)(__ios_type&))
+[19.439s]       |       [01;36m[K^~~~~~~~[m[K
+[19.439s] [01m[K/usr/include/c++/11/ostream:117:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)[m[K’ {aka ‘[01m[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)[m[K’}
+[19.439s]   117 |       operator<<([01;36m[K__ios_type& (*__pf)(__ios_type&)[m[K)
+[19.440s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[19.440s] [01m[K/usr/include/c++/11/ostream:127:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.441s]   127 |       [01;36m[Koperator[m[K<<(ios_base& (*__pf) (ios_base&))
+[19.441s]       |       [01;36m[K^~~~~~~~[m[K
+[19.442s] [01m[K/usr/include/c++/11/ostream:127:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::ios_base& (*)(std::ios_base&)[m[K’
+[19.442s]   127 |       operator<<([01;36m[Kios_base& (*__pf) (ios_base&)[m[K)
+[19.443s]       |                  [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[19.443s] [01m[K/usr/include/c++/11/ostream:166:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.443s]   166 |       [01;36m[Koperator[m[K<<(long __n)
+[19.444s]       |       [01;36m[K^~~~~~~~[m[K
+[19.444s] [01m[K/usr/include/c++/11/ostream:166:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong int[m[K’
+[19.446s]   166 |       operator<<([01;36m[Klong __n[m[K)
+[19.448s]       |                  [01;36m[K~~~~~^~~[m[K
+[19.451s] [01m[K/usr/include/c++/11/ostream:170:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.453s]   170 |       [01;36m[Koperator[m[K<<(unsigned long __n)
+[19.453s]       |       [01;36m[K^~~~~~~~[m[K
+[19.454s] [01m[K/usr/include/c++/11/ostream:170:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong unsigned int[m[K’
+[19.454s]   170 |       operator<<([01;36m[Kunsigned long __n[m[K)
+[19.454s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[19.455s] [01m[K/usr/include/c++/11/ostream:174:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.455s]   174 |       [01;36m[Koperator[m[K<<(bool __n)
+[19.456s]       |       [01;36m[K^~~~~~~~[m[K
+[19.457s] [01m[K/usr/include/c++/11/ostream:174:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kbool[m[K’
+[19.457s]   174 |       operator<<([01;36m[Kbool __n[m[K)
+[19.457s]       |                  [01;36m[K~~~~~^~~[m[K
+[19.458s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[19.458s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.459s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.459s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.460s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.460s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.461s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.461s] [01m[K/usr/include/c++/11/bits/ostream.tcc:91:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.462s]    91 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[19.462s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.462s] [01m[K/usr/include/c++/11/bits/ostream.tcc:92:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kshort int[m[K’
+[19.463s]    92 |     operator<<([01;36m[Kshort __n[m[K)
+[19.463s]       |                [01;36m[K~~~~~~^~~[m[K
+[19.464s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.464s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.467s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.467s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.468s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.468s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.469s] [01m[K/usr/include/c++/11/ostream:181:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.469s]   181 |       [01;36m[Koperator[m[K<<(unsigned short __n)
+[19.469s]       |       [01;36m[K^~~~~~~~[m[K
+[19.470s] [01m[K/usr/include/c++/11/ostream:181:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kshort unsigned int[m[K’
+[19.470s]   181 |       operator<<([01;36m[Kunsigned short __n[m[K)
+[19.471s]       |                  [01;36m[K~~~~~~~~~~~~~~~^~~[m[K
+[19.471s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[19.472s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.472s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.472s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.473s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.473s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.474s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.474s] [01m[K/usr/include/c++/11/bits/ostream.tcc:105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.475s]   105 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[19.475s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.476s] [01m[K/usr/include/c++/11/bits/ostream.tcc:106:20:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kint[m[K’
+[19.477s]   106 |     operator<<([01;36m[Kint __n[m[K)
+[19.477s]       |                [01;36m[K~~~~^~~[m[K
+[19.478s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.478s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.479s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.479s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.480s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.481s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.481s] [01m[K/usr/include/c++/11/ostream:192:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.481s]   192 |       [01;36m[Koperator[m[K<<(unsigned int __n)
+[19.482s]       |       [01;36m[K^~~~~~~~[m[K
+[19.482s] [01m[K/usr/include/c++/11/ostream:192:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kunsigned int[m[K’
+[19.483s]   192 |       operator<<([01;36m[Kunsigned int __n[m[K)
+[19.483s]       |                  [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[19.484s] [01m[K/usr/include/c++/11/ostream:201:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.485s]   201 |       [01;36m[Koperator[m[K<<(long long __n)
+[19.485s]       |       [01;36m[K^~~~~~~~[m[K
+[19.486s] [01m[K/usr/include/c++/11/ostream:201:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong long int[m[K’
+[19.486s]   201 |       operator<<([01;36m[Klong long __n[m[K)
+[19.486s]       |                  [01;36m[K~~~~~~~~~~^~~[m[K
+[19.487s] [01m[K/usr/include/c++/11/ostream:205:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.487s]   205 |       [01;36m[Koperator[m[K<<(unsigned long long __n)
+[19.488s]       |       [01;36m[K^~~~~~~~[m[K
+[19.488s] [01m[K/usr/include/c++/11/ostream:205:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong long unsigned int[m[K’
+[19.489s]   205 |       operator<<([01;36m[Kunsigned long long __n[m[K)
+[19.489s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[19.490s] [01m[K/usr/include/c++/11/ostream:220:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.490s]   220 |       [01;36m[Koperator[m[K<<(double __f)
+[19.490s]       |       [01;36m[K^~~~~~~~[m[K
+[19.491s] [01m[K/usr/include/c++/11/ostream:220:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kdouble[m[K’
+[19.491s]   220 |       operator<<([01;36m[Kdouble __f[m[K)
+[19.492s]       |                  [01;36m[K~~~~~~~^~~[m[K
+[19.492s] [01m[K/usr/include/c++/11/ostream:224:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.493s]   224 |       [01;36m[Koperator[m[K<<(float __f)
+[19.493s]       |       [01;36m[K^~~~~~~~[m[K
+[19.493s] [01m[K/usr/include/c++/11/ostream:224:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kfloat[m[K’
+[19.494s]   224 |       operator<<([01;36m[Kfloat __f[m[K)
+[19.494s]       |                  [01;36m[K~~~~~~^~~[m[K
+[19.495s] [01m[K/usr/include/c++/11/ostream:232:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.495s]   232 |       [01;36m[Koperator[m[K<<(long double __f)
+[19.495s]       |       [01;36m[K^~~~~~~~[m[K
+[19.496s] [01m[K/usr/include/c++/11/ostream:232:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong double[m[K’
+[19.497s]   232 |       operator<<([01;36m[Klong double __f[m[K)
+[19.497s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[19.497s] [01m[K/usr/include/c++/11/ostream:245:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.498s]   245 |       [01;36m[Koperator[m[K<<(const void* __p)
+[19.498s]       |       [01;36m[K^~~~~~~~[m[K
+[19.499s] [01m[K/usr/include/c++/11/ostream:245:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kconst void*[m[K’
+[19.499s]   245 |       operator<<([01;36m[Kconst void* __p[m[K)
+[19.500s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[19.500s] [01m[K/usr/include/c++/11/ostream:250:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t][m[K’
+[19.501s]   250 |       [01;36m[Koperator[m[K<<(nullptr_t)
+[19.501s]       |       [01;36m[K^~~~~~~~[m[K
+[19.501s] [01m[K/usr/include/c++/11/ostream:250:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+[19.502s]   250 |       operator<<([01;36m[Knullptr_t[m[K)
+[19.502s]       |                  [01;36m[K^~~~~~~~~[m[K
+[19.503s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[19.503s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.503s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.504s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.504s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.505s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.505s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.506s] [01m[K/usr/include/c++/11/bits/ostream.tcc:119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>][m[K’
+[19.506s]   119 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[19.507s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.507s] [01m[K/usr/include/c++/11/bits/ostream.tcc:120:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__streambuf_type*[m[K’ {aka ‘[01m[Kstd::basic_streambuf<char>*[m[K’}
+[19.507s]   120 |     operator<<([01;36m[K__streambuf_type* __sbin[m[K)
+[19.508s]       |                [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[19.508s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[19.509s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[19.509s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.510s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[19.510s]    70 |     [01;36m[Koperator[m[K<<(std::basic_ostream<_Ch, _Tr>& __os,
+[19.511s]       |     [01;36m[K^~~~~~~~[m[K
+[19.511s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.511s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+[19.512s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.512s]       |                                           [01;36m[K^~~[m[K
+[19.513s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[19.513s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[19.513s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[19.514s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[19.514s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[19.515s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[19.515s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[19.516s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.516s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.517s] [01m[K/usr/include/c++/11/string_view:667:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::basic_string_view<_CharT, _Traits>) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.517s]   667 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[19.517s]       |     [01;36m[K^~~~~~~~[m[K
+[19.518s] [01m[K/usr/include/c++/11/string_view:668:50:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::basic_string_view<char>[m[K’
+[19.518s]   668 |                [01;36m[Kbasic_string_view<_CharT,_Traits> __str[m[K)
+[19.518s]       |                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[19.519s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[19.519s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[19.520s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[19.520s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[19.521s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[19.521s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[19.522s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.522s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.522s] [01m[K/usr/include/c++/11/bits/basic_string.h:6531:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[19.523s]  6531 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[19.523s]       |     [01;36m[K^~~~~~~~[m[K
+[19.524s] [01m[K/usr/include/c++/11/bits/basic_string.h:6531:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.524s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Alloc[m[K’
+[19.524s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.525s]       |                                           [01;36m[K^~~[m[K
+[19.525s] In file included from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[19.526s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[19.526s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[19.527s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.527s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.527s] [01m[K/usr/include/c++/11/system_error:279:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::error_code&)[m[K’
+[19.528s]   279 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+[19.528s]       |     [01;36m[K^~~~~~~~[m[K
+[19.529s] [01m[K/usr/include/c++/11/system_error:279:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.529s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst std::error_code&[m[K’
+[19.530s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.530s]       |                                           [01;36m[K^~~[m[K
+[19.530s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22[m[K,
+[19.531s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.531s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.532s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.532s] [01m[K/usr/include/c++/11/thread:92:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::thread::id)[m[K’
+[19.533s]    92 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+[19.533s]       |     [01;36m[K^~~~~~~~[m[K
+[19.534s] [01m[K/usr/include/c++/11/thread:92:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.534s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::thread::id[m[K’
+[19.535s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.535s]       |                                           [01;36m[K^~~[m[K
+[19.535s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.536s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.536s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.537s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.537s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.538s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.538s] [01m[K/usr/include/c++/11/ostream:513:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, _CharT) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.539s]   513 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[19.539s]       |     [01;36m[K^~~~~~~~[m[K
+[19.540s] [01m[K/usr/include/c++/11/ostream:513:62:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kchar[m[K’
+[19.540s]   513 |     operator<<(basic_ostream<_CharT, _Traits>& __out, [01;36m[K_CharT __c[m[K)
+[19.541s]       |                                                       [01;36m[K~~~~~~~^~~[m[K
+[19.541s] [01m[K/usr/include/c++/11/ostream:518:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, char)[m[K’
+[19.542s]   518 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[19.542s]       |     [01;36m[K^~~~~~~~[m[K
+[19.542s] [01m[K/usr/include/c++/11/ostream:518:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.543s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kchar[m[K’
+[19.543s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.544s]       |                                           [01;36m[K^~~[m[K
+[19.544s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.545s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.546s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.547s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.547s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.547s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.548s] [01m[K/usr/include/c++/11/ostream:524:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)[m[K’
+[19.548s]   524 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+[19.549s]       |     [01;36m[K^~~~~~~~[m[K
+[19.549s] [01m[K/usr/include/c++/11/ostream:524:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.550s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kchar[m[K’
+[19.550s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.551s]       |                                           [01;36m[K^~~[m[K
+[19.551s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.552s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.552s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.552s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.553s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.553s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.554s] [01m[K/usr/include/c++/11/ostream:530:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)[m[K’
+[19.554s]   530 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[19.555s]       |     [01;36m[K^~~~~~~~[m[K
+[19.555s] [01m[K/usr/include/c++/11/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.556s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Ksigned char[m[K’
+[19.556s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.557s]       |                                           [01;36m[K^~~[m[K
+[19.557s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.557s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.558s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.558s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.559s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.559s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.560s] [01m[K/usr/include/c++/11/ostream:535:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)[m[K’
+[19.561s]   535 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[19.561s]       |     [01;36m[K^~~~~~~~[m[K
+[19.561s] [01m[K/usr/include/c++/11/ostream:535:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.562s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kunsigned char[m[K’
+[19.563s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.563s]       |                                           [01;36m[K^~~[m[K
+[19.564s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.566s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.566s] [01m[K/usr/include/c++/11/ostream:594:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.567s]   594 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[19.567s]       |     [01;36m[K^~~~~~~~[m[K
+[19.568s] [01m[K/usr/include/c++/11/ostream:594:69:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kconst char*[m[K’
+[19.568s]   594 |     operator<<(basic_ostream<_CharT, _Traits>& __out, [01;36m[Kconst _CharT* __s[m[K)
+[19.568s]       |                                                       [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[19.569s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[19.569s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.570s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.570s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.571s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.572s] [01m[K/usr/include/c++/11/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const char*)[m[K’
+[19.573s]   321 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[19.573s]       |     [01;36m[K^~~~~~~~[m[K
+[19.574s] [01m[K/usr/include/c++/11/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.575s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst char*[m[K’
+[19.575s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.576s]       |                                           [01;36m[K^~~[m[K
+[19.577s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.577s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.579s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.579s] [01m[K/usr/include/c++/11/ostream:611:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’
+[19.580s]   611 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[19.580s]       |     [01;36m[K^~~~~~~~[m[K
+[19.581s] [01m[K/usr/include/c++/11/ostream:611:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.581s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst char*[m[K’
+[19.582s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.582s]       |                                           [01;36m[K^~~[m[K
+[19.582s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.583s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.583s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.584s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.584s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.585s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.585s] [01m[K/usr/include/c++/11/ostream:624:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)[m[K’
+[19.585s]   624 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[19.586s]       |     [01;36m[K^~~~~~~~[m[K
+[19.586s] [01m[K/usr/include/c++/11/ostream:624:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.587s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst signed char*[m[K’
+[19.587s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.588s]       |                                           [01;36m[K^~~[m[K
+[19.588s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.589s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.589s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.590s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.590s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.590s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.591s] [01m[K/usr/include/c++/11/ostream:629:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+[19.591s]   629 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[19.592s]       |     [01;36m[K^~~~~~~~[m[K
+[19.592s] [01m[K/usr/include/c++/11/ostream:629:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.593s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst unsigned char*[m[K’
+[19.593s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.593s]       |                                           [01;36m[K^~~[m[K
+[19.594s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.594s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.595s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.595s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.596s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.596s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.597s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)[m[K’
+[19.597s]   750 |     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+[19.597s]       |     [01;36m[K^~~~~~~~[m[K
+[19.598s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.598s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+[19.599s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.599s]       |                                           [01;36m[K^~~[m[K
+[19.599s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.600s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.600s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.601s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.601s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.602s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.602s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.603s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.603s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.603s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.604s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.604s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.605s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.605s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.606s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.606s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.606s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.607s] [01m[K/usr/include/c++/11/iomanip:79:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Resetiosflags)[m[K’
+[19.607s]    79 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+[19.608s]       |     [01;36m[K^~~~~~~~[m[K
+[19.609s] [01m[K/usr/include/c++/11/iomanip:79:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.609s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Resetiosflags[m[K’
+[19.610s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.610s]       |                                           [01;36m[K^~~[m[K
+[19.611s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.611s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.611s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.612s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.612s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.613s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.613s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.617s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.617s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.617s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.618s] [01m[K/usr/include/c++/11/iomanip:109:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setiosflags)[m[K’
+[19.618s]   109 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+[19.619s]       |     [01;36m[K^~~~~~~~[m[K
+[19.619s] [01m[K/usr/include/c++/11/iomanip:109:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.620s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Setiosflags[m[K’
+[19.620s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.621s]       |                                           [01;36m[K^~~[m[K
+[19.621s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.622s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.622s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.622s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.623s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.624s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.624s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.625s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.626s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.626s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.626s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.627s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.627s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.628s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.628s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.629s] [01m[K/usr/include/c++/11/iomanip:143:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setbase)[m[K’
+[19.629s]   143 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+[19.630s]       |     [01;36m[K^~~~~~~~[m[K
+[19.630s] [01m[K/usr/include/c++/11/iomanip:143:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.630s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Setbase[m[K’
+[19.631s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.631s]       |                                           [01;36m[K^~~[m[K
+[19.632s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.632s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.633s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.633s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.633s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.634s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.634s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.635s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.635s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.636s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.636s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.637s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.638s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.639s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.639s] [01m[K/usr/include/c++/11/iomanip:178:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setfill<_CharT>) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.640s]   178 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+[19.640s]       |     [01;36m[K^~~~~~~~[m[K
+[19.641s] [01m[K/usr/include/c++/11/iomanip:178:71:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::_Setfill<char>[m[K’
+[19.641s]   178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, [01;36m[K_Setfill<_CharT> __f[m[K)
+[19.642s]       |                                                      [01;36m[K~~~~~~~~~~~~~~~~~^~~[m[K
+[19.642s] [01m[K/usr/include/c++/11/iomanip:208:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setprecision)[m[K’
+[19.642s]   208 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+[19.643s]       |     [01;36m[K^~~~~~~~[m[K
+[19.643s] [01m[K/usr/include/c++/11/iomanip:208:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.644s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Setprecision[m[K’
+[19.644s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.645s]       |                                           [01;36m[K^~~[m[K
+[19.645s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.645s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.646s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.647s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.648s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.649s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.649s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.650s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.652s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.652s] [01m[K/usr/include/c++/11/iomanip:238:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setw)[m[K’
+[19.653s]   238 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+[19.653s]       |     [01;36m[K^~~~~~~~[m[K
+[19.654s] [01m[K/usr/include/c++/11/iomanip:238:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.654s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Setw[m[K’
+[19.654s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.655s]       |                                           [01;36m[K^~~[m[K
+[19.655s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.656s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.656s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.657s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.657s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.657s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.658s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.658s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.659s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.661s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.662s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.662s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.663s] [01m[K/usr/include/c++/11/iomanip:311:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_money<_MoneyT>)[m[K’
+[19.663s]   311 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+[19.663s]       |     [01;36m[K^~~~~~~~[m[K
+[19.664s] [01m[K/usr/include/c++/11/iomanip:311:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.664s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:27:43:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_MoneyT[m[K’
+[19.665s]    27 |             cout << "터틀봇 작동중..." << [01;36m[Kend[m[K
+[19.665s]       |                                           [01;36m[K^~~[m[K
+[19.666s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.666s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.667s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.667s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.667s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.668s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.669s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.669s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.670s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.670s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.671s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.672s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.672s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.673s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.673s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.674s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.675s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.675s] [01m[K/usr/include/c++/11/iomanip:363:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_time<_CharT>) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.676s]   363 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+[19.679s]       |     [01;36m[K^~~~~~~~[m[K
+[19.679s] [01m[K/usr/include/c++/11/iomanip:363:72:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::_Put_time<char>[m[K’
+[19.680s]   363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, [01;36m[K_Put_time<_CharT> __f[m[K)
+[19.681s]       |                                                      [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[19.681s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::move_robot()[m[K’:
+[19.682s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:35:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::basic_ostream<char>[m[K’ and ‘[01m[K<unresolved overloaded function type>[m[K’)
+[19.683s]    50 |             [01;31m[Kcout << "장애물 감지" << end[m[K
+[19.683s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[19.684s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.685s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.685s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.686s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.687s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.687s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.688s] [01m[K/usr/include/c++/11/ostream:108:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.689s]   108 |       [01;36m[Koperator[m[K<<(__ostream_type& (*__pf)(__ostream_type&))
+[19.690s]       |       [01;36m[K^~~~~~~~[m[K
+[19.690s] [01m[K/usr/include/c++/11/ostream:108:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)[m[K’}
+[19.691s]   108 |       operator<<([01;36m[K__ostream_type& (*__pf)(__ostream_type&)[m[K)
+[19.692s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.692s] [01m[K/usr/include/c++/11/ostream:117:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>][m[K’
+[19.693s]   117 |       [01;36m[Koperator[m[K<<(__ios_type& (*__pf)(__ios_type&))
+[19.693s]       |       [01;36m[K^~~~~~~~[m[K
+[19.694s] [01m[K/usr/include/c++/11/ostream:117:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)[m[K’ {aka ‘[01m[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)[m[K’}
+[19.695s]   117 |       operator<<([01;36m[K__ios_type& (*__pf)(__ios_type&)[m[K)
+[19.696s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[19.696s] [01m[K/usr/include/c++/11/ostream:127:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.697s]   127 |       [01;36m[Koperator[m[K<<(ios_base& (*__pf) (ios_base&))
+[19.698s]       |       [01;36m[K^~~~~~~~[m[K
+[19.698s] [01m[K/usr/include/c++/11/ostream:127:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::ios_base& (*)(std::ios_base&)[m[K’
+[19.699s]   127 |       operator<<([01;36m[Kios_base& (*__pf) (ios_base&)[m[K)
+[19.699s]       |                  [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[19.700s] [01m[K/usr/include/c++/11/ostream:166:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.700s]   166 |       [01;36m[Koperator[m[K<<(long __n)
+[19.700s]       |       [01;36m[K^~~~~~~~[m[K
+[19.701s] [01m[K/usr/include/c++/11/ostream:166:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong int[m[K’
+[19.701s]   166 |       operator<<([01;36m[Klong __n[m[K)
+[19.702s]       |                  [01;36m[K~~~~~^~~[m[K
+[19.702s] [01m[K/usr/include/c++/11/ostream:170:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.703s]   170 |       [01;36m[Koperator[m[K<<(unsigned long __n)
+[19.703s]       |       [01;36m[K^~~~~~~~[m[K
+[19.703s] [01m[K/usr/include/c++/11/ostream:170:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong unsigned int[m[K’
+[19.704s]   170 |       operator<<([01;36m[Kunsigned long __n[m[K)
+[19.704s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[19.705s] [01m[K/usr/include/c++/11/ostream:174:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.705s]   174 |       [01;36m[Koperator[m[K<<(bool __n)
+[19.705s]       |       [01;36m[K^~~~~~~~[m[K
+[19.706s] [01m[K/usr/include/c++/11/ostream:174:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kbool[m[K’
+[19.706s]   174 |       operator<<([01;36m[Kbool __n[m[K)
+[19.707s]       |                  [01;36m[K~~~~~^~~[m[K
+[19.707s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[19.707s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.708s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.708s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.708s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.709s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.709s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.710s] [01m[K/usr/include/c++/11/bits/ostream.tcc:91:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.710s]    91 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[19.710s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.711s] [01m[K/usr/include/c++/11/bits/ostream.tcc:92:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kshort int[m[K’
+[19.711s]    92 |     operator<<([01;36m[Kshort __n[m[K)
+[19.712s]       |                [01;36m[K~~~~~~^~~[m[K
+[19.712s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.713s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.713s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.714s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.714s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.715s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.715s] [01m[K/usr/include/c++/11/ostream:181:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.715s]   181 |       [01;36m[Koperator[m[K<<(unsigned short __n)
+[19.716s]       |       [01;36m[K^~~~~~~~[m[K
+[19.716s] [01m[K/usr/include/c++/11/ostream:181:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kshort unsigned int[m[K’
+[19.717s]   181 |       operator<<([01;36m[Kunsigned short __n[m[K)
+[19.717s]       |                  [01;36m[K~~~~~~~~~~~~~~~^~~[m[K
+[19.717s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[19.718s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.718s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.719s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.719s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.719s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.720s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.720s] [01m[K/usr/include/c++/11/bits/ostream.tcc:105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.721s]   105 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[19.721s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.722s] [01m[K/usr/include/c++/11/bits/ostream.tcc:106:20:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kint[m[K’
+[19.722s]   106 |     operator<<([01;36m[Kint __n[m[K)
+[19.723s]       |                [01;36m[K~~~~^~~[m[K
+[19.723s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.723s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.724s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.724s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.725s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.725s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.726s] [01m[K/usr/include/c++/11/ostream:192:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.726s]   192 |       [01;36m[Koperator[m[K<<(unsigned int __n)
+[19.727s]       |       [01;36m[K^~~~~~~~[m[K
+[19.727s] [01m[K/usr/include/c++/11/ostream:192:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kunsigned int[m[K’
+[19.727s]   192 |       operator<<([01;36m[Kunsigned int __n[m[K)
+[19.728s]       |                  [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[19.728s] [01m[K/usr/include/c++/11/ostream:201:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.729s]   201 |       [01;36m[Koperator[m[K<<(long long __n)
+[19.729s]       |       [01;36m[K^~~~~~~~[m[K
+[19.730s] [01m[K/usr/include/c++/11/ostream:201:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong long int[m[K’
+[19.730s]   201 |       operator<<([01;36m[Klong long __n[m[K)
+[19.731s]       |                  [01;36m[K~~~~~~~~~~^~~[m[K
+[19.731s] [01m[K/usr/include/c++/11/ostream:205:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.731s]   205 |       [01;36m[Koperator[m[K<<(unsigned long long __n)
+[19.732s]       |       [01;36m[K^~~~~~~~[m[K
+[19.732s] [01m[K/usr/include/c++/11/ostream:205:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong long unsigned int[m[K’
+[19.733s]   205 |       operator<<([01;36m[Kunsigned long long __n[m[K)
+[19.733s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[19.734s] [01m[K/usr/include/c++/11/ostream:220:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.734s]   220 |       [01;36m[Koperator[m[K<<(double __f)
+[19.734s]       |       [01;36m[K^~~~~~~~[m[K
+[19.735s] [01m[K/usr/include/c++/11/ostream:220:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kdouble[m[K’
+[19.735s]   220 |       operator<<([01;36m[Kdouble __f[m[K)
+[19.736s]       |                  [01;36m[K~~~~~~~^~~[m[K
+[19.736s] [01m[K/usr/include/c++/11/ostream:224:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.737s]   224 |       [01;36m[Koperator[m[K<<(float __f)
+[19.737s]       |       [01;36m[K^~~~~~~~[m[K
+[19.738s] [01m[K/usr/include/c++/11/ostream:224:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kfloat[m[K’
+[19.738s]   224 |       operator<<([01;36m[Kfloat __f[m[K)
+[19.738s]       |                  [01;36m[K~~~~~~^~~[m[K
+[19.739s] [01m[K/usr/include/c++/11/ostream:232:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.739s]   232 |       [01;36m[Koperator[m[K<<(long double __f)
+[19.740s]       |       [01;36m[K^~~~~~~~[m[K
+[19.740s] [01m[K/usr/include/c++/11/ostream:232:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Klong double[m[K’
+[19.741s]   232 |       operator<<([01;36m[Klong double __f[m[K)
+[19.741s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[19.742s] [01m[K/usr/include/c++/11/ostream:245:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[19.742s]   245 |       [01;36m[Koperator[m[K<<(const void* __p)
+[19.743s]       |       [01;36m[K^~~~~~~~[m[K
+[19.743s] [01m[K/usr/include/c++/11/ostream:245:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kconst void*[m[K’
+[19.743s]   245 |       operator<<([01;36m[Kconst void* __p[m[K)
+[19.744s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[19.744s] [01m[K/usr/include/c++/11/ostream:250:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t][m[K’
+[19.745s]   250 |       [01;36m[Koperator[m[K<<(nullptr_t)
+[19.745s]       |       [01;36m[K^~~~~~~~[m[K
+[19.746s] [01m[K/usr/include/c++/11/ostream:250:18:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+[19.746s]   250 |       operator<<([01;36m[Knullptr_t[m[K)
+[19.746s]       |                  [01;36m[K^~~~~~~~~[m[K
+[19.747s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[19.747s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.748s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.748s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.749s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.749s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.749s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.750s] [01m[K/usr/include/c++/11/bits/ostream.tcc:119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>][m[K’
+[19.750s]   119 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[19.750s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.750s] [01m[K/usr/include/c++/11/bits/ostream.tcc:120:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__streambuf_type*[m[K’ {aka ‘[01m[Kstd::basic_streambuf<char>*[m[K’}
+[19.751s]   120 |     operator<<([01;36m[K__streambuf_type* __sbin[m[K)
+[19.751s]       |                [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[19.751s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[19.752s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[19.752s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.752s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[19.752s]    70 |     [01;36m[Koperator[m[K<<(std::basic_ostream<_Ch, _Tr>& __os,
+[19.753s]       |     [01;36m[K^~~~~~~~[m[K
+[19.753s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.754s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+[19.754s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.755s]       |                                      [01;36m[K^~~[m[K
+[19.755s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[19.756s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[19.756s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[19.757s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[19.757s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[19.757s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[19.758s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[19.758s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.759s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.759s] [01m[K/usr/include/c++/11/string_view:667:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::basic_string_view<_CharT, _Traits>) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.759s]   667 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[19.760s]       |     [01;36m[K^~~~~~~~[m[K
+[19.760s] [01m[K/usr/include/c++/11/string_view:668:50:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::basic_string_view<char>[m[K’
+[19.761s]   668 |                [01;36m[Kbasic_string_view<_CharT,_Traits> __str[m[K)
+[19.761s]       |                [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[19.762s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[19.762s]                  from [01m[K/usr/include/c++/11/stdexcept:39[m[K,
+[19.762s]                  from [01m[K/usr/include/c++/11/system_error:41[m[K,
+[19.763s]                  from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[19.763s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[19.764s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[19.764s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.764s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.765s] [01m[K/usr/include/c++/11/bits/basic_string.h:6531:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[19.765s]  6531 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[19.766s]       |     [01;36m[K^~~~~~~~[m[K
+[19.766s] [01m[K/usr/include/c++/11/bits/basic_string.h:6531:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.767s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Alloc[m[K’
+[19.767s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.767s]       |                                      [01;36m[K^~~[m[K
+[19.768s] In file included from [01m[K/usr/include/c++/11/mutex:42[m[K,
+[19.768s]                  from [01m[K/usr/include/c++/11/future:38[m[K,
+[19.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+[19.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.770s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.770s] [01m[K/usr/include/c++/11/system_error:279:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::error_code&)[m[K’
+[19.771s]   279 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+[19.771s]       |     [01;36m[K^~~~~~~~[m[K
+[19.771s] [01m[K/usr/include/c++/11/system_error:279:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.772s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst std::error_code&[m[K’
+[19.772s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.773s]       |                                      [01;36m[K^~~[m[K
+[19.773s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22[m[K,
+[19.774s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.774s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.775s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.775s] [01m[K/usr/include/c++/11/thread:92:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::thread::id)[m[K’
+[19.775s]    92 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+[19.776s]       |     [01;36m[K^~~~~~~~[m[K
+[19.776s] [01m[K/usr/include/c++/11/thread:92:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.777s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::thread::id[m[K’
+[19.778s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.778s]       |                                      [01;36m[K^~~[m[K
+[19.779s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.779s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.781s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.781s] [01m[K/usr/include/c++/11/ostream:513:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, _CharT) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.782s]   513 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[19.782s]       |     [01;36m[K^~~~~~~~[m[K
+[19.783s] [01m[K/usr/include/c++/11/ostream:513:62:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kchar[m[K’
+[19.783s]   513 |     operator<<(basic_ostream<_CharT, _Traits>& __out, [01;36m[K_CharT __c[m[K)
+[19.783s]       |                                                       [01;36m[K~~~~~~~^~~[m[K
+[19.784s] [01m[K/usr/include/c++/11/ostream:518:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, char)[m[K’
+[19.784s]   518 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[19.785s]       |     [01;36m[K^~~~~~~~[m[K
+[19.785s] [01m[K/usr/include/c++/11/ostream:518:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.786s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kchar[m[K’
+[19.786s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.787s]       |                                      [01;36m[K^~~[m[K
+[19.787s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.787s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.788s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.788s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.789s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.789s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.790s] [01m[K/usr/include/c++/11/ostream:524:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)[m[K’
+[19.790s]   524 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+[19.790s]       |     [01;36m[K^~~~~~~~[m[K
+[19.791s] [01m[K/usr/include/c++/11/ostream:524:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.791s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kchar[m[K’
+[19.792s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.792s]       |                                      [01;36m[K^~~[m[K
+[19.793s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.794s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.794s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.794s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.795s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.795s] [01m[K/usr/include/c++/11/ostream:530:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)[m[K’
+[19.796s]   530 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[19.796s]       |     [01;36m[K^~~~~~~~[m[K
+[19.797s] [01m[K/usr/include/c++/11/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.797s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Ksigned char[m[K’
+[19.798s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.798s]       |                                      [01;36m[K^~~[m[K
+[19.798s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.800s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.800s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.800s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.801s] [01m[K/usr/include/c++/11/ostream:535:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)[m[K’
+[19.801s]   535 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[19.802s]       |     [01;36m[K^~~~~~~~[m[K
+[19.802s] [01m[K/usr/include/c++/11/ostream:535:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.803s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kunsigned char[m[K’
+[19.803s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.803s]       |                                      [01;36m[K^~~[m[K
+[19.804s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.804s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.805s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.805s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.806s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.806s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.806s] [01m[K/usr/include/c++/11/ostream:594:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.807s]   594 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[19.807s]       |     [01;36m[K^~~~~~~~[m[K
+[19.808s] [01m[K/usr/include/c++/11/ostream:594:69:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kconst char*[m[K’
+[19.808s]   594 |     operator<<(basic_ostream<_CharT, _Traits>& __out, [01;36m[Kconst _CharT* __s[m[K)
+[19.809s]       |                                                       [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[19.809s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[19.809s]                  from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.810s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.810s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.811s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.811s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.812s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.812s] [01m[K/usr/include/c++/11/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const char*)[m[K’
+[19.813s]   321 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[19.813s]       |     [01;36m[K^~~~~~~~[m[K
+[19.813s] [01m[K/usr/include/c++/11/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.814s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst char*[m[K’
+[19.814s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.815s]       |                                      [01;36m[K^~~[m[K
+[19.815s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.815s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.816s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.816s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.817s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.817s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.818s] [01m[K/usr/include/c++/11/ostream:611:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’
+[19.818s]   611 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[19.818s]       |     [01;36m[K^~~~~~~~[m[K
+[19.819s] [01m[K/usr/include/c++/11/ostream:611:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.819s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst char*[m[K’
+[19.820s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.820s]       |                                      [01;36m[K^~~[m[K
+[19.821s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.821s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.822s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.822s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.822s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.823s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.823s] [01m[K/usr/include/c++/11/ostream:624:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)[m[K’
+[19.824s]   624 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[19.824s]       |     [01;36m[K^~~~~~~~[m[K
+[19.824s] [01m[K/usr/include/c++/11/ostream:624:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.825s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst signed char*[m[K’
+[19.825s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.826s]       |                                      [01;36m[K^~~[m[K
+[19.826s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.826s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.827s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.827s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.828s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.828s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.829s] [01m[K/usr/include/c++/11/ostream:629:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+[19.829s]   629 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[19.830s]       |     [01;36m[K^~~~~~~~[m[K
+[19.830s] [01m[K/usr/include/c++/11/ostream:629:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.830s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kconst unsigned char*[m[K’
+[19.831s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.831s]       |                                      [01;36m[K^~~[m[K
+[19.832s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[19.832s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[19.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.834s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.834s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)[m[K’
+[19.835s]   750 |     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+[19.835s]       |     [01;36m[K^~~~~~~~[m[K
+[19.835s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.836s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_Tp[m[K’
+[19.836s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.837s]       |                                      [01;36m[K^~~[m[K
+[19.837s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.838s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.838s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.839s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.840s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.841s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.842s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.843s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.843s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.843s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.844s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.844s] [01m[K/usr/include/c++/11/iomanip:79:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Resetiosflags)[m[K’
+[19.845s]    79 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+[19.845s]       |     [01;36m[K^~~~~~~~[m[K
+[19.846s] [01m[K/usr/include/c++/11/iomanip:79:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.846s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Resetiosflags[m[K’
+[19.847s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.847s]       |                                      [01;36m[K^~~[m[K
+[19.847s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.848s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.848s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.849s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.850s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.850s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.851s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.851s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.851s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.852s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.853s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.854s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.854s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.854s] [01m[K/usr/include/c++/11/iomanip:109:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setiosflags)[m[K’
+[19.855s]   109 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+[19.855s]       |     [01;36m[K^~~~~~~~[m[K
+[19.856s] [01m[K/usr/include/c++/11/iomanip:109:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.856s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Setiosflags[m[K’
+[19.857s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.857s]       |                                      [01;36m[K^~~[m[K
+[19.857s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.858s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.858s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.859s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.859s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.860s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.860s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.860s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.861s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.861s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.862s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.862s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.862s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.863s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.864s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.864s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.865s] [01m[K/usr/include/c++/11/iomanip:143:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setbase)[m[K’
+[19.865s]   143 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+[19.866s]       |     [01;36m[K^~~~~~~~[m[K
+[19.866s] [01m[K/usr/include/c++/11/iomanip:143:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.866s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Setbase[m[K’
+[19.867s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.867s]       |                                      [01;36m[K^~~[m[K
+[19.868s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.868s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.869s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.869s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.869s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.870s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.870s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.871s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.871s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.871s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.872s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.872s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.873s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.873s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.874s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.874s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.875s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.875s] [01m[K/usr/include/c++/11/iomanip:178:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setfill<_CharT>) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.875s]   178 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+[19.876s]       |     [01;36m[K^~~~~~~~[m[K
+[19.876s] [01m[K/usr/include/c++/11/iomanip:178:71:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::_Setfill<char>[m[K’
+[19.877s]   178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, [01;36m[K_Setfill<_CharT> __f[m[K)
+[19.878s]       |                                                      [01;36m[K~~~~~~~~~~~~~~~~~^~~[m[K
+[19.878s] [01m[K/usr/include/c++/11/iomanip:208:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setprecision)[m[K’
+[19.879s]   208 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+[19.879s]       |     [01;36m[K^~~~~~~~[m[K
+[19.880s] [01m[K/usr/include/c++/11/iomanip:208:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.880s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Setprecision[m[K’
+[19.881s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.881s]       |                                      [01;36m[K^~~[m[K
+[19.881s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.882s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.882s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.883s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.883s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.884s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.884s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.884s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.885s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.885s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.886s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.886s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.886s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.887s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.887s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.888s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.888s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.889s] [01m[K/usr/include/c++/11/iomanip:238:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setw)[m[K’
+[19.889s]   238 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+[19.889s]       |     [01;36m[K^~~~~~~~[m[K
+[19.890s] [01m[K/usr/include/c++/11/iomanip:238:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.890s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::end[m[K’ (type ‘[01m[K<unresolved overloaded function type>[m[K’) to type ‘[01m[Kstd::_Setw[m[K’
+[19.891s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.891s]       |                                      [01;36m[K^~~[m[K
+[19.891s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.892s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.892s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.893s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.893s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.894s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.894s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.894s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.896s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.896s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.897s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.897s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.897s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.898s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.898s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.899s] [01m[K/usr/include/c++/11/iomanip:311:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_money<_MoneyT>)[m[K’
+[19.899s]   311 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+[19.899s]       |     [01;36m[K^~~~~~~~[m[K
+[19.900s] [01m[K/usr/include/c++/11/iomanip:311:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.900s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:50:38:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[K_MoneyT[m[K’
+[19.901s]    50 |             cout << "장애물 감지" << [01;36m[Kend[m[K
+[19.901s]       |                                      [01;36m[K^~~[m[K
+[19.901s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19[m[K,
+[19.902s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15[m[K,
+[19.902s]                  from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9[m[K,
+[19.903s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[19.903s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[19.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[19.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[19.905s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.905s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.905s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.906s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.907s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.907s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.907s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.908s]                  from [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1[m[K:
+[19.909s] [01m[K/usr/include/c++/11/iomanip:363:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_time<_CharT>) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[19.909s]   363 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+[19.909s]       |     [01;36m[K^~~~~~~~[m[K
+[19.910s] [01m[K/usr/include/c++/11/iomanip:363:72:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[Kstd::_Put_time<char>[m[K’
+[19.910s]   363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, [01;36m[K_Put_time<_CharT> __f[m[K)
+[19.911s]       |                                                      [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[19.911s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:[m[K In function ‘[01m[Kvoid signalHandler(int)[m[K’:
+[19.912s] [01m[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:79:26:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before numeric constant
+[19.912s]    79 |     message.angular.z = 0
+[19.913s]       |                          [01;31m[K^[m[K
+[19.913s]       |                          [32m[K;[m[K
+[19.913s]    80 |     [32m[K.0[m[K;
+[19.914s]       |     [32m[K~~[m[K                    
+[28.172s] gmake[2]: *** [CMakeFiles/cleaner.dir/build.make:76: CMakeFiles/cleaner.dir/src/cleaner.cpp.o] Error 1
+[28.173s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cleaner.dir/all] Error 2
+[28.174s] gmake: *** [Makefile:146: all] Error 2
+[28.180s] Invoked command in '/home/hae/robot_ws/src/build/robot_cleaner_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_cleaner_pkg -- -j4 -l4

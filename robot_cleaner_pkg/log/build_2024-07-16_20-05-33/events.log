@@ -1,0 +1,222 @@
+[0.000000] (-) TimerEvent: {}
+[0.001128] (robot_cleaner_pkg) JobQueued: {'identifier': 'robot_cleaner_pkg', 'dependencies': OrderedDict()}
+[0.002036] (robot_cleaner_pkg) JobStarted: {'identifier': 'robot_cleaner_pkg'}
+[0.040087] (robot_cleaner_pkg) JobProgress: {'identifier': 'robot_cleaner_pkg', 'progress': 'cmake'}
+[0.043210] (robot_cleaner_pkg) JobProgress: {'identifier': 'robot_cleaner_pkg', 'progress': 'build'}
+[0.046683] (robot_cleaner_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 57498 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/hae/robot_ws/src/robot_cleaner_pkg/install:/home/hae/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg:/home/hae/install/robot_move_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/hae/robot_ws/src/robot_cleaner_pkg/build/robot_cleaner_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 57498 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/robot_cleaner_pkg/install/robot_cleaner_pkg:/home/hae/install/robot_move_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099310] (-) TimerEvent: {}
+[0.200117] (-) TimerEvent: {}
+[0.228081] (robot_cleaner_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cleaner\x1b[0m\n'}
+[0.301030] (-) TimerEvent: {}
+[0.328314] (robot_cleaner_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cleaner.dir/src/cleaner.cpp.o\x1b[0m\n'}
+[0.401222] (-) TimerEvent: {}
+[0.502005] (-) TimerEvent: {}
+[0.603005] (-) TimerEvent: {}
+[0.703726] (-) TimerEvent: {}
+[0.804481] (-) TimerEvent: {}
+[0.905294] (-) TimerEvent: {}
+[1.006003] (-) TimerEvent: {}
+[1.106808] (-) TimerEvent: {}
+[1.207610] (-) TimerEvent: {}
+[1.308420] (-) TimerEvent: {}
+[1.409365] (-) TimerEvent: {}
+[1.510198] (-) TimerEvent: {}
+[1.610994] (-) TimerEvent: {}
+[1.711829] (-) TimerEvent: {}
+[1.812637] (-) TimerEvent: {}
+[1.914414] (-) TimerEvent: {}
+[2.015324] (-) TimerEvent: {}
+[2.116289] (-) TimerEvent: {}
+[2.217180] (-) TimerEvent: {}
+[2.318078] (-) TimerEvent: {}
+[2.418992] (-) TimerEvent: {}
+[2.520092] (-) TimerEvent: {}
+[2.621251] (-) TimerEvent: {}
+[2.722316] (-) TimerEvent: {}
+[2.823207] (-) TimerEvent: {}
+[2.924230] (-) TimerEvent: {}
+[3.025191] (-) TimerEvent: {}
+[3.126239] (-) TimerEvent: {}
+[3.227213] (-) TimerEvent: {}
+[3.328099] (-) TimerEvent: {}
+[3.429090] (-) TimerEvent: {}
+[3.530128] (-) TimerEvent: {}
+[3.631849] (-) TimerEvent: {}
+[3.733653] (-) TimerEvent: {}
+[3.834533] (-) TimerEvent: {}
+[3.936270] (-) TimerEvent: {}
+[4.037622] (-) TimerEvent: {}
+[4.138464] (-) TimerEvent: {}
+[4.239544] (-) TimerEvent: {}
+[4.340552] (-) TimerEvent: {}
+[4.441383] (-) TimerEvent: {}
+[4.542263] (-) TimerEvent: {}
+[4.643095] (-) TimerEvent: {}
+[4.744137] (-) TimerEvent: {}
+[4.845078] (-) TimerEvent: {}
+[4.945962] (-) TimerEvent: {}
+[5.046878] (-) TimerEvent: {}
+[5.148021] (-) TimerEvent: {}
+[5.249091] (-) TimerEvent: {}
+[5.350067] (-) TimerEvent: {}
+[5.451058] (-) TimerEvent: {}
+[5.551897] (-) TimerEvent: {}
+[5.652752] (-) TimerEvent: {}
+[5.753654] (-) TimerEvent: {}
+[5.854550] (-) TimerEvent: {}
+[5.955511] (-) TimerEvent: {}
+[6.056423] (-) TimerEvent: {}
+[6.157357] (-) TimerEvent: {}
+[6.258204] (-) TimerEvent: {}
+[6.359099] (-) TimerEvent: {}
+[6.460003] (-) TimerEvent: {}
+[6.561034] (-) TimerEvent: {}
+[6.661890] (-) TimerEvent: {}
+[6.762764] (-) TimerEvent: {}
+[6.863601] (-) TimerEvent: {}
+[6.964424] (-) TimerEvent: {}
+[7.065328] (-) TimerEvent: {}
+[7.166170] (-) TimerEvent: {}
+[7.266978] (-) TimerEvent: {}
+[7.367778] (-) TimerEvent: {}
+[7.468577] (-) TimerEvent: {}
+[7.569421] (-) TimerEvent: {}
+[7.670253] (-) TimerEvent: {}
+[7.771090] (-) TimerEvent: {}
+[7.872448] (-) TimerEvent: {}
+[7.973706] (-) TimerEvent: {}
+[8.074899] (-) TimerEvent: {}
+[8.176136] (-) TimerEvent: {}
+[8.277075] (-) TimerEvent: {}
+[8.377923] (-) TimerEvent: {}
+[8.478798] (-) TimerEvent: {}
+[8.579657] (-) TimerEvent: {}
+[8.680550] (-) TimerEvent: {}
+[8.781413] (-) TimerEvent: {}
+[8.882374] (-) TimerEvent: {}
+[8.983173] (-) TimerEvent: {}
+[9.084005] (-) TimerEvent: {}
+[9.184965] (-) TimerEvent: {}
+[9.285791] (-) TimerEvent: {}
+[9.386638] (-) TimerEvent: {}
+[9.487444] (-) TimerEvent: {}
+[9.588333] (-) TimerEvent: {}
+[9.689143] (-) TimerEvent: {}
+[9.789993] (-) TimerEvent: {}
+[9.890834] (-) TimerEvent: {}
+[9.991721] (-) TimerEvent: {}
+[10.092570] (-) TimerEvent: {}
+[10.193467] (-) TimerEvent: {}
+[10.294329] (-) TimerEvent: {}
+[10.395193] (-) TimerEvent: {}
+[10.496043] (-) TimerEvent: {}
+[10.596938] (-) TimerEvent: {}
+[10.697732] (-) TimerEvent: {}
+[10.798530] (-) TimerEvent: {}
+[10.899372] (-) TimerEvent: {}
+[10.986059] (robot_cleaner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.986996] (robot_cleaner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:66:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid conversion from \xe2\x80\x98\x1b[01m\x1b[Kvoid (*)()\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[K__sighandler_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kvoid (*)(int)\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[10.987500] (robot_cleaner_pkg) StderrLine: {'line': b'   66 |     signal(SIGINT, \x1b[01;31m\x1b[Kshutdown_handler\x1b[m\x1b[K); // Register shutdown signal handler\n'}
+[10.988073] (robot_cleaner_pkg) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.988522] (robot_cleaner_pkg) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[10.989029] (robot_cleaner_pkg) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[Kvoid (*)()\x1b[m\x1b[K\n'}
+[10.989514] (robot_cleaner_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/csignal:42\x1b[m\x1b[K,\n'}
+[10.989947] (robot_cleaner_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:152\x1b[m\x1b[K,\n'}
+[10.990358] (robot_cleaner_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_cleaner_pkg/src/cleaner.cpp:1\x1b[m\x1b[K:\n'}
+[10.990788] (robot_cleaner_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/signal.h:88:57:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 2 of \xe2\x80\x98\x1b[01m\x1b[Kvoid (* signal(int, __sighandler_t))(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.991213] (robot_cleaner_pkg) StderrLine: {'line': b'   88 | extern __sighandler_t signal (int __sig, \x1b[01;36m\x1b[K__sighandler_t __handler\x1b[m\x1b[K)\n'}
+[10.991632] (robot_cleaner_pkg) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[10.999554] (-) TimerEvent: {}
+[11.100441] (-) TimerEvent: {}
+[11.201304] (-) TimerEvent: {}
+[11.302090] (-) TimerEvent: {}
+[11.402950] (-) TimerEvent: {}
+[11.503718] (-) TimerEvent: {}
+[11.604527] (-) TimerEvent: {}
+[11.705379] (-) TimerEvent: {}
+[11.806160] (-) TimerEvent: {}
+[11.906979] (-) TimerEvent: {}
+[12.007807] (-) TimerEvent: {}
+[12.108638] (-) TimerEvent: {}
+[12.209494] (-) TimerEvent: {}
+[12.310254] (-) TimerEvent: {}
+[12.411075] (-) TimerEvent: {}
+[12.511953] (-) TimerEvent: {}
+[12.612867] (-) TimerEvent: {}
+[12.713655] (-) TimerEvent: {}
+[12.814430] (-) TimerEvent: {}
+[12.915223] (-) TimerEvent: {}
+[13.016161] (-) TimerEvent: {}
+[13.116969] (-) TimerEvent: {}
+[13.217762] (-) TimerEvent: {}
+[13.318549] (-) TimerEvent: {}
+[13.419340] (-) TimerEvent: {}
+[13.520258] (-) TimerEvent: {}
+[13.621078] (-) TimerEvent: {}
+[13.721850] (-) TimerEvent: {}
+[13.822631] (-) TimerEvent: {}
+[13.923451] (-) TimerEvent: {}
+[14.024399] (-) TimerEvent: {}
+[14.125281] (-) TimerEvent: {}
+[14.226090] (-) TimerEvent: {}
+[14.326877] (-) TimerEvent: {}
+[14.427677] (-) TimerEvent: {}
+[14.528522] (-) TimerEvent: {}
+[14.629390] (-) TimerEvent: {}
+[14.730180] (-) TimerEvent: {}
+[14.831016] (-) TimerEvent: {}
+[14.931885] (-) TimerEvent: {}
+[15.032680] (-) TimerEvent: {}
+[15.133545] (-) TimerEvent: {}
+[15.234335] (-) TimerEvent: {}
+[15.335131] (-) TimerEvent: {}
+[15.435956] (-) TimerEvent: {}
+[15.536724] (-) TimerEvent: {}
+[15.637634] (-) TimerEvent: {}
+[15.738414] (-) TimerEvent: {}
+[15.839214] (-) TimerEvent: {}
+[15.940047] (-) TimerEvent: {}
+[16.040883] (-) TimerEvent: {}
+[16.141674] (-) TimerEvent: {}
+[16.242493] (-) TimerEvent: {}
+[16.343308] (-) TimerEvent: {}
+[16.444123] (-) TimerEvent: {}
+[16.544986] (-) TimerEvent: {}
+[16.645812] (-) TimerEvent: {}
+[16.746684] (-) TimerEvent: {}
+[16.847603] (-) TimerEvent: {}
+[16.948398] (-) TimerEvent: {}
+[17.049238] (-) TimerEvent: {}
+[17.150093] (-) TimerEvent: {}
+[17.250874] (-) TimerEvent: {}
+[17.351706] (-) TimerEvent: {}
+[17.452506] (-) TimerEvent: {}
+[17.553363] (-) TimerEvent: {}
+[17.654153] (-) TimerEvent: {}
+[17.754921] (-) TimerEvent: {}
+[17.855798] (-) TimerEvent: {}
+[17.956609] (-) TimerEvent: {}
+[18.057432] (-) TimerEvent: {}
+[18.158224] (-) TimerEvent: {}
+[18.259036] (-) TimerEvent: {}
+[18.359867] (-) TimerEvent: {}
+[18.460697] (-) TimerEvent: {}
+[18.561872] (-) TimerEvent: {}
+[18.663009] (-) TimerEvent: {}
+[18.764116] (-) TimerEvent: {}
+[18.865256] (-) TimerEvent: {}
+[18.966469] (-) TimerEvent: {}
+[19.067635] (-) TimerEvent: {}
+[19.168460] (-) TimerEvent: {}
+[19.269548] (-) TimerEvent: {}
+[19.370359] (-) TimerEvent: {}
+[19.471192] (-) TimerEvent: {}
+[19.572060] (-) TimerEvent: {}
+[19.621105] (robot_cleaner_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cleaner.dir/build.make:76: CMakeFiles/cleaner.dir/src/cleaner.cpp.o] Error 1\n'}
+[19.621954] (robot_cleaner_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cleaner.dir/all] Error 2\n'}
+[19.622846] (robot_cleaner_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[19.628613] (robot_cleaner_pkg) CommandEnded: {'returncode': 2}
+[19.672204] (-) TimerEvent: {}
+[19.774250] (-) TimerEvent: {}
+[19.798016] (robot_cleaner_pkg) JobEnded: {'identifier': 'robot_cleaner_pkg', 'rc': 2}
+[19.809981] (-) EventReactorShutdown: {}

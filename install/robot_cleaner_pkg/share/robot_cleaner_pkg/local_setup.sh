@@ -1,0 +1,1 @@
+/home/hae/robot_ws/src/build/robot_cleaner_pkg/ament_cmake_environment_hooks/local_setup.sh
