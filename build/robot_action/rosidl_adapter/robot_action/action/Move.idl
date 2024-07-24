@@ -6,19 +6,19 @@
 module robot_action {
   module action {
     @verbatim (language="comment", text=
-      "Goal")
+      "Goal definition")
     struct Move_Goal {
-      string message;
+      float distance;
     };
     @verbatim (language="comment", text=
-      "Result")
+      "Result definition")
     struct Move_Result {
-      string response;
+      boolean success;
     };
     @verbatim (language="comment", text=
-      "Feedback")
+      "Feedback definition")
     struct Move_Feedback {
-      string feedback;
+      sequence<float> traveled_distances;
     };
   };
 };

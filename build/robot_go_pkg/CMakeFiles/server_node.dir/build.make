@@ -69,10 +69,24 @@ include CMakeFiles/server_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server_node.dir/flags.make
 
+CMakeFiles/server_node.dir/src/main.cpp.o: CMakeFiles/server_node.dir/flags.make
+CMakeFiles/server_node.dir/src/main.cpp.o: /home/hae/robot_ws/src/robot_go_pkg/src/main.cpp
+CMakeFiles/server_node.dir/src/main.cpp.o: CMakeFiles/server_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server_node.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_node.dir/src/main.cpp.o -MF CMakeFiles/server_node.dir/src/main.cpp.o.d -o CMakeFiles/server_node.dir/src/main.cpp.o -c /home/hae/robot_ws/src/robot_go_pkg/src/main.cpp
+
+CMakeFiles/server_node.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_node.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hae/robot_ws/src/robot_go_pkg/src/main.cpp > CMakeFiles/server_node.dir/src/main.cpp.i
+
+CMakeFiles/server_node.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_node.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hae/robot_ws/src/robot_go_pkg/src/main.cpp -o CMakeFiles/server_node.dir/src/main.cpp.s
+
 CMakeFiles/server_node.dir/src/actionsever.cpp.o: CMakeFiles/server_node.dir/flags.make
 CMakeFiles/server_node.dir/src/actionsever.cpp.o: /home/hae/robot_ws/src/robot_go_pkg/src/actionsever.cpp
 CMakeFiles/server_node.dir/src/actionsever.cpp.o: CMakeFiles/server_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server_node.dir/src/actionsever.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server_node.dir/src/actionsever.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_node.dir/src/actionsever.cpp.o -MF CMakeFiles/server_node.dir/src/actionsever.cpp.o.d -o CMakeFiles/server_node.dir/src/actionsever.cpp.o -c /home/hae/robot_ws/src/robot_go_pkg/src/actionsever.cpp
 
 CMakeFiles/server_node.dir/src/actionsever.cpp.i: cmake_force
@@ -83,14 +97,32 @@ CMakeFiles/server_node.dir/src/actionsever.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_node.dir/src/actionsever.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hae/robot_ws/src/robot_go_pkg/src/actionsever.cpp -o CMakeFiles/server_node.dir/src/actionsever.cpp.s
 
+CMakeFiles/server_node.dir/src/scan.cpp.o: CMakeFiles/server_node.dir/flags.make
+CMakeFiles/server_node.dir/src/scan.cpp.o: /home/hae/robot_ws/src/robot_go_pkg/src/scan.cpp
+CMakeFiles/server_node.dir/src/scan.cpp.o: CMakeFiles/server_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server_node.dir/src/scan.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server_node.dir/src/scan.cpp.o -MF CMakeFiles/server_node.dir/src/scan.cpp.o.d -o CMakeFiles/server_node.dir/src/scan.cpp.o -c /home/hae/robot_ws/src/robot_go_pkg/src/scan.cpp
+
+CMakeFiles/server_node.dir/src/scan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server_node.dir/src/scan.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hae/robot_ws/src/robot_go_pkg/src/scan.cpp > CMakeFiles/server_node.dir/src/scan.cpp.i
+
+CMakeFiles/server_node.dir/src/scan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server_node.dir/src/scan.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hae/robot_ws/src/robot_go_pkg/src/scan.cpp -o CMakeFiles/server_node.dir/src/scan.cpp.s
+
 # Object files for target server_node
 server_node_OBJECTS = \
-"CMakeFiles/server_node.dir/src/actionsever.cpp.o"
+"CMakeFiles/server_node.dir/src/main.cpp.o" \
+"CMakeFiles/server_node.dir/src/actionsever.cpp.o" \
+"CMakeFiles/server_node.dir/src/scan.cpp.o"
 
 # External object files for target server_node
 server_node_EXTERNAL_OBJECTS =
 
+server_node: CMakeFiles/server_node.dir/src/main.cpp.o
 server_node: CMakeFiles/server_node.dir/src/actionsever.cpp.o
+server_node: CMakeFiles/server_node.dir/src/scan.cpp.o
 server_node: CMakeFiles/server_node.dir/build.make
 server_node: /opt/ros/humble/lib/librclcpp_action.so
 server_node: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_fastrtps_c.so
@@ -99,6 +131,16 @@ server_node: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__ro
 server_node: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_introspection_cpp.so
 server_node: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_cpp.so
 server_node: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_generator_py.so
+server_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+server_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+server_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+server_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+server_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
+server_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+server_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+server_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+server_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+server_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 server_node: /opt/ros/humble/lib/librclcpp.so
 server_node: /opt/ros/humble/lib/liblibstatistics_collector.so
 server_node: /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so
@@ -135,45 +177,59 @@ server_node: /opt/ros/humble/lib/libament_index_cpp.so
 server_node: /opt/ros/humble/lib/librcl_logging_spdlog.so
 server_node: /opt/ros/humble/lib/librcl_logging_interface.so
 server_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
-server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 server_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so
-server_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 server_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
-server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 server_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
 server_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so
-server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 server_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
-server_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-server_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
-server_node: /opt/ros/humble/lib/librmw.so
 server_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
-server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 server_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
-server_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
-server_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 server_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so
-server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 server_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
-server_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 server_node: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_c.so
 server_node: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_generator_c.so
 server_node: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so
-server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 server_node: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
-server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 server_node: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
-server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 server_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so
 server_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
 server_node: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
+server_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
+server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
+server_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+server_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
+server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
+server_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
+server_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+server_node: /opt/ros/humble/lib/librmw.so
+server_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+server_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
+server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
+server_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
+server_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+server_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
+server_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
+server_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+server_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+server_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+server_node: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+server_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
+server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+server_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
+server_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+server_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+server_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
+server_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+server_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 server_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 server_node: /opt/ros/humble/lib/librcpputils.so
 server_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 server_node: /opt/ros/humble/lib/librcutils.so
-server_node: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 server_node: CMakeFiles/server_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable server_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable server_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

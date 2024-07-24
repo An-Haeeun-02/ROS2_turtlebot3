@@ -70,6 +70,10 @@ CMakeFiles/robot_action__cpp: rosidl_generator_cpp/robot_action/action/move.hpp
 CMakeFiles/robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/move__builder.hpp
 CMakeFiles/robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp
 CMakeFiles/robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/move__traits.hpp
+CMakeFiles/robot_action__cpp: rosidl_generator_cpp/robot_action/action/test.hpp
+CMakeFiles/robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/test__builder.hpp
+CMakeFiles/robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/test__struct.hpp
+CMakeFiles/robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/test__traits.hpp
 
 rosidl_generator_cpp/robot_action/action/move.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/robot_action/action/move.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/robot_action/action/move.hpp: /opt/ros/humble/share/rosidl_
 rosidl_generator_cpp/robot_action/action/move.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/robot_action/action/move.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/robot_action/action/move.hpp: rosidl_adapter/robot_action/action/Move.idl
+rosidl_generator_cpp/robot_action/action/move.hpp: rosidl_adapter/robot_action/action/Test.idl
 rosidl_generator_cpp/robot_action/action/move.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_cpp/robot_action/action/move.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_cpp/robot_action/action/move.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -106,11 +111,27 @@ rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp: rosidl_generat
 rosidl_generator_cpp/robot_action/action/detail/move__traits.hpp: rosidl_generator_cpp/robot_action/action/move.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_action/action/detail/move__traits.hpp
 
+rosidl_generator_cpp/robot_action/action/test.hpp: rosidl_generator_cpp/robot_action/action/move.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_action/action/test.hpp
+
+rosidl_generator_cpp/robot_action/action/detail/test__builder.hpp: rosidl_generator_cpp/robot_action/action/move.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_action/action/detail/test__builder.hpp
+
+rosidl_generator_cpp/robot_action/action/detail/test__struct.hpp: rosidl_generator_cpp/robot_action/action/move.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_action/action/detail/test__struct.hpp
+
+rosidl_generator_cpp/robot_action/action/detail/test__traits.hpp: rosidl_generator_cpp/robot_action/action/move.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/robot_action/action/detail/test__traits.hpp
+
 robot_action__cpp: CMakeFiles/robot_action__cpp
 robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/move__builder.hpp
 robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp
 robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/move__traits.hpp
+robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/test__builder.hpp
+robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/test__struct.hpp
+robot_action__cpp: rosidl_generator_cpp/robot_action/action/detail/test__traits.hpp
 robot_action__cpp: rosidl_generator_cpp/robot_action/action/move.hpp
+robot_action__cpp: rosidl_generator_cpp/robot_action/action/test.hpp
 robot_action__cpp: CMakeFiles/robot_action__cpp.dir/build.make
 .PHONY : robot_action__cpp
 

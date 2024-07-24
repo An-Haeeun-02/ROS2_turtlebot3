@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[ 33%] Built target scan_node
+[ 66%] Built target go_node
+[ 83%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m

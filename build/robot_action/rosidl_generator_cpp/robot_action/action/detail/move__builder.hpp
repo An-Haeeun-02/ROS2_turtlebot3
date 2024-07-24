@@ -21,15 +21,15 @@ namespace action
 namespace builder
 {
 
-class Init_Move_Goal_message
+class Init_Move_Goal_distance
 {
 public:
-  Init_Move_Goal_message()
+  Init_Move_Goal_distance()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::robot_action::action::Move_Goal message(::robot_action::action::Move_Goal::_message_type arg)
+  ::robot_action::action::Move_Goal distance(::robot_action::action::Move_Goal::_distance_type arg)
   {
-    msg_.message = std::move(arg);
+    msg_.distance = std::move(arg);
     return std::move(msg_);
   }
 
@@ -48,7 +48,7 @@ template<>
 inline
 auto build<::robot_action::action::Move_Goal>()
 {
-  return robot_action::action::builder::Init_Move_Goal_message();
+  return robot_action::action::builder::Init_Move_Goal_distance();
 }
 
 }  // namespace robot_action
@@ -63,15 +63,15 @@ namespace action
 namespace builder
 {
 
-class Init_Move_Result_response
+class Init_Move_Result_success
 {
 public:
-  Init_Move_Result_response()
+  Init_Move_Result_success()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::robot_action::action::Move_Result response(::robot_action::action::Move_Result::_response_type arg)
+  ::robot_action::action::Move_Result success(::robot_action::action::Move_Result::_success_type arg)
   {
-    msg_.response = std::move(arg);
+    msg_.success = std::move(arg);
     return std::move(msg_);
   }
 
@@ -90,7 +90,7 @@ template<>
 inline
 auto build<::robot_action::action::Move_Result>()
 {
-  return robot_action::action::builder::Init_Move_Result_response();
+  return robot_action::action::builder::Init_Move_Result_success();
 }
 
 }  // namespace robot_action
@@ -105,15 +105,15 @@ namespace action
 namespace builder
 {
 
-class Init_Move_Feedback_feedback
+class Init_Move_Feedback_traveled_distances
 {
 public:
-  Init_Move_Feedback_feedback()
+  Init_Move_Feedback_traveled_distances()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::robot_action::action::Move_Feedback feedback(::robot_action::action::Move_Feedback::_feedback_type arg)
+  ::robot_action::action::Move_Feedback traveled_distances(::robot_action::action::Move_Feedback::_traveled_distances_type arg)
   {
-    msg_.feedback = std::move(arg);
+    msg_.traveled_distances = std::move(arg);
     return std::move(msg_);
   }
 
@@ -132,7 +132,7 @@ template<>
 inline
 auto build<::robot_action::action::Move_Feedback>()
 {
-  return robot_action::action::builder::Init_Move_Feedback_feedback();
+  return robot_action::action::builder::Init_Move_Feedback_traveled_distances();
 }
 
 }  // namespace robot_action

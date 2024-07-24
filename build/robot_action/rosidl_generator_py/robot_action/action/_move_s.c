@@ -16,9 +16,6 @@
 #include "robot_action/action/detail/move__struct.h"
 #include "robot_action/action/detail/move__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
-
 
 ROSIDL_GENERATOR_C_EXPORT
 bool robot_action__action__move__goal__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -53,19 +50,13 @@ bool robot_action__action__move__goal__convert_from_py(PyObject * _pymsg, void *
     assert(strncmp("robot_action.action._move.Move_Goal", full_classname_dest, 35) == 0);
   }
   robot_action__action__Move_Goal * ros_message = _ros_message;
-  {  // message
-    PyObject * field = PyObject_GetAttrString(_pymsg, "message");
+  {  // distance
+    PyObject * field = PyObject_GetAttrString(_pymsg, "distance");
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->message, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
+    assert(PyFloat_Check(field));
+    ros_message->distance = (float)PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -90,17 +81,11 @@ PyObject * robot_action__action__move__goal__convert_to_py(void * raw_ros_messag
     }
   }
   robot_action__action__Move_Goal * ros_message = (robot_action__action__Move_Goal *)raw_ros_message;
-  {  // message
+  {  // distance
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->message.data,
-      strlen(ros_message->message.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
+    field = PyFloat_FromDouble(ros_message->distance);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "message", field);
+      int rc = PyObject_SetAttrString(_pymessage, "distance", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -125,11 +110,6 @@ PyObject * robot_action__action__move__goal__convert_to_py(void * raw_ros_messag
 // #include "robot_action/action/detail/move__struct.h"
 // already included above
 // #include "robot_action/action/detail/move__functions.h"
-
-// already included above
-// #include "rosidl_runtime_c/string.h"
-// already included above
-// #include "rosidl_runtime_c/string_functions.h"
 
 
 ROSIDL_GENERATOR_C_EXPORT
@@ -165,19 +145,13 @@ bool robot_action__action__move__result__convert_from_py(PyObject * _pymsg, void
     assert(strncmp("robot_action.action._move.Move_Result", full_classname_dest, 37) == 0);
   }
   robot_action__action__Move_Result * ros_message = _ros_message;
-  {  // response
-    PyObject * field = PyObject_GetAttrString(_pymsg, "response");
+  {  // success
+    PyObject * field = PyObject_GetAttrString(_pymsg, "success");
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->response, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
+    assert(PyBool_Check(field));
+    ros_message->success = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -202,17 +176,11 @@ PyObject * robot_action__action__move__result__convert_to_py(void * raw_ros_mess
     }
   }
   robot_action__action__Move_Result * ros_message = (robot_action__action__Move_Result *)raw_ros_message;
-  {  // response
+  {  // success
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->response.data,
-      strlen(ros_message->response.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
+    field = PyBool_FromLong(ros_message->success ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "response", field);
+      int rc = PyObject_SetAttrString(_pymessage, "success", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -238,10 +206,8 @@ PyObject * robot_action__action__move__result__convert_to_py(void * raw_ros_mess
 // already included above
 // #include "robot_action/action/detail/move__functions.h"
 
-// already included above
-// #include "rosidl_runtime_c/string.h"
-// already included above
-// #include "rosidl_runtime_c/string_functions.h"
+#include "rosidl_runtime_c/primitives_sequence.h"
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 
 ROSIDL_GENERATOR_C_EXPORT
@@ -277,19 +243,66 @@ bool robot_action__action__move__feedback__convert_from_py(PyObject * _pymsg, vo
     assert(strncmp("robot_action.action._move.Move_Feedback", full_classname_dest, 39) == 0);
   }
   robot_action__action__Move_Feedback * ros_message = _ros_message;
-  {  // feedback
-    PyObject * field = PyObject_GetAttrString(_pymsg, "feedback");
+  {  // traveled_distances
+    PyObject * field = PyObject_GetAttrString(_pymsg, "traveled_distances");
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
+    if (PyObject_CheckBuffer(field)) {
+      // Optimization for converting arrays of primitives
+      Py_buffer view;
+      int rc = PyObject_GetBuffer(field, &view, PyBUF_SIMPLE);
+      if (rc < 0) {
+        Py_DECREF(field);
+        return false;
+      }
+      Py_ssize_t size = view.len / sizeof(float);
+      if (!rosidl_runtime_c__float__Sequence__init(&(ros_message->traveled_distances), size)) {
+        PyErr_SetString(PyExc_RuntimeError, "unable to create float__Sequence ros_message");
+        PyBuffer_Release(&view);
+        Py_DECREF(field);
+        return false;
+      }
+      float * dest = ros_message->traveled_distances.data;
+      rc = PyBuffer_ToContiguous(dest, &view, view.len, 'C');
+      if (rc < 0) {
+        PyBuffer_Release(&view);
+        Py_DECREF(field);
+        return false;
+      }
+      PyBuffer_Release(&view);
+    } else {
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'traveled_distances'");
+      if (!seq_field) {
+        Py_DECREF(field);
+        return false;
+      }
+      Py_ssize_t size = PySequence_Size(field);
+      if (-1 == size) {
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+      if (!rosidl_runtime_c__float__Sequence__init(&(ros_message->traveled_distances), size)) {
+        PyErr_SetString(PyExc_RuntimeError, "unable to create float__Sequence ros_message");
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+      float * dest = ros_message->traveled_distances.data;
+      for (Py_ssize_t i = 0; i < size; ++i) {
+        PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
+        if (!item) {
+          Py_DECREF(seq_field);
+          Py_DECREF(field);
+          return false;
+        }
+        assert(PyFloat_Check(item));
+        float tmp = (float)PyFloat_AS_DOUBLE(item);
+        memcpy(&dest[i], &tmp, sizeof(float));
+      }
+      Py_DECREF(seq_field);
     }
-    rosidl_runtime_c__String__assign(&ros_message->feedback, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
 
@@ -314,22 +327,62 @@ PyObject * robot_action__action__move__feedback__convert_to_py(void * raw_ros_me
     }
   }
   robot_action__action__Move_Feedback * ros_message = (robot_action__action__Move_Feedback *)raw_ros_message;
-  {  // feedback
+  {  // traveled_distances
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->feedback.data,
-      strlen(ros_message->feedback.data),
-      "replace");
+    field = PyObject_GetAttrString(_pymessage, "traveled_distances");
     if (!field) {
       return NULL;
     }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "feedback", field);
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "array.array") == 0);
+    // ensure that itemsize matches the sizeof of the ROS message field
+    PyObject * itemsize_attr = PyObject_GetAttrString(field, "itemsize");
+    assert(itemsize_attr != NULL);
+    size_t itemsize = PyLong_AsSize_t(itemsize_attr);
+    Py_DECREF(itemsize_attr);
+    if (itemsize != sizeof(float)) {
+      PyErr_SetString(PyExc_RuntimeError, "itemsize doesn't match expectation");
       Py_DECREF(field);
-      if (rc) {
+      return NULL;
+    }
+    // clear the array, poor approach to remove potential default values
+    Py_ssize_t length = PyObject_Length(field);
+    if (-1 == length) {
+      Py_DECREF(field);
+      return NULL;
+    }
+    if (length > 0) {
+      PyObject * pop = PyObject_GetAttrString(field, "pop");
+      assert(pop != NULL);
+      for (Py_ssize_t i = 0; i < length; ++i) {
+        PyObject * ret = PyObject_CallFunctionObjArgs(pop, NULL);
+        if (!ret) {
+          Py_DECREF(pop);
+          Py_DECREF(field);
+          return NULL;
+        }
+        Py_DECREF(ret);
+      }
+      Py_DECREF(pop);
+    }
+    if (ros_message->traveled_distances.size > 0) {
+      // populating the array.array using the frombytes method
+      PyObject * frombytes = PyObject_GetAttrString(field, "frombytes");
+      assert(frombytes != NULL);
+      float * src = &(ros_message->traveled_distances.data[0]);
+      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->traveled_distances.size * sizeof(float));
+      assert(data != NULL);
+      PyObject * ret = PyObject_CallFunctionObjArgs(frombytes, data, NULL);
+      Py_DECREF(data);
+      Py_DECREF(frombytes);
+      if (!ret) {
+        Py_DECREF(field);
         return NULL;
       }
+      Py_DECREF(ret);
     }
+    Py_DECREF(field);
   }
 
   // ownership of _pymessage is transferred to the caller

@@ -1,0 +1,14 @@
+[0.069s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.256s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[0.310s] [ 50%] Built target scan_node
+[0.358s] [ 75%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[2.205s] In file included from [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/move.hpp:7[m[K,
+[2.206s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:10[m[K:
+[2.206s] [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krobot_action/msg/detail/goal__struct.hpp: No such file or directory
+[2.207s]    20 | #include [01;31m[K"robot_action/msg/detail/goal__struct.hpp"[m[K
+[2.207s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.208s] compilation terminated.
+[2.216s] gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+[2.218s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/go_node.dir/all] Error 2
+[2.220s] gmake: *** [Makefile:146: all] Error 2
+[2.227s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

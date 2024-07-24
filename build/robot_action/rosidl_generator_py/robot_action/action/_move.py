@@ -7,6 +7,8 @@
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -55,22 +57,22 @@ class Move_Goal(metaclass=Metaclass_Move_Goal):
     """Message class 'Move_Goal'."""
 
     __slots__ = [
-        '_message',
+        '_distance',
     ]
 
     _fields_and_field_types = {
-        'message': 'string',
+        'distance': 'float',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.message = kwargs.get('message', str())
+        self.distance = kwargs.get('distance', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -101,7 +103,7 @@ class Move_Goal(metaclass=Metaclass_Move_Goal):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.message != other.message:
+        if self.distance != other.distance:
             return False
         return True
 
@@ -111,17 +113,19 @@ class Move_Goal(metaclass=Metaclass_Move_Goal):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def message(self):
-        """Message field 'message'."""
-        return self._message
+    def distance(self):
+        """Message field 'distance'."""
+        return self._distance
 
-    @message.setter
-    def message(self, value):
+    @distance.setter
+    def distance(self, value):
         if __debug__:
             assert \
-                isinstance(value, str), \
-                "The 'message' field must be of type 'str'"
-        self._message = value
+                isinstance(value, float), \
+                "The 'distance' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'distance' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._distance = value
 
 
 # Import statements for member types
@@ -178,22 +182,22 @@ class Move_Result(metaclass=Metaclass_Move_Result):
     """Message class 'Move_Result'."""
 
     __slots__ = [
-        '_response',
+        '_success',
     ]
 
     _fields_and_field_types = {
-        'response': 'string',
+        'success': 'boolean',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.response = kwargs.get('response', str())
+        self.success = kwargs.get('success', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -224,7 +228,7 @@ class Move_Result(metaclass=Metaclass_Move_Result):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.response != other.response:
+        if self.success != other.success:
             return False
         return True
 
@@ -234,23 +238,29 @@ class Move_Result(metaclass=Metaclass_Move_Result):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def response(self):
-        """Message field 'response'."""
-        return self._response
+    def success(self):
+        """Message field 'success'."""
+        return self._success
 
-    @response.setter
-    def response(self, value):
+    @success.setter
+    def success(self, value):
         if __debug__:
             assert \
-                isinstance(value, str), \
-                "The 'response' field must be of type 'str'"
-        self._response = value
+                isinstance(value, bool), \
+                "The 'success' field must be of type 'bool'"
+        self._success = value
 
 
 # Import statements for member types
 
+# Member 'traveled_distances'
+import array  # noqa: E402, I100
+
 # already imported above
 # import builtins
+
+# already imported above
+# import math
 
 # already imported above
 # import rosidl_parser.definition
@@ -301,22 +311,22 @@ class Move_Feedback(metaclass=Metaclass_Move_Feedback):
     """Message class 'Move_Feedback'."""
 
     __slots__ = [
-        '_feedback',
+        '_traveled_distances',
     ]
 
     _fields_and_field_types = {
-        'feedback': 'string',
+        'traveled_distances': 'sequence<float>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.feedback = kwargs.get('feedback', str())
+        self.traveled_distances = array.array('f', kwargs.get('traveled_distances', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -347,7 +357,7 @@ class Move_Feedback(metaclass=Metaclass_Move_Feedback):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.feedback != other.feedback:
+        if self.traveled_distances != other.traveled_distances:
             return False
         return True
 
@@ -357,17 +367,32 @@ class Move_Feedback(metaclass=Metaclass_Move_Feedback):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def feedback(self):
-        """Message field 'feedback'."""
-        return self._feedback
+    def traveled_distances(self):
+        """Message field 'traveled_distances'."""
+        return self._traveled_distances
 
-    @feedback.setter
-    def feedback(self, value):
+    @traveled_distances.setter
+    def traveled_distances(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'traveled_distances' array.array() must have the type code of 'f'"
+            self._traveled_distances = value
+            return
         if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, str), \
-                "The 'feedback' field must be of type 'str'"
-        self._feedback = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
+                "The 'traveled_distances' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._traveled_distances = array.array('f', value)
 
 
 # Import statements for member types

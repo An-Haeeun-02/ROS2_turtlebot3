@@ -39,14 +39,14 @@ void Move_Goal_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Move_Goal_message_member_array[1] = {
   {
-    "message",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    "distance",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(robot_action::action::Move_Goal, message),  // bytes offset in struct
+    offsetof(robot_action::action::Move_Goal, distance),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -158,14 +158,14 @@ void Move_Result_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Move_Result_message_member_array[1] = {
   {
-    "response",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    "success",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(robot_action::action::Move_Result, response),  // bytes offset in struct
+    offsetof(robot_action::action::Move_Result, success),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -275,23 +275,68 @@ void Move_Feedback_fini_function(void * message_memory)
   typed_message->~Move_Feedback();
 }
 
+size_t size_function__Move_Feedback__traveled_distances(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__Move_Feedback__traveled_distances(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__Move_Feedback__traveled_distances(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void fetch_function__Move_Feedback__traveled_distances(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & item = *reinterpret_cast<const float *>(
+    get_const_function__Move_Feedback__traveled_distances(untyped_member, index));
+  auto & value = *reinterpret_cast<float *>(untyped_value);
+  value = item;
+}
+
+void assign_function__Move_Feedback__traveled_distances(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & item = *reinterpret_cast<float *>(
+    get_function__Move_Feedback__traveled_distances(untyped_member, index));
+  const auto & value = *reinterpret_cast<const float *>(untyped_value);
+  item = value;
+}
+
+void resize_function__Move_Feedback__traveled_distances(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<float> *>(untyped_member);
+  member->resize(size);
+}
+
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Move_Feedback_message_member_array[1] = {
   {
-    "feedback",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    "traveled_distances",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(robot_action::action::Move_Feedback, feedback),  // bytes offset in struct
+    offsetof(robot_action::action::Move_Feedback, traveled_distances),  // bytes offset in struct
     nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
+    size_function__Move_Feedback__traveled_distances,  // size() function pointer
+    get_const_function__Move_Feedback__traveled_distances,  // get_const(index) function pointer
+    get_function__Move_Feedback__traveled_distances,  // get(index) function pointer
+    fetch_function__Move_Feedback__traveled_distances,  // fetch(index, &value) function pointer
+    assign_function__Move_Feedback__traveled_distances,  // assign(index, value) function pointer
+    resize_function__Move_Feedback__traveled_distances  // resize(index) function pointer
   }
 };
 

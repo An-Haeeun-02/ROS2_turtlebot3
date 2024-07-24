@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/robot_action/action/__init__.py"
   "../rosidl_generator_py/robot_action/action/_move.py"
   "../rosidl_generator_py/robot_action/action/_move_s.c"
+  "../rosidl_generator_py/robot_action/action/_test.py"
+  "../rosidl_generator_py/robot_action/action/_test_s.c"
   "CMakeFiles/robot_action__py"
 )
 

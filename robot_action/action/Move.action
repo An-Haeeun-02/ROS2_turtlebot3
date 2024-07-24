@@ -1,10 +1,8 @@
-# Goal
-string message
-
+#Goal definition
+float32 distance
 ---
-# Result
-string response
-
+#Result definition
+bool success
 ---
-# Feedback
-string feedback
+#Feedback definition
+float32[] traveled_distances

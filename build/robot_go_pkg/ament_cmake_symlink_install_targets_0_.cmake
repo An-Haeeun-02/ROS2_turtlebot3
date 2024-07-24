@@ -1,1 +1,1 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hae/robot_ws/src/build/robot_go_pkg/server_node" "/home/hae/robot_ws/src/build/robot_go_pkg/cli_node" "TARGETS" "server_node" "cli_node" "DESTINATION" "lib/robot_go_pkg")
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hae/robot_ws/src/build/robot_go_pkg/scan_node" "/home/hae/robot_ws/src/build/robot_go_pkg/go_node" "/home/hae/robot_ws/src/build/robot_go_pkg/cli_node" "TARGETS" "scan_node" "go_node" "cli_node" "DESTINATION" "lib/robot_go_pkg")

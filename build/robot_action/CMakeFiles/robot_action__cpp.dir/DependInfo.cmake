@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/move__builder.hpp" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/move.hpp"
   "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/move.hpp"
   "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/move__traits.hpp" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/move.hpp"
+  "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/test__builder.hpp" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/move.hpp"
+  "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/test__struct.hpp" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/move.hpp"
+  "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/test__traits.hpp" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/move.hpp"
+  "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/test.hpp" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/move.hpp"
   )
 
 

@@ -1,6 +1,7 @@
 /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles/uninstall.dir
 /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles/robot_go_pkg_uninstall.dir
-/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles/server_node.dir
+/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles/scan_node.dir
+/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles/go_node.dir
 /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles/cli_node.dir
 /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles/test.dir
 /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles/edit_cache.dir

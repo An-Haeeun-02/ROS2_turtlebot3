@@ -1,0 +1,9 @@
+In file included from [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/move.hpp:7[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:10[m[K:
+[01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krobot_action/msg/detail/goal__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"robot_action/msg/detail/goal__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/go_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

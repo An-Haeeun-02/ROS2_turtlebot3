@@ -17,14 +17,10 @@ extern "C"
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'message'
-#include "rosidl_runtime_c/string.h"
-
 /// Struct defined in action/Move in the package robot_action.
 typedef struct robot_action__action__Move_Goal
 {
-  rosidl_runtime_c__String message;
+  float distance;
 } robot_action__action__Move_Goal;
 
 // Struct for a sequence of robot_action__action__Move_Goal.
@@ -40,15 +36,10 @@ typedef struct robot_action__action__Move_Goal__Sequence
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'response'
-// already included above
-// #include "rosidl_runtime_c/string.h"
-
 /// Struct defined in action/Move in the package robot_action.
 typedef struct robot_action__action__Move_Result
 {
-  rosidl_runtime_c__String response;
+  bool success;
 } robot_action__action__Move_Result;
 
 // Struct for a sequence of robot_action__action__Move_Result.
@@ -65,14 +56,13 @@ typedef struct robot_action__action__Move_Result__Sequence
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'feedback'
-// already included above
-// #include "rosidl_runtime_c/string.h"
+// Member 'traveled_distances'
+#include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in action/Move in the package robot_action.
 typedef struct robot_action__action__Move_Feedback
 {
-  rosidl_runtime_c__String feedback;
+  rosidl_runtime_c__float__Sequence traveled_distances;
 } robot_action__action__Move_Feedback;
 
 // Struct for a sequence of robot_action__action__Move_Feedback.

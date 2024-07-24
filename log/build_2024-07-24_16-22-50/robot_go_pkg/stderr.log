@@ -1,0 +1,31 @@
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotClient::send_goal(double)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:30:65:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KTurtlebotClient::send_goal(double)::<lambda(rclcpp_action::ClientGoalHandle<robot_action::action::Move>::SharedPtr)>[m[K’ to ‘[01m[Kconst rclcpp_action::Client<robot_action::action::Move>::SendGoalOptions&[m[K’
+   30 |         auto goal_handle_future = [01;31m[Kthis->client_->async_send_goal(goal_msg,[m[K
+      |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+   31 | [01;31m[K            [this](const GoalHandleMove::SharedPtr goal_handle) {[m[K
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   32 | [01;31m[K                RCLCPP_INFO(this->get_logger(), "Goal accepted!");[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   33 | [01;31m[K                this->handle_goal_response(goal_handle);[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K         
+   34 | [01;31m[K            }[m[K
+      |             [01;31m[K~[m[K                                                    
+   35 | [01;31m[K        )[m[K;
+      |         [01;31m[K~[m[K                                                        
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:422:62:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kstd::shared_future<typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr> rclcpp_action::Client<ActionT>::async_send_goal(const Goal&, const rclcpp_action::Client<ActionT>::SendGoalOptions&) [with ActionT = robot_action::action::Move; typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr = std::shared_ptr<rclcpp_action::ClientGoalHandle<robot_action::action::Move> >; rclcpp_action::Client<ActionT>::Goal = robot_action::action::Move_Goal_<std::allocator<void> >][m[K’
+  422 |   async_send_goal(const Goal & goal, [01;36m[Kconst SendGoalOptions & options = SendGoalOptions()[m[K)
+      |                                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotClient::handle_goal_response(rclcpp_action::ClientGoalHandle<robot_action::action::Move>::SharedPtr)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:55:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’} has no member named ‘[01m[Kasync_result[m[K’; did you mean ‘[01m[Kasync_get_result[m[K’?
+   55 |         auto result_future = goal_handle->[01;31m[Kasync_result[m[K();
+      |                                           [01;31m[K^~~~~~~~~~~~[m[K
+      |                                           [32m[Kasync_get_result[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:74:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’} has no member named ‘[01m[Kget_feedback[m[K’; did you mean ‘[01m[KFeedback[m[K’?
+   74 |             auto feedback = goal_handle->[01;31m[Kget_feedback[m[K();
+      |                                          [01;31m[K^~~~~~~~~~~~[m[K
+      |                                          [32m[KFeedback[m[K
+gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/cli_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

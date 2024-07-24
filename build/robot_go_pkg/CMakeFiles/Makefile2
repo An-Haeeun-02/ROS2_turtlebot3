@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/hae/robot_ws/src/build/robot_go_pkg
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/server_node.dir/all
+all: CMakeFiles/scan_node.dir/all
+all: CMakeFiles/go_node.dir/all
 all: CMakeFiles/cli_node.dir/all
 .PHONY : all
 
@@ -74,7 +75,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/robot_go_pkg_uninstall.dir/clean
-clean: CMakeFiles/server_node.dir/clean
+clean: CMakeFiles/scan_node.dir/clean
+clean: CMakeFiles/go_node.dir/clean
 clean: CMakeFiles/cli_node.dir/clean
 .PHONY : clean
 
@@ -131,30 +133,56 @@ CMakeFiles/robot_go_pkg_uninstall.dir/clean:
 .PHONY : CMakeFiles/robot_go_pkg_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/server_node.dir
+# Target rules for target CMakeFiles/scan_node.dir
 
 # All Build rule for target.
-CMakeFiles/server_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_node.dir/build.make CMakeFiles/server_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_node.dir/build.make CMakeFiles/server_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=3,4 "Built target server_node"
-.PHONY : CMakeFiles/server_node.dir/all
+CMakeFiles/scan_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_node.dir/build.make CMakeFiles/scan_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_node.dir/build.make CMakeFiles/scan_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=5,6 "Built target scan_node"
+.PHONY : CMakeFiles/scan_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/server_node.dir/rule: cmake_check_build_system
+CMakeFiles/scan_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server_node.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/scan_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/server_node.dir/rule
+.PHONY : CMakeFiles/scan_node.dir/rule
 
 # Convenience name for target.
-server_node: CMakeFiles/server_node.dir/rule
-.PHONY : server_node
+scan_node: CMakeFiles/scan_node.dir/rule
+.PHONY : scan_node
 
 # clean rule for target.
-CMakeFiles/server_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_node.dir/build.make CMakeFiles/server_node.dir/clean
-.PHONY : CMakeFiles/server_node.dir/clean
+CMakeFiles/scan_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_node.dir/build.make CMakeFiles/scan_node.dir/clean
+.PHONY : CMakeFiles/scan_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/go_node.dir
+
+# All Build rule for target.
+CMakeFiles/go_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/go_node.dir/build.make CMakeFiles/go_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/go_node.dir/build.make CMakeFiles/go_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=3,4 "Built target go_node"
+.PHONY : CMakeFiles/go_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/go_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/go_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/go_node.dir/rule
+
+# Convenience name for target.
+go_node: CMakeFiles/go_node.dir/rule
+.PHONY : go_node
+
+# clean rule for target.
+CMakeFiles/go_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/go_node.dir/build.make CMakeFiles/go_node.dir/clean
+.PHONY : CMakeFiles/go_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/cli_node.dir

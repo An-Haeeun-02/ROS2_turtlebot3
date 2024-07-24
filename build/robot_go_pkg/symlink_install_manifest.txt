@@ -1,4 +1,5 @@
-/home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/server_node
+/home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/scan_node
+/home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/go_node
 /home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/cli_node
 /home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/package_run_dependencies/robot_go_pkg
 /home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/parent_prefix_path/robot_go_pkg

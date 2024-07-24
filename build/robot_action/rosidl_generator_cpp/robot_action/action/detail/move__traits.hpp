@@ -25,10 +25,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: message
+  // member: distance
   {
-    out << "message: ";
-    rosidl_generator_traits::value_to_yaml(msg.message, out);
+    out << "distance: ";
+    rosidl_generator_traits::value_to_yaml(msg.distance, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -37,13 +37,13 @@ inline void to_block_style_yaml(
   const Move_Goal & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: message
+  // member: distance
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "message: ";
-    rosidl_generator_traits::value_to_yaml(msg.message, out);
+    out << "distance: ";
+    rosidl_generator_traits::value_to_yaml(msg.distance, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -94,11 +94,11 @@ inline const char * name<robot_action::action::Move_Goal>()
 
 template<>
 struct has_fixed_size<robot_action::action::Move_Goal>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<robot_action::action::Move_Goal>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<robot_action::action::Move_Goal>
@@ -117,10 +117,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: response
+  // member: success
   {
-    out << "response: ";
-    rosidl_generator_traits::value_to_yaml(msg.response, out);
+    out << "success: ";
+    rosidl_generator_traits::value_to_yaml(msg.success, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -129,13 +129,13 @@ inline void to_block_style_yaml(
   const Move_Result & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: response
+  // member: success
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "response: ";
-    rosidl_generator_traits::value_to_yaml(msg.response, out);
+    out << "success: ";
+    rosidl_generator_traits::value_to_yaml(msg.success, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -186,11 +186,11 @@ inline const char * name<robot_action::action::Move_Result>()
 
 template<>
 struct has_fixed_size<robot_action::action::Move_Result>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<robot_action::action::Move_Result>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<robot_action::action::Move_Result>
@@ -209,10 +209,21 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: feedback
+  // member: traveled_distances
   {
-    out << "feedback: ";
-    rosidl_generator_traits::value_to_yaml(msg.feedback, out);
+    if (msg.traveled_distances.size() == 0) {
+      out << "traveled_distances: []";
+    } else {
+      out << "traveled_distances: [";
+      size_t pending_items = msg.traveled_distances.size();
+      for (auto item : msg.traveled_distances) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -221,14 +232,24 @@ inline void to_block_style_yaml(
   const Move_Feedback & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: feedback
+  // member: traveled_distances
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "feedback: ";
-    rosidl_generator_traits::value_to_yaml(msg.feedback, out);
-    out << "\n";
+    if (msg.traveled_distances.size() == 0) {
+      out << "traveled_distances: []\n";
+    } else {
+      out << "traveled_distances:\n";
+      for (auto item : msg.traveled_distances) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
   }
 }  // NOLINT(readability/fn_size)
 

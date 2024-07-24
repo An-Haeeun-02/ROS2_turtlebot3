@@ -11,21 +11,13 @@
 #include "rcutils/allocator.h"
 
 
-// Include directives for member types
-// Member `message`
-#include "rosidl_runtime_c/string_functions.h"
-
 bool
 robot_action__action__Move_Goal__init(robot_action__action__Move_Goal * msg)
 {
   if (!msg) {
     return false;
   }
-  // message
-  if (!rosidl_runtime_c__String__init(&msg->message)) {
-    robot_action__action__Move_Goal__fini(msg);
-    return false;
-  }
+  // distance
   return true;
 }
 
@@ -35,8 +27,7 @@ robot_action__action__Move_Goal__fini(robot_action__action__Move_Goal * msg)
   if (!msg) {
     return;
   }
-  // message
-  rosidl_runtime_c__String__fini(&msg->message);
+  // distance
 }
 
 bool
@@ -45,10 +36,8 @@ robot_action__action__Move_Goal__are_equal(const robot_action__action__Move_Goal
   if (!lhs || !rhs) {
     return false;
   }
-  // message
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->message), &(rhs->message)))
-  {
+  // distance
+  if (lhs->distance != rhs->distance) {
     return false;
   }
   return true;
@@ -62,12 +51,8 @@ robot_action__action__Move_Goal__copy(
   if (!input || !output) {
     return false;
   }
-  // message
-  if (!rosidl_runtime_c__String__copy(
-      &(input->message), &(output->message)))
-  {
-    return false;
-  }
+  // distance
+  output->distance = input->distance;
   return true;
 }
 
@@ -251,22 +236,13 @@ robot_action__action__Move_Goal__Sequence__copy(
 }
 
 
-// Include directives for member types
-// Member `response`
-// already included above
-// #include "rosidl_runtime_c/string_functions.h"
-
 bool
 robot_action__action__Move_Result__init(robot_action__action__Move_Result * msg)
 {
   if (!msg) {
     return false;
   }
-  // response
-  if (!rosidl_runtime_c__String__init(&msg->response)) {
-    robot_action__action__Move_Result__fini(msg);
-    return false;
-  }
+  // success
   return true;
 }
 
@@ -276,8 +252,7 @@ robot_action__action__Move_Result__fini(robot_action__action__Move_Result * msg)
   if (!msg) {
     return;
   }
-  // response
-  rosidl_runtime_c__String__fini(&msg->response);
+  // success
 }
 
 bool
@@ -286,10 +261,8 @@ robot_action__action__Move_Result__are_equal(const robot_action__action__Move_Re
   if (!lhs || !rhs) {
     return false;
   }
-  // response
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->response), &(rhs->response)))
-  {
+  // success
+  if (lhs->success != rhs->success) {
     return false;
   }
   return true;
@@ -303,12 +276,8 @@ robot_action__action__Move_Result__copy(
   if (!input || !output) {
     return false;
   }
-  // response
-  if (!rosidl_runtime_c__String__copy(
-      &(input->response), &(output->response)))
-  {
-    return false;
-  }
+  // success
+  output->success = input->success;
   return true;
 }
 
@@ -493,9 +462,8 @@ robot_action__action__Move_Result__Sequence__copy(
 
 
 // Include directives for member types
-// Member `feedback`
-// already included above
-// #include "rosidl_runtime_c/string_functions.h"
+// Member `traveled_distances`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
 robot_action__action__Move_Feedback__init(robot_action__action__Move_Feedback * msg)
@@ -503,8 +471,8 @@ robot_action__action__Move_Feedback__init(robot_action__action__Move_Feedback * 
   if (!msg) {
     return false;
   }
-  // feedback
-  if (!rosidl_runtime_c__String__init(&msg->feedback)) {
+  // traveled_distances
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->traveled_distances, 0)) {
     robot_action__action__Move_Feedback__fini(msg);
     return false;
   }
@@ -517,8 +485,8 @@ robot_action__action__Move_Feedback__fini(robot_action__action__Move_Feedback * 
   if (!msg) {
     return;
   }
-  // feedback
-  rosidl_runtime_c__String__fini(&msg->feedback);
+  // traveled_distances
+  rosidl_runtime_c__float__Sequence__fini(&msg->traveled_distances);
 }
 
 bool
@@ -527,9 +495,9 @@ robot_action__action__Move_Feedback__are_equal(const robot_action__action__Move_
   if (!lhs || !rhs) {
     return false;
   }
-  // feedback
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->feedback), &(rhs->feedback)))
+  // traveled_distances
+  if (!rosidl_runtime_c__float__Sequence__are_equal(
+      &(lhs->traveled_distances), &(rhs->traveled_distances)))
   {
     return false;
   }
@@ -544,9 +512,9 @@ robot_action__action__Move_Feedback__copy(
   if (!input || !output) {
     return false;
   }
-  // feedback
-  if (!rosidl_runtime_c__String__copy(
-      &(input->feedback), &(output->feedback)))
+  // traveled_distances
+  if (!rosidl_runtime_c__float__Sequence__copy(
+      &(input->traveled_distances), &(output->traveled_distances)))
   {
     return false;
   }

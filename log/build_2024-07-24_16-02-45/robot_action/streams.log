@@ -1,0 +1,44 @@
+[0.054s] Invoking command in '/home/hae/robot_ws/src/build/robot_action': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action -- -j4 -l4
+[0.263s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_generator_c[0m
+[0.304s] [  2%] Built target robot_action__cpp
+[0.337s] [  5%] [32mBuilding C object CMakeFiles/robot_action__rosidl_generator_c.dir/rosidl_generator_c/robot_action/action/detail/move__functions.c.o[0m
+[0.363s] [  5%] Built target ament_cmake_python_symlink_robot_action
+[0.363s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_cpp[0m
+[0.389s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_fastrtps_cpp[0m
+[0.440s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_introspection_cpp[0m
+[0.443s] In file included from [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_c/robot_action/action/detail/move__functions.h:19[m[K,
+[0.444s]                  from [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_c/robot_action/action/detail/move__functions.c:4[m[K:
+[0.445s] [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_c/robot_action/action/detail/move__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Krobot_action/msg/detail/goal__struct.h: No such file or directory
+[0.445s]    22 | #include [01;31m[K"robot_action/msg/detail/goal__struct.h"[m[K
+[0.445s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.446s] compilation terminated.
+[0.449s] gmake[2]: *** [CMakeFiles/robot_action__rosidl_generator_c.dir/build.make:128: CMakeFiles/robot_action__rosidl_generator_c.dir/rosidl_generator_c/robot_action/action/detail/move__functions.c.o] Error 1
+[0.450s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/robot_action__rosidl_generator_c.dir/all] Error 2
+[0.450s] gmake[1]: *** Waiting for unfinished jobs....
+[0.480s] [  7%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_action/action/detail/dds_fastrtps/move__type_support.cpp.o[0m
+[0.500s] [ 10%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_action/action/move__type_support.cpp.o[0m
+[0.548s] [ 12%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_action/action/detail/move__type_support.cpp.o[0m
+[0.838s] In file included from [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_typesupport_fastrtps_cpp/robot_action/action/detail/move__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[0.839s]                  from [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_typesupport_fastrtps_cpp/robot_action/action/detail/dds_fastrtps/move__type_support.cpp:4[m[K:
+[0.842s] [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krobot_action/msg/detail/goal__struct.hpp: No such file or directory
+[0.843s]    20 | #include [01;31m[K"robot_action/msg/detail/goal__struct.hpp"[m[K
+[0.845s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.845s] compilation terminated.
+[0.848s] gmake[2]: *** [CMakeFiles/robot_action__rosidl_typesupport_fastrtps_cpp.dir/build.make:105: CMakeFiles/robot_action__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_action/action/detail/dds_fastrtps/move__type_support.cpp.o] Error 1
+[0.849s] gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/robot_action__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[0.852s] In file included from [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_typesupport_cpp/robot_action/action/move__type_support.cpp:7[m[K:
+[0.853s] [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krobot_action/msg/detail/goal__struct.hpp: No such file or directory
+[0.853s]    20 | #include [01;31m[K"robot_action/msg/detail/goal__struct.hpp"[m[K
+[0.854s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.855s] compilation terminated.
+[0.859s] gmake[2]: *** [CMakeFiles/robot_action__rosidl_typesupport_cpp.dir/build.make:97: CMakeFiles/robot_action__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_action/action/move__type_support.cpp.o] Error 1
+[0.860s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/robot_action__rosidl_typesupport_cpp.dir/all] Error 2
+[0.931s] In file included from [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_typesupport_introspection_cpp/robot_action/action/detail/move__type_support.cpp:12[m[K:
+[0.932s] [01m[K/home/hae/robot_ws/src/build/robot_action/rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Krobot_action/msg/detail/goal__struct.hpp: No such file or directory
+[0.933s]    20 | #include [01;31m[K"robot_action/msg/detail/goal__struct.hpp"[m[K
+[0.933s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.934s] compilation terminated.
+[0.937s] gmake[2]: *** [CMakeFiles/robot_action__rosidl_typesupport_introspection_cpp.dir/build.make:105: CMakeFiles/robot_action__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_action/action/detail/move__type_support.cpp.o] Error 1
+[0.938s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/robot_action__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[0.938s] gmake: *** [Makefile:146: all] Error 2
+[0.945s] Invoked command in '/home/hae/robot_ws/src/build/robot_action' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action -- -j4 -l4

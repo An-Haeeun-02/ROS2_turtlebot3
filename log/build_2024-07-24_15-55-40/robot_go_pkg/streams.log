@@ -1,0 +1,124 @@
+[0.068s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.175s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.720s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.755s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.927s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.940s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.963s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.008s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.070s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.297s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.303s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.299s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.898s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.061s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.366s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[3.590s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.899s] -- Found robot_action: 0.0.0 (/home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake)
+[4.088s] -- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)
+[4.192s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.542s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.543s] -- Configured cppcheck include dirs: 
+[4.544s] -- Configured cppcheck exclude dirs and/or files: 
+[4.549s] -- Added test 'lint_cmake' to check CMake code style
+[4.557s] -- Added test 'uncrustify' to check C / C++ code style
+[4.558s] -- Configured uncrustify additional arguments: 
+[4.559s] -- Added test 'xmllint' to check XML markup files
+[4.565s] -- Configuring done
+[4.652s] -- Generating done
+[4.661s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_go_pkg
+[4.774s] [35m[1mConsolidate compiler generated dependencies of target scan_node[0m
+[4.780s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[4.872s] [ 50%] Built target scan_node
+[4.879s] [ 75%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[15.346s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[15.347s]    26 |     [01;31m[Krclcpp_action[m[K::Server<robot_action::action::Move>::SharedPtr action_server_;
+[15.347s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[15.372s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:27:21:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[15.372s]    27 |     std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<robot_action::action::Move>> current_goal_handle_;
+[15.372s]       |                     [01;31m[K^~~~~~~~~~~~~[m[K
+[15.373s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:27:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.373s]    27 |     std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move[01;31m[K>>[m[K current_goal_handle_;
+[15.373s]       |                                                                               [01;31m[K^~[m[K
+[15.380s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:74:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[15.380s]    74 |     [01;31m[Krclcpp_action[m[K::GoalResponse handle_goal(
+[15.381s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[15.388s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:83:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[15.388s]    83 |     [01;31m[Krclcpp_action[m[K::CancelResponse handle_cancel(const std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move>> goal_handle)
+[15.389s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[15.414s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:48:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[15.414s]    89 |     void handle_accepted(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<robot_action::action::Move>> goal_handle)
+[15.415s]       |                                                [01;31m[K^~~~~~~~~~~~~[m[K
+[15.416s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:106:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.416s]    89 |     void handle_accepted(const std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move[01;31m[K>>[m[K goal_handle)
+[15.417s]       |                                                                                                          [01;31m[K^~[m[K
+[15.440s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:48:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[15.440s]    89 |     void handle_accepted(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<robot_action::action::Move>> goal_handle)
+[15.441s]       |                                                [01;31m[K^~~~~~~~~~~~~[m[K
+[15.441s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:106:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.441s]    89 |     void handle_accepted(const std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move[01;31m[K>>[m[K goal_handle)
+[15.442s]       |                                                                                                          [01;31m[K^~[m[K
+[15.465s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:48:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[15.466s]    89 |     void handle_accepted(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<robot_action::action::Move>> goal_handle)
+[15.466s]       |                                                [01;31m[K^~~~~~~~~~~~~[m[K
+[15.466s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:106:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.467s]    89 |     void handle_accepted(const std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move[01;31m[K>>[m[K goal_handle)
+[15.467s]       |                                                                                                          [01;31m[K^~[m[K
+[15.468s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:32:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[15.468s]    89 |     void handle_accepted(const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move>> goal_handle)
+[15.468s]       |                                [01;31m[K^~~[m[K
+[15.469s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:48:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ has not been declared
+[15.469s]    89 |     void handle_accepted(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<robot_action::action::Move>> goal_handle)
+[15.469s]       |                                                [01;31m[K^~~~~~~~~~~~~[m[K
+[15.470s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:106:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>>[m[K’ token
+[15.470s]    89 |     void handle_accepted(const std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move[01;31m[K>>[m[K goal_handle)
+[15.471s]       |                                                                                                          [01;31m[K^~[m[K
+[15.471s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:26:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[15.471s]    89 |     void handle_accepted([01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move>> goal_handle)
+[15.472s]       |                          [01;31m[K^~~~~[m[K
+[15.472s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:89:106:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K>[m[K’ token
+[15.473s]    89 |     void handle_accepted(const std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move[01;31m[K>>[m[K goal_handle)
+[15.473s]       |                                                                                                          [01;31m[K^~[m[K
+[15.474s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:109:28:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[15.474s]   109 |     using GoalHandleMove = [01;31m[Krclcpp_action[m[K::ServerGoalHandle<Move>;
+[15.475s]       |                            [01;31m[K^~~~~~~~~~~~~[m[K
+[15.495s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::handle_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[15.496s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:58:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_action::action::Move_Feedback_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_action::action::Move_Feedback_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktraveled_distances[m[K’
+[15.497s]    58 |         feedback->[01;31m[Ktraveled_distances[m[K.push_back(total_distance_);
+[15.497s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[15.498s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:60:33:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[15.498s]    60 |             current_goal_handle_[01;31m[K->[m[Kpublish_feedback(feedback);
+[15.499s]       |                                 [01;31m[K^~[m[K
+[15.508s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:66:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_action::action::Move_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_action::action::Move_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’
+[15.509s]    66 |             result->[01;31m[Ksuccess[m[K = true;
+[15.510s]       |                     [01;31m[K^~~~~~~[m[K
+[15.511s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:67:33:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+[15.511s]    67 |             current_goal_handle_[01;31m[K->[m[Ksucceed(result);
+[15.512s]       |                                 [01;31m[K^~[m[K
+[15.537s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::handle_accepted(...)[m[K’:
+[15.538s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:91:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_handle[m[K’ was not declared in this scope
+[15.539s]    91 |         current_goal_handle_ = [01;31m[Kgoal_handle[m[K;
+[15.540s]       |                                [01;31m[K^~~~~~~~~~~[m[K
+[15.605s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[15.606s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:131:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kaction_server_[m[K’ was not declared in this scope
+[15.606s]   131 |         [01;31m[Kaction_server_[m[K = rclcpp_action::create_server<robot_action::action::Move>(
+[15.607s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[15.607s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:131:26:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ has not been declared
+[15.608s]   131 |         action_server_ = [01;31m[Krclcpp_action[m[K::create_server<robot_action::action::Move>(
+[15.608s]       |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[15.609s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:131:81:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[15.610s]   131 |         action_server_ = rclcpp_action::create_server<robot_action::action::Move[01;31m[K>[m[K(
+[15.611s]       |                                                                                 [01;31m[K^[m[K
+[15.611s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:132:13:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[15.612s]   132 |             [01;35m[Kthis[m[K,
+[15.612s]       |             [01;35m[K^~~~[m[K
+[15.613s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:134:45:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_goal[m[K’ is not a member of ‘[01m[KTurtlebotController[m[K’
+[15.613s]   134 |             std::bind(&TurtlebotController::[01;31m[Khandle_goal[m[K, this, std::placeholders::_1, std::placeholders::_2),
+[15.614s]       |                                             [01;31m[K^~~~~~~~~~~[m[K
+[15.614s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:135:45:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_cancel[m[K’ is not a member of ‘[01m[KTurtlebotController[m[K’
+[15.615s]   135 |             std::bind(&TurtlebotController::[01;31m[Khandle_cancel[m[K, this, std::placeholders::_1),
+[15.615s]       |                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[27.553s] gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+[27.553s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/go_node.dir/all] Error 2
+[27.554s] gmake: *** [Makefile:146: all] Error 2
+[27.561s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

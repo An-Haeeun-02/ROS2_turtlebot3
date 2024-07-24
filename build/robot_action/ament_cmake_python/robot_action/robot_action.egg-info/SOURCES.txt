@@ -4,3 +4,6 @@ robot_action.egg-info/PKG-INFO
 robot_action.egg-info/SOURCES.txt
 robot_action.egg-info/dependency_links.txt
 robot_action.egg-info/top_level.txt
+robot_action/action/__init__.py
+robot_action/action/_move.py
+robot_action/action/_test.py

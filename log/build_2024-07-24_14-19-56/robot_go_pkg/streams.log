@@ -1,0 +1,50 @@
+[0.063s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.169s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.708s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.744s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.916s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.926s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.950s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.993s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.056s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.278s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.284s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.268s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.859s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.023s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.326s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[3.550s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.857s] -- Found robot_action: 0.0.0 (/home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake)
+[4.053s] -- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)
+[4.155s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.485s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.486s] -- Configured cppcheck include dirs: 
+[4.486s] -- Configured cppcheck exclude dirs and/or files: 
+[4.493s] -- Added test 'lint_cmake' to check CMake code style
+[4.502s] -- Added test 'uncrustify' to check C / C++ code style
+[4.502s] -- Configured uncrustify additional arguments: 
+[4.504s] -- Added test 'xmllint' to check XML markup files
+[4.509s] -- Configuring done
+[4.595s] -- Generating done
+[4.605s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_go_pkg
+[4.720s] [35m[1mConsolidate compiler generated dependencies of target server_node[0m
+[4.722s] [35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[4.826s] [ 20%] [32mBuilding CXX object CMakeFiles/server_node.dir/src/scan.cpp.o[0m
+[4.834s] [ 40%] [32mBuilding CXX object CMakeFiles/server_node.dir/src/actionsever.cpp.o[0m
+[4.842s] [ 80%] Built target cli_node
+[16.928s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/actionsever.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse MoveActionServer::handle_goal(const GoalUUID&, std::shared_ptr<const robot_action::action::Move_Goal_<std::allocator<void> > >)[m[K’:
+[16.929s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/actionsever.cpp:25:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[16.930s]    25 |     rclcpp_action::GoalResponse handle_goal([01;35m[Kconst rclcpp_action::GoalUUID &uuid[m[K, std::shared_ptr<const Move::Goal> goal)
+[16.931s]       |                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[16.931s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/actionsever.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse MoveActionServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move> >)[m[K’:
+[16.932s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/actionsever.cpp:31:87:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[16.933s]    31 |     rclcpp_action::CancelResponse handle_cancel([01;35m[Kconst std::shared_ptr<GoalHandleMove> goal_handle[m[K)
+[16.934s]       |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[41.048s] [100%] [32m[1mLinking CXX executable server_node[0m
+[41.361s] /usr/bin/ld: CMakeFiles/server_node.dir/src/scan.cpp.o: in function `main':
+[41.363s] scan.cpp:(.text+0x80): multiple definition of `main'; CMakeFiles/server_node.dir/src/actionsever.cpp.o:actionsever.cpp:(.text+0x8): first defined here
+[43.689s] collect2: error: ld returned 1 exit status
+[43.694s] gmake[2]: *** [CMakeFiles/server_node.dir/build.make:217: server_node] Error 1
+[43.695s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/server_node.dir/all] Error 2
+[43.696s] gmake: *** [Makefile:146: all] Error 2
+[43.702s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

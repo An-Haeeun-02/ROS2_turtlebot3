@@ -1,0 +1,19 @@
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotClient::start()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:42:63:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp_action::Client<robot_action::action::Move>::async_send_goal(robot_action::action::Move_Goal_<std::allocator<void> >&, std::_Bind_helper<false, void (TurtlebotClient::*)(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<robot_action::action::Move> > >), TurtlebotClient*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (TurtlebotClient::*)(std::shared_ptr<rclcpp_action::ClientGoalHandle<robot_action::action::Move> >, std::shared_ptr<const robot_action::action::Move_Feedback_<std::allocator<void> > >), TurtlebotClient*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, void (TurtlebotClient::*)(const rclcpp_action::ClientGoalHandle<robot_action::action::Move>::WrappedResult&), TurtlebotClient*, const std::_Placeholder<1>&>::type)[m[K’
+   42 |             auto goal_handle_future = [01;31m[Kclient_->async_send_goal(goal_msg,[m[K
+      |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+   43 | [01;31m[K                std::bind(&TurtlebotClient::goal_response_callback, this, std::placeholders::_1),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   44 | [01;31m[K                std::bind(&TurtlebotClient::feedback_callback, this, std::placeholders::_1, std::placeholders::_2),[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   45 | [01;31m[K                std::bind(&TurtlebotClient::result_callback, this, std::placeholders::_1))[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:422:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_future<typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr> rclcpp_action::Client<ActionT>::async_send_goal(const Goal&, const rclcpp_action::Client<ActionT>::SendGoalOptions&) [with ActionT = robot_action::action::Move; typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr = std::shared_ptr<rclcpp_action::ClientGoalHandle<robot_action::action::Move> >; rclcpp_action::Client<ActionT>::Goal = robot_action::action::Move_Goal_<std::allocator<void> >][m[K’
+  422 |   [01;36m[Kasync_send_goal[m[K(const Goal & goal, const SendGoalOptions & options = SendGoalOptions())
+      |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:422:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/cli_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
