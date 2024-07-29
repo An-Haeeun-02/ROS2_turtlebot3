@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target server_node[0m
+[ 33%] Built target cli_node
+[ 50%] [32mBuilding CXX object CMakeFiles/server_node.dir/src/main.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/server_node.dir/src/actionsever.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/server_node.dir/src/scan.cpp.o[0m

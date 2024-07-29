@@ -67,6 +67,7 @@ include CMakeFiles/robot_action.dir/compiler_depend.make
 include CMakeFiles/robot_action.dir/progress.make
 
 CMakeFiles/robot_action: /home/hae/robot_ws/src/robot_action/action/Move.action
+CMakeFiles/robot_action: /home/hae/robot_ws/src/robot_action/action/Test.action
 CMakeFiles/robot_action: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/robot_action: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/robot_action: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl

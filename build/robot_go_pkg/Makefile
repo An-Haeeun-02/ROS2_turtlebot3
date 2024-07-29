@@ -198,17 +198,30 @@ robot_go_pkg_uninstall/fast:
 .PHONY : robot_go_pkg_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named server_node
+# Target rules for targets named scan_node
 
 # Build rule for target.
-server_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_node
-.PHONY : server_node
+scan_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scan_node
+.PHONY : scan_node
 
 # fast build rule for target.
-server_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_node.dir/build.make CMakeFiles/server_node.dir/build
-.PHONY : server_node/fast
+scan_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_node.dir/build.make CMakeFiles/scan_node.dir/build
+.PHONY : scan_node/fast
+
+#=============================================================================
+# Target rules for targets named go_node
+
+# Build rule for target.
+go_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 go_node
+.PHONY : go_node
+
+# fast build rule for target.
+go_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/go_node.dir/build.make CMakeFiles/go_node.dir/build
+.PHONY : go_node/fast
 
 #=============================================================================
 # Target rules for targets named cli_node
@@ -223,53 +236,77 @@ cli_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_node.dir/build.make CMakeFiles/cli_node.dir/build
 .PHONY : cli_node/fast
 
-src/actioncli.o: src/actioncli.cpp.o
-.PHONY : src/actioncli.o
+src/cli.o: src/cli.cpp.o
+.PHONY : src/cli.o
 
 # target to build an object file
-src/actioncli.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_node.dir/build.make CMakeFiles/cli_node.dir/src/actioncli.cpp.o
-.PHONY : src/actioncli.cpp.o
+src/cli.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_node.dir/build.make CMakeFiles/cli_node.dir/src/cli.cpp.o
+.PHONY : src/cli.cpp.o
 
-src/actioncli.i: src/actioncli.cpp.i
-.PHONY : src/actioncli.i
+src/cli.i: src/cli.cpp.i
+.PHONY : src/cli.i
 
 # target to preprocess a source file
-src/actioncli.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_node.dir/build.make CMakeFiles/cli_node.dir/src/actioncli.cpp.i
-.PHONY : src/actioncli.cpp.i
+src/cli.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_node.dir/build.make CMakeFiles/cli_node.dir/src/cli.cpp.i
+.PHONY : src/cli.cpp.i
 
-src/actioncli.s: src/actioncli.cpp.s
-.PHONY : src/actioncli.s
+src/cli.s: src/cli.cpp.s
+.PHONY : src/cli.s
 
 # target to generate assembly for a file
-src/actioncli.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_node.dir/build.make CMakeFiles/cli_node.dir/src/actioncli.cpp.s
-.PHONY : src/actioncli.cpp.s
+src/cli.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_node.dir/build.make CMakeFiles/cli_node.dir/src/cli.cpp.s
+.PHONY : src/cli.cpp.s
 
-src/actionsever.o: src/actionsever.cpp.o
-.PHONY : src/actionsever.o
+src/go.o: src/go.cpp.o
+.PHONY : src/go.o
 
 # target to build an object file
-src/actionsever.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_node.dir/build.make CMakeFiles/server_node.dir/src/actionsever.cpp.o
-.PHONY : src/actionsever.cpp.o
+src/go.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/go_node.dir/build.make CMakeFiles/go_node.dir/src/go.cpp.o
+.PHONY : src/go.cpp.o
 
-src/actionsever.i: src/actionsever.cpp.i
-.PHONY : src/actionsever.i
+src/go.i: src/go.cpp.i
+.PHONY : src/go.i
 
 # target to preprocess a source file
-src/actionsever.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_node.dir/build.make CMakeFiles/server_node.dir/src/actionsever.cpp.i
-.PHONY : src/actionsever.cpp.i
+src/go.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/go_node.dir/build.make CMakeFiles/go_node.dir/src/go.cpp.i
+.PHONY : src/go.cpp.i
 
-src/actionsever.s: src/actionsever.cpp.s
-.PHONY : src/actionsever.s
+src/go.s: src/go.cpp.s
+.PHONY : src/go.s
 
 # target to generate assembly for a file
-src/actionsever.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_node.dir/build.make CMakeFiles/server_node.dir/src/actionsever.cpp.s
-.PHONY : src/actionsever.cpp.s
+src/go.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/go_node.dir/build.make CMakeFiles/go_node.dir/src/go.cpp.s
+.PHONY : src/go.cpp.s
+
+src/scan.o: src/scan.cpp.o
+.PHONY : src/scan.o
+
+# target to build an object file
+src/scan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_node.dir/build.make CMakeFiles/scan_node.dir/src/scan.cpp.o
+.PHONY : src/scan.cpp.o
+
+src/scan.i: src/scan.cpp.i
+.PHONY : src/scan.i
+
+# target to preprocess a source file
+src/scan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_node.dir/build.make CMakeFiles/scan_node.dir/src/scan.cpp.i
+.PHONY : src/scan.cpp.i
+
+src/scan.s: src/scan.cpp.s
+.PHONY : src/scan.s
+
+# target to generate assembly for a file
+src/scan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_node.dir/build.make CMakeFiles/scan_node.dir/src/scan.cpp.s
+.PHONY : src/scan.cpp.s
 
 # Help Target
 help:
@@ -287,13 +324,17 @@ help:
 	@echo "... robot_go_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... cli_node"
-	@echo "... server_node"
-	@echo "... src/actioncli.o"
-	@echo "... src/actioncli.i"
-	@echo "... src/actioncli.s"
-	@echo "... src/actionsever.o"
-	@echo "... src/actionsever.i"
-	@echo "... src/actionsever.s"
+	@echo "... go_node"
+	@echo "... scan_node"
+	@echo "... src/cli.o"
+	@echo "... src/cli.i"
+	@echo "... src/cli.s"
+	@echo "... src/go.o"
+	@echo "... src/go.i"
+	@echo "... src/go.s"
+	@echo "... src/scan.o"
+	@echo "... src/scan.i"
+	@echo "... src/scan.s"
 .PHONY : help
 
 

@@ -361,8 +361,14 @@ include("/home/hae/robot_ws/src/build/robot_action/ament_cmake_symlink_install_t
 # install(FILES "/home/hae/robot_ws/src/build/robot_action/rosidl_adapter/robot_action/action/Move.idl" "DESTINATION" "share/robot_action/action")
 ament_cmake_symlink_install_files("/home/hae/robot_ws/src/robot_action" FILES "/home/hae/robot_ws/src/build/robot_action/rosidl_adapter/robot_action/action/Move.idl" "DESTINATION" "share/robot_action/action")
 
+# install(FILES "/home/hae/robot_ws/src/build/robot_action/rosidl_adapter/robot_action/action/Test.idl" "DESTINATION" "share/robot_action/action")
+ament_cmake_symlink_install_files("/home/hae/robot_ws/src/robot_action" FILES "/home/hae/robot_ws/src/build/robot_action/rosidl_adapter/robot_action/action/Test.idl" "DESTINATION" "share/robot_action/action")
+
 # install(FILES "/home/hae/robot_ws/src/robot_action/action/Move.action" "DESTINATION" "share/robot_action/action")
 ament_cmake_symlink_install_files("/home/hae/robot_ws/src/robot_action" FILES "/home/hae/robot_ws/src/robot_action/action/Move.action" "DESTINATION" "share/robot_action/action")
+
+# install(FILES "/home/hae/robot_ws/src/robot_action/action/Test.action" "DESTINATION" "share/robot_action/action")
+ament_cmake_symlink_install_files("/home/hae/robot_ws/src/robot_action" FILES "/home/hae/robot_ws/src/robot_action/action/Test.action" "DESTINATION" "share/robot_action/action")
 
 # install(FILES "/home/hae/robot_ws/src/build/robot_action/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_action" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/hae/robot_ws/src/robot_action" FILES "/home/hae/robot_ws/src/build/robot_action/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_action" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

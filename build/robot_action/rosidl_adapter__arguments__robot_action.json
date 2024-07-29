@@ -1,6 +1,7 @@
 {
   "package_name": "robot_action",
   "non_idl_tuples": [
-    "/home/hae/robot_ws/src/robot_action:action/Move.action"
+    "/home/hae/robot_ws/src/robot_action:action/Move.action",
+    "/home/hae/robot_ws/src/robot_action:action/Test.action"
   ]
 }

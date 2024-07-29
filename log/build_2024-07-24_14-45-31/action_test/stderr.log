@@ -1,0 +1,4 @@
+[01m[K/home/hae/robot_ws/src/action_test/src/actionsever.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse MoveActionServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move> >)[m[K’:
+[01m[K/home/hae/robot_ws/src/action_test/src/actionsever.cpp:31:87:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   31 |     rclcpp_action::CancelResponse handle_cancel([01;35m[Kconst std::shared_ptr<GoalHandleMove> goal_handle[m[K)
+      |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K

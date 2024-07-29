@@ -34,8 +34,6 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // message
-#include "rosidl_runtime_c/string_functions.h"  // message
 
 // forward declare type support functions
 
@@ -51,18 +49,9 @@ static bool _Move_Goal__cdr_serialize(
     return false;
   }
   const _Move_Goal__ros_msg_type * ros_message = static_cast<const _Move_Goal__ros_msg_type *>(untyped_ros_message);
-  // Field name: message
+  // Field name: distance
   {
-    const rosidl_runtime_c__String * str = &ros_message->message;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << ros_message->distance;
   }
 
   return true;
@@ -77,20 +66,9 @@ static bool _Move_Goal__cdr_deserialize(
     return false;
   }
   _Move_Goal__ros_msg_type * ros_message = static_cast<_Move_Goal__ros_msg_type *>(untyped_ros_message);
-  // Field name: message
+  // Field name: distance
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->message.data) {
-      rosidl_runtime_c__String__init(&ros_message->message);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->message,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'message'\n");
-      return false;
-    }
+    cdr >> ros_message->distance;
   }
 
   return true;
@@ -110,10 +88,12 @@ size_t get_serialized_size_robot_action__action__Move_Goal(
   (void)padding;
   (void)wchar_size;
 
-  // field.name message
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->message.size + 1);
+  // field.name distance
+  {
+    size_t item_size = sizeof(ros_message->distance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -143,17 +123,13 @@ size_t max_serialized_size_robot_action__action__Move_Goal(
   full_bounded = true;
   is_plain = true;
 
-  // member: message
+  // member: distance
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -164,7 +140,7 @@ size_t max_serialized_size_robot_action__action__Move_Goal(
     using DataType = robot_action__action__Move_Goal;
     is_plain =
       (
-      offsetof(DataType, message) +
+      offsetof(DataType, distance) +
       last_member_size
       ) == ret_val;
   }
@@ -252,10 +228,6 @@ extern "C"
 {
 #endif
 
-// already included above
-// #include "rosidl_runtime_c/string.h"  // response
-// already included above
-// #include "rosidl_runtime_c/string_functions.h"  // response
 
 // forward declare type support functions
 
@@ -271,18 +243,9 @@ static bool _Move_Result__cdr_serialize(
     return false;
   }
   const _Move_Result__ros_msg_type * ros_message = static_cast<const _Move_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: response
+  // Field name: success
   {
-    const rosidl_runtime_c__String * str = &ros_message->response;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << (ros_message->success ? true : false);
   }
 
   return true;
@@ -297,20 +260,11 @@ static bool _Move_Result__cdr_deserialize(
     return false;
   }
   _Move_Result__ros_msg_type * ros_message = static_cast<_Move_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: response
+  // Field name: success
   {
-    std::string tmp;
+    uint8_t tmp;
     cdr >> tmp;
-    if (!ros_message->response.data) {
-      rosidl_runtime_c__String__init(&ros_message->response);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->response,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'response'\n");
-      return false;
-    }
+    ros_message->success = tmp ? true : false;
   }
 
   return true;
@@ -330,10 +284,12 @@ size_t get_serialized_size_robot_action__action__Move_Result(
   (void)padding;
   (void)wchar_size;
 
-  // field.name response
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->response.size + 1);
+  // field.name success
+  {
+    size_t item_size = sizeof(ros_message->success);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -363,17 +319,12 @@ size_t max_serialized_size_robot_action__action__Move_Result(
   full_bounded = true;
   is_plain = true;
 
-  // member: response
+  // member: success
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -384,7 +335,7 @@ size_t max_serialized_size_robot_action__action__Move_Result(
     using DataType = robot_action__action__Move_Result;
     is_plain =
       (
-      offsetof(DataType, response) +
+      offsetof(DataType, success) +
       last_member_size
       ) == ret_val;
   }
@@ -472,10 +423,8 @@ extern "C"
 {
 #endif
 
-// already included above
-// #include "rosidl_runtime_c/string.h"  // feedback
-// already included above
-// #include "rosidl_runtime_c/string_functions.h"  // feedback
+#include "rosidl_runtime_c/primitives_sequence.h"  // traveled_distances
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // traveled_distances
 
 // forward declare type support functions
 
@@ -491,18 +440,12 @@ static bool _Move_Feedback__cdr_serialize(
     return false;
   }
   const _Move_Feedback__ros_msg_type * ros_message = static_cast<const _Move_Feedback__ros_msg_type *>(untyped_ros_message);
-  // Field name: feedback
+  // Field name: traveled_distances
   {
-    const rosidl_runtime_c__String * str = &ros_message->feedback;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    size_t size = ros_message->traveled_distances.size;
+    auto array_ptr = ros_message->traveled_distances.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
   }
 
   return true;
@@ -517,20 +460,20 @@ static bool _Move_Feedback__cdr_deserialize(
     return false;
   }
   _Move_Feedback__ros_msg_type * ros_message = static_cast<_Move_Feedback__ros_msg_type *>(untyped_ros_message);
-  // Field name: feedback
+  // Field name: traveled_distances
   {
-    std::string tmp;
-    cdr >> tmp;
-    if (!ros_message->feedback.data) {
-      rosidl_runtime_c__String__init(&ros_message->feedback);
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->traveled_distances.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->traveled_distances);
     }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->feedback,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'feedback'\n");
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->traveled_distances, size)) {
+      fprintf(stderr, "failed to create array for field 'traveled_distances'");
       return false;
     }
+    auto array_ptr = ros_message->traveled_distances.data;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -550,10 +493,17 @@ size_t get_serialized_size_robot_action__action__Move_Feedback(
   (void)padding;
   (void)wchar_size;
 
-  // field.name feedback
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->feedback.size + 1);
+  // field.name traveled_distances
+  {
+    size_t array_size = ros_message->traveled_distances.size;
+    auto array_ptr = ros_message->traveled_distances.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -583,17 +533,17 @@ size_t max_serialized_size_robot_action__action__Move_Feedback(
   full_bounded = true;
   is_plain = true;
 
-  // member: feedback
+  // member: traveled_distances
   {
-    size_t array_size = 1;
-
+    size_t array_size = 0;
     full_bounded = false;
     is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -604,7 +554,7 @@ size_t max_serialized_size_robot_action__action__Move_Feedback(
     using DataType = robot_action__action__Move_Feedback;
     is_plain =
       (
-      offsetof(DataType, feedback) +
+      offsetof(DataType, traveled_distances) +
       last_member_size
       ) == ret_val;
   }

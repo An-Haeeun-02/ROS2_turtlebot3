@@ -32,8 +32,8 @@ cdr_serialize(
   const robot_action::action::Move_Goal & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: message
-  cdr << ros_message.message;
+  // Member: distance
+  cdr << ros_message.distance;
   return true;
 }
 
@@ -43,8 +43,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   robot_action::action::Move_Goal & ros_message)
 {
-  // Member: message
-  cdr >> ros_message.message;
+  // Member: distance
+  cdr >> ros_message.distance;
 
   return true;
 }
@@ -62,10 +62,12 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: message
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.message.size() + 1);
+  // Member: distance
+  {
+    size_t item_size = sizeof(ros_message.distance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -90,17 +92,13 @@ max_serialized_size_Move_Goal(
   is_plain = true;
 
 
-  // Member: message
+  // Member: distance
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -111,7 +109,7 @@ max_serialized_size_Move_Goal(
     using DataType = robot_action::action::Move_Goal;
     is_plain =
       (
-      offsetof(DataType, message) +
+      offsetof(DataType, distance) +
       last_member_size
       ) == ret_val;
   }
@@ -246,8 +244,8 @@ cdr_serialize(
   const robot_action::action::Move_Result & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: response
-  cdr << ros_message.response;
+  // Member: success
+  cdr << (ros_message.success ? true : false);
   return true;
 }
 
@@ -257,8 +255,12 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   robot_action::action::Move_Result & ros_message)
 {
-  // Member: response
-  cdr >> ros_message.response;
+  // Member: success
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.success = tmp ? true : false;
+  }
 
   return true;
 }
@@ -276,10 +278,12 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: response
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.response.size() + 1);
+  // Member: success
+  {
+    size_t item_size = sizeof(ros_message.success);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -304,17 +308,12 @@ max_serialized_size_Move_Result(
   is_plain = true;
 
 
-  // Member: response
+  // Member: success
   {
     size_t array_size = 1;
 
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -325,7 +324,7 @@ max_serialized_size_Move_Result(
     using DataType = robot_action::action::Move_Result;
     is_plain =
       (
-      offsetof(DataType, response) +
+      offsetof(DataType, success) +
       last_member_size
       ) == ret_val;
   }
@@ -460,8 +459,10 @@ cdr_serialize(
   const robot_action::action::Move_Feedback & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: feedback
-  cdr << ros_message.feedback;
+  // Member: traveled_distances
+  {
+    cdr << ros_message.traveled_distances;
+  }
   return true;
 }
 
@@ -471,8 +472,10 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   robot_action::action::Move_Feedback & ros_message)
 {
-  // Member: feedback
-  cdr >> ros_message.feedback;
+  // Member: traveled_distances
+  {
+    cdr >> ros_message.traveled_distances;
+  }
 
   return true;
 }
@@ -490,10 +493,16 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: feedback
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.feedback.size() + 1);
+  // Member: traveled_distances
+  {
+    size_t array_size = ros_message.traveled_distances.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.traveled_distances[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -518,17 +527,17 @@ max_serialized_size_Move_Feedback(
   is_plain = true;
 
 
-  // Member: feedback
+  // Member: traveled_distances
   {
-    size_t array_size = 1;
-
+    size_t array_size = 0;
     full_bounded = false;
     is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -539,7 +548,7 @@ max_serialized_size_Move_Feedback(
     using DataType = robot_action::action::Move_Feedback;
     is_plain =
       (
-      offsetof(DataType, feedback) +
+      offsetof(DataType, traveled_distances) +
       last_member_size
       ) == ret_val;
   }

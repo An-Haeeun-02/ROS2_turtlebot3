@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cli_node.dir/src/actioncli.cpp.o"
-  "CMakeFiles/cli_node.dir/src/actioncli.cpp.o.d"
+  "CMakeFiles/cli_node.dir/src/cli.cpp.o"
+  "CMakeFiles/cli_node.dir/src/cli.cpp.o.d"
   "cli_node"
   "cli_node.pdb"
 )

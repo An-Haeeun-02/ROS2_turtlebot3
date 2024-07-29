@@ -1,0 +1,36 @@
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::handle_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:59:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_action::action::Move_Feedback_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_action::action::Move_Feedback_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktraveled_distances[m[K’
+   59 |         feedback->[01;31m[Ktraveled_distances[m[K.push_back(total_distance_);
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:67:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_action::action::Move_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_action::action::Move_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’
+   67 |             result->[01;31m[Ksuccess[m[K = true;
+      |                     [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1[m[K:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse TurtlebotController::handle_goal(const GoalUUID&, std::shared_ptr<const robot_action::action::Move_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:79:99:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct robot_action::action::Move_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct robot_action::action::Move_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdistance[m[K’
+   79 |         RCLCPP_INFO(this->get_logger(), "Received goal request with distance: %.2f meters", goal->[01;31m[Kdistance[m[K);
+      |                                                                                                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:80:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct robot_action::action::Move_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct robot_action::action::Move_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdistance[m[K’
+   80 |         goal_distance_ = goal->[01;31m[Kdistance[m[K; // 목표 거리 설정
+      |                                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:76:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   76 |         [01;35m[Kconst rclcpp_action::GoalUUID &uuid[m[K,
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse TurtlebotController::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move> >)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:84:132:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 |     rclcpp_action::CancelResponse handle_cancel([01;35m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move>> goal_handle[m[K)
+      |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/go_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

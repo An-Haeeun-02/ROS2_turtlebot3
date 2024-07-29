@@ -1,0 +1,84 @@
+[0.060s] Invoking command in '/home/hae/robot_ws/src/build/action_test': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hae/robot_ws/src/action_test -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/action_test
+[0.327s] -- The C compiler identification is GNU 11.4.0
+[0.607s] -- The CXX compiler identification is GNU 11.4.0
+[0.641s] -- Detecting C compiler ABI info
+[0.988s] -- Detecting C compiler ABI info - done
+[1.015s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.017s] -- Detecting C compile features
+[1.019s] -- Detecting C compile features - done
+[1.032s] -- Detecting CXX compiler ABI info
+[1.394s] -- Detecting CXX compiler ABI info - done
+[1.425s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.426s] -- Detecting CXX compile features
+[1.428s] -- Detecting CXX compile features - done
+[1.451s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.174s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.463s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.737s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[3.074s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.117s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.174s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.254s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.369s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.755s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.777s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.387s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.636s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.065s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.140s] -- Looking for pthread.h
+[5.473s] -- Looking for pthread.h - found
+[5.475s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.822s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.827s] -- Found Threads: TRUE  
+[6.502s] -- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)
+[6.902s] -- Found robot_action: 0.0.0 (/home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake)
+[7.112s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[7.623s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.058s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.061s] -- Configured cppcheck include dirs: 
+[8.061s] -- Configured cppcheck exclude dirs and/or files: 
+[8.064s] -- Added test 'lint_cmake' to check CMake code style
+[8.072s] -- Added test 'uncrustify' to check C / C++ code style
+[8.072s] -- Configured uncrustify additional arguments: 
+[8.074s] -- Added test 'xmllint' to check XML markup files
+[8.082s] -- Configuring done
+[8.165s] -- Generating done
+[8.173s] -- Build files have been written to: /home/hae/robot_ws/src/build/action_test
+[8.215s] Invoked command in '/home/hae/robot_ws/src/build/action_test' returned '0': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/hae/robot_ws/src/action_test -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/action_test
+[8.224s] Invoking command in '/home/hae/robot_ws/src/build/action_test': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/action_test -- -j4 -l4
+[8.441s] [ 50%] [32mBuilding CXX object CMakeFiles/server_node.dir/src/actionsever.cpp.o[0m
+[8.442s] [ 50%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/actioncli.cpp.o[0m
+[20.440s] [01m[K/home/hae/robot_ws/src/action_test/src/actionsever.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse MoveActionServer::handle_goal(const GoalUUID&, std::shared_ptr<const robot_action::action::Move_Goal_<std::allocator<void> > >)[m[K’:
+[20.441s] [01m[K/home/hae/robot_ws/src/action_test/src/actionsever.cpp:25:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[20.442s]    25 |     rclcpp_action::GoalResponse handle_goal([01;35m[Kconst rclcpp_action::GoalUUID &uuid[m[K, std::shared_ptr<const Move::Goal> goal)
+[20.445s]       |                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[20.446s] [01m[K/home/hae/robot_ws/src/action_test/src/actionsever.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse MoveActionServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move> >)[m[K’:
+[20.447s] [01m[K/home/hae/robot_ws/src/action_test/src/actionsever.cpp:31:87:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[20.447s]    31 |     rclcpp_action::CancelResponse handle_cancel([01;35m[Kconst std::shared_ptr<GoalHandleMove> goal_handle[m[K)
+[20.448s]       |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[26.063s] [ 75%] [32m[1mLinking CXX executable server_node[0m
+[26.941s] [100%] [32m[1mLinking CXX executable cli_node[0m
+[27.013s] [100%] Built target server_node
+[27.776s] [100%] Built target cli_node
+[27.815s] Invoked command in '/home/hae/robot_ws/src/build/action_test' returned '0': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/action_test -- -j4 -l4
+[27.996s] Invoking command in '/home/hae/robot_ws/src/build/action_test': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hae/robot_ws/src/build/action_test
+[28.022s] -- Install configuration: ""
+[28.024s] -- Execute custom install script
+[28.026s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/lib/action_test/server_node
+[28.057s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/lib/action_test/cli_node
+[28.092s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/ament_index/resource_index/package_run_dependencies/action_test
+[28.126s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/ament_index/resource_index/parent_prefix_path/action_test
+[28.159s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/environment/ament_prefix_path.sh
+[28.190s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/environment/ament_prefix_path.dsv
+[28.222s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/environment/path.sh
+[28.255s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/environment/path.dsv
+[28.288s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/local_setup.bash
+[28.321s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/local_setup.sh
+[28.355s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/local_setup.zsh
+[28.391s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/local_setup.dsv
+[28.425s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/package.dsv
+[28.460s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/ament_index/resource_index/packages/action_test
+[28.493s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/cmake/action_testConfig.cmake
+[28.526s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/cmake/action_testConfig-version.cmake
+[28.561s] -- Symlinking: /home/hae/robot_ws/src/install/action_test/share/action_test/package.xml
+[28.598s] Invoked command in '/home/hae/robot_ws/src/build/action_test' returned '0': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/hae/robot_ws/src/build/action_test

@@ -1,2 +1,4 @@
 action/Move.action
 action/Move.idl
+action/Test.action
+action/Test.idl

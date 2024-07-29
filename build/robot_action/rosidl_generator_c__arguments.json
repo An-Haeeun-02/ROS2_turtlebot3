@@ -3,7 +3,8 @@
   "output_dir": "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_c/robot_action",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/hae/robot_ws/src/build/robot_action/rosidl_adapter/robot_action:action/Move.idl"
+    "/home/hae/robot_ws/src/build/robot_action/rosidl_adapter/robot_action:action/Move.idl",
+    "/home/hae/robot_ws/src/build/robot_action/rosidl_adapter/robot_action:action/Test.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
@@ -29,6 +30,7 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/hae/robot_ws/src/build/robot_action/rosidl_adapter/robot_action/action/Move.idl",
+    "/home/hae/robot_ws/src/build/robot_action/rosidl_adapter/robot_action/action/Test.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",

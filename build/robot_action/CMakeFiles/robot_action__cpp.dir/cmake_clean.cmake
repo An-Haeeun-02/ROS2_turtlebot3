@@ -3,7 +3,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/robot_action/action/detail/move__builder.hpp"
   "rosidl_generator_cpp/robot_action/action/detail/move__struct.hpp"
   "rosidl_generator_cpp/robot_action/action/detail/move__traits.hpp"
+  "rosidl_generator_cpp/robot_action/action/detail/test__builder.hpp"
+  "rosidl_generator_cpp/robot_action/action/detail/test__struct.hpp"
+  "rosidl_generator_cpp/robot_action/action/detail/test__traits.hpp"
   "rosidl_generator_cpp/robot_action/action/move.hpp"
+  "rosidl_generator_cpp/robot_action/action/test.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

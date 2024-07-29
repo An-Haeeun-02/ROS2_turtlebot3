@@ -1,0 +1,25 @@
+[0.062s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.253s] [35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[0.309s] [ 33%] Built target scan_node
+[0.317s] [ 66%] Built target go_node
+[0.358s] [ 83%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m
+[10.615s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotClient::start()[m[K’:
+[10.615s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:42:63:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp_action::Client<robot_action::action::Move>::async_send_goal(robot_action::action::Move_Goal_<std::allocator<void> >&, std::_Bind_helper<false, void (TurtlebotClient::*)(std::shared_future<std::shared_ptr<rclcpp_action::ClientGoalHandle<robot_action::action::Move> > >), TurtlebotClient*, const std::_Placeholder<1>&>::type, std::_Bind_helper<false, void (TurtlebotClient::*)(std::shared_ptr<rclcpp_action::ClientGoalHandle<robot_action::action::Move> >, std::shared_ptr<const robot_action::action::Move_Feedback_<std::allocator<void> > >), TurtlebotClient*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type, std::_Bind_helper<false, void (TurtlebotClient::*)(const rclcpp_action::ClientGoalHandle<robot_action::action::Move>::WrappedResult&), TurtlebotClient*, const std::_Placeholder<1>&>::type)[m[K’
+[10.616s]    42 |             auto goal_handle_future = [01;31m[Kclient_->async_send_goal(goal_msg,[m[K
+[10.616s]       |                                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[10.616s]    43 | [01;31m[K                std::bind(&TurtlebotClient::goal_response_callback, this, std::placeholders::_1),[m[K
+[10.616s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.617s]    44 | [01;31m[K                std::bind(&TurtlebotClient::feedback_callback, this, std::placeholders::_1, std::placeholders::_2),[m[K
+[10.617s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.617s]    45 | [01;31m[K                std::bind(&TurtlebotClient::result_callback, this, std::placeholders::_1))[m[K;
+[10.618s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.618s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+[10.618s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:2[m[K:
+[10.619s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:422:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_future<typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr> rclcpp_action::Client<ActionT>::async_send_goal(const Goal&, const rclcpp_action::Client<ActionT>::SendGoalOptions&) [with ActionT = robot_action::action::Move; typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr = std::shared_ptr<rclcpp_action::ClientGoalHandle<robot_action::action::Move> >; rclcpp_action::Client<ActionT>::Goal = robot_action::action::Move_Goal_<std::allocator<void> >][m[K’
+[10.619s]   422 |   [01;36m[Kasync_send_goal[m[K(const Goal & goal, const SendGoalOptions & options = SendGoalOptions())
+[10.620s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[10.620s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:422:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[12.755s] gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1
+[12.756s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/cli_node.dir/all] Error 2
+[12.757s] gmake: *** [Makefile:146: all] Error 2
+[12.764s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

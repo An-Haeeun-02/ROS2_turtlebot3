@@ -1,0 +1,41 @@
+[0.063s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.257s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[0.321s] [ 50%] Built target scan_node
+[0.354s] [ 75%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[11.190s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::handle_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[11.191s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:59:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_action::action::Move_Feedback_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_action::action::Move_Feedback_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktraveled_distances[m[K’
+[11.192s]    59 |         feedback->[01;31m[Ktraveled_distances[m[K.push_back(total_distance_);
+[11.192s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[11.218s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:67:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct robot_action::action::Move_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct robot_action::action::Move_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’
+[11.218s]    67 |             result->[01;31m[Ksuccess[m[K = true;
+[11.219s]       |                     [01;31m[K^~~~~~~[m[K
+[11.225s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.225s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.226s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.226s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.227s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.227s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.228s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.228s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.229s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.230s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1[m[K:
+[11.230s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse TurtlebotController::handle_goal(const GoalUUID&, std::shared_ptr<const robot_action::action::Move_Goal_<std::allocator<void> > >)[m[K’:
+[11.231s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:79:99:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct robot_action::action::Move_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct robot_action::action::Move_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdistance[m[K’
+[11.231s]    79 |         RCLCPP_INFO(this->get_logger(), "Received goal request with distance: %.2f meters", goal->[01;31m[Kdistance[m[K);
+[11.231s]       |                                                                                                   [01;31m[K^~~~~~~~[m[K
+[11.232s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:80:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct robot_action::action::Move_Goal_<std::allocator<void> >[m[K’ {aka ‘[01m[Kconst struct robot_action::action::Move_Goal_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdistance[m[K’
+[11.232s]    80 |         goal_distance_ = goal->[01;31m[Kdistance[m[K; // 목표 거리 설정
+[11.233s]       |                                [01;31m[K^~~~~~~~[m[K
+[11.233s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:76:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuuid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.234s]    76 |         [01;35m[Kconst rclcpp_action::GoalUUID &uuid[m[K,
+[11.234s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[11.234s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse TurtlebotController::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move> >)[m[K’:
+[11.235s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:84:132:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal_handle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.236s]    84 |     rclcpp_action::CancelResponse handle_cancel([01;35m[Kconst std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move>> goal_handle[m[K)
+[11.236s]       |                                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[24.158s] gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+[24.159s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/go_node.dir/all] Error 2
+[24.160s] gmake: *** [Makefile:146: all] Error 2
+[24.168s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

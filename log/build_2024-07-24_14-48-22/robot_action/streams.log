@@ -1,0 +1,217 @@
+[0.052s] Invoking command in '/home/hae/robot_ws/src/build/robot_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action -- -j4 -l4
+[0.150s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.705s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.738s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.745s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.756s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.933s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.522s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.392s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.507s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.611s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.718s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.718s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.719s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[4.793s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.861s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.866s] -- Added test 'lint_cmake' to check CMake code style
+[4.870s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.892s] -- Added test 'xmllint' to check XML markup files
+[4.907s] -- Configuring done
+[5.103s] -- Generating done
+[5.122s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_action
+[5.235s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.282s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.322s] [  5%] Built target ament_cmake_python_symlink_robot_action
+[6.748s] running egg_info
+[6.752s] writing robot_action.egg-info/PKG-INFO
+[6.754s] writing dependency_links to robot_action.egg-info/dependency_links.txt
+[6.757s] writing top-level names to robot_action.egg-info/top_level.txt
+[6.768s] reading manifest file 'robot_action.egg-info/SOURCES.txt'
+[6.771s] writing manifest file 'robot_action.egg-info/SOURCES.txt'
+[6.928s] [  5%] Built target ament_cmake_python_build_robot_action_egg
+[8.447s] [  5%] Built target robot_action__cpp
+[8.501s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.515s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[8.528s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.547s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_generator_c[0m
+[8.606s] [ 15%] [32mBuilding C object CMakeFiles/robot_action__rosidl_generator_c.dir/rosidl_generator_c/robot_action/action/detail/move__functions.c.o[0m
+[9.512s] [ 17%] [32mBuilding C object CMakeFiles/robot_action__rosidl_generator_c.dir/rosidl_generator_c/robot_action/action/detail/test__functions.c.o[0m
+[10.266s] [ 20%] [32m[1mLinking C shared library librobot_action__rosidl_generator_c.so[0m
+[10.477s] [ 20%] Built target robot_action__rosidl_generator_c
+[10.528s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[10.781s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_cpp[0m
+[10.887s] [ 25%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_action/action/move__type_support.cpp.o[0m
+[11.340s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_introspection_cpp[0m
+[11.429s] [ 28%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_action/action/detail/move__type_support.cpp.o[0m
+[12.078s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_fastrtps_cpp[0m
+[12.228s] [ 30%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_action/action/detail/dds_fastrtps/move__type_support.cpp.o[0m
+[14.153s] [ 33%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/robot_action/action/test__type_support.cpp.o[0m
+[14.637s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_fastrtps_c[0m
+[14.718s] [ 35%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_action/action/detail/move__type_support_c.cpp.o[0m
+[15.646s] [ 38%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/robot_action/action/detail/test__type_support.cpp.o[0m
+[16.488s] [ 41%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/robot_action/action/detail/dds_fastrtps/test__type_support.cpp.o[0m
+[17.365s] [ 43%] [32m[1mLinking CXX shared library librobot_action__rosidl_typesupport_cpp.so[0m
+[17.394s] [ 46%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/robot_action/action/detail/test__type_support_c.cpp.o[0m
+[17.618s] [ 46%] Built target robot_action__rosidl_typesupport_cpp
+[17.670s] [ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[20.147s] [ 51%] [32m[1mLinking CXX shared library librobot_action__rosidl_typesupport_introspection_cpp.so[0m
+[20.304s] [ 53%] [32m[1mLinking CXX shared library librobot_action__rosidl_typesupport_fastrtps_c.so[0m
+[20.558s] [ 53%] Built target robot_action__rosidl_typesupport_introspection_cpp
+[20.620s] [ 56%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[20.764s] [ 56%] Built target robot_action__rosidl_typesupport_fastrtps_c
+[20.838s] [ 58%] [32m[1mLinking CXX shared library librobot_action__rosidl_typesupport_fastrtps_cpp.so[0m
+[21.240s] [ 58%] Built target robot_action__rosidl_typesupport_fastrtps_cpp
+[21.321s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_introspection_c[0m
+[21.375s] [ 61%] [32mBuilding C object CMakeFiles/robot_action__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_action/action/detail/move__type_support.c.o[0m
+[21.378s] [ 64%] [32mBuilding C object CMakeFiles/robot_action__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/robot_action/action/detail/test__type_support.c.o[0m
+[21.661s] [ 66%] [32m[1mLinking C shared library librobot_action__rosidl_typesupport_introspection_c.so[0m
+[21.793s] [ 66%] Built target robot_action__rosidl_typesupport_introspection_c
+[22.447s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_c[0m
+[22.498s] [ 69%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_action/action/move__type_support.cpp.o[0m
+[22.501s] [ 71%] [32mBuilding CXX object CMakeFiles/robot_action__rosidl_typesupport_c.dir/rosidl_typesupport_c/robot_action/action/test__type_support.cpp.o[0m
+[22.757s] [ 74%] [32m[1mLinking CXX shared library librobot_action__rosidl_typesupport_c.so[0m
+[22.925s] [ 74%] Built target robot_action__rosidl_typesupport_c
+[23.008s] [ 74%] Built target robot_action
+[23.096s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[28.282s] [ 76%] Built target robot_action__py
+[28.326s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_generator_py[0m
+[28.393s] [ 79%] [32mBuilding C object CMakeFiles/robot_action__rosidl_generator_py.dir/rosidl_generator_py/robot_action/action/_move_s.c.o[0m
+[28.394s] [ 82%] [32mBuilding C object CMakeFiles/robot_action__rosidl_generator_py.dir/rosidl_generator_py/robot_action/action/_test_s.c.o[0m
+[29.082s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/robot_action/librobot_action__rosidl_generator_py.so[0m
+[29.281s] [ 84%] Built target robot_action__rosidl_generator_py
+[29.325s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_fastrtps_c__pyext[0m
+[29.329s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_introspection_c__pyext[0m
+[29.329s] [35m[1mConsolidate compiler generated dependencies of target robot_action__rosidl_typesupport_c__pyext[0m
+[29.397s] [ 87%] [32mBuilding C object CMakeFiles/robot_action__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[29.404s] [ 89%] [32mBuilding C object CMakeFiles/robot_action__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[29.417s] [ 92%] [32mBuilding C object CMakeFiles/robot_action__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_c.c.o[0m
+[30.222s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/robot_action/robot_action_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[30.223s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/robot_action/robot_action_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[30.253s] [100%] [32m[1mLinking C shared library rosidl_generator_py/robot_action/robot_action_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[30.533s] [100%] Built target robot_action__rosidl_typesupport_fastrtps_c__pyext
+[30.536s] [100%] Built target robot_action__rosidl_typesupport_introspection_c__pyext
+[30.558s] [100%] Built target robot_action__rosidl_typesupport_c__pyext
+[30.601s] Invoked command in '/home/hae/robot_ws/src/build/robot_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_action -- -j4 -l4
+[31.064s] Invoking command in '/home/hae/robot_ws/src/build/robot_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_action
+[31.091s] -- Install configuration: ""
+[31.093s] -- Execute custom install script
+[31.095s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/rosidl_interfaces/robot_action
+[31.098s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__functions.h
+[31.099s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__struct.h
+[31.100s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__type_support.h
+[31.100s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__functions.h
+[31.133s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__struct.h
+[31.164s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__type_support.h
+[31.199s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/move.h
+[31.200s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/test.h
+[31.232s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/msg/rosidl_generator_c__visibility_control.h
+[31.233s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/library_path.sh
+[31.234s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/library_path.dsv
+[31.237s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__rosidl_typesupport_fastrtps_c.h
+[31.238s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__rosidl_typesupport_fastrtps_c.h
+[31.270s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[31.272s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__rosidl_typesupport_introspection_c.h
+[31.273s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__rosidl_typesupport_introspection_c.h
+[31.306s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.309s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__builder.hpp
+[31.310s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__struct.hpp
+[31.310s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__traits.hpp
+[31.311s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__builder.hpp
+[31.343s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__struct.hpp
+[31.377s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__traits.hpp
+[31.409s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/move.hpp
+[31.410s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/test.hpp
+[31.446s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__rosidl_typesupport_fastrtps_cpp.hpp
+[31.446s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__rosidl_typesupport_fastrtps_cpp.hpp
+[31.479s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[31.481s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__rosidl_typesupport_introspection_cpp.hpp
+[31.482s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__rosidl_typesupport_introspection_cpp.hpp
+[31.515s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/pythonpath.sh
+[31.515s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/pythonpath.dsv
+[31.518s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action-0.0.0-py3.10.egg-info/PKG-INFO
+[31.519s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action-0.0.0-py3.10.egg-info/SOURCES.txt
+[31.522s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action-0.0.0-py3.10.egg-info/dependency_links.txt
+[31.522s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action-0.0.0-py3.10.egg-info/top_level.txt
+[31.527s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/__init__.py
+[31.527s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/_robot_action_s.ep.rosidl_typesupport_c.c
+[31.528s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c
+[31.529s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/_robot_action_s.ep.rosidl_typesupport_introspection_c.c
+[31.530s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/__init__.py
+[31.531s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_move.py
+[31.532s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_move_s.c
+[31.532s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_test.py
+[31.563s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_test_s.c
+[31.597s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/librobot_action__rosidl_generator_py.so
+[31.598s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[31.599s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[31.600s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[31.603s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[31.604s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[31.606s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[31.607s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/action/Move.idl
+[31.608s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/action/Test.idl
+[31.642s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/action/Move.action
+[31.643s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/action/Test.action
+[31.676s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/package_run_dependencies/robot_action
+[31.677s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/parent_prefix_path/robot_action
+[31.679s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/ament_prefix_path.sh
+[31.679s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/ament_prefix_path.dsv
+[31.680s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/path.sh
+[31.681s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/path.dsv
+[31.682s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.bash
+[31.683s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.sh
+[31.684s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.zsh
+[31.685s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.dsv
+[31.685s] -- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/package.dsv
+[31.717s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/packages/robot_action
+[31.718s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/rosidl_cmake-extras.cmake
+[31.719s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/ament_cmake_export_dependencies-extras.cmake
+[31.720s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/ament_cmake_export_include_directories-extras.cmake
+[31.721s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/ament_cmake_export_libraries-extras.cmake
+[31.722s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/ament_cmake_export_targets-extras.cmake
+[31.724s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[31.725s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[31.726s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_actionConfig.cmake
+[31.726s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_actionConfig-version.cmake
+[31.727s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/package.xml
+[31.729s] -- Installing: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_generator_c.so
+[31.732s] -- Set runtime path of "/home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_generator_c.so" to ""
+[31.733s] -- Installing: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_fastrtps_c.so
+[31.737s] -- Set runtime path of "/home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_fastrtps_c.so" to ""
+[31.738s] -- Installing: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_introspection_c.so
+[31.741s] -- Set runtime path of "/home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_introspection_c.so" to ""
+[31.742s] -- Installing: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_c.so
+[31.744s] -- Set runtime path of "/home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_c.so" to ""
+[31.745s] -- Installing: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_fastrtps_cpp.so
+[31.749s] -- Set runtime path of "/home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_fastrtps_cpp.so" to ""
+[31.750s] -- Installing: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_introspection_cpp.so
+[31.754s] -- Set runtime path of "/home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_introspection_cpp.so" to ""
+[31.755s] -- Installing: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_cpp.so
+[31.757s] -- Set runtime path of "/home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_cpp.so" to ""
+[31.940s] Listing '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action'...
+[31.941s] Compiling '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/__init__.py'...
+[31.943s] Listing '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action'...
+[31.944s] Compiling '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/__init__.py'...
+[31.945s] Compiling '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_move.py'...
+[31.946s] Compiling '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_test.py'...
+[31.966s] -- Installing: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_generator_py.so
+[31.968s] -- Set runtime path of "/home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_generator_py.so" to ""
+[31.969s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_cExport.cmake
+[31.970s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_cExport-noconfig.cmake
+[31.971s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_typesupport_fastrtps_cExport.cmake
+[31.972s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[31.972s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_introspection_cExport.cmake
+[31.973s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[31.973s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_cExport.cmake
+[31.974s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_cExport-noconfig.cmake
+[31.975s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_cppExport.cmake
+[31.975s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_typesupport_fastrtps_cppExport.cmake
+[31.977s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[31.978s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_introspection_cppExport.cmake
+[31.979s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[31.979s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_cppExport.cmake
+[31.980s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_cppExport-noconfig.cmake
+[31.980s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_pyExport.cmake
+[31.981s] -- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_pyExport-noconfig.cmake
+[31.989s] Invoked command in '/home/hae/robot_ws/src/build/robot_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_action

@@ -70,8 +70,10 @@ robot_action__py/CMakeFiles/robot_action__py: rosidl_generator_py/robot_action/_
 robot_action__py/CMakeFiles/robot_action__py: rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_introspection_c.c
 robot_action__py/CMakeFiles/robot_action__py: rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_c.c
 robot_action__py/CMakeFiles/robot_action__py: rosidl_generator_py/robot_action/action/_move.py
+robot_action__py/CMakeFiles/robot_action__py: rosidl_generator_py/robot_action/action/_test.py
 robot_action__py/CMakeFiles/robot_action__py: rosidl_generator_py/robot_action/action/__init__.py
 robot_action__py/CMakeFiles/robot_action__py: rosidl_generator_py/robot_action/action/_move_s.c
+robot_action__py/CMakeFiles/robot_action__py: rosidl_generator_py/robot_action/action/_test_s.c
 
 rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -87,6 +89,7 @@ rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_
 rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_action/action/Move.idl
+rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/robot_action/action/Test.idl
 rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -106,11 +109,17 @@ rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_c.c: rosi
 rosidl_generator_py/robot_action/action/_move.py: rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_action/action/_move.py
 
+rosidl_generator_py/robot_action/action/_test.py: rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_action/action/_test.py
+
 rosidl_generator_py/robot_action/action/__init__.py: rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_action/action/__init__.py
 
 rosidl_generator_py/robot_action/action/_move_s.c: rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_action/action/_move_s.c
+
+rosidl_generator_py/robot_action/action/_test_s.c: rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/robot_action/action/_test_s.c
 
 robot_action__py: robot_action__py/CMakeFiles/robot_action__py
 robot_action__py: rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_c.c
@@ -119,6 +128,8 @@ robot_action__py: rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typ
 robot_action__py: rosidl_generator_py/robot_action/action/__init__.py
 robot_action__py: rosidl_generator_py/robot_action/action/_move.py
 robot_action__py: rosidl_generator_py/robot_action/action/_move_s.c
+robot_action__py: rosidl_generator_py/robot_action/action/_test.py
+robot_action__py: rosidl_generator_py/robot_action/action/_test_s.c
 robot_action__py: robot_action__py/CMakeFiles/robot_action__py.dir/build.make
 .PHONY : robot_action__py
 

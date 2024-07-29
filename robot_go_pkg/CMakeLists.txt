@@ -30,20 +30,20 @@ endif()
 
 #add_executable(test_node src/test.cpp)
 #ament_target_dependencies(test_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs)
-#add_executable(scan_node src/scan.cpp)
-#ament_target_dependencies(scan_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs)
-#add_executable(go_node src/go.cpp)
-#ament_target_dependencies(go_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs)
-add_executable(server_node src/actionsever.cpp)
-ament_target_dependencies(server_node rclcpp rclcpp_action robot_action)
-add_executable(cli_node src/actioncli.cpp)
+add_executable(scan_node src/scan.cpp)
+ament_target_dependencies(scan_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs)
+add_executable(go_node src/go.cpp)
+ament_target_dependencies(go_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs rclcpp_action robot_action)
+#add_executable(server_node src/actionsever.cpp)
+#ament_target_dependencies(server_node rclcpp rclcpp_action robot_action sensor_msgs geometry_msgs)
+add_executable(cli_node src/cli.cpp)
 ament_target_dependencies(cli_node rclcpp rclcpp_action robot_action)
 
 install(TARGETS 
   #test_node
-  #scan_node
-  #go_node
-  server_node
+  scan_node
+  go_node
+  #server_node
   cli_node
   DESTINATION lib/${PROJECT_NAME}
     )

@@ -828,6 +828,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/robot_go_pkg_uninstall.dir/DependInfo.cmake"
-  "CMakeFiles/server_node.dir/DependInfo.cmake"
+  "CMakeFiles/scan_node.dir/DependInfo.cmake"
+  "CMakeFiles/go_node.dir/DependInfo.cmake"
   "CMakeFiles/cli_node.dir/DependInfo.cmake"
   )

@@ -17,6 +17,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/action/__init__.py" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/action/_move.py" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/action/_move_s.c" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/action/_test.py" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/action/_test_s.c" "/home/hae/robot_ws/src/build/robot_action/rosidl_generator_py/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

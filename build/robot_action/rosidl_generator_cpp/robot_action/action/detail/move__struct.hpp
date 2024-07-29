@@ -38,30 +38,30 @@ struct Move_Goal_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->message = "";
+      this->distance = 0.0f;
     }
   }
 
   explicit Move_Goal_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : message(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->message = "";
+      this->distance = 0.0f;
     }
   }
 
   // field types and members
-  using _message_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _message_type message;
+  using _distance_type =
+    float;
+  _distance_type distance;
 
   // setters for named parameter idiom
-  Type & set__message(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  Type & set__distance(
+    const float & _arg)
   {
-    this->message = _arg;
+    this->distance = _arg;
     return *this;
   }
 
@@ -107,7 +107,7 @@ struct Move_Goal_
   // comparison operators
   bool operator==(const Move_Goal_ & other) const
   {
-    if (this->message != other.message) {
+    if (this->distance != other.distance) {
       return false;
     }
     return true;
@@ -152,30 +152,30 @@ struct Move_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->response = "";
+      this->success = false;
     }
   }
 
   explicit Move_Result_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : response(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->response = "";
+      this->success = false;
     }
   }
 
   // field types and members
-  using _response_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _response_type response;
+  using _success_type =
+    bool;
+  _success_type success;
 
   // setters for named parameter idiom
-  Type & set__response(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  Type & set__success(
+    const bool & _arg)
   {
-    this->response = _arg;
+    this->success = _arg;
     return *this;
   }
 
@@ -221,7 +221,7 @@ struct Move_Result_
   // comparison operators
   bool operator==(const Move_Result_ & other) const
   {
-    if (this->response != other.response) {
+    if (this->success != other.success) {
       return false;
     }
     return true;
@@ -263,33 +263,25 @@ struct Move_Feedback_
 
   explicit Move_Feedback_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   {
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->feedback = "";
-    }
+    (void)_init;
   }
 
   explicit Move_Feedback_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : feedback(_alloc)
   {
-    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
-      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->feedback = "";
-    }
+    (void)_init;
+    (void)_alloc;
   }
 
   // field types and members
-  using _feedback_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _feedback_type feedback;
+  using _traveled_distances_type =
+    std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
+  _traveled_distances_type traveled_distances;
 
   // setters for named parameter idiom
-  Type & set__feedback(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  Type & set__traveled_distances(
+    const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
-    this->feedback = _arg;
+    this->traveled_distances = _arg;
     return *this;
   }
 
@@ -335,7 +327,7 @@ struct Move_Feedback_
   // comparison operators
   bool operator==(const Move_Feedback_ & other) const
   {
-    if (this->feedback != other.feedback) {
+    if (this->traveled_distances != other.traveled_distances) {
       return false;
     }
     return true;

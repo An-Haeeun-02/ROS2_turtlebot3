@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hae/robot_ws/src/build/action_test/server_node" "/home/hae/robot_ws/src/build/action_test/cli_node" "TARGETS" "server_node" "cli_node" "DESTINATION" "lib/action_test")

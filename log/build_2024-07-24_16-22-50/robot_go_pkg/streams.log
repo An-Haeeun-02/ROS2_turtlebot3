@@ -1,0 +1,66 @@
+[0.063s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.168s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.709s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.743s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.914s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.925s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.948s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.992s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.054s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.277s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.282s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.259s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.847s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.018s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.324s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[3.551s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.854s] -- Found robot_action: 0.0.0 (/home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake)
+[4.045s] -- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)
+[4.149s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.484s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.485s] -- Configured cppcheck include dirs: 
+[4.485s] -- Configured cppcheck exclude dirs and/or files: 
+[4.491s] -- Added test 'lint_cmake' to check CMake code style
+[4.500s] -- Added test 'uncrustify' to check C / C++ code style
+[4.500s] -- Configured uncrustify additional arguments: 
+[4.502s] -- Added test 'xmllint' to check XML markup files
+[4.508s] -- Configuring done
+[4.610s] -- Generating done
+[4.621s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_go_pkg
+[4.749s] [35m[1mConsolidate compiler generated dependencies of target scan_node[0m
+[4.749s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[4.797s] [ 16%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m
+[4.844s] [ 50%] Built target scan_node
+[4.864s] [ 83%] Built target go_node
+[15.063s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotClient::send_goal(double)[m[K’:
+[15.064s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:30:65:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KTurtlebotClient::send_goal(double)::<lambda(rclcpp_action::ClientGoalHandle<robot_action::action::Move>::SharedPtr)>[m[K’ to ‘[01m[Kconst rclcpp_action::Client<robot_action::action::Move>::SendGoalOptions&[m[K’
+[15.064s]    30 |         auto goal_handle_future = [01;31m[Kthis->client_->async_send_goal(goal_msg,[m[K
+[15.065s]       |                                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[15.065s]    31 | [01;31m[K            [this](const GoalHandleMove::SharedPtr goal_handle) {[m[K
+[15.065s]       |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.066s]    32 | [01;31m[K                RCLCPP_INFO(this->get_logger(), "Goal accepted!");[m[K
+[15.066s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.067s]    33 | [01;31m[K                this->handle_goal_response(goal_handle);[m[K
+[15.067s]       |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K         
+[15.068s]    34 | [01;31m[K            }[m[K
+[15.068s]       |             [01;31m[K~[m[K                                                    
+[15.069s]    35 | [01;31m[K        )[m[K;
+[15.069s]       |         [01;31m[K~[m[K                                                        
+[15.070s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+[15.070s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:2[m[K:
+[15.070s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:422:62:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kstd::shared_future<typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr> rclcpp_action::Client<ActionT>::async_send_goal(const Goal&, const rclcpp_action::Client<ActionT>::SendGoalOptions&) [with ActionT = robot_action::action::Move; typename rclcpp_action::ClientGoalHandle<ActionT>::SharedPtr = std::shared_ptr<rclcpp_action::ClientGoalHandle<robot_action::action::Move> >; rclcpp_action::Client<ActionT>::Goal = robot_action::action::Move_Goal_<std::allocator<void> >][m[K’
+[15.071s]   422 |   async_send_goal(const Goal & goal, [01;36m[Kconst SendGoalOptions & options = SendGoalOptions()[m[K)
+[15.071s]       |                                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.072s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotClient::handle_goal_response(rclcpp_action::ClientGoalHandle<robot_action::action::Move>::SharedPtr)[m[K’:
+[15.072s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:55:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’} has no member named ‘[01m[Kasync_result[m[K’; did you mean ‘[01m[Kasync_get_result[m[K’?
+[15.073s]    55 |         auto result_future = goal_handle->[01;31m[Kasync_result[m[K();
+[15.073s]       |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[15.074s]       |                                           [32m[Kasync_get_result[m[K
+[15.074s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:74:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’} has no member named ‘[01m[Kget_feedback[m[K’; did you mean ‘[01m[KFeedback[m[K’?
+[15.075s]    74 |             auto feedback = goal_handle->[01;31m[Kget_feedback[m[K();
+[15.075s]       |                                          [01;31m[K^~~~~~~~~~~~[m[K
+[15.076s]       |                                          [32m[KFeedback[m[K
+[17.168s] gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1
+[17.169s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/cli_node.dir/all] Error 2
+[17.170s] gmake: *** [Makefile:146: all] Error 2
+[17.177s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
