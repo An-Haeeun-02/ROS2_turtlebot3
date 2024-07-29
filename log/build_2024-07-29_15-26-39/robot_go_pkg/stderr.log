@@ -1,0 +1,7 @@
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In function ‘[01m[Kvoid signalHandler(int)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:183:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+  183 |     [01;31m[Kmessage[m[K.linear.x = 0.0;  // 전진 속도 설정
+      |     [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

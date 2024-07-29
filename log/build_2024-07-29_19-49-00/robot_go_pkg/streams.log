@@ -1,0 +1,35 @@
+[0.064s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.270s] [35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[0.287s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[0.369s] [ 25%] Built target scan_node
+[0.403s] [ 50%] Built target test_node
+[0.434s] [ 62%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m
+[0.441s] [ 75%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[22.285s] [ 87%] [32m[1mLinking CXX executable cli_node[0m
+[23.317s] [ 87%] Built target cli_node
+[55.065s] [100%] [32m[1mLinking CXX executable go_node[0m
+[58.353s] [100%] Built target go_node
+[58.396s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '0': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[58.626s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_go_pkg
+[58.654s] -- Install configuration: ""
+[58.656s] -- Execute custom install script
+[58.658s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/test_node
+[58.659s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/scan_node
+[58.660s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/go_node
+[58.661s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/cli_node
+[58.662s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/package_run_dependencies/robot_go_pkg
+[58.663s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/parent_prefix_path/robot_go_pkg
+[58.665s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/ament_prefix_path.sh
+[58.666s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/ament_prefix_path.dsv
+[58.667s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/path.sh
+[58.668s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/environment/path.dsv
+[58.669s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.bash
+[58.670s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.sh
+[58.671s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.zsh
+[58.673s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/local_setup.dsv
+[58.673s] -- Symlinking: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/package.dsv
+[58.719s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/ament_index/resource_index/packages/robot_go_pkg
+[58.720s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/cmake/robot_go_pkgConfig.cmake
+[58.721s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/cmake/robot_go_pkgConfig-version.cmake
+[58.722s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_go_pkg/share/robot_go_pkg/package.xml
+[58.741s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '0': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_go_pkg

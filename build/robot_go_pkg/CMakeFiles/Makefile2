@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/hae/robot_ws/src/build/robot_go_pkg
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/test_node.dir/all
 all: CMakeFiles/scan_node.dir/all
 all: CMakeFiles/go_node.dir/all
 all: CMakeFiles/cli_node.dir/all
@@ -75,6 +76,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/robot_go_pkg_uninstall.dir/clean
+clean: CMakeFiles/test_node.dir/clean
 clean: CMakeFiles/scan_node.dir/clean
 clean: CMakeFiles/go_node.dir/clean
 clean: CMakeFiles/cli_node.dir/clean
@@ -131,6 +133,32 @@ robot_go_pkg_uninstall: CMakeFiles/robot_go_pkg_uninstall.dir/rule
 CMakeFiles/robot_go_pkg_uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_go_pkg_uninstall.dir/build.make CMakeFiles/robot_go_pkg_uninstall.dir/clean
 .PHONY : CMakeFiles/robot_go_pkg_uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_node.dir
+
+# All Build rule for target.
+CMakeFiles/test_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles --progress-num=7,8 "Built target test_node"
+.PHONY : CMakeFiles/test_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hae/robot_ws/src/build/robot_go_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/test_node.dir/rule
+
+# Convenience name for target.
+test_node: CMakeFiles/test_node.dir/rule
+.PHONY : test_node
+
+# clean rule for target.
+CMakeFiles/test_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/clean
+.PHONY : CMakeFiles/test_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/scan_node.dir

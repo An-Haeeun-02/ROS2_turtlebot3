@@ -1,0 +1,4 @@
+[ 25%] Built target test_node
+[ 50%] Built target scan_node
+[ 75%] Built target cli_node
+[ 87%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m

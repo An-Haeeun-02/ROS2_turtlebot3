@@ -1,0 +1,127 @@
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:26:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+   19 |   void handle_odom(const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg)
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:39:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   19 |   void handle_odom(const nav_msgs::msg[01;31m[K::[m[KOdometry::SharedPtr msg)
+      |                                       [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   19 |   void handle_odom[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOdometry::SharedPtr msg)
+      |                   [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                       [32m[K)[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   19 |   void handle_odom(const nav_msgs::[01;31m[Kmsg[m[K::Odometry::SharedPtr msg)
+      |                                    [01;31m[K^~~[m[K
+      |                                       [32m[K;[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:41:[m[K [01;31m[Kerror: [m[K‘[01m[KOdometry[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   19 |   void handle_odom(const nav_msgs::msg::[01;31m[KOdometry[m[K::SharedPtr msg)
+      |                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   46 |   rclcpp::Subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr subscription_;
+      |                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   46 |   rclcpp::Subscription<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr subscription_;
+      |                                               [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   46 |   rclcpp::Subscription<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K subscription_;
+      |                                                  [01;31m[K^~~~~~~~~[m[K
+      |                                                           [32m[K;[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:60:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   46 |   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Ksubscription_[m[K;
+      |                                                            [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                            [32m[Krmw_subscription_t[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+   48 |   geometry_msgs::msg::[01;31m[KPoint[m[K last_position_;
+      |                       [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   59 |         [01;31m[Ksubscription_[m[K = this->create_subscription<nav_msgs::msg::Odometry>("/odom", 10,
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_subscription_t[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:59:51:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   59 |         subscription_ = this->create_subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>("/odom", 10,
+      |                                                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:59:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   59 |         subscription_ = this->[01;31m[Kcreate_subscription<nav_msgs::msg::Odometry>[m[K("/odom", 10,
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:60:20:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+   60 |       [this](const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg) {
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:64:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ may not be used in this context
+   64 |     timer_ = [01;31m[Kthis[m[K->create_wall_timer(
+      |              [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:66:8:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   66 |       [[01;31m[Kthis[m[K]() {
+      |        [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:1[m[K:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In lambda function:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:67:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+   67 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Total Distance: %.2f meters", total_distance_);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:67:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+   67 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Total Distance: %.2f meters", total_distance_);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:67:72:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KTurtlebotController::total_distance_[m[K’
+   67 |         RCLCPP_INFO(this->get_logger(), "Total Distance: %.2f meters", [01;31m[Ktotal_distance_[m[K);
+      |                                                                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:49:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   49 |   double [01;36m[Ktotal_distance_[m[K;
+      |          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   69 |     )[01;31m[K;[m[K
+      |      [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:60:13:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   60 |       [this][01;36m[K([m[Kconst nav_msgs::msg::Odometry::SharedPtr msg) {
+      |             [01;36m[K^[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In lambda function:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+   69 |     )[01;31m[K;[m[K
+      |      [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:64:5:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimer_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   60 |       [this]([01;35m[Kconst nav_msgs::msg::Odometry::SharedPtr msg) {[m[K
+      |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   61 | [01;35m[K        this->handle_odom(msg);[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   62 | [01;35m[K      }[m[K
+      |       [01;35m[K~[m[K
+   63 | [01;35m[K          // 로그를 찍기 위한 타이머 설정[m[K
+      |           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   64 | [01;35m[K    timer_ = this->create_wall_timer([m[K
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   65 | [01;35m[K      std::chrono::seconds(1), // 시간 단위 리터럴 수정[m[K
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   66 | [01;35m[K      [this]() {[m[K
+      |       [01;35m[K~~~~~~~~~~[m[K
+   67 | [01;35m[K        RCLCPP_INFO(this->get_logger(), "Total Distance: %.2f meters", total_distance_);[m[K
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   68 | [01;35m[K      }[m[K
+      |       [01;35m[K~[m[K
+   69 | [01;35m[K    )[m[K;
+      |     [01;35m[K~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   69 |     )[01;31m[K;[m[K
+      |      [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:59:75:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   59 |         subscription_ = this->create_subscription<nav_msgs::msg::Odometry>[01;36m[K([m[K"/odom", 10,
+      |                                                                           [01;36m[K^[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:70:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   70 |     [01;31m[K)[m[K;
+      |     [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/got_node.dir/build.make:76: CMakeFiles/got_node.dir/src/go_topic.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/got_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

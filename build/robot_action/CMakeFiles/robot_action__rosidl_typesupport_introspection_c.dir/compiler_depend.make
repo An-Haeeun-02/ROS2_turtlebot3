@@ -65,10 +65,8 @@ CMakeFiles/robot_action__rosidl_typesupport_introspection_c.dir/rosidl_typesuppo
   /usr/include/aarch64-linux-gnu/bits/stdlib-float.h \
   rosidl_generator_c/robot_action/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/robot_action/action/detail/move__struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/uuid.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_generator_c__visibility_control.h \
@@ -177,6 +175,8 @@ rosidl_generator_c/robot_action/action/test.h:
 
 rosidl_generator_c/robot_action/action/detail/test__functions.h:
 
+rosidl_typesupport_introspection_c/robot_action/action/detail/test__type_support.c:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__rosidl_typesupport_introspection_c.h:
@@ -196,10 +196,6 @@ rosidl_generator_c/robot_action/action/move.h:
 /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_generator_c__visibility_control.h:
 
 /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h:
-
-rosidl_typesupport_introspection_c/robot_action/action/detail/test__type_support.c:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
 

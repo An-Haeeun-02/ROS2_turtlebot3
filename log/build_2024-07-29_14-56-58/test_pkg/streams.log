@@ -1,0 +1,26 @@
+[0.064s] Invoking command in '/home/hae/robot_ws/src/build/test_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/test_pkg -- -j4 -l4
+[0.257s] [35m[1mConsolidate compiler generated dependencies of target odom_node[0m
+[0.360s] [ 50%] [32mBuilding CXX object CMakeFiles/odom_node.dir/src/odom_ex.cpp.o[0m
+[33.327s] [100%] [32m[1mLinking CXX executable odom_node[0m
+[35.372s] [100%] Built target odom_node
+[35.415s] Invoked command in '/home/hae/robot_ws/src/build/test_pkg' returned '0': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/test_pkg -- -j4 -l4
+[35.589s] Invoking command in '/home/hae/robot_ws/src/build/test_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/test_pkg
+[35.621s] -- Install configuration: ""
+[35.623s] -- Execute custom install script
+[35.625s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/lib/test_pkg/odom_node
+[35.626s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/ament_index/resource_index/package_run_dependencies/test_pkg
+[35.627s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/ament_index/resource_index/parent_prefix_path/test_pkg
+[35.628s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/environment/ament_prefix_path.sh
+[35.629s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/environment/ament_prefix_path.dsv
+[35.630s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/environment/path.sh
+[35.631s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/environment/path.dsv
+[35.633s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/local_setup.bash
+[35.635s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/local_setup.sh
+[35.636s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/local_setup.zsh
+[35.640s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/local_setup.dsv
+[35.641s] -- Symlinking: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/package.dsv
+[35.673s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/ament_index/resource_index/packages/test_pkg
+[35.677s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/cmake/test_pkgConfig.cmake
+[35.677s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/cmake/test_pkgConfig-version.cmake
+[35.679s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/test_pkg/share/test_pkg/package.xml
+[35.705s] Invoked command in '/home/hae/robot_ws/src/build/test_pkg' returned '0': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/test_pkg

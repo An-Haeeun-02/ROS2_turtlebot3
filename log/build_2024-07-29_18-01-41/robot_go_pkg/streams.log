@@ -1,0 +1,21 @@
+[0.064s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.348s] [35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[0.423s] [ 25%] Built target scan_node
+[0.470s] [ 50%] Built target go_node
+[0.474s] [ 75%] Built target test_node
+[0.567s] [ 87%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m
+[13.235s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In lambda function:
+[13.236s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:106:114:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_future<rclcpp_action::ClientGoalHandle<ActionT>::WrappedResult> rclcpp_action::ClientGoalHandle<ActionT>::async_get_result() [with ActionT = robot_action::action::Move][m[K’ is private within this context
+[13.236s]   106 |                 rclcpp::spin_until_future_complete(this->get_node_base_interface(), [01;31m[Kgoal_handle->async_get_result()[m[K);
+[13.237s]       |                                                                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[13.237s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:170[m[K,
+[13.238s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:43[m[K,
+[13.238s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+[13.238s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:2[m[K:
+[13.239s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle_impl.hpp:60:1:[m[K [01;36m[Knote: [m[Kdeclared private here
+[13.240s]    60 | [01;36m[KClientGoalHandle<ActionT>[m[K::async_get_result()
+[13.240s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.809s] gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1
+[16.811s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/cli_node.dir/all] Error 2
+[16.811s] gmake: *** [Makefile:146: all] Error 2
+[16.817s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

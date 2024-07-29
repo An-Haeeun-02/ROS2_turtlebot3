@@ -1,0 +1,1 @@
+/home/hae/robot_ws/src/build/test_pkg/ament_cmake_environment_hooks/local_setup.sh

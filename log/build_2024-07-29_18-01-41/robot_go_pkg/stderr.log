@@ -1,0 +1,14 @@
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In lambda function:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:106:114:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::shared_future<rclcpp_action::ClientGoalHandle<ActionT>::WrappedResult> rclcpp_action::ClientGoalHandle<ActionT>::async_get_result() [with ActionT = robot_action::action::Move][m[K’ is private within this context
+  106 |                 rclcpp::spin_until_future_complete(this->get_node_base_interface(), [01;31m[Kgoal_handle->async_get_result()[m[K);
+      |                                                                                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:170[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:43[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle_impl.hpp:60:1:[m[K [01;36m[Knote: [m[Kdeclared private here
+   60 | [01;36m[KClientGoalHandle<ActionT>[m[K::async_get_result()
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/cli_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

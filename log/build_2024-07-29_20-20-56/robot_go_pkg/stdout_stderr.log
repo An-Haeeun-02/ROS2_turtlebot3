@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[ 25%] Built target scan_node
+[ 50%] Built target test_node
+[ 75%] Built target cli_node
+[ 87%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::handle_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:90:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+   90 |                 cout << [01;31m[Kgoal[m[K->distance << " 미터 만큼 이동 완료" << endl
+      |                         [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

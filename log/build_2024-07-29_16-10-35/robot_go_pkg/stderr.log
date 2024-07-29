@@ -1,0 +1,16 @@
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Kvoid MoveActionServer::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:67:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid rclcpp_action::ServerBase::publish_feedback(std::shared_ptr<void>)[m[K’ is protected within this context
+   67 |             [01;31m[Kaction_server_->publish_feedback(feedback)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_server.hpp:29[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:39[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/server.hpp:272:3:[m[K [01;36m[Knote: [m[Kdeclared protected here
+  272 |   [01;36m[Kpublish_feedback[m[K(std::shared_ptr<void> feedback_msg);
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:74:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::Server<robot_action::action::Move>[m[K’ {aka ‘[01m[Kclass rclcpp_action::Server<robot_action::action::Move>[m[K’} has no member named ‘[01m[Ksucceed[m[K’
+   74 |                 action_server_->[01;31m[Ksucceed[m[K(result);
+      |                                 [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

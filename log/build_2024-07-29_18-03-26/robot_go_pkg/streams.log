@@ -1,0 +1,15 @@
+[0.063s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.285s] [35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[0.378s] [ 25%] Built target go_node
+[0.381s] [ 50%] Built target test_node
+[0.407s] [ 75%] Built target scan_node
+[0.415s] [ 87%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m
+[12.767s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In member function ‘[01m[Kvoid MoveActionClient::process_user_input()[m[K’:
+[12.767s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:37:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’} has no member named ‘[01m[Kasync_result[m[K’; did you mean ‘[01m[Kasync_get_result[m[K’?
+[12.768s]    37 |                 auto result_future = goal_handle_->[01;31m[Kasync_result[m[K();
+[12.768s]       |                                                    [01;31m[K^~~~~~~~~~~~[m[K
+[12.769s]       |                                                    [32m[Kasync_get_result[m[K
+[15.422s] gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1
+[15.423s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/cli_node.dir/all] Error 2
+[15.424s] gmake: *** [Makefile:146: all] Error 2
+[15.432s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

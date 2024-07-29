@@ -1,0 +1,43 @@
+[35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[ 25%] Built target test_node
+[ 50%] Built target scan_node
+[ 62%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[ 87%] Built target cli_node
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::handle_accepted(std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move> >)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:91:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::initialize_sensor_data()[m[K’
+   91 |         [01;31m[Kinitialize_sensor_data()[m[K; // 센서 데이터 초기화
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:95:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid TurtlebotController::initialize_sensor_data(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’
+   95 |     void [01;36m[Kinitialize_sensor_data[m[K(const geometry_msgs::msg::Vector3::SharedPtr msg)
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:95:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:26:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KTurtlebotController::obstacle_detected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   26 |     bool [01;35m[Kobstacle_detected_[m[K; // 장애물 감지 여부
+      |          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:22:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble TurtlebotController::total_distance_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   22 |     double [01;35m[Ktotal_distance_[m[K; // 총 이동 거리 저장 변수
+      |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:144:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  144 |     [01;35m[KTurtlebotController[m[K()
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:150:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_subscriber_[m[K’ was not declared in this scope
+  150 |         [01;31m[Ksensor_subscriber_[m[K = this->create_subscription<geometry_msgs::msg::Vector3>("aeeun", 10); // 센서 데이터 구독
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:150:84:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::create_subscription<geometry_msgs::msg::Vector3>(const char [6], int)[m[K’
+  150 |         sensor_subscriber_ = [01;31m[Kthis->create_subscription<geometry_msgs::msg::Vector3>("aeeun", 10)[m[K; // 센서 데이터 구독
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:150:84:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 2 provided
+  150 |         sensor_subscriber_ = [01;36m[Kthis->create_subscription<geometry_msgs::msg::Vector3>("aeeun", 10)[m[K; // 센서 데이터 구독
+      |                              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,169 @@
+[0.000000] (-) TimerEvent: {}
+[0.001664] (-) JobUnselected: {'identifier': 'action_test'}
+[0.002264] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.002972] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.003152] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.003360] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.003526] (test_pkg) JobQueued: {'identifier': 'test_pkg', 'dependencies': OrderedDict([('robot_action', '/home/hae/robot_ws/src/install/robot_action')])}
+[0.003747] (test_pkg) JobStarted: {'identifier': 'test_pkg'}
+[0.064769] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'cmake'}
+[0.065903] (test_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/hae/robot_ws/src/test_pkg', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/test_pkg'], 'cwd': '/home/hae/robot_ws/src/build/test_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 51382 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae/robot_ws'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-65487756-0730-41b0-a852-d616eb823164.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/test_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51382 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble')]), 'shell': False}
+[0.099102] (-) TimerEvent: {}
+[0.200110] (-) TimerEvent: {}
+[0.300987] (-) TimerEvent: {}
+[0.401923] (-) TimerEvent: {}
+[0.502990] (-) TimerEvent: {}
+[0.603888] (-) TimerEvent: {}
+[0.692090] (test_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.704108] (-) TimerEvent: {}
+[0.805151] (-) TimerEvent: {}
+[0.908394] (-) TimerEvent: {}
+[1.009471] (-) TimerEvent: {}
+[1.110611] (-) TimerEvent: {}
+[1.211709] (-) TimerEvent: {}
+[1.213130] (test_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.263733] (test_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.311951] (-) TimerEvent: {}
+[1.413393] (-) TimerEvent: {}
+[1.515197] (-) TimerEvent: {}
+[1.616268] (-) TimerEvent: {}
+[1.642661] (test_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.669043] (test_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.671314] (test_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.673924] (test_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.688479] (test_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.716500] (-) TimerEvent: {}
+[1.817411] (-) TimerEvent: {}
+[1.918472] (-) TimerEvent: {}
+[2.019377] (-) TimerEvent: {}
+[2.087430] (test_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.119024] (test_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.119827] (-) TimerEvent: {}
+[2.120774] (test_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.122110] (test_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.156696] (test_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.220063] (-) TimerEvent: {}
+[2.320908] (-) TimerEvent: {}
+[2.421875] (-) TimerEvent: {}
+[2.523275] (-) TimerEvent: {}
+[2.624381] (-) TimerEvent: {}
+[2.725647] (-) TimerEvent: {}
+[2.826750] (-) TimerEvent: {}
+[2.927569] (-) TimerEvent: {}
+[3.025848] (test_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.027825] (-) TimerEvent: {}
+[3.128684] (-) TimerEvent: {}
+[3.229666] (-) TimerEvent: {}
+[3.331011] (-) TimerEvent: {}
+[3.390496] (test_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.431110] (-) TimerEvent: {}
+[3.531872] (-) TimerEvent: {}
+[3.663416] (-) TimerEvent: {}
+[3.764247] (-) TimerEvent: {}
+[3.865072] (-) TimerEvent: {}
+[3.965895] (-) TimerEvent: {}
+[4.066784] (-) TimerEvent: {}
+[4.167613] (-) TimerEvent: {}
+[4.216560] (test_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.267793] (-) TimerEvent: {}
+[4.368493] (-) TimerEvent: {}
+[4.469262] (-) TimerEvent: {}
+[4.570062] (-) TimerEvent: {}
+[4.663774] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.670234] (-) TimerEvent: {}
+[4.715401] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.770471] (-) TimerEvent: {}
+[4.794846] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.870663] (-) TimerEvent: {}
+[4.971501] (-) TimerEvent: {}
+[5.008688] (test_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.071690] (-) TimerEvent: {}
+[5.156757] (test_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.171883] (-) TimerEvent: {}
+[5.272662] (-) TimerEvent: {}
+[5.373511] (-) TimerEvent: {}
+[5.474342] (-) TimerEvent: {}
+[5.575105] (-) TimerEvent: {}
+[5.634020] (test_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.662142] (test_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.675295] (-) TimerEvent: {}
+[5.776067] (-) TimerEvent: {}
+[5.876914] (-) TimerEvent: {}
+[5.977780] (-) TimerEvent: {}
+[6.078582] (-) TimerEvent: {}
+[6.179332] (-) TimerEvent: {}
+[6.280131] (-) TimerEvent: {}
+[6.325220] (test_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.380326] (-) TimerEvent: {}
+[6.481228] (-) TimerEvent: {}
+[6.582035] (-) TimerEvent: {}
+[6.584177] (test_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.682258] (-) TimerEvent: {}
+[6.783186] (-) TimerEvent: {}
+[6.884231] (-) TimerEvent: {}
+[6.985245] (-) TimerEvent: {}
+[7.037784] (test_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.085492] (-) TimerEvent: {}
+[7.144150] (test_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.188004] (-) TimerEvent: {}
+[7.288834] (-) TimerEvent: {}
+[7.395678] (-) TimerEvent: {}
+[7.498677] (-) TimerEvent: {}
+[7.587310] (test_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.589891] (test_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.598904] (-) TimerEvent: {}
+[7.702474] (-) TimerEvent: {}
+[7.803471] (-) TimerEvent: {}
+[7.904681] (-) TimerEvent: {}
+[8.009538] (-) TimerEvent: {}
+[8.017825] (test_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.023340] (test_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.109727] (-) TimerEvent: {}
+[8.210553] (-) TimerEvent: {}
+[8.311380] (-) TimerEvent: {}
+[8.412235] (-) TimerEvent: {}
+[8.513071] (-) TimerEvent: {}
+[8.614181] (-) TimerEvent: {}
+[8.715037] (-) TimerEvent: {}
+[8.815866] (-) TimerEvent: {}
+[8.916597] (-) TimerEvent: {}
+[9.017537] (-) TimerEvent: {}
+[9.067825] (test_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[9.117730] (-) TimerEvent: {}
+[9.218465] (-) TimerEvent: {}
+[9.275969] (test_pkg) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[9.318645] (-) TimerEvent: {}
+[9.419532] (-) TimerEvent: {}
+[9.520507] (-) TimerEvent: {}
+[9.621263] (-) TimerEvent: {}
+[9.630011] (test_pkg) StdoutLine: {'line': b'-- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[9.721435] (-) TimerEvent: {}
+[9.822193] (-) TimerEvent: {}
+[9.922973] (-) TimerEvent: {}
+[9.934745] (test_pkg) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[10.023146] (-) TimerEvent: {}
+[10.123925] (-) TimerEvent: {}
+[10.224682] (-) TimerEvent: {}
+[10.271281] (test_pkg) StdoutLine: {'line': b'-- Found robot_action: 0.0.0 (/home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake)\n'}
+[10.324858] (-) TimerEvent: {}
+[10.425584] (-) TimerEvent: {}
+[10.484625] (test_pkg) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[10.525755] (-) TimerEvent: {}
+[10.626459] (-) TimerEvent: {}
+[10.631684] (test_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[10.726631] (-) TimerEvent: {}
+[10.827368] (-) TimerEvent: {}
+[10.928130] (-) TimerEvent: {}
+[11.028959] (-) TimerEvent: {}
+[11.066974] (test_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):\n'}
+[11.067951] (test_pkg) StderrLine: {'line': b'  ament_target_dependencies() the first argument must be a valid target name\n'}
+[11.068543] (test_pkg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[11.069020] (test_pkg) StderrLine: {'line': b'  CMakeLists.txt:33 (ament_target_dependencies)\n'}
+[11.069485] (test_pkg) StderrLine: {'line': b'\n'}
+[11.069920] (test_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[11.070718] (test_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[11.071543] (test_pkg) StdoutLine: {'line': b'See also "/home/hae/robot_ws/src/build/test_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[11.113508] (test_pkg) CommandEnded: {'returncode': 1}
+[11.129154] (-) TimerEvent: {}
+[11.209382] (test_pkg) JobEnded: {'identifier': 'test_pkg', 'rc': 1}
+[11.221206] (-) EventReactorShutdown: {}

@@ -230,7 +230,6 @@ CMakeFiles/robot_action__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fa
  /home/hae/robot_ws/src/build/robot_action/rosidl_generator_c/robot_action/action/detail/move__functions.h
  /usr/include/c++/11/stdlib.h
  /home/hae/robot_ws/src/build/robot_action/rosidl_generator_c/robot_action/msg/rosidl_generator_c__visibility_control.h
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_generator_c__visibility_control.h
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h

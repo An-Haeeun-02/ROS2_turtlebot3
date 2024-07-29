@@ -198,6 +198,19 @@ robot_go_pkg_uninstall/fast:
 .PHONY : robot_go_pkg_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named test_node
+
+# Build rule for target.
+test_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_node
+.PHONY : test_node
+
+# fast build rule for target.
+test_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/build
+.PHONY : test_node/fast
+
+#=============================================================================
 # Target rules for targets named scan_node
 
 # Build rule for target.
@@ -308,6 +321,30 @@ src/scan.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_node.dir/build.make CMakeFiles/scan_node.dir/src/scan.cpp.s
 .PHONY : src/scan.cpp.s
 
+src/test.o: src/test.cpp.o
+.PHONY : src/test.o
+
+# target to build an object file
+src/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/src/test.cpp.o
+.PHONY : src/test.cpp.o
+
+src/test.i: src/test.cpp.i
+.PHONY : src/test.i
+
+# target to preprocess a source file
+src/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
+
+src/test.s: src/test.cpp.s
+.PHONY : src/test.s
+
+# target to generate assembly for a file
+src/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_node.dir/build.make CMakeFiles/test_node.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +363,7 @@ help:
 	@echo "... cli_node"
 	@echo "... go_node"
 	@echo "... scan_node"
+	@echo "... test_node"
 	@echo "... src/cli.o"
 	@echo "... src/cli.i"
 	@echo "... src/cli.s"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/scan.o"
 	@echo "... src/scan.i"
 	@echo "... src/scan.s"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
 .PHONY : help
 
 

@@ -1,0 +1,10 @@
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:26:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KTurtlebotController::obstacle_detected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   26 |     bool [01;35m[Kobstacle_detected_[m[K; // 장애물 감지 여부
+      |          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:22:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble TurtlebotController::total_distance_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   22 |     double [01;35m[Ktotal_distance_[m[K; // 총 이동 거리 저장 변수
+      |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:148:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  148 |     [01;35m[KTurtlebotController[m[K()
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K

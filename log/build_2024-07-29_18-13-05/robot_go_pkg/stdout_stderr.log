@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[ 25%] Built target scan_node
+[ 37%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m
+[ 62%] Built target test_node
+[ 87%] Built target go_node
+gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/cli_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[ 25%] Built target cli_node
+[ 50%] Built target test_node
+[ 75%] Built target scan_node
+[ 87%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:167:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K/[m[K’ token
+  167 | void signalHandler(int [01;31m[K/[m[Ksignum/) {
+      |                        [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

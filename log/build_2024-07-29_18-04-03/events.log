@@ -1,0 +1,189 @@
+[0.000000] (-) TimerEvent: {}
+[0.002054] (-) JobUnselected: {'identifier': 'action_test'}
+[0.002889] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.003591] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.003859] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.004114] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.004346] (robot_go_pkg) JobQueued: {'identifier': 'robot_go_pkg', 'dependencies': OrderedDict([('robot_action', '/home/hae/robot_ws/src/install/robot_action')])}
+[0.004652] (robot_go_pkg) JobStarted: {'identifier': 'robot_go_pkg'}
+[0.059730] (robot_go_pkg) JobProgress: {'identifier': 'robot_go_pkg', 'progress': 'cmake'}
+[0.063208] (robot_go_pkg) JobProgress: {'identifier': 'robot_go_pkg', 'progress': 'build'}
+[0.065978] (robot_go_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/robot_go_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/robot_go_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 51382 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-4b45b157-027a-4050-a313-b4b5f245afa6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hae/robot_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/robot_go_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51382 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble')]), 'shell': False}
+[0.098738] (-) TimerEvent: {}
+[0.200036] (-) TimerEvent: {}
+[0.301355] (-) TimerEvent: {}
+[0.303294] (robot_go_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cli_node\x1b[0m\n'}
+[0.385901] (robot_go_pkg) StdoutLine: {'line': b'[ 25%] Built target scan_node\n'}
+[0.401576] (-) TimerEvent: {}
+[0.422338] (robot_go_pkg) StdoutLine: {'line': b'[ 50%] Built target test_node\n'}
+[0.452743] (robot_go_pkg) StdoutLine: {'line': b'[ 75%] Built target go_node\n'}
+[0.458072] (robot_go_pkg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o\x1b[0m\n'}
+[0.501824] (-) TimerEvent: {}
+[0.602912] (-) TimerEvent: {}
+[0.703864] (-) TimerEvent: {}
+[0.804768] (-) TimerEvent: {}
+[0.905681] (-) TimerEvent: {}
+[1.006938] (-) TimerEvent: {}
+[1.107731] (-) TimerEvent: {}
+[1.208520] (-) TimerEvent: {}
+[1.309257] (-) TimerEvent: {}
+[1.410072] (-) TimerEvent: {}
+[1.510924] (-) TimerEvent: {}
+[1.611830] (-) TimerEvent: {}
+[1.712733] (-) TimerEvent: {}
+[1.813565] (-) TimerEvent: {}
+[1.914458] (-) TimerEvent: {}
+[2.015296] (-) TimerEvent: {}
+[2.116116] (-) TimerEvent: {}
+[2.216885] (-) TimerEvent: {}
+[2.317638] (-) TimerEvent: {}
+[2.418657] (-) TimerEvent: {}
+[2.519593] (-) TimerEvent: {}
+[2.620537] (-) TimerEvent: {}
+[2.721501] (-) TimerEvent: {}
+[2.822449] (-) TimerEvent: {}
+[2.923362] (-) TimerEvent: {}
+[3.024222] (-) TimerEvent: {}
+[3.125173] (-) TimerEvent: {}
+[3.226066] (-) TimerEvent: {}
+[3.327007] (-) TimerEvent: {}
+[3.428076] (-) TimerEvent: {}
+[3.529062] (-) TimerEvent: {}
+[3.630264] (-) TimerEvent: {}
+[3.731184] (-) TimerEvent: {}
+[3.832222] (-) TimerEvent: {}
+[3.933018] (-) TimerEvent: {}
+[4.033840] (-) TimerEvent: {}
+[4.134775] (-) TimerEvent: {}
+[4.235757] (-) TimerEvent: {}
+[4.336820] (-) TimerEvent: {}
+[4.437712] (-) TimerEvent: {}
+[4.538794] (-) TimerEvent: {}
+[4.639860] (-) TimerEvent: {}
+[4.740956] (-) TimerEvent: {}
+[4.841829] (-) TimerEvent: {}
+[4.942754] (-) TimerEvent: {}
+[5.043619] (-) TimerEvent: {}
+[5.144513] (-) TimerEvent: {}
+[5.245392] (-) TimerEvent: {}
+[5.346405] (-) TimerEvent: {}
+[5.447559] (-) TimerEvent: {}
+[5.548574] (-) TimerEvent: {}
+[5.649538] (-) TimerEvent: {}
+[5.750617] (-) TimerEvent: {}
+[5.851783] (-) TimerEvent: {}
+[5.952773] (-) TimerEvent: {}
+[6.053740] (-) TimerEvent: {}
+[6.176287] (-) TimerEvent: {}
+[6.277297] (-) TimerEvent: {}
+[6.378180] (-) TimerEvent: {}
+[6.479368] (-) TimerEvent: {}
+[6.580528] (-) TimerEvent: {}
+[6.681474] (-) TimerEvent: {}
+[6.782300] (-) TimerEvent: {}
+[6.883546] (-) TimerEvent: {}
+[6.984599] (-) TimerEvent: {}
+[7.085529] (-) TimerEvent: {}
+[7.186426] (-) TimerEvent: {}
+[7.287291] (-) TimerEvent: {}
+[7.388206] (-) TimerEvent: {}
+[7.489079] (-) TimerEvent: {}
+[7.589943] (-) TimerEvent: {}
+[7.690924] (-) TimerEvent: {}
+[7.791823] (-) TimerEvent: {}
+[7.892680] (-) TimerEvent: {}
+[7.993770] (-) TimerEvent: {}
+[8.094766] (-) TimerEvent: {}
+[8.195661] (-) TimerEvent: {}
+[8.296499] (-) TimerEvent: {}
+[8.397291] (-) TimerEvent: {}
+[8.498316] (-) TimerEvent: {}
+[8.599329] (-) TimerEvent: {}
+[8.700278] (-) TimerEvent: {}
+[8.801114] (-) TimerEvent: {}
+[8.901967] (-) TimerEvent: {}
+[9.002897] (-) TimerEvent: {}
+[9.103729] (-) TimerEvent: {}
+[9.204569] (-) TimerEvent: {}
+[9.305396] (-) TimerEvent: {}
+[9.406257] (-) TimerEvent: {}
+[9.507073] (-) TimerEvent: {}
+[9.607943] (-) TimerEvent: {}
+[9.708847] (-) TimerEvent: {}
+[9.809683] (-) TimerEvent: {}
+[9.910616] (-) TimerEvent: {}
+[10.011495] (-) TimerEvent: {}
+[10.112450] (-) TimerEvent: {}
+[10.213315] (-) TimerEvent: {}
+[10.314191] (-) TimerEvent: {}
+[10.415075] (-) TimerEvent: {}
+[10.515926] (-) TimerEvent: {}
+[10.616816] (-) TimerEvent: {}
+[10.718129] (-) TimerEvent: {}
+[10.818967] (-) TimerEvent: {}
+[10.919801] (-) TimerEvent: {}
+[11.020726] (-) TimerEvent: {}
+[11.122142] (-) TimerEvent: {}
+[11.223039] (-) TimerEvent: {}
+[11.323950] (-) TimerEvent: {}
+[11.424880] (-) TimerEvent: {}
+[11.525894] (-) TimerEvent: {}
+[11.626898] (-) TimerEvent: {}
+[11.727988] (-) TimerEvent: {}
+[11.829013] (-) TimerEvent: {}
+[11.929852] (-) TimerEvent: {}
+[12.030691] (-) TimerEvent: {}
+[12.131552] (-) TimerEvent: {}
+[12.232353] (-) TimerEvent: {}
+[12.333193] (-) TimerEvent: {}
+[12.434010] (-) TimerEvent: {}
+[12.534842] (-) TimerEvent: {}
+[12.635643] (-) TimerEvent: {}
+[12.736506] (-) TimerEvent: {}
+[12.837314] (-) TimerEvent: {}
+[12.885204] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MoveActionClient::process_user_input()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.886140] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:37:68:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::shared_future<rclcpp_action::ClientGoalHandle<ActionT>::WrappedResult> rclcpp_action::ClientGoalHandle<ActionT>::async_get_result() [with ActionT = robot_action::action::Move]\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[12.886688] (robot_go_pkg) StderrLine: {'line': b'   37 |                 auto result_future = \x1b[01;31m\x1b[Kgoal_handle_->async_get_result()\x1b[m\x1b[K;\n'}
+[12.887128] (robot_go_pkg) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[12.887523] (robot_go_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:170\x1b[m\x1b[K,\n'}
+[12.887922] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:43\x1b[m\x1b[K,\n'}
+[12.888359] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36\x1b[m\x1b[K,\n'}
+[12.888741] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:2\x1b[m\x1b[K:\n'}
+[12.889117] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle_impl.hpp:60:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[12.889507] (robot_go_pkg) StderrLine: {'line': b'   60 | \x1b[01;36m\x1b[KClientGoalHandle<ActionT>\x1b[m\x1b[K::async_get_result()\n'}
+[12.889896] (robot_go_pkg) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.937525] (-) TimerEvent: {}
+[13.038406] (-) TimerEvent: {}
+[13.139210] (-) TimerEvent: {}
+[13.240024] (-) TimerEvent: {}
+[13.340923] (-) TimerEvent: {}
+[13.441793] (-) TimerEvent: {}
+[13.542645] (-) TimerEvent: {}
+[13.643415] (-) TimerEvent: {}
+[13.744207] (-) TimerEvent: {}
+[13.845050] (-) TimerEvent: {}
+[13.945832] (-) TimerEvent: {}
+[14.046645] (-) TimerEvent: {}
+[14.147430] (-) TimerEvent: {}
+[14.248252] (-) TimerEvent: {}
+[14.349096] (-) TimerEvent: {}
+[14.449977] (-) TimerEvent: {}
+[14.550831] (-) TimerEvent: {}
+[14.651672] (-) TimerEvent: {}
+[14.752478] (-) TimerEvent: {}
+[14.853291] (-) TimerEvent: {}
+[14.954133] (-) TimerEvent: {}
+[15.054905] (-) TimerEvent: {}
+[15.155782] (-) TimerEvent: {}
+[15.256612] (-) TimerEvent: {}
+[15.357439] (-) TimerEvent: {}
+[15.458273] (-) TimerEvent: {}
+[15.559085] (-) TimerEvent: {}
+[15.565477] (robot_go_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1\n'}
+[15.566620] (robot_go_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/cli_node.dir/all] Error 2\n'}
+[15.568110] (robot_go_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[15.573968] (robot_go_pkg) CommandEnded: {'returncode': 2}
+[15.659356] (-) TimerEvent: {}
+[15.760138] (-) TimerEvent: {}
+[15.817695] (robot_go_pkg) JobEnded: {'identifier': 'robot_go_pkg', 'rc': 2}
+[15.829413] (-) EventReactorShutdown: {}

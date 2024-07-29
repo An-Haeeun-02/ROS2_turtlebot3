@@ -1,0 +1,14 @@
+[0.068s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.268s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[0.335s] [ 25%] Built target scan_node
+[0.378s] [ 50%] Built target cli_node
+[0.381s] [ 62%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[0.412s] [ 87%] Built target test_node
+[2.310s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kyour_package/action/move_distance.hpp: No such file or directory
+[2.310s]     7 | #include [01;31m[K<your_package/action/move_distance.hpp>[m[K // 해당 패키지와 액션을 사용할 것
+[2.312s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.312s] compilation terminated.
+[2.322s] gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+[2.323s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+[2.324s] gmake: *** [Makefile:146: all] Error 2
+[2.330s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

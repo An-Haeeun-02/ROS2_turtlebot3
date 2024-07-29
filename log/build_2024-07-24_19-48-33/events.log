@@ -1,0 +1,182 @@
+[0.000000] (-) TimerEvent: {}
+[0.001761] (-) JobUnselected: {'identifier': 'action_test'}
+[0.002353] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.002888] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.003121] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.003293] (robot_action) JobQueued: {'identifier': 'robot_action', 'dependencies': OrderedDict()}
+[0.003575] (robot_action) JobStarted: {'identifier': 'robot_action'}
+[0.051329] (robot_action) JobProgress: {'identifier': 'robot_action', 'progress': 'cmake'}
+[0.057620] (robot_action) JobProgress: {'identifier': 'robot_action', 'progress': 'build'}
+[0.060742] (robot_action) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/robot_action', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/robot_action', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 56656 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae/robot_ws'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0cde0ddf-081e-41ba-911b-3461253bf64e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/robot_action'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 56656 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099072] (-) TimerEvent: {}
+[0.199874] (-) TimerEvent: {}
+[0.300954] (-) TimerEvent: {}
+[0.400211] (robot_action) StdoutLine: {'line': b'[  2%] Built target robot_action__cpp\n'}
+[0.405214] (-) TimerEvent: {}
+[0.445278] (robot_action) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_robot_action\n'}
+[0.465534] (robot_action) StdoutLine: {'line': b'[ 12%] Built target robot_action__rosidl_generator_c\n'}
+[0.505473] (-) TimerEvent: {}
+[0.560417] (robot_action) StdoutLine: {'line': b'[ 23%] Built target robot_action__rosidl_typesupport_cpp\n'}
+[0.569689] (robot_action) StdoutLine: {'line': b'[ 33%] Built target robot_action__rosidl_typesupport_fastrtps_cpp\n'}
+[0.594882] (robot_action) StdoutLine: {'line': b'[ 43%] Built target robot_action__rosidl_typesupport_introspection_cpp\n'}
+[0.605698] (-) TimerEvent: {}
+[0.712091] (-) TimerEvent: {}
+[0.713222] (robot_action) StdoutLine: {'line': b'[ 53%] Built target robot_action__rosidl_typesupport_fastrtps_c\n'}
+[0.757439] (robot_action) StdoutLine: {'line': b'[ 64%] Built target robot_action__rosidl_typesupport_introspection_c\n'}
+[0.771985] (robot_action) StdoutLine: {'line': b'[ 74%] Built target robot_action__rosidl_typesupport_c\n'}
+[0.812443] (-) TimerEvent: {}
+[0.890354] (robot_action) StdoutLine: {'line': b'[ 74%] Built target robot_action\n'}
+[0.912625] (-) TimerEvent: {}
+[1.002760] (robot_action) StdoutLine: {'line': b'[ 76%] Built target robot_action__py\n'}
+[1.012992] (-) TimerEvent: {}
+[1.113937] (-) TimerEvent: {}
+[1.131248] (robot_action) StdoutLine: {'line': b'[ 84%] Built target robot_action__rosidl_generator_py\n'}
+[1.214239] (-) TimerEvent: {}
+[1.277271] (robot_action) StdoutLine: {'line': b'[ 89%] Built target robot_action__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.313458] (robot_action) StdoutLine: {'line': b'[ 94%] Built target robot_action__rosidl_typesupport_c__pyext\n'}
+[1.314353] (-) TimerEvent: {}
+[1.322611] (robot_action) StdoutLine: {'line': b'[100%] Built target robot_action__rosidl_typesupport_introspection_c__pyext\n'}
+[1.414535] (-) TimerEvent: {}
+[1.515338] (-) TimerEvent: {}
+[1.616281] (-) TimerEvent: {}
+[1.717004] (-) TimerEvent: {}
+[1.817676] (-) TimerEvent: {}
+[1.918490] (-) TimerEvent: {}
+[2.019425] (-) TimerEvent: {}
+[2.023808] (robot_action) StdoutLine: {'line': b'running egg_info\n'}
+[2.028914] (robot_action) StdoutLine: {'line': b'writing robot_action.egg-info/PKG-INFO\n'}
+[2.029923] (robot_action) StdoutLine: {'line': b'writing dependency_links to robot_action.egg-info/dependency_links.txt\n'}
+[2.031238] (robot_action) StdoutLine: {'line': b'writing top-level names to robot_action.egg-info/top_level.txt\n'}
+[2.043957] (robot_action) StdoutLine: {'line': b"reading manifest file 'robot_action.egg-info/SOURCES.txt'\n"}
+[2.047816] (robot_action) StdoutLine: {'line': b"writing manifest file 'robot_action.egg-info/SOURCES.txt'\n"}
+[2.119697] (-) TimerEvent: {}
+[2.183245] (robot_action) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_robot_action_egg\n'}
+[2.219863] (-) TimerEvent: {}
+[2.224972] (robot_action) CommandEnded: {'returncode': 0}
+[2.320105] (-) TimerEvent: {}
+[2.421312] (-) TimerEvent: {}
+[2.522296] (-) TimerEvent: {}
+[2.622958] (-) TimerEvent: {}
+[2.678964] (robot_action) JobProgress: {'identifier': 'robot_action', 'progress': 'install'}
+[2.715205] (robot_action) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hae/robot_ws/src/build/robot_action'], 'cwd': '/home/hae/robot_ws/src/build/robot_action', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 56656 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae/robot_ws'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-0cde0ddf-081e-41ba-911b-3461253bf64e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/robot_action'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 56656 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.723239] (-) TimerEvent: {}
+[2.749874] (robot_action) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.754419] (robot_action) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.756047] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/rosidl_interfaces/robot_action\n'}
+[2.761739] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__functions.h\n'}
+[2.763587] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__struct.h\n'}
+[2.764667] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__type_support.h\n'}
+[2.765802] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__functions.h\n'}
+[2.766769] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__struct.h\n'}
+[2.767839] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__type_support.h\n'}
+[2.768775] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/move.h\n'}
+[2.769680] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/test.h\n'}
+[2.770690] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.771925] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/library_path.sh\n'}
+[2.772960] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/library_path.dsv\n'}
+[2.776947] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__rosidl_typesupport_fastrtps_c.h\n'}
+[2.777961] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__rosidl_typesupport_fastrtps_c.h\n'}
+[2.778874] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.781331] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__rosidl_typesupport_introspection_c.h\n'}
+[2.782203] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__rosidl_typesupport_introspection_c.h\n'}
+[2.783160] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.785543] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__builder.hpp\n'}
+[2.786360] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__struct.hpp\n'}
+[2.787294] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__traits.hpp\n'}
+[2.788255] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__builder.hpp\n'}
+[2.789133] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__struct.hpp\n'}
+[2.789984] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__traits.hpp\n'}
+[2.790807] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/move.hpp\n'}
+[2.791735] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/test.hpp\n'}
+[2.795408] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.796288] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.797148] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.799353] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/move__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.800255] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/include/robot_action/robot_action/action/detail/test__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.801196] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/pythonpath.sh\n'}
+[2.802047] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/pythonpath.dsv\n'}
+[2.803914] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.804711] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.806144] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.807432] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.811713] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/__init__.py\n'}
+[2.812489] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/_robot_action_s.ep.rosidl_typesupport_c.c\n'}
+[2.813322] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/_robot_action_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.814215] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/_robot_action_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.815118] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/__init__.py\n'}
+[2.815994] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_move.py\n'}
+[2.816844] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_move_s.c\n'}
+[2.817674] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_test.py\n'}
+[2.818520] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action/_test_s.c\n'}
+[2.819381] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/librobot_action__rosidl_generator_py.so\n'}
+[2.820249] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.821090] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.821938] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.823434] (-) TimerEvent: {}
+[2.824267] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.826329] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.828271] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/robot_action_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[2.829215] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/action/Move.idl\n'}
+[2.830857] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/action/Test.idl\n'}
+[2.832337] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/action/Move.action\n'}
+[2.833052] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/action/Test.action\n'}
+[2.834023] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/package_run_dependencies/robot_action\n'}
+[2.835235] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/parent_prefix_path/robot_action\n'}
+[2.836223] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/ament_prefix_path.sh\n'}
+[2.837163] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/ament_prefix_path.dsv\n'}
+[2.838138] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/path.sh\n'}
+[2.839214] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/environment/path.dsv\n'}
+[2.840075] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.bash\n'}
+[2.840930] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.sh\n'}
+[2.841784] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.zsh\n'}
+[2.842621] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/local_setup.dsv\n'}
+[2.844321] (robot_action) StdoutLine: {'line': b'-- Symlinking: /home/hae/robot_ws/src/install/robot_action/share/robot_action/package.dsv\n'}
+[2.876373] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/ament_index/resource_index/packages/robot_action\n'}
+[2.877186] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/rosidl_cmake-extras.cmake\n'}
+[2.878125] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.879197] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.880142] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.881060] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.882059] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.882911] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.883955] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_actionConfig.cmake\n'}
+[2.884761] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_actionConfig-version.cmake\n'}
+[2.885680] (robot_action) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_action/share/robot_action/package.xml\n'}
+[2.889622] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_generator_c.so\n'}
+[2.893821] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_fastrtps_c.so\n'}
+[2.898175] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_introspection_c.so\n'}
+[2.902333] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_c.so\n'}
+[2.906662] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.911320] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_introspection_cpp.so\n'}
+[2.915387] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_typesupport_cpp.so\n'}
+[2.923585] (-) TimerEvent: {}
+[3.024488] (-) TimerEvent: {}
+[3.058426] (robot_action) StdoutLine: {'line': b"Listing '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action'...\n"}
+[3.060020] (robot_action) StdoutLine: {'line': b"Listing '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages/robot_action/action'...\n"}
+[3.086946] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/lib/librobot_action__rosidl_generator_py.so\n'}
+[3.089588] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_cExport.cmake\n'}
+[3.090218] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.092272] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.093093] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.095388] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.096167] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.098407] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_cExport.cmake\n'}
+[3.099241] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.101703] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_cppExport.cmake\n'}
+[3.104055] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.104712] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.106516] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.107189] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.108956] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_cppExport.cmake\n'}
+[3.109550] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/robot_action__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.111387] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_pyExport.cmake\n'}
+[3.112079] (robot_action) StdoutLine: {'line': b'-- Up-to-date: /home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake/export_robot_action__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.120806] (robot_action) CommandEnded: {'returncode': 0}
+[3.124616] (-) TimerEvent: {}
+[3.225551] (-) TimerEvent: {}
+[3.326595] (-) TimerEvent: {}
+[3.427443] (-) TimerEvent: {}
+[3.528173] (-) TimerEvent: {}
+[3.628955] (-) TimerEvent: {}
+[3.681932] (robot_action) JobEnded: {'identifier': 'robot_action', 'rc': 0}
+[3.685861] (-) EventReactorShutdown: {}

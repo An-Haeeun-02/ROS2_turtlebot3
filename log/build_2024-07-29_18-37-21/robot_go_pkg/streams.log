@@ -1,0 +1,39 @@
+[0.064s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.273s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[0.293s] [35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[0.395s] [ 25%] Built target test_node
+[0.409s] [ 50%] Built target scan_node
+[0.430s] [ 62%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[0.437s] [ 75%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m
+[15.459s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In function ‘[01m[Kvoid signalHandler(int)[m[K’:
+[15.460s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:166:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::cout[m[K’?
+[15.463s]   166 |     [01;31m[Kcout[m[K << "Ctrl+C로 종료합니다." << endl;
+[15.464s]       |     [01;31m[K^~~~[m[K
+[15.465s]       |     [32m[Kstd::cout[m[K
+[15.466s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[15.467s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[15.467s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[15.475s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.476s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1[m[K:
+[15.477s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[15.478s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[15.478s]       |                  [01;36m[K^~~~[m[K
+[15.484s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:166:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::endl[m[K’?
+[15.485s]   166 |     cout << "Ctrl+C로 종료합니다." << [01;31m[Kendl[m[K;
+[15.485s]       |                                       [01;31m[K^~~~[m[K
+[15.486s]       |                                       [32m[Kstd::endl[m[K
+[15.487s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[15.495s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+[15.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[15.502s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[15.506s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.511s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1[m[K:
+[15.515s] [01m[K/usr/include/c++/11/ostream:684:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ declared here
+[15.519s]   684 |     [01;36m[Kendl[m[K(basic_ostream<_CharT, _Traits>& __os)
+[15.523s]       |     [01;36m[K^~~~[m[K
+[22.046s] [ 87%] [32m[1mLinking CXX executable cli_node[0m
+[23.026s] [ 87%] Built target cli_node
+[30.350s] gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+[30.351s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+[30.352s] gmake: *** [Makefile:146: all] Error 2
+[30.358s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

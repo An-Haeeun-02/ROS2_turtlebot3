@@ -1,0 +1,70 @@
+[35m[1mConsolidate compiler generated dependencies of target got_node[0m
+[35m[1mConsolidate compiler generated dependencies of target odom_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/got_node.dir/src/go_topic.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/odom_node.dir/src/odom_ex.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:26:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   20 |     rclcpp::Subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr subscription_;
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   20 |     rclcpp::Subscription<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr subscription_;
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   20 |     rclcpp::Subscription<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K subscription_;
+      |                                                    [01;31m[K^~~~~~~~~[m[K
+      |                                                             [32m[K;[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:62:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   20 |     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Ksubscription_[m[K;
+      |                                                              [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                              [32m[Krmw_subscription_t[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:22:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+   22 |     geometry_msgs::msg::[01;31m[KPoint[m[K last_position_;
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:28:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+   26 |     void handle_odom(const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg)
+      |                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:41:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   26 |     void handle_odom(const nav_msgs::msg[01;31m[K::[m[KOdometry::SharedPtr msg)
+      |                                         [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:41:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   26 |     void handle_odom[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOdometry::SharedPtr msg)
+      |                     [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                         [32m[K)[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   26 |     void handle_odom(const nav_msgs::[01;31m[Kmsg[m[K::Odometry::SharedPtr msg)
+      |                                      [01;31m[K^~~[m[K
+      |                                         [32m[K;[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:43:[m[K [01;31m[Kerror: [m[K‘[01m[KOdometry[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   26 |     void handle_odom(const nav_msgs::msg::[01;31m[KOdometry[m[K::SharedPtr msg)
+      |                                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   63 |         [01;31m[Ksubscription_[m[K = this->create_subscription<nav_msgs::msg::Odometry>(
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_subscription_t[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:51:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   63 |         subscription_ = this->create_subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>(
+      |                                                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   63 |         subscription_ = this->[01;31m[Kcreate_subscription<nav_msgs::msg::Odometry>[m[K(
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:66:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+   66 |           [this](const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg) {
+      |                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In lambda function:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+   69 |         )[01;31m[K;[m[K
+      |          [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:75:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   63 |         subscription_ = this->create_subscription<nav_msgs::msg::Odometry>[01;36m[K([m[K
+      |                                                                           [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/got_node.dir/build.make:76: CMakeFiles/got_node.dir/src/go_topic.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/got_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] [32m[1mLinking CXX executable odom_node[0m
+[ 75%] Built target odom_node
+gmake: *** [Makefile:146: all] Error 2

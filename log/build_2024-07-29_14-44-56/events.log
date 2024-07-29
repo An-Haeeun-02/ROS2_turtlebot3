@@ -1,0 +1,287 @@
+[0.000000] (-) TimerEvent: {}
+[0.001099] (-) JobUnselected: {'identifier': 'action_test'}
+[0.002214] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.003003] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.003545] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.003737] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.003896] (test_pkg) JobQueued: {'identifier': 'test_pkg', 'dependencies': OrderedDict([('robot_action', '/home/hae/robot_ws/src/install/robot_action')])}
+[0.004067] (test_pkg) JobStarted: {'identifier': 'test_pkg'}
+[0.049550] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'cmake'}
+[0.053546] (test_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/hae/robot_ws/src/test_pkg', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/test_pkg'], 'cwd': '/home/hae/robot_ws/src/build/test_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 51382 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae/robot_ws'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-65487756-0730-41b0-a852-d616eb823164.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/test_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51382 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble')]), 'shell': False}
+[0.099161] (-) TimerEvent: {}
+[0.112246] (test_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199336] (-) TimerEvent: {}
+[0.300126] (-) TimerEvent: {}
+[0.400863] (-) TimerEvent: {}
+[0.501853] (-) TimerEvent: {}
+[0.602652] (-) TimerEvent: {}
+[0.669530] (test_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.701616] (test_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.702792] (-) TimerEvent: {}
+[0.803453] (-) TimerEvent: {}
+[0.873614] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.884480] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.903623] (-) TimerEvent: {}
+[0.908491] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.954944] (test_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.003800] (-) TimerEvent: {}
+[1.017199] (test_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.103980] (-) TimerEvent: {}
+[1.204710] (-) TimerEvent: {}
+[1.240585] (test_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.246786] (test_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.304886] (-) TimerEvent: {}
+[1.405597] (-) TimerEvent: {}
+[1.506308] (-) TimerEvent: {}
+[1.607049] (-) TimerEvent: {}
+[1.707751] (-) TimerEvent: {}
+[1.808504] (-) TimerEvent: {}
+[1.909243] (-) TimerEvent: {}
+[2.009989] (-) TimerEvent: {}
+[2.110917] (-) TimerEvent: {}
+[2.211650] (-) TimerEvent: {}
+[2.220944] (test_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.311831] (-) TimerEvent: {}
+[2.412704] (-) TimerEvent: {}
+[2.513499] (-) TimerEvent: {}
+[2.614267] (-) TimerEvent: {}
+[2.715061] (-) TimerEvent: {}
+[2.815580] (test_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.816193] (-) TimerEvent: {}
+[2.916813] (-) TimerEvent: {}
+[2.977954] (test_pkg) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[3.016993] (-) TimerEvent: {}
+[3.117740] (-) TimerEvent: {}
+[3.218606] (-) TimerEvent: {}
+[3.290291] (test_pkg) StdoutLine: {'line': b'-- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[3.318769] (-) TimerEvent: {}
+[3.419470] (-) TimerEvent: {}
+[3.514075] (test_pkg) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[3.519623] (-) TimerEvent: {}
+[3.620308] (-) TimerEvent: {}
+[3.721046] (-) TimerEvent: {}
+[3.819903] (test_pkg) StdoutLine: {'line': b'-- Found robot_action: 0.0.0 (/home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake)\n'}
+[3.821165] (-) TimerEvent: {}
+[3.921850] (-) TimerEvent: {}
+[4.007520] (test_pkg) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[4.022028] (-) TimerEvent: {}
+[4.110328] (test_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.122243] (-) TimerEvent: {}
+[4.223432] (-) TimerEvent: {}
+[4.324120] (-) TimerEvent: {}
+[4.424895] (-) TimerEvent: {}
+[4.453354] (test_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.456248] (test_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.456842] (test_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.461474] (test_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.469795] (test_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.470509] (test_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.473492] (test_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.483335] (test_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.525078] (-) TimerEvent: {}
+[4.560043] (test_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[4.567306] (test_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/hae/robot_ws/src/build/test_pkg\n'}
+[4.598171] (test_pkg) CommandEnded: {'returncode': 0}
+[4.600196] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'build'}
+[4.602782] (test_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/test_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/test_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 51382 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae/robot_ws'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-65487756-0730-41b0-a852-d616eb823164.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/test_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51382 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble')]), 'shell': False}
+[4.625411] (-) TimerEvent: {}
+[4.726351] (-) TimerEvent: {}
+[4.827266] (-) TimerEvent: {}
+[4.836880] (test_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/got_node.dir/src/go_topic.cpp.o\x1b[0m\n'}
+[4.857051] (test_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/odom_node.dir/src/odom_ex.cpp.o\x1b[0m\n'}
+[4.927634] (-) TimerEvent: {}
+[4.929417] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[K /rclcpp.hpp: No such file or directory\n'}
+[4.930520] (test_pkg) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K" /rclcpp.hpp"\x1b[m\x1b[K\n'}
+[4.931074] (test_pkg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.931437] (test_pkg) StderrLine: {'line': b'compilation terminated.\n'}
+[4.939258] (test_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/got_node.dir/build.make:76: CMakeFiles/got_node.dir/src/go_topic.cpp.o] Error 1\n'}
+[4.940001] (test_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/got_node.dir/all] Error 2\n'}
+[4.940740] (test_pkg) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.027899] (-) TimerEvent: {}
+[5.128835] (-) TimerEvent: {}
+[5.229538] (-) TimerEvent: {}
+[5.330296] (-) TimerEvent: {}
+[5.431033] (-) TimerEvent: {}
+[5.531743] (-) TimerEvent: {}
+[5.632508] (-) TimerEvent: {}
+[5.733374] (-) TimerEvent: {}
+[5.834477] (-) TimerEvent: {}
+[5.935174] (-) TimerEvent: {}
+[6.036010] (-) TimerEvent: {}
+[6.136887] (-) TimerEvent: {}
+[6.237641] (-) TimerEvent: {}
+[6.338385] (-) TimerEvent: {}
+[6.439171] (-) TimerEvent: {}
+[6.539944] (-) TimerEvent: {}
+[6.640761] (-) TimerEvent: {}
+[6.741466] (-) TimerEvent: {}
+[6.842219] (-) TimerEvent: {}
+[6.943323] (-) TimerEvent: {}
+[7.044248] (-) TimerEvent: {}
+[7.145061] (-) TimerEvent: {}
+[7.245852] (-) TimerEvent: {}
+[7.346712] (-) TimerEvent: {}
+[7.447646] (-) TimerEvent: {}
+[7.548563] (-) TimerEvent: {}
+[7.649513] (-) TimerEvent: {}
+[7.750459] (-) TimerEvent: {}
+[7.851366] (-) TimerEvent: {}
+[7.952319] (-) TimerEvent: {}
+[8.053259] (-) TimerEvent: {}
+[8.154143] (-) TimerEvent: {}
+[8.255015] (-) TimerEvent: {}
+[8.355980] (-) TimerEvent: {}
+[8.456969] (-) TimerEvent: {}
+[8.557748] (-) TimerEvent: {}
+[8.658619] (-) TimerEvent: {}
+[8.759607] (-) TimerEvent: {}
+[8.860513] (-) TimerEvent: {}
+[8.961405] (-) TimerEvent: {}
+[9.062194] (-) TimerEvent: {}
+[9.163308] (-) TimerEvent: {}
+[9.264214] (-) TimerEvent: {}
+[9.365088] (-) TimerEvent: {}
+[9.466109] (-) TimerEvent: {}
+[9.567049] (-) TimerEvent: {}
+[9.667827] (-) TimerEvent: {}
+[9.768618] (-) TimerEvent: {}
+[9.869482] (-) TimerEvent: {}
+[9.970429] (-) TimerEvent: {}
+[10.071286] (-) TimerEvent: {}
+[10.172128] (-) TimerEvent: {}
+[10.273011] (-) TimerEvent: {}
+[10.373978] (-) TimerEvent: {}
+[10.474886] (-) TimerEvent: {}
+[10.575733] (-) TimerEvent: {}
+[10.676615] (-) TimerEvent: {}
+[10.777511] (-) TimerEvent: {}
+[10.878360] (-) TimerEvent: {}
+[10.979297] (-) TimerEvent: {}
+[11.080098] (-) TimerEvent: {}
+[11.180887] (-) TimerEvent: {}
+[11.281686] (-) TimerEvent: {}
+[11.382568] (-) TimerEvent: {}
+[11.483345] (-) TimerEvent: {}
+[11.584125] (-) TimerEvent: {}
+[11.684914] (-) TimerEvent: {}
+[11.785715] (-) TimerEvent: {}
+[11.886568] (-) TimerEvent: {}
+[11.987363] (-) TimerEvent: {}
+[12.088152] (-) TimerEvent: {}
+[12.188949] (-) TimerEvent: {}
+[12.289801] (-) TimerEvent: {}
+[12.390691] (-) TimerEvent: {}
+[12.491527] (-) TimerEvent: {}
+[12.592511] (-) TimerEvent: {}
+[12.693350] (-) TimerEvent: {}
+[12.794155] (-) TimerEvent: {}
+[12.895113] (-) TimerEvent: {}
+[12.995918] (-) TimerEvent: {}
+[13.096713] (-) TimerEvent: {}
+[13.197544] (-) TimerEvent: {}
+[13.298540] (-) TimerEvent: {}
+[13.399432] (-) TimerEvent: {}
+[13.500236] (-) TimerEvent: {}
+[13.601003] (-) TimerEvent: {}
+[13.701866] (-) TimerEvent: {}
+[13.802650] (-) TimerEvent: {}
+[13.903425] (-) TimerEvent: {}
+[14.004251] (-) TimerEvent: {}
+[14.105329] (-) TimerEvent: {}
+[14.206200] (-) TimerEvent: {}
+[14.307151] (-) TimerEvent: {}
+[14.407987] (-) TimerEvent: {}
+[14.508814] (-) TimerEvent: {}
+[14.609637] (-) TimerEvent: {}
+[14.710495] (-) TimerEvent: {}
+[14.811297] (-) TimerEvent: {}
+[14.912092] (-) TimerEvent: {}
+[15.012934] (-) TimerEvent: {}
+[15.113849] (-) TimerEvent: {}
+[15.214683] (-) TimerEvent: {}
+[15.291352] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:43:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kpublic\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.292174] (test_pkg) StderrLine: {'line': b'   43 | \x1b[01;31m\x1b[Kpublic\x1b[m\x1b[K:\n'}
+[15.292637] (test_pkg) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[15.293044] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:44:84:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[15.293453] (test_pkg) StderrLine: {'line': b'   44 |   OdomDistanceCalculator() : Node("odom_distance_calculator"), total_distance_{0.0}\x1b[01;31m\x1b[K,\x1b[m\x1b[K initialized_{false}\n'}
+[15.293856] (test_pkg) StderrLine: {'line': b'      |                                                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.294248] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:44:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected constructor, destructor, or type conversion before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[15.294817] (test_pkg) StderrLine: {'line': b'   44 |   OdomDistanceCalculator() : Node("odom_distance_calculator"), total_distance_{0.0}, initialized_\x1b[01;31m\x1b[K{\x1b[m\x1b[Kfalse}\n'}
+[15.295224] (test_pkg) StderrLine: {'line': b'      |                                                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.295608] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:45:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[15.296057] (test_pkg) StderrLine: {'line': b'   45 |   \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[15.296448] (test_pkg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.314868] (-) TimerEvent: {}
+[15.415687] (-) TimerEvent: {}
+[15.516547] (-) TimerEvent: {}
+[15.617465] (-) TimerEvent: {}
+[15.718289] (-) TimerEvent: {}
+[15.819139] (-) TimerEvent: {}
+[15.919913] (-) TimerEvent: {}
+[16.020718] (-) TimerEvent: {}
+[16.121554] (-) TimerEvent: {}
+[16.222342] (-) TimerEvent: {}
+[16.323151] (-) TimerEvent: {}
+[16.423945] (-) TimerEvent: {}
+[16.524738] (-) TimerEvent: {}
+[16.625570] (-) TimerEvent: {}
+[16.726366] (-) TimerEvent: {}
+[16.827203] (-) TimerEvent: {}
+[16.927988] (-) TimerEvent: {}
+[17.005047] (test_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[17.006189] (test_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[17.006684] (test_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[17.007069] (test_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[17.007346] (test_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:1\x1b[m\x1b[K:\n'}
+[17.007609] (test_pkg) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = OdomDistanceCalculator; _Args = {}; _Tp = OdomDistanceCalculator]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.007879] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = OdomDistanceCalculator; _Args = {}; _Tp = OdomDistanceCalculator; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<OdomDistanceCalculator>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.008154] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = OdomDistanceCalculator; _Alloc = std::allocator<OdomDistanceCalculator>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.008425] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = OdomDistanceCalculator; _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.009295] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}; _Tp = OdomDistanceCalculator; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.009950] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}; _Tp = OdomDistanceCalculator]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.010845] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = OdomDistanceCalculator; _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.011688] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = OdomDistanceCalculator; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.012336] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:82:56:\x1b[m\x1b[K   required from here\n'}
+[17.012920] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KOdomDistanceCalculator::OdomDistanceCalculator()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.013509] (test_pkg) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[17.014071] (test_pkg) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.014720] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:7:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOdomDistanceCalculator::OdomDistanceCalculator()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[17.015328] (test_pkg) StderrLine: {'line': b'    7 | class \x1b[01;36m\x1b[KOdomDistanceCalculator\x1b[m\x1b[K : public rclcpp::Node\n'}
+[17.015916] (test_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[17.016479] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:7:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.017088] (test_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[17.017651] (test_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[17.018222] (test_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[17.018901] (test_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:1\x1b[m\x1b[K:\n'}
+[17.019506] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.020173] (test_pkg) StderrLine: {'line': b' 1294 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[17.020772] (test_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[17.021352] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[17.021964] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.022620] (test_pkg) StderrLine: {'line': b'  101 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[17.023248] (test_pkg) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[17.023896] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 0 provided\n'}
+[17.024466] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[17.025058] (test_pkg) StderrLine: {'line': b'   89 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[17.025555] (test_pkg) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[17.025977] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[17.028160] (-) TimerEvent: {}
+[17.128939] (-) TimerEvent: {}
+[17.229774] (-) TimerEvent: {}
+[17.330687] (-) TimerEvent: {}
+[17.431459] (-) TimerEvent: {}
+[17.532323] (-) TimerEvent: {}
+[17.633139] (-) TimerEvent: {}
+[17.734271] (-) TimerEvent: {}
+[17.835095] (-) TimerEvent: {}
+[17.935828] (-) TimerEvent: {}
+[18.036660] (-) TimerEvent: {}
+[18.137534] (-) TimerEvent: {}
+[18.189440] (test_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/odom_node.dir/build.make:76: CMakeFiles/odom_node.dir/src/odom_ex.cpp.o] Error 1\n'}
+[18.190283] (test_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/odom_node.dir/all] Error 2\n'}
+[18.191083] (test_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[18.196932] (test_pkg) CommandEnded: {'returncode': 2}
+[18.237751] (-) TimerEvent: {}
+[18.338477] (-) TimerEvent: {}
+[18.386155] (test_pkg) JobEnded: {'identifier': 'test_pkg', 'rc': 2}
+[18.399164] (-) EventReactorShutdown: {}
