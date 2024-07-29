@@ -1,0 +1,330 @@
+[0.000000] (-) TimerEvent: {}
+[0.002014] (-) JobUnselected: {'identifier': 'action_test'}
+[0.003442] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.003668] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.003857] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.004048] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.007615] (robot_go_pkg) JobQueued: {'identifier': 'robot_go_pkg', 'dependencies': OrderedDict([('robot_action', '/home/hae/robot_ws/src/install/robot_action')])}
+[0.008211] (robot_go_pkg) JobStarted: {'identifier': 'robot_go_pkg'}
+[0.059899] (robot_go_pkg) JobProgress: {'identifier': 'robot_go_pkg', 'progress': 'cmake'}
+[0.063770] (robot_go_pkg) JobProgress: {'identifier': 'robot_go_pkg', 'progress': 'build'}
+[0.067375] (robot_go_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/robot_go_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/robot_go_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 51382 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-4b45b157-027a-4050-a313-b4b5f245afa6.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hae/robot_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/robot_go_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51382 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble')]), 'shell': False}
+[0.098896] (-) TimerEvent: {}
+[0.199662] (-) TimerEvent: {}
+[0.271026] (robot_go_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target go_node\x1b[0m\n'}
+[0.300433] (-) TimerEvent: {}
+[0.343779] (robot_go_pkg) StdoutLine: {'line': b'[ 25%] Built target scan_node\n'}
+[0.354102] (robot_go_pkg) StdoutLine: {'line': b'[ 50%] Built target test_node\n'}
+[0.375521] (robot_go_pkg) StdoutLine: {'line': b'[ 75%] Built target cli_node\n'}
+[0.400658] (-) TimerEvent: {}
+[0.430129] (robot_go_pkg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o\x1b[0m\n'}
+[0.500849] (-) TimerEvent: {}
+[0.601647] (-) TimerEvent: {}
+[0.702650] (-) TimerEvent: {}
+[0.803444] (-) TimerEvent: {}
+[0.904571] (-) TimerEvent: {}
+[1.005263] (-) TimerEvent: {}
+[1.105956] (-) TimerEvent: {}
+[1.206801] (-) TimerEvent: {}
+[1.307701] (-) TimerEvent: {}
+[1.408541] (-) TimerEvent: {}
+[1.509348] (-) TimerEvent: {}
+[1.610138] (-) TimerEvent: {}
+[1.711120] (-) TimerEvent: {}
+[1.811896] (-) TimerEvent: {}
+[1.912748] (-) TimerEvent: {}
+[2.013591] (-) TimerEvent: {}
+[2.114398] (-) TimerEvent: {}
+[2.215226] (-) TimerEvent: {}
+[2.315992] (-) TimerEvent: {}
+[2.416825] (-) TimerEvent: {}
+[2.517711] (-) TimerEvent: {}
+[2.618637] (-) TimerEvent: {}
+[2.719583] (-) TimerEvent: {}
+[2.820563] (-) TimerEvent: {}
+[2.921452] (-) TimerEvent: {}
+[3.022384] (-) TimerEvent: {}
+[3.123463] (-) TimerEvent: {}
+[3.224330] (-) TimerEvent: {}
+[3.325293] (-) TimerEvent: {}
+[3.426370] (-) TimerEvent: {}
+[3.527292] (-) TimerEvent: {}
+[3.628228] (-) TimerEvent: {}
+[3.729284] (-) TimerEvent: {}
+[3.830232] (-) TimerEvent: {}
+[3.931122] (-) TimerEvent: {}
+[4.031953] (-) TimerEvent: {}
+[4.133157] (-) TimerEvent: {}
+[4.234036] (-) TimerEvent: {}
+[4.334886] (-) TimerEvent: {}
+[4.435718] (-) TimerEvent: {}
+[4.536785] (-) TimerEvent: {}
+[4.637648] (-) TimerEvent: {}
+[4.738491] (-) TimerEvent: {}
+[4.839371] (-) TimerEvent: {}
+[4.940226] (-) TimerEvent: {}
+[5.041113] (-) TimerEvent: {}
+[5.141943] (-) TimerEvent: {}
+[5.242828] (-) TimerEvent: {}
+[5.343970] (-) TimerEvent: {}
+[5.445019] (-) TimerEvent: {}
+[5.546156] (-) TimerEvent: {}
+[5.647105] (-) TimerEvent: {}
+[5.748091] (-) TimerEvent: {}
+[5.849298] (-) TimerEvent: {}
+[5.950505] (-) TimerEvent: {}
+[6.051551] (-) TimerEvent: {}
+[6.152615] (-) TimerEvent: {}
+[6.253640] (-) TimerEvent: {}
+[6.354626] (-) TimerEvent: {}
+[6.455772] (-) TimerEvent: {}
+[6.556804] (-) TimerEvent: {}
+[6.658156] (-) TimerEvent: {}
+[6.759000] (-) TimerEvent: {}
+[6.859908] (-) TimerEvent: {}
+[6.960873] (-) TimerEvent: {}
+[7.061901] (-) TimerEvent: {}
+[7.162826] (-) TimerEvent: {}
+[7.263746] (-) TimerEvent: {}
+[7.364604] (-) TimerEvent: {}
+[7.465554] (-) TimerEvent: {}
+[7.566400] (-) TimerEvent: {}
+[7.667313] (-) TimerEvent: {}
+[7.768250] (-) TimerEvent: {}
+[7.869202] (-) TimerEvent: {}
+[7.970088] (-) TimerEvent: {}
+[8.071086] (-) TimerEvent: {}
+[8.171959] (-) TimerEvent: {}
+[8.272861] (-) TimerEvent: {}
+[8.373742] (-) TimerEvent: {}
+[8.474626] (-) TimerEvent: {}
+[8.575500] (-) TimerEvent: {}
+[8.676371] (-) TimerEvent: {}
+[8.777325] (-) TimerEvent: {}
+[8.878187] (-) TimerEvent: {}
+[8.979107] (-) TimerEvent: {}
+[9.080002] (-) TimerEvent: {}
+[9.180854] (-) TimerEvent: {}
+[9.281722] (-) TimerEvent: {}
+[9.382594] (-) TimerEvent: {}
+[9.483531] (-) TimerEvent: {}
+[9.584441] (-) TimerEvent: {}
+[9.685355] (-) TimerEvent: {}
+[9.786214] (-) TimerEvent: {}
+[9.887085] (-) TimerEvent: {}
+[9.987984] (-) TimerEvent: {}
+[10.088908] (-) TimerEvent: {}
+[10.189760] (-) TimerEvent: {}
+[10.290708] (-) TimerEvent: {}
+[10.391633] (-) TimerEvent: {}
+[10.492467] (-) TimerEvent: {}
+[10.593306] (-) TimerEvent: {}
+[10.694213] (-) TimerEvent: {}
+[10.795096] (-) TimerEvent: {}
+[10.896013] (-) TimerEvent: {}
+[10.996882] (-) TimerEvent: {}
+[11.097875] (-) TimerEvent: {}
+[11.198761] (-) TimerEvent: {}
+[11.299643] (-) TimerEvent: {}
+[11.400556] (-) TimerEvent: {}
+[11.501523] (-) TimerEvent: {}
+[11.602501] (-) TimerEvent: {}
+[11.703608] (-) TimerEvent: {}
+[11.804675] (-) TimerEvent: {}
+[11.905502] (-) TimerEvent: {}
+[12.006341] (-) TimerEvent: {}
+[12.107175] (-) TimerEvent: {}
+[12.207981] (-) TimerEvent: {}
+[12.308788] (-) TimerEvent: {}
+[12.409603] (-) TimerEvent: {}
+[12.510469] (-) TimerEvent: {}
+[12.611315] (-) TimerEvent: {}
+[12.712101] (-) TimerEvent: {}
+[12.812932] (-) TimerEvent: {}
+[12.913731] (-) TimerEvent: {}
+[13.014593] (-) TimerEvent: {}
+[13.115509] (-) TimerEvent: {}
+[13.204192] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTurtlebotController::TurtlebotController()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.205074] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:26:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTurtlebotController::obstacle_detected_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.205567] (robot_go_pkg) StderrLine: {'line': b'   26 |     bool \x1b[01;35m\x1b[Kobstacle_detected_\x1b[m\x1b[K; // \xec\x9e\xa5\xec\x95\xa0\xeb\xac\xbc \xea\xb0\x90\xec\xa7\x80 \xec\x97\xac\xeb\xb6\x80\n'}
+[13.205995] (robot_go_pkg) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.206406] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:22:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kdouble TurtlebotController::total_distance_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.207278] (robot_go_pkg) StderrLine: {'line': b'   22 |     double \x1b[01;35m\x1b[Ktotal_distance_\x1b[m\x1b[K; // \xec\xb4\x9d \xec\x9d\xb4\xeb\x8f\x99 \xea\xb1\xb0\xeb\xa6\xac \xec\xa0\x80\xec\x9e\xa5 \xeb\xb3\x80\xec\x88\x98\n'}
+[13.208805] (robot_go_pkg) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.209914] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:152:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[13.210369] (robot_go_pkg) StderrLine: {'line': b'  152 |     \x1b[01;35m\x1b[KTurtlebotController\x1b[m\x1b[K()\n'}
+[13.210865] (robot_go_pkg) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.211367] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:156:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[13.211769] (robot_go_pkg) StderrLine: {'line': b'  156 |         cmd_publisher_ = this->\x1b[01;31m\x1b[Kcreate_publisher<geometry_msgs::msg::Twist\x1b[m\x1b[K\n'}
+[13.212155] (robot_go_pkg) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.212567] (robot_go_pkg) StderrLine: {'line': b'  157 | \x1b[01;31m\x1b[K        cmd_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10)\x1b[m\x1b[K;\n'}
+[13.212947] (robot_go_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.213354] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:156:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[13.213821] (robot_go_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[13.214197] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[13.214578] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1\x1b[m\x1b[K:\n'}
+[13.215079] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.215488] (-) TimerEvent: {}
+[13.215909] (robot_go_pkg) StderrLine: {'line': b'  363 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[13.216496] (robot_go_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.216937] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.217405] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:156:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.217886] (robot_go_pkg) StderrLine: {'line': b'  156 |         cmd_publisher_ = this->\x1b[01;36m\x1b[Kcreate_publisher<geometry_msgs::msg::Twist\x1b[m\x1b[K\n'}
+[13.218271] (robot_go_pkg) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.218657] (robot_go_pkg) StderrLine: {'line': b'  157 | \x1b[01;36m\x1b[K        cmd_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10)\x1b[m\x1b[K;\n'}
+[13.219186] (robot_go_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.219600] (robot_go_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[13.220052] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[13.220498] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1\x1b[m\x1b[K:\n'}
+[13.220906] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.221432] (robot_go_pkg) StderrLine: {'line': b'  374 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[13.222040] (robot_go_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.222641] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.223174] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:156:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.223809] (robot_go_pkg) StderrLine: {'line': b'  156 |         cmd_publisher_ = this->\x1b[01;36m\x1b[Kcreate_publisher<geometry_msgs::msg::Twist\x1b[m\x1b[K\n'}
+[13.224268] (robot_go_pkg) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.224682] (robot_go_pkg) StderrLine: {'line': b'  157 | \x1b[01;36m\x1b[K        cmd_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10)\x1b[m\x1b[K;\n'}
+[13.225091] (robot_go_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.225483] (robot_go_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[13.225857] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[13.226231] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1\x1b[m\x1b[K:\n'}
+[13.226597] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.227106] (robot_go_pkg) StderrLine: {'line': b'  391 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[13.227589] (robot_go_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.227975] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.228360] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:156:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.228736] (robot_go_pkg) StderrLine: {'line': b'  156 |         cmd_publisher_ = this->\x1b[01;36m\x1b[Kcreate_publisher<geometry_msgs::msg::Twist\x1b[m\x1b[K\n'}
+[13.229105] (robot_go_pkg) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.229544] (robot_go_pkg) StderrLine: {'line': b'  157 | \x1b[01;36m\x1b[K        cmd_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10)\x1b[m\x1b[K;\n'}
+[13.229947] (robot_go_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.230322] (robot_go_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[13.230743] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[13.231288] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1\x1b[m\x1b[K:\n'}
+[13.231749] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.232231] (robot_go_pkg) StderrLine: {'line': b'  399 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[13.232603] (robot_go_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.232969] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.233325] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:156:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[K_Yp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.233703] (robot_go_pkg) StderrLine: {'line': b'  156 |         cmd_publisher_ = this->\x1b[01;36m\x1b[Kcreate_publisher<geometry_msgs::msg::Twist\x1b[m\x1b[K\n'}
+[13.234069] (robot_go_pkg) StderrLine: {'line': b'      |                                \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.234434] (robot_go_pkg) StderrLine: {'line': b'  157 | \x1b[01;36m\x1b[K        cmd_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10)\x1b[m\x1b[K;\n'}
+[13.234869] (robot_go_pkg) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.235317] (robot_go_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[13.235703] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[13.236064] (robot_go_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1\x1b[m\x1b[K:\n'}
+[13.236491] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.236881] (robot_go_pkg) StderrLine: {'line': b'  359 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[13.237298] (robot_go_pkg) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.237668] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.238145] (robot_go_pkg) StderrLine: {'line': b'  359 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[13.238516] (robot_go_pkg) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.238978] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.239375] (robot_go_pkg) StderrLine: {'line': b'  383 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[13.239744] (robot_go_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.240109] (robot_go_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[K<unresolved overloaded function type>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.240496] (robot_go_pkg) StderrLine: {'line': b'  383 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[13.240860] (robot_go_pkg) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[13.315718] (-) TimerEvent: {}
+[13.416514] (-) TimerEvent: {}
+[13.517308] (-) TimerEvent: {}
+[13.618145] (-) TimerEvent: {}
+[13.719021] (-) TimerEvent: {}
+[13.819871] (-) TimerEvent: {}
+[13.920655] (-) TimerEvent: {}
+[14.021441] (-) TimerEvent: {}
+[14.122235] (-) TimerEvent: {}
+[14.223120] (-) TimerEvent: {}
+[14.323904] (-) TimerEvent: {}
+[14.424687] (-) TimerEvent: {}
+[14.525478] (-) TimerEvent: {}
+[14.626312] (-) TimerEvent: {}
+[14.727172] (-) TimerEvent: {}
+[14.827964] (-) TimerEvent: {}
+[14.928775] (-) TimerEvent: {}
+[15.029557] (-) TimerEvent: {}
+[15.130339] (-) TimerEvent: {}
+[15.231203] (-) TimerEvent: {}
+[15.332018] (-) TimerEvent: {}
+[15.432815] (-) TimerEvent: {}
+[15.533615] (-) TimerEvent: {}
+[15.634571] (-) TimerEvent: {}
+[15.735454] (-) TimerEvent: {}
+[15.836260] (-) TimerEvent: {}
+[15.937061] (-) TimerEvent: {}
+[16.037883] (-) TimerEvent: {}
+[16.138728] (-) TimerEvent: {}
+[16.239572] (-) TimerEvent: {}
+[16.340372] (-) TimerEvent: {}
+[16.441160] (-) TimerEvent: {}
+[16.541960] (-) TimerEvent: {}
+[16.642928] (-) TimerEvent: {}
+[16.743878] (-) TimerEvent: {}
+[16.844727] (-) TimerEvent: {}
+[16.945512] (-) TimerEvent: {}
+[17.046322] (-) TimerEvent: {}
+[17.147156] (-) TimerEvent: {}
+[17.247960] (-) TimerEvent: {}
+[17.348767] (-) TimerEvent: {}
+[17.449567] (-) TimerEvent: {}
+[17.550378] (-) TimerEvent: {}
+[17.651250] (-) TimerEvent: {}
+[17.752212] (-) TimerEvent: {}
+[17.853008] (-) TimerEvent: {}
+[17.953861] (-) TimerEvent: {}
+[18.054778] (-) TimerEvent: {}
+[18.155630] (-) TimerEvent: {}
+[18.256553] (-) TimerEvent: {}
+[18.357432] (-) TimerEvent: {}
+[18.458347] (-) TimerEvent: {}
+[18.559308] (-) TimerEvent: {}
+[18.660335] (-) TimerEvent: {}
+[18.761158] (-) TimerEvent: {}
+[18.862005] (-) TimerEvent: {}
+[18.962833] (-) TimerEvent: {}
+[19.063606] (-) TimerEvent: {}
+[19.164394] (-) TimerEvent: {}
+[19.265186] (-) TimerEvent: {}
+[19.366019] (-) TimerEvent: {}
+[19.466842] (-) TimerEvent: {}
+[19.567631] (-) TimerEvent: {}
+[19.668427] (-) TimerEvent: {}
+[19.769237] (-) TimerEvent: {}
+[19.870082] (-) TimerEvent: {}
+[19.970901] (-) TimerEvent: {}
+[20.071723] (-) TimerEvent: {}
+[20.172598] (-) TimerEvent: {}
+[20.273412] (-) TimerEvent: {}
+[20.374249] (-) TimerEvent: {}
+[20.475093] (-) TimerEvent: {}
+[20.575903] (-) TimerEvent: {}
+[20.676694] (-) TimerEvent: {}
+[20.777569] (-) TimerEvent: {}
+[20.878420] (-) TimerEvent: {}
+[20.979310] (-) TimerEvent: {}
+[21.080110] (-) TimerEvent: {}
+[21.180956] (-) TimerEvent: {}
+[21.281794] (-) TimerEvent: {}
+[21.382692] (-) TimerEvent: {}
+[21.483546] (-) TimerEvent: {}
+[21.584557] (-) TimerEvent: {}
+[21.685323] (-) TimerEvent: {}
+[21.786059] (-) TimerEvent: {}
+[21.886837] (-) TimerEvent: {}
+[21.987583] (-) TimerEvent: {}
+[22.088393] (-) TimerEvent: {}
+[22.189243] (-) TimerEvent: {}
+[22.290252] (-) TimerEvent: {}
+[22.391066] (-) TimerEvent: {}
+[22.491862] (-) TimerEvent: {}
+[22.592661] (-) TimerEvent: {}
+[22.693565] (-) TimerEvent: {}
+[22.794475] (-) TimerEvent: {}
+[22.842080] (robot_go_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1\n'}
+[22.843147] (robot_go_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2\n'}
+[22.844056] (robot_go_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[22.849944] (robot_go_pkg) CommandEnded: {'returncode': 2}
+[22.894631] (-) TimerEvent: {}
+[22.995651] (-) TimerEvent: {}
+[23.087810] (robot_go_pkg) JobEnded: {'identifier': 'robot_go_pkg', 'rc': 2}
+[23.095885] (-) TimerEvent: {}
+[23.102582] (-) EventReactorShutdown: {}

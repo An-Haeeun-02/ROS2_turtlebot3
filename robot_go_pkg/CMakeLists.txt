@@ -28,8 +28,8 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-#add_executable(test_node src/test.cpp)
-#ament_target_dependencies(test_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs)
+add_executable(test_node src/test.cpp)
+ament_target_dependencies(test_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs)
 add_executable(scan_node src/scan.cpp)
 ament_target_dependencies(scan_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs)
 add_executable(go_node src/go.cpp)
@@ -40,7 +40,7 @@ add_executable(cli_node src/cli.cpp)
 ament_target_dependencies(cli_node rclcpp rclcpp_action robot_action)
 
 install(TARGETS 
-  #test_node
+  test_node
   scan_node
   go_node
   #server_node

@@ -1,0 +1,114 @@
+[0.064s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.264s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[0.382s] [ 25%] Built target test_node
+[0.384s] [ 50%] Built target cli_node
+[0.393s] [ 75%] Built target scan_node
+[0.424s] [ 87%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[14.255s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::initialize_sensor_data()[m[K’:
+[14.256s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:102:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[14.257s]   102 |         sensor_data_ = *[01;31m[Kmsg[m[K;
+[14.257s]       |                         [01;31m[K^~~[m[K
+[14.259s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:102:25:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[14.259s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[14.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[14.260s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[14.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[14.261s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[14.262s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[14.263s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[14.263s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.277s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.277s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.278s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.279s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1[m[K:
+[14.280s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[14.280s]    27 | namespace [01;36m[Kmsg[m[K
+[14.281s]       |           [01;36m[K^~~[m[K
+[14.281s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[14.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[14.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[14.283s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[14.284s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[14.284s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.285s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.285s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.294s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.294s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.296s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1[m[K:
+[14.296s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[14.297s]    27 | namespace [01;36m[Kmsg[m[K
+[14.297s]       |           [01;36m[K^~~[m[K
+[14.298s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[14.299s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[14.299s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[14.300s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[14.300s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[14.301s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[14.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[14.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[14.303s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[14.304s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[14.304s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[14.305s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[14.305s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[14.306s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:1[m[K:
+[14.307s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[14.307s]    27 | namespace [01;36m[Kmsg[m[K
+[14.308s]       |           [01;36m[K^~~[m[K
+[14.308s] In file included from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:20[m[K,
+[14.309s]                  from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:20[m[K,
+[14.310s]                  from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.hpp:7[m[K,
+[14.310s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:25[m[K,
+[14.311s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:43[m[K,
+[14.311s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+[14.312s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:2[m[K:
+[14.312s] [01m[K/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kunique_identifier_msgs::msg[m[K’
+[14.313s]    27 | namespace [01;36m[Kmsg[m[K
+[14.314s]       |           [01;36m[K^~~[m[K
+[14.314s] In file included from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_status__struct.hpp:20[m[K,
+[14.315s]                  from [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/goal_status.hpp:7[m[K,
+[14.315s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client_goal_handle.hpp:25[m[K,
+[14.316s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/client.hpp:43[m[K,
+[14.317s]                  from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:36[m[K,
+[14.317s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:2[m[K:
+[14.318s] [01m[K/opt/ros/humble/include/action_msgs/action_msgs/msg/detail/goal_info__struct.hpp:33:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kaction_msgs::msg[m[K’
+[14.318s]    33 | namespace [01;36m[Kmsg[m[K
+[14.319s]       |           [01;36m[K^~~[m[K
+[14.322s] In file included from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:20[m[K,
+[14.323s]                  from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+[14.324s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:3[m[K:
+[14.325s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[14.325s]    31 | namespace [01;36m[Kmsg[m[K
+[14.326s]       |           [01;36m[K^~~[m[K
+[14.327s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+[14.327s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+[14.328s]                  from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+[14.328s]                  from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+[14.329s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:3[m[K:
+[14.329s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+[14.330s]    27 | namespace [01;36m[Kmsg[m[K
+[14.331s]       |           [01;36m[K^~~[m[K
+[14.331s] In file included from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+[14.332s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:3[m[K:
+[14.332s] [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:35:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Knav_msgs::msg[m[K’
+[14.333s]    35 | namespace [01;36m[Kmsg[m[K
+[14.334s]       |           [01;36m[K^~~[m[K
+[14.334s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[14.335s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:25:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KTurtlebotController::obstacle_detected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.336s]    25 |     bool [01;35m[Kobstacle_detected_[m[K;                    // 장애물 감지 여부
+[14.336s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[14.337s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:21:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble TurtlebotController::total_distance_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.338s]    21 |     double [01;35m[Ktotal_distance_[m[K;                    // 총 이동 거리
+[14.339s]       |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+[14.339s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:140:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[14.340s]   140 |     [01;35m[KTurtlebotController[m[K()
+[14.341s]       |     [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.144s] gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+[24.145s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+[24.146s] gmake: *** [Makefile:146: all] Error 2
+[24.152s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

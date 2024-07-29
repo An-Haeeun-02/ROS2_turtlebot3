@@ -1,0 +1,16 @@
+/home/hae/robot_ws/src/install/test_pkg/lib/test_pkg/got_node
+/home/hae/robot_ws/src/install/test_pkg/share/ament_index/resource_index/package_run_dependencies/test_pkg
+/home/hae/robot_ws/src/install/test_pkg/share/ament_index/resource_index/parent_prefix_path/test_pkg
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/environment/ament_prefix_path.sh
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/environment/ament_prefix_path.dsv
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/environment/path.sh
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/environment/path.dsv
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/local_setup.bash
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/local_setup.sh
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/local_setup.zsh
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/local_setup.dsv
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/package.dsv
+/home/hae/robot_ws/src/install/test_pkg/share/ament_index/resource_index/packages/test_pkg
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/cmake/test_pkgConfig.cmake
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/cmake/test_pkgConfig-version.cmake
+/home/hae/robot_ws/src/install/test_pkg/share/test_pkg/package.xml

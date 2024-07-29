@@ -1,0 +1,13 @@
+[0.075s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.358s] [ 25%] Built target test_node
+[0.378s] [ 50%] Built target scan_node
+[0.399s] [ 75%] Built target cli_node
+[0.413s] [ 87%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[12.661s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In function ‘[01m[Kvoid signalHandler(int)[m[K’:
+[12.661s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:183:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[12.662s]   183 |     [01;31m[Kmessage[m[K.linear.x = 0.0;  // 전진 속도 설정
+[12.662s]       |     [01;31m[K^~~~~~~[m[K
+[25.181s] gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+[25.182s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+[25.183s] gmake: *** [Makefile:146: all] Error 2
+[25.190s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

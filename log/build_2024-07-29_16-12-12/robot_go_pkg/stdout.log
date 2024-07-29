@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[ 25%] Built target test_node
+[ 50%] Built target cli_node
+[ 75%] Built target scan_node
+[ 87%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m

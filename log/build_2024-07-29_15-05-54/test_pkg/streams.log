@@ -1,0 +1,159 @@
+[0.073s] Invoking command in '/home/hae/robot_ws/src/build/test_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/test_pkg -- -j4 -l4
+[0.178s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.765s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.800s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.976s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.988s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.017s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.069s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.144s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.411s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.418s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.448s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.107s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.275s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.601s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[3.848s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.165s] -- Found robot_action: 0.0.0 (/home/hae/robot_ws/src/install/robot_action/share/robot_action/cmake)
+[4.363s] -- Found rclcpp_action: 16.0.9 (/opt/ros/humble/share/rclcpp_action/cmake)
+[4.472s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.843s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.844s] -- Configured cppcheck include dirs: 
+[4.845s] -- Configured cppcheck exclude dirs and/or files: 
+[4.850s] -- Added test 'lint_cmake' to check CMake code style
+[4.865s] -- Added test 'uncrustify' to check C / C++ code style
+[4.866s] -- Configured uncrustify additional arguments: 
+[4.866s] -- Added test 'xmllint' to check XML markup files
+[4.870s] -- Configuring done
+[4.940s] -- Generating done
+[4.951s] -- Build files have been written to: /home/hae/robot_ws/src/build/test_pkg
+[5.077s] [35m[1mConsolidate compiler generated dependencies of target got_node[0m
+[5.177s] [ 50%] [32mBuilding CXX object CMakeFiles/got_node.dir/src/go_topic.cpp.o[0m
+[15.476s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:26:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[15.477s]    19 |   void handle_odom(const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg)
+[15.477s]       |                          [01;31m[K^~~~~~~~[m[K
+[15.478s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:39:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[15.478s]    19 |   void handle_odom(const nav_msgs::msg[01;31m[K::[m[KOdometry::SharedPtr msg)
+[15.479s]       |                                       [01;31m[K^~[m[K
+[15.479s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[15.480s]    19 |   void handle_odom[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOdometry::SharedPtr msg)
+[15.480s]       |                   [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[15.481s]       |                                       [32m[K)[m[K
+[15.481s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[15.482s]    19 |   void handle_odom(const nav_msgs::[01;31m[Kmsg[m[K::Odometry::SharedPtr msg)
+[15.482s]       |                                    [01;31m[K^~~[m[K
+[15.483s]       |                                       [32m[K;[m[K
+[15.487s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:19:41:[m[K [01;31m[Kerror: [m[K‘[01m[KOdometry[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[15.488s]    19 |   void handle_odom(const nav_msgs::msg::[01;31m[KOdometry[m[K::SharedPtr msg)
+[15.488s]       |                                         [01;31m[K^~~~~~~~[m[K
+[15.509s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+[15.510s]    46 |   rclcpp::Subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr subscription_;
+[15.510s]       |                        [01;31m[K^~~~~~~~[m[K
+[15.510s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[15.511s]    46 |   rclcpp::Subscription<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr subscription_;
+[15.511s]       |                                               [01;31m[K^[m[K
+[15.512s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[15.512s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[15.512s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[15.513s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[15.513s]    46 |   rclcpp::Subscription<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K subscription_;
+[15.513s]       |                                                  [01;31m[K^~~~~~~~~[m[K
+[15.514s]       |                                                           [32m[K;[m[K
+[15.516s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:46:60:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[15.517s]    46 |   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Ksubscription_[m[K;
+[15.517s]       |                                                            [01;31m[K^~~~~~~~~~~~~[m[K
+[15.518s]       |                                                            [32m[Krmw_subscription_t[m[K
+[15.518s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:48:23:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+[15.519s]    48 |   geometry_msgs::msg::[01;31m[KPoint[m[K last_position_;
+[15.519s]       |                       [01;31m[K^~~~~[m[K
+[15.575s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[15.576s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[15.576s]    59 |         [01;31m[Ksubscription_[m[K = this->create_subscription<nav_msgs::msg::Odometry>("/odom", 10,
+[15.577s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[15.577s]       |         [32m[Krmw_subscription_t[m[K
+[15.596s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:59:51:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+[15.597s]    59 |         subscription_ = this->create_subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>("/odom", 10,
+[15.597s]       |                                                   [01;31m[K^~~~~~~~[m[K
+[15.597s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:59:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[15.598s]    59 |         subscription_ = this->[01;31m[Kcreate_subscription<nav_msgs::msg::Odometry>[m[K("/odom", 10,
+[15.598s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.602s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:60:20:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[15.603s]    60 |       [this](const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg) {
+[15.603s]       |                    [01;31m[K^~~~~~~~[m[K
+[15.604s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:64:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ may not be used in this context
+[15.605s]    64 |     timer_ = [01;31m[Kthis[m[K->create_wall_timer(
+[15.607s]       |              [01;31m[K^~~~[m[K
+[15.607s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:66:8:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[15.608s]    66 |       [[01;31m[Kthis[m[K]() {
+[15.608s]       |        [01;31m[K^~~~[m[K
+[15.611s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[15.612s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[15.612s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[15.613s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[15.613s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[15.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[15.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[15.614s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[15.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[15.615s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[15.616s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.616s]                  from [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:1[m[K:
+[15.616s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In lambda function:
+[15.617s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:67:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+[15.617s]    67 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Total Distance: %.2f meters", total_distance_);
+[15.618s]       |                     [01;31m[K^~~~[m[K
+[15.618s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:67:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+[15.618s]    67 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Total Distance: %.2f meters", total_distance_);
+[15.619s]       |                     [01;31m[K^~~~[m[K
+[15.619s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:67:72:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KTurtlebotController::total_distance_[m[K’
+[15.620s]    67 |         RCLCPP_INFO(this->get_logger(), "Total Distance: %.2f meters", [01;31m[Ktotal_distance_[m[K);
+[15.620s]       |                                                                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+[15.621s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:49:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[15.622s]    49 |   double [01;36m[Ktotal_distance_[m[K;
+[15.622s]       |          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[15.623s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[15.623s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[15.624s]    69 |     )[01;31m[K;[m[K
+[15.624s]       |      [01;31m[K^[m[K
+[15.624s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:60:13:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[15.625s]    60 |       [this][01;36m[K([m[Kconst nav_msgs::msg::Odometry::SharedPtr msg) {
+[15.625s]       |             [01;36m[K^[m[K
+[15.626s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In lambda function:
+[15.626s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[15.626s]    69 |     )[01;31m[K;[m[K
+[15.627s]       |      [01;31m[K^[m[K
+[15.628s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:64:5:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimer_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[15.628s]    60 |       [this]([01;35m[Kconst nav_msgs::msg::Odometry::SharedPtr msg) {[m[K
+[15.629s]       |              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.629s]    61 | [01;35m[K        this->handle_odom(msg);[m[K
+[15.630s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.630s]    62 | [01;35m[K      }[m[K
+[15.630s]       |       [01;35m[K~[m[K
+[15.631s]    63 | [01;35m[K          // 로그를 찍기 위한 타이머 설정[m[K
+[15.631s]       |           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.632s]    64 | [01;35m[K    timer_ = this->create_wall_timer([m[K
+[15.632s]       |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.633s]    65 | [01;35m[K      std::chrono::seconds(1), // 시간 단위 리터럴 수정[m[K
+[15.633s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.633s]    66 | [01;35m[K      [this]() {[m[K
+[15.634s]       |       [01;35m[K~~~~~~~~~~[m[K
+[15.634s]    67 | [01;35m[K        RCLCPP_INFO(this->get_logger(), "Total Distance: %.2f meters", total_distance_);[m[K
+[15.635s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.635s]    68 | [01;35m[K      }[m[K
+[15.636s]       |       [01;35m[K~[m[K
+[15.636s]    69 | [01;35m[K    )[m[K;
+[15.636s]       |     [01;35m[K~[m[K
+[15.637s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[15.637s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[15.638s]    69 |     )[01;31m[K;[m[K
+[15.638s]       |      [01;31m[K^[m[K
+[15.638s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:59:75:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[15.639s]    59 |         subscription_ = this->create_subscription<nav_msgs::msg::Odometry>[01;36m[K([m[K"/odom", 10,
+[15.639s]       |                                                                           [01;36m[K^[m[K
+[15.640s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:70:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[15.640s]    70 |     [01;31m[K)[m[K;
+[15.641s]       |     [01;31m[K^[m[K
+[24.421s] gmake[2]: *** [CMakeFiles/got_node.dir/build.make:76: CMakeFiles/got_node.dir/src/go_topic.cpp.o] Error 1
+[24.422s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/got_node.dir/all] Error 2
+[24.422s] gmake: *** [Makefile:146: all] Error 2
+[24.429s] Invoked command in '/home/hae/robot_ws/src/build/test_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/test_pkg -- -j4 -l4

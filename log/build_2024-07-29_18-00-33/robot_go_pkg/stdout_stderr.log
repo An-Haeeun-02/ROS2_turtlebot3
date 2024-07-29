@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[ 25%] Built target go_node
+[ 50%] Built target scan_node
+[ 75%] Built target test_node
+[ 87%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In lambda function:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:106:98:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’ {aka ‘[01m[Kclass rclcpp_action::ClientGoalHandle<robot_action::action::Move>[m[K’} has no member named ‘[01m[Kasync_result[m[K’; did you mean ‘[01m[Kasync_get_result[m[K’?
+  106 |                 rclcpp::spin_until_future_complete(this->get_node_base_interface(), goal_handle->[01;31m[Kasync_result[m[K());
+      |                                                                                                  [01;31m[K^~~~~~~~~~~~[m[K
+      |                                                                                                  [32m[Kasync_get_result[m[K
+gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/cli_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

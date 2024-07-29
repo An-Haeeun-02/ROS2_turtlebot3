@@ -1,3 +1,4 @@
+/home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/test_node
 /home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/scan_node
 /home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/go_node
 /home/hae/robot_ws/src/install/robot_go_pkg/lib/robot_go_pkg/cli_node

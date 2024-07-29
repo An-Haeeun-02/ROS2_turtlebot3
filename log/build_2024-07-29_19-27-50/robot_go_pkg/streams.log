@@ -1,0 +1,43 @@
+[0.082s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.352s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[0.428s] [ 25%] Built target scan_node
+[0.456s] [ 50%] Built target test_node
+[0.496s] [35m[1mConsolidate compiler generated dependencies of target cli_node[0m
+[0.504s] [ 62%] [32m[1mLinking CXX executable go_node[0m
+[0.612s] [ 75%] [32mBuilding CXX object CMakeFiles/cli_node.dir/src/cli.cpp.o[0m
+[4.036s] [ 87%] Built target go_node
+[13.720s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:[m[K In lambda function:
+[13.720s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:59:51:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kempty[m[K’ in ‘[01m[K((const std::__shared_ptr_access<const robot_action::action::Move_Feedback_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& feedback))->std::__shared_ptr_access<const robot_action::action::Move_Feedback_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->robot_action::action::Move_Feedback_<std::allocator<void> >::traveled_distances[m[K’, which is of non-class type ‘[01m[Kconst _traveled_distances_type[m[K’ {aka ‘[01m[Kconst float[m[K’}
+[13.722s]    59 |           if (!feedback->traveled_distances.[01;31m[Kempty[m[K()) { // 피드백의 traveled_distances가 비어있지 않은 경우
+[13.724s]       |                                             [01;31m[K^~~~~[m[K
+[13.724s] 
+[13.725s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:61:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::begin[m[K’?
+[13.726s]    61 |             for (float distance : feedback->[01;31m[Ktraveled_distances[m[K) { // 피드백 거리 리스트 반복
+[13.726s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[13.727s]       |                                             [32m[Kstd::begin[m[K
+[13.728s] In file included from [01m[K/usr/include/c++/11/array:41[m[K,
+[13.728s]                  from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[13.729s]                  from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+[13.729s]                  from [01m[K/usr/include/c++/11/memory:76[m[K,
+[13.730s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[13.730s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:1[m[K:
+[13.731s] [01m[K/usr/include/c++/11/bits/range_access.h:108:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::begin[m[K’ declared here
+[13.732s]   108 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&) noexcept;
+[13.733s]       |                                     [01;36m[K^~~~~[m[K
+[13.734s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:61:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+[13.735s]    61 |             for (float distance : feedback->[01;31m[Ktraveled_distances[m[K) { // 피드백 거리 리스트 반복
+[13.735s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[13.736s]       |                                             [32m[Kstd::end[m[K
+[13.736s] In file included from [01m[K/usr/include/c++/11/array:41[m[K,
+[13.737s]                  from [01m[K/usr/include/c++/11/tuple:39[m[K,
+[13.738s]                  from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+[13.738s]                  from [01m[K/usr/include/c++/11/memory:76[m[K,
+[13.739s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[13.739s]                  from [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/cli.cpp:1[m[K:
+[13.740s] [01m[K/usr/include/c++/11/bits/range_access.h:110:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+[13.741s]   110 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&) noexcept;
+[13.741s]       |                                     [01;36m[K^~~[m[K
+[16.939s] gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Error 1
+[16.940s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/cli_node.dir/all] Error 2
+[16.945s] gmake: *** [Makefile:146: all] Error 2
+[16.948s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

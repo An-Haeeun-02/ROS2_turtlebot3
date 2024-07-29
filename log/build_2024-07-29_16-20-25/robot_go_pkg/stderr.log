@@ -1,0 +1,11 @@
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse MoveActionServer::handle_goal(const GoalUUID&, std::shared_ptr<const robot_action::action::Move_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:74:41:[m[K [01;31m[Kerror: [m[K‘[01m[KAccepted[m[K’ is not a member of ‘[01m[Krclcpp_action::GoalResponse[m[K’
+   74 |     return rclcpp_action::GoalResponse::[01;31m[KAccepted[m[K;
+      |                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse MoveActionServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move> >)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:81:43:[m[K [01;31m[Kerror: [m[K‘[01m[KAccepted[m[K’ is not a member of ‘[01m[Krclcpp_action::CancelResponse[m[K’
+   81 |     return rclcpp_action::CancelResponse::[01;31m[KAccepted[m[K;
+      |                                           [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

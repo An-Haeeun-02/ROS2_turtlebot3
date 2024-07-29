@@ -1,0 +1,512 @@
+[0.000000] (-) TimerEvent: {}
+[0.001083] (-) JobUnselected: {'identifier': 'action_test'}
+[0.002034] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.002580] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.003104] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.003297] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.003575] (test_pkg) JobQueued: {'identifier': 'test_pkg', 'dependencies': OrderedDict([('robot_action', '/home/hae/robot_ws/src/install/robot_action')])}
+[0.003770] (test_pkg) JobStarted: {'identifier': 'test_pkg'}
+[0.050006] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'cmake'}
+[0.053935] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'build'}
+[0.057003] (test_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/test_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/test_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 51382 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae/robot_ws'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-65487756-0730-41b0-a852-d616eb823164.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/test_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 51382 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble')]), 'shell': False}
+[0.099186] (-) TimerEvent: {}
+[0.200005] (-) TimerEvent: {}
+[0.249901] (test_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target got_node\x1b[0m\n'}
+[0.271552] (test_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target odom_node\x1b[0m\n'}
+[0.300259] (-) TimerEvent: {}
+[0.365295] (test_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/got_node.dir/src/go_topic.cpp.o\x1b[0m\n'}
+[0.369705] (test_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/odom_node.dir/src/odom_ex.cpp.o\x1b[0m\n'}
+[0.400575] (-) TimerEvent: {}
+[0.501654] (-) TimerEvent: {}
+[0.602403] (-) TimerEvent: {}
+[0.703253] (-) TimerEvent: {}
+[0.804863] (-) TimerEvent: {}
+[0.907803] (-) TimerEvent: {}
+[1.008635] (-) TimerEvent: {}
+[1.110200] (-) TimerEvent: {}
+[1.215656] (-) TimerEvent: {}
+[1.316433] (-) TimerEvent: {}
+[1.417126] (-) TimerEvent: {}
+[1.517936] (-) TimerEvent: {}
+[1.618722] (-) TimerEvent: {}
+[1.719561] (-) TimerEvent: {}
+[1.820375] (-) TimerEvent: {}
+[1.923560] (-) TimerEvent: {}
+[2.027567] (-) TimerEvent: {}
+[2.128528] (-) TimerEvent: {}
+[2.229489] (-) TimerEvent: {}
+[2.330590] (-) TimerEvent: {}
+[2.431585] (-) TimerEvent: {}
+[2.533651] (-) TimerEvent: {}
+[2.634677] (-) TimerEvent: {}
+[2.735945] (-) TimerEvent: {}
+[2.836874] (-) TimerEvent: {}
+[2.937950] (-) TimerEvent: {}
+[3.038956] (-) TimerEvent: {}
+[3.140096] (-) TimerEvent: {}
+[3.241070] (-) TimerEvent: {}
+[3.342413] (-) TimerEvent: {}
+[3.443497] (-) TimerEvent: {}
+[3.545138] (-) TimerEvent: {}
+[3.646280] (-) TimerEvent: {}
+[3.747532] (-) TimerEvent: {}
+[3.848670] (-) TimerEvent: {}
+[3.951549] (-) TimerEvent: {}
+[4.052576] (-) TimerEvent: {}
+[4.155547] (-) TimerEvent: {}
+[4.256449] (-) TimerEvent: {}
+[4.357476] (-) TimerEvent: {}
+[4.458568] (-) TimerEvent: {}
+[4.559792] (-) TimerEvent: {}
+[4.660972] (-) TimerEvent: {}
+[4.762053] (-) TimerEvent: {}
+[4.866395] (-) TimerEvent: {}
+[4.967503] (-) TimerEvent: {}
+[5.068573] (-) TimerEvent: {}
+[5.169586] (-) TimerEvent: {}
+[5.270681] (-) TimerEvent: {}
+[5.375585] (-) TimerEvent: {}
+[5.476636] (-) TimerEvent: {}
+[5.579490] (-) TimerEvent: {}
+[5.681066] (-) TimerEvent: {}
+[5.782562] (-) TimerEvent: {}
+[5.886040] (-) TimerEvent: {}
+[5.987277] (-) TimerEvent: {}
+[6.088996] (-) TimerEvent: {}
+[6.190018] (-) TimerEvent: {}
+[6.291553] (-) TimerEvent: {}
+[6.392578] (-) TimerEvent: {}
+[6.495106] (-) TimerEvent: {}
+[6.597691] (-) TimerEvent: {}
+[6.698699] (-) TimerEvent: {}
+[6.799587] (-) TimerEvent: {}
+[6.901176] (-) TimerEvent: {}
+[7.003702] (-) TimerEvent: {}
+[7.106340] (-) TimerEvent: {}
+[7.207938] (-) TimerEvent: {}
+[7.309512] (-) TimerEvent: {}
+[7.412076] (-) TimerEvent: {}
+[7.513664] (-) TimerEvent: {}
+[7.615251] (-) TimerEvent: {}
+[7.716852] (-) TimerEvent: {}
+[7.818385] (-) TimerEvent: {}
+[7.919911] (-) TimerEvent: {}
+[8.021441] (-) TimerEvent: {}
+[8.122608] (-) TimerEvent: {}
+[8.224178] (-) TimerEvent: {}
+[8.325196] (-) TimerEvent: {}
+[8.426717] (-) TimerEvent: {}
+[8.528100] (-) TimerEvent: {}
+[8.629626] (-) TimerEvent: {}
+[8.730696] (-) TimerEvent: {}
+[8.832205] (-) TimerEvent: {}
+[8.933252] (-) TimerEvent: {}
+[9.035876] (-) TimerEvent: {}
+[9.139506] (-) TimerEvent: {}
+[9.242039] (-) TimerEvent: {}
+[9.343026] (-) TimerEvent: {}
+[9.447641] (-) TimerEvent: {}
+[9.549746] (-) TimerEvent: {}
+[9.651762] (-) TimerEvent: {}
+[9.752690] (-) TimerEvent: {}
+[9.853776] (-) TimerEvent: {}
+[9.956283] (-) TimerEvent: {}
+[10.057309] (-) TimerEvent: {}
+[10.158271] (-) TimerEvent: {}
+[10.259225] (-) TimerEvent: {}
+[10.360273] (-) TimerEvent: {}
+[10.461203] (-) TimerEvent: {}
+[10.562179] (-) TimerEvent: {}
+[10.663424] (-) TimerEvent: {}
+[10.767549] (-) TimerEvent: {}
+[10.868998] (-) TimerEvent: {}
+[10.970130] (-) TimerEvent: {}
+[11.074670] (-) TimerEvent: {}
+[11.175661] (-) TimerEvent: {}
+[11.279568] (-) TimerEvent: {}
+[11.383544] (-) TimerEvent: {}
+[11.484495] (-) TimerEvent: {}
+[11.587565] (-) TimerEvent: {}
+[11.691535] (-) TimerEvent: {}
+[11.795612] (-) TimerEvent: {}
+[11.899562] (-) TimerEvent: {}
+[12.003290] (-) TimerEvent: {}
+[12.107560] (-) TimerEvent: {}
+[12.211569] (-) TimerEvent: {}
+[12.315620] (-) TimerEvent: {}
+[12.419595] (-) TimerEvent: {}
+[12.523561] (-) TimerEvent: {}
+[12.624858] (-) TimerEvent: {}
+[12.727313] (-) TimerEvent: {}
+[12.828937] (-) TimerEvent: {}
+[12.930584] (-) TimerEvent: {}
+[13.032470] (-) TimerEvent: {}
+[13.135040] (-) TimerEvent: {}
+[13.239574] (-) TimerEvent: {}
+[13.343566] (-) TimerEvent: {}
+[13.444574] (-) TimerEvent: {}
+[13.547579] (-) TimerEvent: {}
+[13.648650] (-) TimerEvent: {}
+[13.751557] (-) TimerEvent: {}
+[13.855580] (-) TimerEvent: {}
+[13.959250] (-) TimerEvent: {}
+[14.060640] (-) TimerEvent: {}
+[14.162854] (-) TimerEvent: {}
+[14.263953] (-) TimerEvent: {}
+[14.367563] (-) TimerEvent: {}
+[14.471572] (-) TimerEvent: {}
+[14.575566] (-) TimerEvent: {}
+[14.676512] (-) TimerEvent: {}
+[14.777562] (-) TimerEvent: {}
+[14.880176] (-) TimerEvent: {}
+[14.940066] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.941081] (test_pkg) StderrLine: {'line': b'   20 |     rclcpp::Subscription<\x1b[01;31m\x1b[Knav_msgs\x1b[m\x1b[K::msg::Odometry>::SharedPtr subscription_;\n'}
+[14.941954] (test_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.942861] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[14.946859] (test_pkg) StderrLine: {'line': b'   20 |     rclcpp::Subscription<nav_msgs::msg::Odometry\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr subscription_;\n'}
+[14.947505] (test_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.948411] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[14.949199] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[14.950100] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[14.951004] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[14.957759] (test_pkg) StderrLine: {'line': b'   20 |     rclcpp::Subscription<nav_msgs::msg::Odometry>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K subscription_;\n'}
+[14.958767] (test_pkg) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[14.963381] (test_pkg) StderrLine: {'line': b'      |                                                             \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[14.966779] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.970341] (test_pkg) StderrLine: {'line': b'   20 |     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K;\n'}
+[14.976198] (test_pkg) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.979574] (test_pkg) StderrLine: {'line': b'      |                                                              \x1b[32m\x1b[Krmw_subscription_t\x1b[m\x1b[K\n'}
+[14.982834] (-) TimerEvent: {}
+[14.984068] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:22:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.987431] (test_pkg) StderrLine: {'line': b'   22 |     geometry_msgs::msg::\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K last_position_;\n'}
+[14.990584] (test_pkg) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[14.994260] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[14.997550] (test_pkg) StderrLine: {'line': b'   26 |     void handle_odom(const \x1b[01;31m\x1b[Knav_msgs\x1b[m\x1b[K::msg::Odometry::SharedPtr msg)\n'}
+[15.000883] (test_pkg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.004214] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[15.008163] (test_pkg) StderrLine: {'line': b'   26 |     void handle_odom(const nav_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KOdometry::SharedPtr msg)\n'}
+[15.011686] (test_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[15.015022] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[15.018568] (test_pkg) StderrLine: {'line': b'   26 |     void handle_odom\x1b[34m\x1b[K(\x1b[m\x1b[Kconst nav_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KOdometry::SharedPtr msg)\n'}
+[15.022096] (test_pkg) StderrLine: {'line': b'      |                     \x1b[34m\x1b[K~\x1b[m\x1b[K                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[15.025506] (test_pkg) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[15.028926] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[15.032622] (test_pkg) StderrLine: {'line': b'   26 |     void handle_odom(const nav_msgs::\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K::Odometry::SharedPtr msg)\n'}
+[15.033560] (test_pkg) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[15.034417] (test_pkg) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[15.038182] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOdometry\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[15.041875] (test_pkg) StderrLine: {'line': b'   26 |     void handle_odom(const nav_msgs::msg::\x1b[01;31m\x1b[KOdometry\x1b[m\x1b[K::SharedPtr msg)\n'}
+[15.045078] (test_pkg) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.075841] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTurtlebotController::TurtlebotController()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.077018] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.077878] (test_pkg) StderrLine: {'line': b'   63 |         \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K = this->create_subscription<nav_msgs::msg::Odometry>(\n'}
+[15.078794] (test_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.080046] (test_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_subscription_t\x1b[m\x1b[K\n'}
+[15.083154] (-) TimerEvent: {}
+[15.107821] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.108710] (test_pkg) StderrLine: {'line': b'   63 |         subscription_ = this->create_subscription<\x1b[01;31m\x1b[Knav_msgs\x1b[m\x1b[K::msg::Odometry>(\n'}
+[15.109693] (test_pkg) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.110485] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[15.111503] (test_pkg) StderrLine: {'line': b'   63 |         subscription_ = this->\x1b[01;31m\x1b[Kcreate_subscription<nav_msgs::msg::Odometry>\x1b[m\x1b[K(\n'}
+[15.112396] (test_pkg) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.120010] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:66:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[15.120952] (test_pkg) StderrLine: {'line': b'   66 |           [this](const \x1b[01;31m\x1b[Knav_msgs\x1b[m\x1b[K::msg::Odometry::SharedPtr msg) {\n'}
+[15.121785] (test_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[15.122548] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[15.123450] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[15.124262] (test_pkg) StderrLine: {'line': b'   69 |         )\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[15.124958] (test_pkg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[15.125693] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTurtlebotController::TurtlebotController()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.126530] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[15.127231] (test_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:75:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[15.136950] (test_pkg) StderrLine: {'line': b'   63 |         subscription_ = this->create_subscription<nav_msgs::msg::Odometry>\x1b[01;36m\x1b[K(\x1b[m\x1b[K\n'}
+[15.137744] (test_pkg) StderrLine: {'line': b'      |                                                                           \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[15.183505] (-) TimerEvent: {}
+[15.286574] (-) TimerEvent: {}
+[15.387586] (-) TimerEvent: {}
+[15.489433] (-) TimerEvent: {}
+[15.590428] (-) TimerEvent: {}
+[15.691578] (-) TimerEvent: {}
+[15.795551] (-) TimerEvent: {}
+[15.898176] (-) TimerEvent: {}
+[15.999152] (-) TimerEvent: {}
+[16.100182] (-) TimerEvent: {}
+[16.201175] (-) TimerEvent: {}
+[16.302156] (-) TimerEvent: {}
+[16.403114] (-) TimerEvent: {}
+[16.507556] (-) TimerEvent: {}
+[16.611566] (-) TimerEvent: {}
+[16.712516] (-) TimerEvent: {}
+[16.813477] (-) TimerEvent: {}
+[16.914509] (-) TimerEvent: {}
+[17.015554] (-) TimerEvent: {}
+[17.119335] (-) TimerEvent: {}
+[17.223552] (-) TimerEvent: {}
+[17.327556] (-) TimerEvent: {}
+[17.428417] (-) TimerEvent: {}
+[17.530751] (-) TimerEvent: {}
+[17.631897] (-) TimerEvent: {}
+[17.732882] (-) TimerEvent: {}
+[17.835589] (-) TimerEvent: {}
+[17.936468] (-) TimerEvent: {}
+[18.038760] (-) TimerEvent: {}
+[18.141388] (-) TimerEvent: {}
+[18.243611] (-) TimerEvent: {}
+[18.344674] (-) TimerEvent: {}
+[18.447609] (-) TimerEvent: {}
+[18.548536] (-) TimerEvent: {}
+[18.649585] (-) TimerEvent: {}
+[18.751559] (-) TimerEvent: {}
+[18.852574] (-) TimerEvent: {}
+[18.953560] (-) TimerEvent: {}
+[19.054559] (-) TimerEvent: {}
+[19.155559] (-) TimerEvent: {}
+[19.256596] (-) TimerEvent: {}
+[19.357562] (-) TimerEvent: {}
+[19.458583] (-) TimerEvent: {}
+[19.559773] (-) TimerEvent: {}
+[19.660752] (-) TimerEvent: {}
+[19.761744] (-) TimerEvent: {}
+[19.862721] (-) TimerEvent: {}
+[19.963695] (-) TimerEvent: {}
+[20.064619] (-) TimerEvent: {}
+[20.165585] (-) TimerEvent: {}
+[20.266567] (-) TimerEvent: {}
+[20.367705] (-) TimerEvent: {}
+[20.468721] (-) TimerEvent: {}
+[20.569693] (-) TimerEvent: {}
+[20.670780] (-) TimerEvent: {}
+[20.771737] (-) TimerEvent: {}
+[20.872737] (-) TimerEvent: {}
+[20.973734] (-) TimerEvent: {}
+[21.074702] (-) TimerEvent: {}
+[21.175659] (-) TimerEvent: {}
+[21.276641] (-) TimerEvent: {}
+[21.379666] (-) TimerEvent: {}
+[21.480638] (-) TimerEvent: {}
+[21.583560] (-) TimerEvent: {}
+[21.684491] (-) TimerEvent: {}
+[21.785547] (-) TimerEvent: {}
+[21.886618] (-) TimerEvent: {}
+[21.987621] (-) TimerEvent: {}
+[22.090120] (-) TimerEvent: {}
+[22.192817] (-) TimerEvent: {}
+[22.295547] (-) TimerEvent: {}
+[22.399568] (-) TimerEvent: {}
+[22.500855] (-) TimerEvent: {}
+[22.601914] (-) TimerEvent: {}
+[22.702928] (-) TimerEvent: {}
+[22.804122] (-) TimerEvent: {}
+[22.905224] (-) TimerEvent: {}
+[23.006359] (-) TimerEvent: {}
+[23.107473] (-) TimerEvent: {}
+[23.208420] (-) TimerEvent: {}
+[23.309474] (-) TimerEvent: {}
+[23.410593] (-) TimerEvent: {}
+[23.511571] (-) TimerEvent: {}
+[23.612471] (-) TimerEvent: {}
+[23.713416] (-) TimerEvent: {}
+[23.814414] (-) TimerEvent: {}
+[23.915379] (-) TimerEvent: {}
+[24.016378] (-) TimerEvent: {}
+[24.117259] (-) TimerEvent: {}
+[24.218200] (-) TimerEvent: {}
+[24.319107] (-) TimerEvent: {}
+[24.419991] (-) TimerEvent: {}
+[24.520865] (-) TimerEvent: {}
+[24.621865] (-) TimerEvent: {}
+[24.722734] (-) TimerEvent: {}
+[24.823643] (-) TimerEvent: {}
+[24.924544] (-) TimerEvent: {}
+[25.025568] (-) TimerEvent: {}
+[25.126703] (-) TimerEvent: {}
+[25.227528] (-) TimerEvent: {}
+[25.328341] (-) TimerEvent: {}
+[25.429325] (-) TimerEvent: {}
+[25.530603] (-) TimerEvent: {}
+[25.631569] (-) TimerEvent: {}
+[25.732476] (-) TimerEvent: {}
+[25.833442] (-) TimerEvent: {}
+[25.934312] (-) TimerEvent: {}
+[26.035209] (-) TimerEvent: {}
+[26.136198] (-) TimerEvent: {}
+[26.237086] (-) TimerEvent: {}
+[26.338045] (-) TimerEvent: {}
+[26.439188] (-) TimerEvent: {}
+[26.540133] (-) TimerEvent: {}
+[26.641035] (-) TimerEvent: {}
+[26.741946] (-) TimerEvent: {}
+[26.797080] (test_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/got_node.dir/build.make:76: CMakeFiles/got_node.dir/src/go_topic.cpp.o] Error 1\n'}
+[26.798186] (test_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/got_node.dir/all] Error 2\n'}
+[26.798766] (test_pkg) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[26.842118] (-) TimerEvent: {}
+[26.943148] (-) TimerEvent: {}
+[27.044148] (-) TimerEvent: {}
+[27.145352] (-) TimerEvent: {}
+[27.246662] (-) TimerEvent: {}
+[27.347985] (-) TimerEvent: {}
+[27.448803] (-) TimerEvent: {}
+[27.549619] (-) TimerEvent: {}
+[27.650447] (-) TimerEvent: {}
+[27.751325] (-) TimerEvent: {}
+[27.852173] (-) TimerEvent: {}
+[27.953018] (-) TimerEvent: {}
+[28.053816] (-) TimerEvent: {}
+[28.154583] (-) TimerEvent: {}
+[28.255463] (-) TimerEvent: {}
+[28.356355] (-) TimerEvent: {}
+[28.457153] (-) TimerEvent: {}
+[28.557889] (-) TimerEvent: {}
+[28.658646] (-) TimerEvent: {}
+[28.759533] (-) TimerEvent: {}
+[28.860312] (-) TimerEvent: {}
+[28.961122] (-) TimerEvent: {}
+[29.061894] (-) TimerEvent: {}
+[29.162688] (-) TimerEvent: {}
+[29.263521] (-) TimerEvent: {}
+[29.364304] (-) TimerEvent: {}
+[29.465124] (-) TimerEvent: {}
+[29.565924] (-) TimerEvent: {}
+[29.666690] (-) TimerEvent: {}
+[29.767521] (-) TimerEvent: {}
+[29.868271] (-) TimerEvent: {}
+[29.969066] (-) TimerEvent: {}
+[30.069898] (-) TimerEvent: {}
+[30.170677] (-) TimerEvent: {}
+[30.271565] (-) TimerEvent: {}
+[30.372501] (-) TimerEvent: {}
+[30.473336] (-) TimerEvent: {}
+[30.574131] (-) TimerEvent: {}
+[30.674944] (-) TimerEvent: {}
+[30.775724] (-) TimerEvent: {}
+[30.876527] (-) TimerEvent: {}
+[30.977360] (-) TimerEvent: {}
+[31.078234] (-) TimerEvent: {}
+[31.179070] (-) TimerEvent: {}
+[31.279873] (-) TimerEvent: {}
+[31.380708] (-) TimerEvent: {}
+[31.481565] (-) TimerEvent: {}
+[31.582445] (-) TimerEvent: {}
+[31.683418] (-) TimerEvent: {}
+[31.784204] (-) TimerEvent: {}
+[31.884993] (-) TimerEvent: {}
+[31.985795] (-) TimerEvent: {}
+[32.086645] (-) TimerEvent: {}
+[32.187521] (-) TimerEvent: {}
+[32.288276] (-) TimerEvent: {}
+[32.389072] (-) TimerEvent: {}
+[32.489862] (-) TimerEvent: {}
+[32.590703] (-) TimerEvent: {}
+[32.691583] (-) TimerEvent: {}
+[32.792398] (-) TimerEvent: {}
+[32.893169] (-) TimerEvent: {}
+[32.993944] (-) TimerEvent: {}
+[33.094781] (-) TimerEvent: {}
+[33.195583] (-) TimerEvent: {}
+[33.296377] (-) TimerEvent: {}
+[33.397168] (-) TimerEvent: {}
+[33.497971] (-) TimerEvent: {}
+[33.598824] (-) TimerEvent: {}
+[33.699647] (-) TimerEvent: {}
+[33.800421] (-) TimerEvent: {}
+[33.901192] (-) TimerEvent: {}
+[34.002011] (-) TimerEvent: {}
+[34.102927] (-) TimerEvent: {}
+[34.203757] (-) TimerEvent: {}
+[34.304506] (-) TimerEvent: {}
+[34.405300] (-) TimerEvent: {}
+[34.506152] (-) TimerEvent: {}
+[34.606952] (-) TimerEvent: {}
+[34.707754] (-) TimerEvent: {}
+[34.808513] (-) TimerEvent: {}
+[34.909299] (-) TimerEvent: {}
+[35.010038] (-) TimerEvent: {}
+[35.110871] (-) TimerEvent: {}
+[35.211668] (-) TimerEvent: {}
+[35.312482] (-) TimerEvent: {}
+[35.413229] (-) TimerEvent: {}
+[35.513973] (-) TimerEvent: {}
+[35.614829] (-) TimerEvent: {}
+[35.715658] (-) TimerEvent: {}
+[35.816423] (-) TimerEvent: {}
+[35.917208] (-) TimerEvent: {}
+[36.017993] (-) TimerEvent: {}
+[36.118829] (-) TimerEvent: {}
+[36.219607] (-) TimerEvent: {}
+[36.320392] (-) TimerEvent: {}
+[36.421155] (-) TimerEvent: {}
+[36.521948] (-) TimerEvent: {}
+[36.622775] (-) TimerEvent: {}
+[36.723554] (-) TimerEvent: {}
+[36.824323] (-) TimerEvent: {}
+[36.925094] (-) TimerEvent: {}
+[37.025885] (-) TimerEvent: {}
+[37.126670] (-) TimerEvent: {}
+[37.366826] (-) TimerEvent: {}
+[37.467645] (-) TimerEvent: {}
+[37.568437] (-) TimerEvent: {}
+[37.669224] (-) TimerEvent: {}
+[37.770040] (-) TimerEvent: {}
+[37.870858] (-) TimerEvent: {}
+[37.971717] (-) TimerEvent: {}
+[38.072507] (-) TimerEvent: {}
+[38.173274] (-) TimerEvent: {}
+[38.274198] (-) TimerEvent: {}
+[38.375028] (-) TimerEvent: {}
+[38.476012] (-) TimerEvent: {}
+[38.576811] (-) TimerEvent: {}
+[38.677648] (-) TimerEvent: {}
+[38.778444] (-) TimerEvent: {}
+[38.879243] (-) TimerEvent: {}
+[38.980275] (-) TimerEvent: {}
+[39.081136] (-) TimerEvent: {}
+[39.182052] (-) TimerEvent: {}
+[39.282862] (-) TimerEvent: {}
+[39.383725] (-) TimerEvent: {}
+[39.484598] (-) TimerEvent: {}
+[39.585475] (-) TimerEvent: {}
+[39.686371] (-) TimerEvent: {}
+[39.787202] (-) TimerEvent: {}
+[39.888009] (-) TimerEvent: {}
+[39.988863] (-) TimerEvent: {}
+[40.089786] (-) TimerEvent: {}
+[40.190707] (-) TimerEvent: {}
+[40.292134] (-) TimerEvent: {}
+[40.394455] (-) TimerEvent: {}
+[40.495325] (-) TimerEvent: {}
+[40.596258] (-) TimerEvent: {}
+[40.697268] (-) TimerEvent: {}
+[40.798272] (-) TimerEvent: {}
+[40.899093] (-) TimerEvent: {}
+[41.000217] (-) TimerEvent: {}
+[41.032445] (test_pkg) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable odom_node\x1b[0m\n'}
+[41.100445] (-) TimerEvent: {}
+[41.201340] (-) TimerEvent: {}
+[41.302377] (-) TimerEvent: {}
+[41.404027] (-) TimerEvent: {}
+[41.505358] (-) TimerEvent: {}
+[41.606789] (-) TimerEvent: {}
+[41.708054] (-) TimerEvent: {}
+[41.809579] (-) TimerEvent: {}
+[41.910887] (-) TimerEvent: {}
+[42.012836] (-) TimerEvent: {}
+[42.114670] (-) TimerEvent: {}
+[42.216284] (-) TimerEvent: {}
+[42.317318] (-) TimerEvent: {}
+[42.418253] (-) TimerEvent: {}
+[42.519240] (-) TimerEvent: {}
+[42.620065] (-) TimerEvent: {}
+[42.720839] (-) TimerEvent: {}
+[42.821703] (-) TimerEvent: {}
+[42.922564] (-) TimerEvent: {}
+[43.024170] (-) TimerEvent: {}
+[43.125352] (-) TimerEvent: {}
+[43.226488] (-) TimerEvent: {}
+[43.327402] (-) TimerEvent: {}
+[43.408200] (test_pkg) StdoutLine: {'line': b'[ 75%] Built target odom_node\n'}
+[43.413254] (test_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[43.419948] (test_pkg) CommandEnded: {'returncode': 2}
+[43.427600] (-) TimerEvent: {}
+[43.528437] (-) TimerEvent: {}
+[43.603334] (test_pkg) JobEnded: {'identifier': 'test_pkg', 'rc': 2}
+[43.616404] (-) EventReactorShutdown: {}

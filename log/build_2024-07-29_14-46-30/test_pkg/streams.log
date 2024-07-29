@@ -1,0 +1,120 @@
+[0.056s] Invoking command in '/home/hae/robot_ws/src/build/test_pkg': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/test_pkg -- -j4 -l4
+[0.244s] [35m[1mConsolidate compiler generated dependencies of target odom_node[0m
+[0.292s] [ 25%] [32mBuilding CXX object CMakeFiles/got_node.dir/src/go_topic.cpp.o[0m
+[0.353s] [ 50%] [32mBuilding CXX object CMakeFiles/odom_node.dir/src/odom_ex.cpp.o[0m
+[12.955s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:26:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+[12.958s]    20 |     rclcpp::Subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr subscription_;
+[12.961s]       |                          [01;31m[K^~~~~~~~[m[K
+[12.965s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.968s]    20 |     rclcpp::Subscription<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr subscription_;
+[12.971s]       |                                                 [01;31m[K^[m[K
+[12.975s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[12.978s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[12.981s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[12.985s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[12.988s]    20 |     rclcpp::Subscription<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K subscription_;
+[12.991s]       |                                                    [01;31m[K^~~~~~~~~[m[K
+[12.994s]       |                                                             [32m[K;[m[K
+[12.997s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:20:62:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[13.000s]    20 |     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Ksubscription_[m[K;
+[13.003s]       |                                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[13.006s]       |                                                              [32m[Krmw_subscription_t[m[K
+[13.008s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:22:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ in namespace ‘[01m[Kgeometry_msgs::msg[m[K’ does not name a type
+[13.011s]    22 |     geometry_msgs::msg::[01;31m[KPoint[m[K last_position_;
+[13.014s]       |                         [01;31m[K^~~~~[m[K
+[13.017s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:28:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[13.020s]    26 |     void handle_odom(const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg)
+[13.023s]       |                            [01;31m[K^~~~~~~~[m[K
+[13.027s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:41:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[13.030s]    26 |     void handle_odom(const nav_msgs::msg[01;31m[K::[m[KOdometry::SharedPtr msg)
+[13.033s]       |                                         [01;31m[K^~[m[K
+[13.036s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:41:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[13.039s]    26 |     void handle_odom[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOdometry::SharedPtr msg)
+[13.042s]       |                     [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[13.045s]       |                                         [32m[K)[m[K
+[13.048s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[13.053s]    26 |     void handle_odom(const nav_msgs::[01;31m[Kmsg[m[K::Odometry::SharedPtr msg)
+[13.055s]       |                                      [01;31m[K^~~[m[K
+[13.059s]       |                                         [32m[K;[m[K
+[13.062s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:26:43:[m[K [01;31m[Kerror: [m[K‘[01m[KOdometry[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[13.065s]    26 |     void handle_odom(const nav_msgs::msg::[01;31m[KOdometry[m[K::SharedPtr msg)
+[13.068s]       |                                           [01;31m[K^~~~~~~~[m[K
+[13.071s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[13.074s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[13.078s]    63 |         [01;31m[Ksubscription_[m[K = this->create_subscription<nav_msgs::msg::Odometry>(
+[13.081s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[13.084s]       |         [32m[Krmw_subscription_t[m[K
+[13.089s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:51:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+[13.092s]    63 |         subscription_ = this->create_subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>(
+[13.093s]       |                                                   [01;31m[K^~~~~~~~[m[K
+[13.094s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[13.095s]    63 |         subscription_ = this->[01;31m[Kcreate_subscription<nav_msgs::msg::Odometry>[m[K(
+[13.096s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.097s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:66:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[13.098s]    66 |           [this](const [01;31m[Knav_msgs[m[K::msg::Odometry::SharedPtr msg) {
+[13.099s]       |                        [01;31m[K^~~~~~~~[m[K
+[13.100s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In lambda function:
+[13.100s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K;[m[K’ token
+[13.101s]    69 |         )[01;31m[K;[m[K
+[13.102s]       |          [01;31m[K^[m[K
+[13.102s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[13.103s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:69:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[13.104s] [01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:75:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[13.104s]    63 |         subscription_ = this->create_subscription<nav_msgs::msg::Odometry>[01;36m[K([m[K
+[13.105s]       |                                                                           [01;36m[K^[m[K
+[13.212s] [01m[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:43:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kpublic[m[K’
+[13.212s]    43 | [01;31m[Kpublic[m[K:
+[13.214s]       | [01;31m[K^~~~~~[m[K
+[13.214s] [01m[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:44:84:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K,[m[K’ token
+[13.215s]    44 |   OdomDistanceCalculator() : Node("odom_distance_calculator"), total_distance_{0.0}[01;31m[K,[m[K initialized_{false}
+[13.216s]       |                                                                                    [01;31m[K^[m[K
+[13.216s] [01m[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:44:98:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K{[m[K’ token
+[13.217s]    44 |   OdomDistanceCalculator() : Node("odom_distance_calculator"), total_distance_{0.0}, initialized_[01;31m[K{[m[Kfalse}
+[13.218s]       |                                                                                                  [01;31m[K^[m[K
+[13.218s] [01m[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:45:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+[13.219s]    45 |   [01;31m[K{[m[K
+[13.220s]       |   [01;31m[K^[m[K
+[15.192s] In file included from [01m[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[15.193s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[15.194s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[15.195s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[15.195s]                  from [01m[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:1[m[K:
+[15.196s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = OdomDistanceCalculator; _Args = {}; _Tp = OdomDistanceCalculator][m[K’:
+[15.201s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = OdomDistanceCalculator; _Args = {}; _Tp = OdomDistanceCalculator; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<OdomDistanceCalculator>][m[K’
+[15.202s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = OdomDistanceCalculator; _Alloc = std::allocator<OdomDistanceCalculator>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[15.203s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = OdomDistanceCalculator; _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[15.203s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}; _Tp = OdomDistanceCalculator; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[15.204s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}; _Tp = OdomDistanceCalculator][m[K’
+[15.205s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = OdomDistanceCalculator; _Alloc = std::allocator<OdomDistanceCalculator>; _Args = {}][m[K’
+[15.206s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = OdomDistanceCalculator; _Args = {}][m[K’
+[15.206s] [01m[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:82:56:[m[K   required from here
+[15.207s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KOdomDistanceCalculator::OdomDistanceCalculator()[m[K’
+[15.207s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[15.208s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.209s] [01m[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:7:7:[m[K [01;36m[Knote: [m[K‘[01m[KOdomDistanceCalculator::OdomDistanceCalculator()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[15.210s]     7 | class [01;36m[KOdomDistanceCalculator[m[K : public rclcpp::Node
+[15.210s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.213s] [01m[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:7:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[15.215s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[15.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[15.216s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[15.217s]                  from [01m[K/home/hae/robot_ws/src/test_pkg/src/odom_ex.cpp:1[m[K:
+[15.218s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[15.218s]  1294 |   [01;36m[KNode[m[K(
+[15.219s]       |   [01;36m[K^~~~[m[K
+[15.220s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[15.221s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[15.221s]   101 |   explicit [01;36m[KNode[m[K(
+[15.222s]       |            [01;36m[K^~~~[m[K
+[15.223s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[15.223s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[15.224s]    89 |   explicit [01;36m[KNode[m[K(
+[15.225s]       |            [01;36m[K^~~~[m[K
+[15.225s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[16.490s] gmake[2]: *** [CMakeFiles/odom_node.dir/build.make:76: CMakeFiles/odom_node.dir/src/odom_ex.cpp.o] Error 1
+[16.492s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/odom_node.dir/all] Error 2
+[16.493s] gmake[1]: *** Waiting for unfinished jobs....
+[22.399s] gmake[2]: *** [CMakeFiles/got_node.dir/build.make:76: CMakeFiles/got_node.dir/src/go_topic.cpp.o] Error 1
+[22.399s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/got_node.dir/all] Error 2
+[22.400s] gmake: *** [Makefile:146: all] Error 2
+[22.406s] Invoked command in '/home/hae/robot_ws/src/build/test_pkg' returned '2': AMENT_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/opt/ros/humble LD_LIBRARY_PATH=/home/hae/robot_ws/src/install/robot_action/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/hae/robot_ws/src/build/test_pkg -- -j4 -l4

@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/cli_node.dir/build.make:76: CMakeFiles/cli_node.dir/src/cli.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/cli_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

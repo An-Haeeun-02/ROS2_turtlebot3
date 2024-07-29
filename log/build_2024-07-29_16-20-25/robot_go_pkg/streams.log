@@ -1,0 +1,18 @@
+[0.090s] Invoking command in '/home/hae/robot_ws/src/build/robot_go_pkg': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4
+[0.374s] [35m[1mConsolidate compiler generated dependencies of target go_node[0m
+[0.528s] [ 25%] Built target test_node
+[0.548s] [ 50%] Built target scan_node
+[0.561s] [ 75%] Built target cli_node
+[0.598s] [ 87%] [32mBuilding CXX object CMakeFiles/go_node.dir/src/go.cpp.o[0m
+[13.674s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse MoveActionServer::handle_goal(const GoalUUID&, std::shared_ptr<const robot_action::action::Move_Goal_<std::allocator<void> > >)[m[K’:
+[13.674s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:74:41:[m[K [01;31m[Kerror: [m[K‘[01m[KAccepted[m[K’ is not a member of ‘[01m[Krclcpp_action::GoalResponse[m[K’
+[13.675s]    74 |     return rclcpp_action::GoalResponse::[01;31m[KAccepted[m[K;
+[13.676s]       |                                         [01;31m[K^~~~~~~~[m[K
+[13.676s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:[m[K In member function ‘[01m[Krclcpp_action::CancelResponse MoveActionServer::handle_cancel(std::shared_ptr<rclcpp_action::ServerGoalHandle<robot_action::action::Move> >)[m[K’:
+[13.677s] [01m[K/home/hae/robot_ws/src/robot_go_pkg/src/go.cpp:81:43:[m[K [01;31m[Kerror: [m[K‘[01m[KAccepted[m[K’ is not a member of ‘[01m[Krclcpp_action::CancelResponse[m[K’
+[13.677s]    81 |     return rclcpp_action::CancelResponse::[01;31m[KAccepted[m[K;
+[13.677s]       |                                           [01;31m[K^~~~~~~~[m[K
+[23.356s] gmake[2]: *** [CMakeFiles/go_node.dir/build.make:76: CMakeFiles/go_node.dir/src/go.cpp.o] Error 1
+[23.357s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/go_node.dir/all] Error 2
+[23.358s] gmake: *** [Makefile:146: all] Error 2
+[23.365s] Invoked command in '/home/hae/robot_ws/src/build/robot_go_pkg' returned '2': CMAKE_PREFIX_PATH=/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_go_pkg -- -j4 -l4

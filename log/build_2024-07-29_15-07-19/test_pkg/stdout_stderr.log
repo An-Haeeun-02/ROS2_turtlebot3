@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target got_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/got_node.dir/src/go_topic.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:68:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Ktimer_[m[K’
+   68 |     [01;31m[Ktimer_[m[K = this->create_wall_timer(
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:63:75:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   63 |         subscription_ = this->create_subscription<nav_msgs::msg::Odometry>[01;36m[K([m[K"/odom", 10,
+      |                                                                           [01;36m[K^[m[K
+[01m[K/home/hae/robot_ws/src/test_pkg/src/go_topic.cpp:74:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   74 |     [01;31m[K)[m[K;
+      |     [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/got_node.dir/build.make:76: CMakeFiles/got_node.dir/src/go_topic.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/got_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
