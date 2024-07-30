@@ -1,45 +1,45 @@
-#include <rclcpp/rclcpp.hpp>                       // ROS2의 rclcpp 헤더 파일을 포함합니다.
-#include <rclcpp_action/rclcpp_action.hpp>         // ROS2의 rclcpp_action 헤더 파일을 포함합니다.
-#include <nav_msgs/msg/odometry.hpp>               // ROS2의 Odometry 메시지 헤더 파일을 포함합니다.
-#include <geometry_msgs/msg/twist.hpp>             // ROS2의 Twist 메시지 헤더 파일을 포함합니다.
-#include <geometry_msgs/msg/vector3.hpp>           // ROS2의 Vector3 메시지 헤더 파일을 포함합니다.
-#include <geometry_msgs/msg/point.hpp>             // ROS2의 Point 메시지 헤더 파일을 포함합니다.
-#include <cmath>                                 // 수학 함수 사용을 위한 헤더 파일을 포함합니다.
-#include <thread>                                // 스레드 작업을 위한 헤더 파일을 포함합니다.
-#include "robot_action/action/move.hpp"           // 사용자 정의 Move 액션 메시지 헤더 파일을 포함합니다.
-#include <iostream>                              // 표준 입출력 사용을 위한 헤더 파일을 포함합니다.
+#include <rclcpp/rclcpp.hpp>                   
+#include <rclcpp_action/rclcpp_action.hpp>
+#include <nav_msgs/msg/odometry.hpp> 
+#include <geometry_msgs/msg/twist.hpp> 
+#include <geometry_msgs/msg/vector3.hpp>
+#include <geometry_msgs/msg/point.hpp>
+#include <cmath>
+#include <thread>        
+#include "robot_action/action/move.hpp" 
+#include <iostream>                              
 
-using namespace std;                             // 표준 네임스페이스를 전역적으로 사용합니다.
+using namespace std;
 
-class TurtlebotController : public rclcpp::Node { // TurtlebotController 클래스를 정의하고 rclcpp::Node를 상속받습니다.
+class TurtlebotController : public rclcpp::Node {
 public:
-    using Move = robot_action::action::Move;     // Move 액션 메시지 타입을 정의합니다.
-    using GoalHandleMove = rclcpp_action::ServerGoalHandle<Move>; // Move 액션의 GoalHandle 타입을 정의합니다.
+    using Move = robot_action::action::Move;     // Move 액션 메시지 타입을 정의(별칭)
+    using GoalHandleMove = rclcpp_action::ServerGoalHandle<Move>; // Move 액션의 GoalHandle 타입을 정의
 
     TurtlebotController()
-        : Node("robotController"),             // 노드 이름을 "robotController"로 초기화합니다.
-          obstacle_detected_(false),            // 장애물 감지 플래그를 초기화합니다.
-          total_distance_(0.0),                 // 총 이동 거리를 초기화합니다.
-          initialized_(false),                  // 초기화 플래그를 초기화합니다.
-          goal_distance_(0.0)                   // 목표 거리를 초기화합니다.
+        : Node("robotController"),             // 노드 이름을 "robotController"로 초기화
+          obstacle_detected_(false),            // 장애물 감지 플래그를 초기화
+          total_distance_(0.0),                 // 총 이동 거리를 초기화
+          initialized_(false),                  // 초기화 플래그를 초기화
+          goal_distance_(0.0)                   // 목표 거리를 초기화
     {
-        // "cmd_vel"이라는 토픽으로 Twist 메시지를 전송할 퍼블리셔를 생성합니다.
+        // "cmd_vel" 토픽 퍼블리셔 생성
         cmd_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
 
-        // "aeeun"이라는 토픽에서 Vector3 메시지를 수신할 구독자를 생성합니다.
+        // "aeeun"토픽 서브스크라이버 생성
         sensor_subscriber_ = this->create_subscription<geometry_msgs::msg::Vector3>("aeeun", 10,
             std::bind(&TurtlebotController::sensor_callback, this, std::placeholders::_1));
 
-        cout << "Turtlebot이 실행 중입니다..." << endl; // Turtlebot이 실행 중임을 표준 출력으로 출력합니다.
+        cout << "Turtlebot이 실행 중입니다..." << endl; //실행시 출력
 
-        // "/odom"이라는 토픽에서 Odometry 메시지를 수신할 구독자를 생성합니다.
+        // "/odom" 토픽 서브스크라이버 생성
         odom_subscription_ = this->create_subscription<nav_msgs::msg::Odometry>(
             "/odom",
             10,
             std::bind(&TurtlebotController::handle_odom, this, std::placeholders::_1)
         );
 
-        // "an"이라는 이름으로 Move 액션 서버를 생성합니다.
+        // "an"이라는 Move 액션 서버를 생성
         action_server_ = rclcpp_action::create_server<Move>(
             this,
             "an",
@@ -70,10 +70,10 @@ private:
             return;
         }
 
-        auto current_position = msg->pose.pose.position; // 현재 위치를 가져옵니다.
-        double dx = current_position.x - last_position_.x; // X축 방향 거리 계산
-        double dy = current_position.y - last_position_.y; // Y축 방향 거리 계산
-        double distance = std::sqrt(dx * dx + dy * dy); // 총 이동 거리 계산
+        auto current_position = msg->pose.pose.position; // 현재 위치
+        double dx = current_position.x - last_position_.x; // X축 방향 거리
+        double dy = current_position.y - last_position_.y; // Y축 방향 거리
+        double distance = std::sqrt(dx * dx + dy * dy); // 총 이동 거리
         total_distance_ += distance; // 총 이동 거리 업데이트
 
         if (current_goal_handle_) { // 현재 목표 핸들이 유효한 경우
@@ -144,7 +144,7 @@ private:
     void sensor_callback(const geometry_msgs::msg::Vector3::SharedPtr msg) { // 센서 데이터 수신 콜백 함수
         sensor_data_ = *msg; // 센서 데이터 저장
         check_obstacle(); // 장애물 여부 확인
-    }
+    }//콜백 함수로 장애물 감지 여부와 센서 데이터 실시간으로 초기화
 
     void check_obstacle() { // 장애물 여부를 확인하는 함수
         obstacle_detected_ = sensor_data_.x < 30.0; // X값이 30보다 작은 경우 장애물 감지
