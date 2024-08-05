@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target gps[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gps.dir/src/gps.cpp.o[0m
+[100%] [32m[1mLinking CXX executable gps[0m
+/usr/bin/ld: cannot find -lGPSMM_LIBRARIES-NOTFOUND: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/gps.dir/build.make:151: gps] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -8,7 +8,6 @@
 #include <thread>        
 #include "robot_action/action/move.hpp" 
 #include <iostream>                              
-
 using namespace std;
 
 class TurtlebotController : public rclcpp::Node {
@@ -93,7 +92,6 @@ private:
             total_distance_ = 0.0; // 총 이동 거리 초기화
             goal_distance_ = 0.0; // 목표 거리 초기화
         }
-
         last_position_ = current_position; // 마지막 위치 업데이트
     }
 

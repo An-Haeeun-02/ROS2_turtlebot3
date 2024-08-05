@@ -1,0 +1,23 @@
+[0.058s] Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/cgps_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/cgps_pkg
+[0.103s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.713s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.919s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.919s]   By not providing "Findlibgpsmm.h.cmake" in CMAKE_MODULE_PATH this project
+[0.920s]   has asked CMake to find a package configuration file provided by
+[0.920s]   "libgpsmm.h", but CMake did not find one.
+[0.921s] 
+[0.922s]   Could not find a package configuration file provided by "libgpsmm.h" with
+[0.923s]   any of the following names:
+[0.924s] 
+[0.925s]     libgpsmm.hConfig.cmake
+[0.925s]     libgpsmm.h-config.cmake
+[0.926s] 
+[0.927s]   Add the installation prefix of "libgpsmm.h" to CMAKE_PREFIX_PATH or set
+[0.928s]   "libgpsmm.h_DIR" to a directory containing one of the above files.  If
+[0.928s]   "libgpsmm.h" provides a separate development package or SDK, be sure it has
+[0.929s]   been installed.
+[0.929s] 
+[0.930s] [0m
+[0.930s] -- Configuring incomplete, errors occurred!
+[0.931s] See also "/home/hae/robot_ws/src/build/cgps_pkg/CMakeFiles/CMakeOutput.log".
+[0.939s] Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/cgps_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/cgps_pkg

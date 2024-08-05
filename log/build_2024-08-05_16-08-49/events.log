@@ -1,0 +1,9 @@
+[0.000000] (-) TimerEvent: {}
+[0.001210] (-) JobUnselected: {'identifier': 'action_test'}
+[0.001835] (-) JobUnselected: {'identifier': 'cgps_pkg'}
+[0.002112] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.002244] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.002376] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.002671] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.002933] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.003233] (-) EventReactorShutdown: {}

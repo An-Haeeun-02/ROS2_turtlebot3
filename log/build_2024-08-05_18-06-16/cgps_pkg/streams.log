@@ -1,0 +1,33 @@
+[0.061s] Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4
+[0.162s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.743s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.775s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.955s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.965s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.989s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.036s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.103s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.332s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.338s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.352s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.129s] [31mCMake Error at CMakeLists.txt:7 (find_package):
+[3.129s]   By not providing "Findgpsd.cmake" in CMAKE_MODULE_PATH this project has
+[3.130s]   asked CMake to find a package configuration file provided by "gpsd", but
+[3.130s]   CMake did not find one.
+[3.131s] 
+[3.131s]   Could not find a package configuration file provided by "gpsd" with any of
+[3.132s]   the following names:
+[3.132s] 
+[3.133s]     gpsdConfig.cmake
+[3.133s]     gpsd-config.cmake
+[3.134s] 
+[3.134s]   Add the installation prefix of "gpsd" to CMAKE_PREFIX_PATH or set
+[3.134s]   "gpsd_DIR" to a directory containing one of the above files.  If "gpsd"
+[3.135s]   provides a separate development package or SDK, be sure it has been
+[3.137s]   installed.
+[3.138s] 
+[3.139s] [0m
+[3.142s] -- Configuring incomplete, errors occurred!
+[3.144s] See also "/home/hae/robot_ws/src/build/cgps_pkg/CMakeFiles/CMakeOutput.log".
+[3.156s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[3.163s] Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4

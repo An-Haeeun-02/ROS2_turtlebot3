@@ -1,0 +1,21 @@
+[0.052s] Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4
+[0.230s] [35m[1mConsolidate compiler generated dependencies of target gps[0m
+[0.310s] [ 50%] [32mBuilding CXX object CMakeFiles/gps.dir/src/gps.cpp.o[0m
+[1.718s] [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[1.723s] [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_ctx[m[K’ was not declared in this scope
+[1.724s]    11 |     [01;31m[Kgps_ctx[m[K *gps = gps_open("localhost", DEFAULT_GPSD_PORT);
+[1.724s]       |     [01;31m[K^~~~~~~[m[K
+[1.732s] [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:11:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps[m[K’ was not declared in this scope
+[1.740s]    11 |     gps_ctx *[01;31m[Kgps[m[K = gps_open("localhost", DEFAULT_GPSD_PORT);
+[1.744s]       |              [01;31m[K^~~[m[K
+[1.747s] [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:11:28:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kint gps_open(const char*, const char*, gps_data_t*)[m[K’
+[1.754s]    11 |     gps_ctx *gps = [01;31m[Kgps_open("localhost", DEFAULT_GPSD_PORT)[m[K;
+[1.757s]       |                    [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.760s] In file included from [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:2[m[K:
+[1.763s] [01m[K/usr/include/gps.h:2443:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.764s]  2443 | extern int [01;36m[Kgps_open[m[K(const char *, const char *,
+[1.765s]       |            [01;36m[K^~~~~~~~[m[K
+[2.049s] gmake[2]: *** [CMakeFiles/gps.dir/build.make:76: CMakeFiles/gps.dir/src/gps.cpp.o] Error 1
+[2.050s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps.dir/all] Error 2
+[2.056s] gmake: *** [Makefile:146: all] Error 2
+[2.059s] Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4

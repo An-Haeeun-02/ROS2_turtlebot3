@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target gps[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gps.dir/src/gps.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:25:21:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kint gps_read(gps_data_t*, char*, int)[m[K’
+   25 |         if ([01;31m[Kgps_read(&gps_data)[m[K == -1) {
+      |             [01;31m[K~~~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:2[m[K:
+[01m[K/usr/include/gps.h:2447:12:[m[K [01;36m[Knote: [m[Kdeclared here
+ 2447 | extern int [01;36m[Kgps_read[m[K(struct gps_data_t *, char *message, int message_len);
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:8:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgps_data_ptr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+    8 |     struct gps_data_t *[01;35m[Kgps_data_ptr[m[K = &gps_data;
+      |                        [01;35m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gps.dir/build.make:76: CMakeFiles/gps.dir/src/gps.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

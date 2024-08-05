@@ -1,0 +1,39 @@
+[0.065s] Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4
+[0.211s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.942s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.001s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.214s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.227s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.258s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.321s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.678s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.685s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.746s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.468s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.411s] -- Configuring done
+[4.478s] -- Generating done
+[4.497s] -- Build files have been written to: /home/hae/robot_ws/src/build/cgps_pkg
+[4.623s] [35m[1mConsolidate compiler generated dependencies of target gps[0m
+[4.708s] [ 50%] [32mBuilding CXX object CMakeFiles/gps.dir/src/gps.cpp.o[0m
+[6.394s] [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[6.395s] [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_ctx[m[K’ was not declared in this scope
+[6.396s]    12 |     [01;31m[Kgps_ctx[m[K *gps = gps_open("localhost", DEFAULT_GPSD_PORT);
+[6.397s]       |     [01;31m[K^~~~~~~[m[K
+[6.405s] [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:12:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps[m[K’ was not declared in this scope
+[6.406s]    12 |     gps_ctx *[01;31m[Kgps[m[K = gps_open("localhost", DEFAULT_GPSD_PORT);
+[6.407s]       |              [01;31m[K^~~[m[K
+[6.408s] [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:12:28:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kint gps_open(const char*, const char*, gps_data_t*)[m[K’
+[6.409s]    12 |     gps_ctx *gps = [01;31m[Kgps_open("localhost", DEFAULT_GPSD_PORT)[m[K;
+[6.409s]       |                    [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.410s] In file included from [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:2[m[K:
+[6.411s] [01m[K/usr/include/gps.h:2443:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[6.412s]  2443 | extern int [01;36m[Kgps_open[m[K(const char *, const char *,
+[6.422s]       |            [01;36m[K^~~~~~~~[m[K
+[6.422s] [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:11:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.423s]    11 |     int [01;35m[Kerr[m[K;
+[6.424s]       |         [01;35m[K^~~[m[K
+[6.770s] gmake[2]: *** [CMakeFiles/gps.dir/build.make:76: CMakeFiles/gps.dir/src/gps.cpp.o] Error 1
+[6.770s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps.dir/all] Error 2
+[6.771s] gmake: *** [Makefile:146: all] Error 2
+[6.772s] Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4

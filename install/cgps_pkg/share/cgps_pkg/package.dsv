@@ -1,0 +1,8 @@
+source;share/cgps_pkg/hook/cmake_prefix_path.ps1
+source;share/cgps_pkg/hook/cmake_prefix_path.dsv
+source;share/cgps_pkg/hook/cmake_prefix_path.sh
+source;share/cgps_pkg/local_setup.bash
+source;share/cgps_pkg/local_setup.dsv
+source;share/cgps_pkg/local_setup.ps1
+source;share/cgps_pkg/local_setup.sh
+source;share/cgps_pkg/local_setup.zsh

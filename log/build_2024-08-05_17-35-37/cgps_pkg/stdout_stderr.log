@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target gps[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gps.dir/src/gps.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:11:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_ctx[m[K’ was not declared in this scope
+   11 |     [01;31m[Kgps_ctx[m[K *gps = gps_open("localhost", DEFAULT_GPSD_PORT);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:11:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps[m[K’ was not declared in this scope
+   11 |     gps_ctx *[01;31m[Kgps[m[K = gps_open("localhost", DEFAULT_GPSD_PORT);
+      |              [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:11:28:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kint gps_open(const char*, const char*, gps_data_t*)[m[K’
+   11 |     gps_ctx *gps = [01;31m[Kgps_open("localhost", DEFAULT_GPSD_PORT)[m[K;
+      |                    [01;31m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/hae/robot_ws/src/cgps_pkg/src/gps.cpp:2[m[K:
+[01m[K/usr/include/gps.h:2443:12:[m[K [01;36m[Knote: [m[Kdeclared here
+ 2443 | extern int [01;36m[Kgps_open[m[K(const char *, const char *,
+      |            [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gps.dir/build.make:76: CMakeFiles/gps.dir/src/gps.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
