@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:10 (find_package):
+  By not providing "Findlibgpsmm.h.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "libgpsmm.h", but CMake did not find one.
+
+  Could not find a package configuration file provided by "libgpsmm.h" with
+  any of the following names:
+
+    libgpsmm.hConfig.cmake
+    libgpsmm.h-config.cmake
+
+  Add the installation prefix of "libgpsmm.h" to CMAKE_PREFIX_PATH or set
+  "libgpsmm.h_DIR" to a directory containing one of the above files.  If
+  "libgpsmm.h" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m

@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target gps[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gps.dir/src/gps.cpp.o[0m
+[100%] [32m[1mLinking CXX executable gps[0m
+/usr/bin/ld: CMakeFiles/gps.dir/src/gps.cpp.o: in function `main':
+gps.cpp:(.text+0x4c): undefined reference to `gpsmm::stream(int)'
+/usr/bin/ld: gps.cpp:(.text+0x80): undefined reference to `gpsmm::~gpsmm()'
+/usr/bin/ld: gps.cpp:(.text+0xac): undefined reference to `gpsmm::read()'
+/usr/bin/ld: gps.cpp:(.text+0x1d8): undefined reference to `gpsmm::~gpsmm()'
+/usr/bin/ld: CMakeFiles/gps.dir/src/gps.cpp.o: in function `gpsmm::gpsmm(char const*, char const*)':
+gps.cpp:(.text._ZN5gpsmmC2EPKcS1_[_ZN5gpsmmC5EPKcS1_]+0x14): undefined reference to `vtable for gpsmm'
+/usr/bin/ld: gps.cpp:(.text._ZN5gpsmmC2EPKcS1_[_ZN5gpsmmC5EPKcS1_]+0x18): undefined reference to `vtable for gpsmm'
+/usr/bin/ld: gps.cpp:(.text._ZN5gpsmmC2EPKcS1_[_ZN5gpsmmC5EPKcS1_]+0x5c): undefined reference to `gpsmm::gps_inner_open(char const*, char const*)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/gps.dir/build.make:97: gps] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

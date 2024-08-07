@@ -1,0 +1,4 @@
+Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/cgps_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/cgps_pkg
+Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/cgps_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/cgps_pkg
+Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4
+Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4

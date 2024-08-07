@@ -1,0 +1,7 @@
+[0mCMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+GPSMM_LIBRARIES
+    linked by target "gps" in directory /home/hae/robot_ws/src/cgps_pkg
+[0m
+[0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

@@ -1,0 +1,14 @@
+[0.055s] Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4
+[0.247s] [35m[1mConsolidate compiler generated dependencies of target gps[0m
+[0.300s] [ 50%] [32mBuilding CXX object CMakeFiles/gps.dir/src/gps.cpp.o[0m
+[2.050s] [100%] [32m[1mLinking CXX executable gps[0m
+[2.352s] /usr/bin/ld: CMakeFiles/gps.dir/src/gps.cpp.o: in function `main':
+[2.352s] gps.cpp:(.text+0x40): undefined reference to `gps_open'
+[2.355s] /usr/bin/ld: gps.cpp:(.text+0x80): undefined reference to `gps_stream'
+[2.355s] /usr/bin/ld: gps.cpp:(.text+0xb0): undefined reference to `gps_close'
+[2.360s] /usr/bin/ld: gps.cpp:(.text+0xcc): undefined reference to `gps_read'
+[2.386s] collect2: error: ld returned 1 exit status
+[2.389s] gmake[2]: *** [CMakeFiles/gps.dir/build.make:97: gps] Error 1
+[2.394s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps.dir/all] Error 2
+[2.400s] gmake: *** [Makefile:146: all] Error 2
+[2.401s] Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4

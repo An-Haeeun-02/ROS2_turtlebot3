@@ -55,6 +55,7 @@ CMakeFiles/robot_action__rosidl_generator_c.dir/rosidl_generator_c/robot_action/
   /usr/include/stdint.h \
   /usr/include/aarch64-linux-gnu/bits/wchar.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
   /usr/include/assert.h \
@@ -77,6 +78,7 @@ CMakeFiles/robot_action__rosidl_generator_c.dir/rosidl_generator_c/robot_action/
   /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
   /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/rosidl_generator_c__visibility_control.h \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__functions.h \
@@ -177,6 +179,8 @@ rosidl_generator_c/robot_action/action/detail/test__functions.h:
 
 /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__functions.h:
 
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
+
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdio_lim.h:
@@ -201,6 +205,8 @@ rosidl_generator_c/robot_action/action/detail/test__functions.h:
 
 /usr/include/strings.h:
 
+/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
+
 /usr/include/endian.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/time_t.h:
@@ -208,12 +214,6 @@ rosidl_generator_c/robot_action/action/detail/test__functions.h:
 /usr/include/aarch64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/time64.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
-
-/usr/include/aarch64-linux-gnu/sys/types.h:
 
 /usr/include/string.h:
 
@@ -330,6 +330,10 @@ rosidl_generator_c/robot_action/msg/rosidl_generator_c__visibility_control.h:
 /usr/include/aarch64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/aarch64-linux-gnu/sys/types.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 rosidl_generator_c/robot_action/action/detail/move__struct.h:
 

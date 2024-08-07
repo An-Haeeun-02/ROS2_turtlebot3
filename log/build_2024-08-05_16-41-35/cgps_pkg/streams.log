@@ -1,0 +1,41 @@
+[0.064s] Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4
+[0.292s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.902s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.941s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.044s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.055s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.081s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.127s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.425s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.432s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.398s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.999s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[3.163s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.521s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.843s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.844s] -- Configured cppcheck include dirs: 
+[3.845s] -- Configured cppcheck exclude dirs and/or files: 
+[3.847s] -- Added test 'lint_cmake' to check CMake code style
+[3.853s] -- Added test 'uncrustify' to check C / C++ code style
+[3.853s] -- Configured uncrustify additional arguments: 
+[3.855s] -- Added test 'xmllint' to check XML markup files
+[3.860s] -- Configuring done
+[3.917s] -- Generating done
+[3.926s] -- Build files have been written to: /home/hae/robot_ws/src/build/cgps_pkg
+[4.040s] [35m[1mConsolidate compiler generated dependencies of target gps[0m
+[4.129s] [ 50%] [32m[1mLinking CXX executable gps[0m
+[4.523s] /usr/bin/ld: CMakeFiles/gps.dir/src/gps.cpp.o: in function `main':
+[4.524s] gps.cpp:(.text+0x4c): undefined reference to `gpsmm::stream(int)'
+[4.526s] /usr/bin/ld: gps.cpp:(.text+0x80): undefined reference to `gpsmm::~gpsmm()'
+[4.526s] /usr/bin/ld: gps.cpp:(.text+0xac): undefined reference to `gpsmm::read()'
+[4.527s] /usr/bin/ld: gps.cpp:(.text+0x1d8): undefined reference to `gpsmm::~gpsmm()'
+[4.527s] /usr/bin/ld: CMakeFiles/gps.dir/src/gps.cpp.o: in function `gpsmm::gpsmm(char const*, char const*)':
+[4.528s] gps.cpp:(.text._ZN5gpsmmC2EPKcS1_[_ZN5gpsmmC5EPKcS1_]+0x14): undefined reference to `vtable for gpsmm'
+[4.529s] /usr/bin/ld: gps.cpp:(.text._ZN5gpsmmC2EPKcS1_[_ZN5gpsmmC5EPKcS1_]+0x18): undefined reference to `vtable for gpsmm'
+[4.529s] /usr/bin/ld: gps.cpp:(.text._ZN5gpsmmC2EPKcS1_[_ZN5gpsmmC5EPKcS1_]+0x5c): undefined reference to `gpsmm::gps_inner_open(char const*, char const*)'
+[4.540s] collect2: error: ld returned 1 exit status
+[4.548s] gmake[2]: *** [CMakeFiles/gps.dir/build.make:151: gps] Error 1
+[4.549s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps.dir/all] Error 2
+[4.549s] gmake: *** [Makefile:146: all] Error 2
+[4.555s] Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4

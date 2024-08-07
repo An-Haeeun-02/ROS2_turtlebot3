@@ -1,0 +1,26 @@
+[0.063s] Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4
+[0.253s] [35m[1mConsolidate compiler generated dependencies of target gps_node[0m
+[0.377s] [ 50%] [32mBuilding CXX object CMakeFiles/gps_node.dir/src/gps.cpp.o[0m
+[19.530s] [100%] [32m[1mLinking CXX executable gps_node[0m
+[20.587s] [100%] Built target gps_node
+[20.632s] Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/cgps_pkg -- -j4 -l4
+[20.807s] Invoking command in '/home/hae/robot_ws/src/build/cgps_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/cgps_pkg
+[20.835s] -- Install configuration: ""
+[20.839s] -- Execute custom install script
+[20.844s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/lib/cgps_pkg/gps_node
+[20.847s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/ament_index/resource_index/package_run_dependencies/cgps_pkg
+[20.851s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/ament_index/resource_index/parent_prefix_path/cgps_pkg
+[20.852s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/environment/ament_prefix_path.sh
+[20.853s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/environment/ament_prefix_path.dsv
+[20.853s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/environment/path.sh
+[20.854s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/environment/path.dsv
+[20.854s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/local_setup.bash
+[20.855s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/local_setup.sh
+[20.855s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/local_setup.zsh
+[20.856s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/local_setup.dsv
+[20.856s] -- Symlinking: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/package.dsv
+[20.886s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/ament_index/resource_index/packages/cgps_pkg
+[20.887s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/cmake/cgps_pkgConfig.cmake
+[20.889s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/cmake/cgps_pkgConfig-version.cmake
+[20.892s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/cgps_pkg/share/cgps_pkg/package.xml
+[20.898s] Invoked command in '/home/hae/robot_ws/src/build/cgps_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/cgps_pkg

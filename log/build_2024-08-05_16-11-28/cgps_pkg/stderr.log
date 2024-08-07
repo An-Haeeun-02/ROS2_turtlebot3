@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:13 (find_package):
+  By not providing "Findcsignal.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "csignal", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "csignal" with any
+  of the following names:
+
+    csignalConfig.cmake
+    csignal-config.cmake
+
+  Add the installation prefix of "csignal" to CMAKE_PREFIX_PATH or set
+  "csignal_DIR" to a directory containing one of the above files.  If
+  "csignal" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m
