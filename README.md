@@ -31,18 +31,24 @@ ros2 launch turtlebot3_bringup robot.launch.py
 ---
 
 ## 패키지 설명
-1. ### robot_action
-- 액션 형식이 담겨 있는 패키지
-2. ### robot_go_pkg
-- 액션 통신 방식으로 장애물을 감지하고 입력된 거리만큼 움직이면서 장애물을 피해가는 패키
-3. ### rogot_cleaner_pkg
--  토픽 통신 방식으로 장애물을 감지하고 움직이는 패키
-4. ### robot_move_pkg
--  토픽 통신 방식을 통해 키보드 입력을 통해 움직이는 패키
-5. ### cgps_pkg
-- EZ-0048 GPS 센서를 통해 좌표값만 출력하는 패키
-6. ### action_test
+1. ### robot_move_pkg
+-  토픽 통신 방식을 통해 키보드 입력을 통해 움직이는 패키지
+  
+2. ### rogot_cleaner_pkg
+-  토픽 통신 방식으로 장애물을 감지하고 움직이는 패키지
+
+3. ### action_test
 -  액션 동작을 확인할 수 있는 간단한 액션 패키지
+
+4. ### robot_action
+- 액션 형식이 담겨 있는 패키지
+  
+5. ### robot_go_pkg
+- 액션 통신 방식으로 장애물을 감지하고 입력된 거리만큼 움직이면서 장애물을 피해가는 패키
+
+6. ### cgps_pkg
+- EZ-0048 GPS 센서를 통해 좌표값만 출력하는 패키
+
 7.  ### test_pkg
 -  패키지를 만들기 전, 테스트 용으로 만드는 패키지
   
