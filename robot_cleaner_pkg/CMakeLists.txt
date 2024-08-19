@@ -24,7 +24,10 @@ if(BUILD_TESTING)
 endif()
 add_executable(cleaner src/cleaner.cpp)
 ament_target_dependencies(cleaner rclcpp std_msgs geometry_msgs)
+add_executable(scan_node src/scan.cpp)
+ament_target_dependencies(scan_node rclcpp std_msgs geometry_msgs nav_msgs sensor_msgs)
 install(TARGETS 
-  cleaner 
+  cleaner
+  scan_node
     DESTINATION lib/${PROJECT_NAME})
 ament_package()
