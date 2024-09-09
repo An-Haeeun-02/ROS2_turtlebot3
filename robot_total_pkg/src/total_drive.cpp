@@ -21,9 +21,11 @@ private:
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_publisher_; // cmd_vel 토픽에 메시지를 발행할 퍼블리셔
     rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr sensor_right_subscriber_; // 우측 센서 데이터 구독
     rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr sensor_left_subscriber_; // 좌측 센서 데이터 구독
+    rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr sensor_front_subscriber_; // 좌측 센서 데이터 구독
     rclcpp::Subscription<geometry_msgs::msg::Vector3>::SharedPtr sensor_subscriber_; // 정면 센서 데이터 구독
     geometry_msgs::msg::Vector3 sensor_right_data_; // 우측 센서 데이터 저장
     geometry_msgs::msg::Vector3 sensor_left_data_; // 좌측 센서 데이터 저장
+    geometry_msgs::msg::Vector3 sensor_front_data_; // 정면 센서 데이터 저장
     geometry_msgs::msg::Vector3 sensor_data_; // 정면 센서 데이터 저장
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
@@ -32,6 +34,10 @@ private:
     double previous_right_value_; // 이전 오른쪽 센서 값
     double initial_orientation_;
     double current_orientation_;
+    
+    double tfmini_range_;  // 클래스 멤버 선언 순서
+    bool stair_detected_;  // 계단 감지 여부
+    
     bool is_initialized_ = false;
     bool stop_requested_ = false;
 
@@ -73,21 +79,22 @@ private:
     {
       cmd_msg.angular.z = -angle_diff * 1.0;  // 각도 차이에 비례하여 회전 속도 설정
       cmd_msg.linear.x = 0.1;  // 회전 중일 때는 직진 속도 줄임
-    }
-    else
+    }else
     {
       cmd_msg.angular.z = 0.0;  // 각도 차이가 작으면 회전하지 않음
     }
 
     // 명령 퍼블리시
     cmd_publisher_->publish(cmd_msg);
-  }
-
-
+    }
 
 
 public:
-    TurtlebotController() : Node("robot_cleaner"), obstacle_detected_(false), previous_left_value_(0.0), previous_right_value_(0.0) {
+    TurtlebotController() : Node("robot_cleaner"), 
+    obstacle_detected_(false),
+    stair_detected_(false), 
+    previous_left_value_(0.0), 
+    previous_right_value_(0.0) {
         // 기본 임계값 설정
         sensor_thresholds_[0] = 25.0;
         sensor_thresholds_[30] = 30.0;
@@ -104,7 +111,8 @@ public:
             std::bind(&TurtlebotController::sensor_left_callback, this, std::placeholders::_1)); // 좌측 센서 데이터 구독
         imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>("/imu", 10, 
             std::bind(&TurtlebotController::imuCallback, this, std::placeholders::_1));
-
+        sensor_front_subscriber_ = this->create_subscription<geometry_msgs::msg::Vector3>("/haeeun", 10,
+            std::bind(&TurtlebotController::sensor_front_callback, this, std::placeholders::_1));
 
         cout << "터틀봇 작동중..." << endl; // 초기화 완료 메시지 출력
     }
@@ -121,6 +129,25 @@ public:
 
     void sensor_left_callback(const geometry_msgs::msg::Vector3::SharedPtr lmsg) {
         sensor_left_data_ = *lmsg; // 좌측 센서 데이터 업데이트
+    }
+
+    void sensor_front_callback(const geometry_msgs::msg::Vector3::SharedPtr fmsg) {
+        sensor_front_data_ = *fmsg; // 정면 센서 데이터 업데이트
+        check_stairs();  // 계단 여부 확인
+    }
+
+    void check_stairs() {
+        if (sensor_front_data_.x > 15.0) {
+            cout << "앞에 계단이 있습니다!" << endl;
+
+            // 로봇을 멈추기 위한 Twist 메시지 발행
+            auto message = geometry_msgs::msg::Twist();
+            message.linear.x = 0.0;
+            message.angular.z = 0.0;
+            cmd_publisher_->publish(message);
+
+            stair_detected_ = true;
+        }
     }
 
     void check_sensor_threshold() {
@@ -159,10 +186,18 @@ public:
     void move_robot() {
         while (rclcpp::ok()) { // ROS2가 정상 동작하는 동안 반복
             auto message = geometry_msgs::msg::Twist(); // 메시지 객체 생성
+            if (stair_detected_) {
+                // 계단이 감지되면 전진 중지
+                cout << "계단 감지로 인해 로봇 정지" << endl;
+                break;
+            }
 
             if (obstacle_detected_) { // 장애물 감지 시
                 cout << "장애물 감지" << endl; // 장애물 감지 메시지 출력
-                RCLCPP_INFO(this->get_logger(), "Sensor Data - 정면: %.2f, 우측: %.2f, 좌측: %.2f", sensor_data_.x, sensor_data_.y, sensor_data_.z); // 센서 데이터 로그 출력
+                            RCLCPP_INFO(this->get_logger(), "Sensor Data - 정면: %.2f, 우측: %.2f, 좌측: %.2f, 30도: %.2f, 330도: %.2f, 60도: %.2f, 300도: %.2f"
+                                , sensor_data_.x, sensor_data_.y, sensor_data_.z
+                                , sensor_right_data_.x, sensor_right_data_.y
+                                , sensor_left_data_.x, sensor_left_data_.y);
                 message.linear.x = 0.0; // 전진 멈춤
                 cmd_publisher_->publish(message); // cmd_vel 토픽에 멈춤 명령 발행
                 if (sensor_data_.y > sensor_data_.z) { // 좌측 센서 값이 우측 센서 값보다 클 때
