@@ -1,0 +1,44 @@
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:29:26:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+   29 |     rclcpp::Subscription<[01;31m[Knav_msgs[m[K::msg::Odometry>::SharedPtr odom_sub_; // Odometry 데이터 구독
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:29:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   29 |     rclcpp::Subscription<nav_msgs::msg::Odometry[01;31m[K>[m[K::SharedPtr odom_sub_; // Odometry 데이터 구독
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:29:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:29:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:29:49:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:29:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   29 |     rclcpp::Subscription<nav_msgs::msg::Odometry>::[01;31m[KSharedPtr[m[K odom_sub_; // Odometry 데이터 구독
+      |                                                    [01;31m[K^~~~~~~~~[m[K
+      |                                                             [32m[K;[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:29:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_sub_[m[K’ does not name a type
+   29 |     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr [01;31m[Kodom_sub_[m[K; // Odometry 데이터 구독
+      |                                                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::imuCallback(sensor_msgs::msg::Imu_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:45:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2[m[K’ has not been declared
+   45 |         [01;31m[Ktf2[m[K::Quaternion quat;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2[m[K’ has not been declared
+   46 |         [01;31m[Ktf2[m[K::fromMsg(msg->orientation, quat);
+      |         [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:46:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kquat[m[K’ was not declared in this scope; did you mean ‘[01m[Kquad_t[m[K’?
+   46 |         tf2::fromMsg(msg->orientation, [01;31m[Kquat[m[K);
+      |                                        [01;31m[K^~~~[m[K
+      |                                        [32m[Kquad_t[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:48:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2[m[K’ has not been declared
+   48 |         [01;31m[Ktf2[m[K::Matrix3x3(quat).getRPY(roll, pitch, yaw);
+      |         [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:36:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KTurtlebotController::stair_detected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   36 |     bool [01;35m[Kstair_detected_[m[K; // 계단 감지 플래그
+      |          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:31:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble TurtlebotController::previous_left_value_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   31 |     double [01;35m[Kprevious_left_value_[m[K; // 이전 왼쪽 센서 값 저장
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:88:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   88 |     [01;35m[KTurtlebotController[m[K() : Node("robot_cleaner"),
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/drive_node.dir/build.make:76: CMakeFiles/drive_node.dir/src/total_drive.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/drive_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

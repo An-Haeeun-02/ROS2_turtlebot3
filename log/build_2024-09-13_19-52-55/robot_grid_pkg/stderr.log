@@ -1,0 +1,17 @@
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kbool is_turn(Point, Point, Point)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:44:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   44 | bool is_turn(Point prev, [01;35m[KPoint current[m[K, Point next) {
+      |                          [01;35m[K~~~~~~^~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid right_turn()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   61 |         [01;31m[Kcmd_publisher_[m[K->publish(message); // 회전 명령 발행
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid left_turn()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:73:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   73 |         [01;31m[Kcmd_publisher_[m[K->publish(message); // 회전 명령 발행
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

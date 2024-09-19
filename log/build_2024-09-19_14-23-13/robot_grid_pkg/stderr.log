@@ -1,0 +1,66 @@
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcm[m[K’ has not been declared
+  124 |     void go_straight(int block, [01;31m[Kcm[m[K){
+      |                                 [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::move_robot()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:89:16:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint[m[K’ was not declared in this scope; did you mean ‘[01m[KsetPoint[m[K’?
+   89 |             if([01;31m[Ksetpoint[m[K[0][0] == setpoint[2][0]){ //x가 같을 때
+      |                [01;31m[K^~~~~~~~[m[K
+      |                [32m[KsetPoint[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:90:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::go_straight()[m[K’
+   90 |                 [01;31m[Kgo_straight()[m[K;
+      |                 [01;31m[K~~~~~~~~~~~^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid TurtlebotController::go_straight(int, int)[m[K’
+  124 |     void [01;36m[Kgo_straight[m[K(int block, cm){
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:99:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint[m[K’ was not declared in this scope; did you mean ‘[01m[KsetPoint[m[K’?
+   99 |         for(int i=2;[01;31m[Ksetpoint[m[K.size()-1>i;i++ ){
+      |                     [01;31m[K^~~~~~~~[m[K
+      |                     [32m[KsetPoint[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:101:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::go_straight()[m[K’
+  101 |                 [01;31m[Kgo_straight()[m[K;
+      |                 [01;31m[K~~~~~~~~~~~^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid TurtlebotController::go_straight(int, int)[m[K’
+  124 |     void [01;36m[Kgo_straight[m[K(int block, cm){
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:105:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::left_course(int&, int&)[m[K’
+  105 |                     [01;31m[Kleft_course(block, cm)[m[K//좌회전 후 직진
+      |                     [01;31m[K~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:136:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid TurtlebotController::left_course(int)[m[K’
+  136 |     void [01;36m[Kleft_course[m[K(int block){
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:136:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:113:12:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint[m[K’ was not declared in this scope; did you mean ‘[01m[KsetPoint[m[K’?
+  113 |         if([01;31m[Ksetpoint[m[K[setpoint.size()-1][0] == setpoint[1][0]){ //x가 같을 때
+      |            [01;31m[K^~~~~~~~[m[K
+      |            [32m[KsetPoint[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:114:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::go_straight()[m[K’
+  114 |                 [01;31m[Kgo_straight()[m[K;
+      |                 [01;31m[K~~~~~~~~~~~^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid TurtlebotController::go_straight(int, int)[m[K’
+  124 |     void [01;36m[Kgo_straight[m[K(int block, cm){
+      |          [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::go_straight(int, int)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kblock[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  124 |     void go_straight([01;35m[Kint block[m[K, cm){
+      |                      [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::right_course(int)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:131:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_trun[m[K’ was not declared in this scope
+  131 |         [01;31m[Kright_trun[m[K()
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:130:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kblock[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  130 |     void right_course([01;35m[Kint block[m[K){
+      |                       [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::left_course(int)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:136:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kblock[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  136 |     void left_course([01;35m[Kint block[m[K){
+      |                      [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kbool TurtlebotController::is_turn(const TurtlebotController::Point&, const TurtlebotController::Point&, const TurtlebotController::Point&)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:164:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  164 |     bool is_turn(const Point& prev, [01;35m[Kconst Point& current[m[K, const Point& next) {
+      |                                     [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

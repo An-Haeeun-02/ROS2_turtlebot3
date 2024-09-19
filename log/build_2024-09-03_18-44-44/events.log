@@ -1,0 +1,181 @@
+[0.000000] (-) TimerEvent: {}
+[0.001632] (-) JobUnselected: {'identifier': 'action_test'}
+[0.002227] (-) JobUnselected: {'identifier': 'cgps_pkg'}
+[0.002825] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.003011] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.003437] (-) JobUnselected: {'identifier': 'robot_drive_pkg'}
+[0.003579] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.003704] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.003819] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.003915] (dot_pkg) JobQueued: {'identifier': 'dot_pkg', 'dependencies': OrderedDict()}
+[0.004002] (dot_pkg) JobStarted: {'identifier': 'dot_pkg'}
+[0.058765] (dot_pkg) JobProgress: {'identifier': 'dot_pkg', 'progress': 'cmake'}
+[0.064044] (dot_pkg) JobProgress: {'identifier': 'dot_pkg', 'progress': 'build'}
+[0.068501] (dot_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/dot_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/dot_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 58126 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('TERM_PROGRAM_VERSION', '1.92.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-8deea4b7-d2d3-4456-a406-4bb1c71c87e8.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hae/robot_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '10'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ab3660f3b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/dot_pkg:/home/hae/robot_ws/src/install/cgps_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/dot_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 58126 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/dot_pkg:/home/hae/robot_ws/src/install/cgps_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099009] (-) TimerEvent: {}
+[0.200114] (-) TimerEvent: {}
+[0.301043] (-) TimerEvent: {}
+[0.378106] (dot_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dot_node\x1b[0m\n'}
+[0.401239] (-) TimerEvent: {}
+[0.502367] (-) TimerEvent: {}
+[0.529055] (dot_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dot_node.dir/src/dot.cpp.o\x1b[0m\n'}
+[0.602582] (-) TimerEvent: {}
+[0.703567] (-) TimerEvent: {}
+[0.804520] (-) TimerEvent: {}
+[0.906444] (-) TimerEvent: {}
+[1.007226] (-) TimerEvent: {}
+[1.107976] (-) TimerEvent: {}
+[1.208890] (-) TimerEvent: {}
+[1.309696] (-) TimerEvent: {}
+[1.410523] (-) TimerEvent: {}
+[1.511585] (-) TimerEvent: {}
+[1.612928] (-) TimerEvent: {}
+[1.713949] (-) TimerEvent: {}
+[1.814820] (-) TimerEvent: {}
+[1.915827] (-) TimerEvent: {}
+[2.016653] (-) TimerEvent: {}
+[2.117563] (-) TimerEvent: {}
+[2.218428] (-) TimerEvent: {}
+[2.319442] (-) TimerEvent: {}
+[2.420767] (-) TimerEvent: {}
+[2.521724] (-) TimerEvent: {}
+[2.622532] (-) TimerEvent: {}
+[2.723397] (-) TimerEvent: {}
+[2.824471] (-) TimerEvent: {}
+[2.925410] (-) TimerEvent: {}
+[3.026359] (-) TimerEvent: {}
+[3.127277] (-) TimerEvent: {}
+[3.228232] (-) TimerEvent: {}
+[3.329214] (-) TimerEvent: {}
+[3.430176] (-) TimerEvent: {}
+[3.531293] (-) TimerEvent: {}
+[3.632386] (-) TimerEvent: {}
+[3.733304] (-) TimerEvent: {}
+[3.834232] (-) TimerEvent: {}
+[3.935280] (-) TimerEvent: {}
+[4.036263] (-) TimerEvent: {}
+[4.137310] (-) TimerEvent: {}
+[4.238272] (-) TimerEvent: {}
+[4.339312] (-) TimerEvent: {}
+[4.440372] (-) TimerEvent: {}
+[4.541349] (-) TimerEvent: {}
+[4.642336] (-) TimerEvent: {}
+[4.743262] (-) TimerEvent: {}
+[4.844173] (-) TimerEvent: {}
+[4.945064] (-) TimerEvent: {}
+[5.046020] (-) TimerEvent: {}
+[5.146951] (-) TimerEvent: {}
+[5.247878] (-) TimerEvent: {}
+[5.348837] (-) TimerEvent: {}
+[5.449993] (-) TimerEvent: {}
+[5.551326] (-) TimerEvent: {}
+[5.653029] (-) TimerEvent: {}
+[5.754078] (-) TimerEvent: {}
+[5.855437] (-) TimerEvent: {}
+[5.956454] (-) TimerEvent: {}
+[6.057357] (-) TimerEvent: {}
+[6.158130] (-) TimerEvent: {}
+[6.259176] (-) TimerEvent: {}
+[6.360154] (-) TimerEvent: {}
+[6.461042] (-) TimerEvent: {}
+[6.562106] (-) TimerEvent: {}
+[6.663233] (-) TimerEvent: {}
+[6.764104] (-) TimerEvent: {}
+[6.864976] (-) TimerEvent: {}
+[6.965875] (-) TimerEvent: {}
+[7.066862] (-) TimerEvent: {}
+[7.167850] (-) TimerEvent: {}
+[7.268777] (-) TimerEvent: {}
+[7.369745] (-) TimerEvent: {}
+[7.470724] (-) TimerEvent: {}
+[7.571554] (-) TimerEvent: {}
+[7.672457] (-) TimerEvent: {}
+[7.773344] (-) TimerEvent: {}
+[7.874218] (-) TimerEvent: {}
+[7.975092] (-) TimerEvent: {}
+[8.076009] (-) TimerEvent: {}
+[8.176894] (-) TimerEvent: {}
+[8.277806] (-) TimerEvent: {}
+[8.378765] (-) TimerEvent: {}
+[8.479702] (-) TimerEvent: {}
+[8.580667] (-) TimerEvent: {}
+[8.681850] (-) TimerEvent: {}
+[8.782813] (-) TimerEvent: {}
+[8.883836] (-) TimerEvent: {}
+[8.984757] (-) TimerEvent: {}
+[9.085668] (-) TimerEvent: {}
+[9.186516] (-) TimerEvent: {}
+[9.287359] (-) TimerEvent: {}
+[9.388255] (-) TimerEvent: {}
+[9.489281] (-) TimerEvent: {}
+[9.590193] (-) TimerEvent: {}
+[9.691064] (-) TimerEvent: {}
+[9.792005] (-) TimerEvent: {}
+[9.892919] (-) TimerEvent: {}
+[9.993916] (-) TimerEvent: {}
+[10.094914] (-) TimerEvent: {}
+[10.195789] (-) TimerEvent: {}
+[10.297102] (-) TimerEvent: {}
+[10.398686] (-) TimerEvent: {}
+[10.499663] (-) TimerEvent: {}
+[10.600559] (-) TimerEvent: {}
+[10.701464] (-) TimerEvent: {}
+[10.802725] (-) TimerEvent: {}
+[10.904039] (-) TimerEvent: {}
+[11.005199] (-) TimerEvent: {}
+[11.106004] (-) TimerEvent: {}
+[11.206889] (-) TimerEvent: {}
+[11.307858] (-) TimerEvent: {}
+[11.480039] (-) TimerEvent: {}
+[11.581090] (-) TimerEvent: {}
+[11.682321] (-) TimerEvent: {}
+[11.783208] (-) TimerEvent: {}
+[11.884435] (-) TimerEvent: {}
+[11.985592] (-) TimerEvent: {}
+[12.086805] (-) TimerEvent: {}
+[12.187692] (-) TimerEvent: {}
+[12.288598] (-) TimerEvent: {}
+[12.389428] (-) TimerEvent: {}
+[12.490279] (-) TimerEvent: {}
+[12.591137] (-) TimerEvent: {}
+[12.691957] (-) TimerEvent: {}
+[12.792790] (-) TimerEvent: {}
+[12.893595] (-) TimerEvent: {}
+[12.994542] (-) TimerEvent: {}
+[13.073681] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KLidarVisualizer::LidarVisualizer()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.075031] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:15:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kqos\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.075523] (dot_pkg) StderrLine: {'line': b'   15 |             "/scan", \x1b[01;31m\x1b[Kqos\x1b[m\x1b[K, std::bind(&DistanceNode::topic_callback, this, std::placeholders::_1));\n'}
+[13.076085] (dot_pkg) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[13.076481] (dot_pkg) StderrLine: {'line': b'      |                      \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[13.076848] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:15:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDistanceNode\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[13.077256] (dot_pkg) StderrLine: {'line': b'   15 |             "/scan", qos, std::bind(&\x1b[01;31m\x1b[KDistanceNode\x1b[m\x1b[K::topic_callback, this, std::placeholders::_1));\n'}
+[13.077625] (dot_pkg) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.094744] (-) TimerEvent: {}
+[13.195564] (-) TimerEvent: {}
+[13.296332] (-) TimerEvent: {}
+[13.397161] (-) TimerEvent: {}
+[13.498003] (-) TimerEvent: {}
+[13.598841] (-) TimerEvent: {}
+[13.699735] (-) TimerEvent: {}
+[13.800609] (-) TimerEvent: {}
+[13.901407] (-) TimerEvent: {}
+[14.002227] (-) TimerEvent: {}
+[14.103055] (-) TimerEvent: {}
+[14.203927] (-) TimerEvent: {}
+[14.304748] (-) TimerEvent: {}
+[14.405559] (-) TimerEvent: {}
+[14.506390] (-) TimerEvent: {}
+[14.607418] (-) TimerEvent: {}
+[14.708489] (-) TimerEvent: {}
+[14.809428] (-) TimerEvent: {}
+[14.869143] (dot_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/dot_node.dir/build.make:76: CMakeFiles/dot_node.dir/src/dot.cpp.o] Error 1\n'}
+[14.872013] (dot_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dot_node.dir/all] Error 2\n'}
+[14.874358] (dot_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.909635] (-) TimerEvent: {}
+[14.970606] (dot_pkg) CommandEnded: {'returncode': 2}
+[15.009879] (-) TimerEvent: {}
+[15.110939] (-) TimerEvent: {}
+[15.211951] (-) TimerEvent: {}
+[15.312888] (-) TimerEvent: {}
+[15.397946] (dot_pkg) JobEnded: {'identifier': 'dot_pkg', 'rc': 2}
+[15.410243] (-) EventReactorShutdown: {}

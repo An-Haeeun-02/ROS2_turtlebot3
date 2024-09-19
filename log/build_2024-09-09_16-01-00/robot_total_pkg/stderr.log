@@ -1,0 +1,17 @@
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_service_[m[K’ was not declared in this scope
+  105 |         [01;31m[Kstop_service_[m[K = this->create_service<std_srvs::srv::Empty>("/stop_robot",
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:105:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+  105 |         stop_service_ = this->create_service<[01;31m[Kstd_srvs[m[K::srv::Empty>("/stop_robot",
+      |                                              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:105:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  105 |         stop_service_ = this->[01;31m[Kcreate_service<std_srvs::srv::Empty>[m[K("/stop_robot",
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:106:45:[m[K [01;31m[Kerror: [m[K‘[01m[KstopServiceCallback[m[K’ is not a member of ‘[01m[KTurtlebotController[m[K’
+  106 |             std::bind(&TurtlebotController::[01;31m[KstopServiceCallback[m[K, this, std::placeholders::_1, std::placeholders::_2));
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::move_robot()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:179:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcmd_publisher_[m[K’
+  179 |                 [01;31m[Kcmd_publisher_[m[K->publish(message); // cmd_vel 토픽에 전진 명령 발행
+      |                 [01;31m[K^~~~~~~~~~~~~~[m[K

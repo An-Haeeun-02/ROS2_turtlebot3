@@ -1,0 +1,11 @@
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:[m[K In constructor ‘[01m[KLidarVisualizer::LidarVisualizer()[m[K’:
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kqos[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+   15 |             "/scan", [01;31m[Kqos[m[K, std::bind(&DistanceNode::topic_callback, this, std::placeholders::_1));
+      |                      [01;31m[K^~~[m[K
+      |                      [32m[Kcos[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:15:38:[m[K [01;31m[Kerror: [m[K‘[01m[KDistanceNode[m[K’ has not been declared
+   15 |             "/scan", qos, std::bind(&[01;31m[KDistanceNode[m[K::topic_callback, this, std::placeholders::_1));
+      |                                      [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/dot_node.dir/build.make:76: CMakeFiles/dot_node.dir/src/dot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dot_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

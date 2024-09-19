@@ -1,0 +1,13 @@
+[0.060s] Invoking command in '/home/hae/robot_ws/src/build/dot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/dot_pkg -- -j4 -l4
+[0.308s] [ 50%] [32mBuilding CXX object CMakeFiles/dot_node.dir/src/dot.cpp.o[0m
+[12.143s] [01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:[m[K In member function ‘[01m[Kvoid LidarVisualizer::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.143s] [01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:46:52:[m[K [01;31m[Kerror: [m[K‘[01m[KX[m[K’ was not declared in this scope
+[12.144s]    46 |             int grid_y = static_cast<int>(center - [01;31m[KX[m[K); // y 좌표를 화면 좌표계로 변환
+[12.144s]       |                                                    [01;31m[K^[m[K
+[12.146s] [01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:41:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[12.147s]    41 |             double [01;35m[Kx[m[K = range * cos(angle); // 극좌표를 직교 좌표로 변환 (x 좌표)
+[12.147s]       |                    [01;35m[K^[m[K
+[21.387s] gmake[2]: *** [CMakeFiles/dot_node.dir/build.make:76: CMakeFiles/dot_node.dir/src/dot.cpp.o] Error 1
+[21.398s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dot_node.dir/all] Error 2
+[21.399s] gmake: *** [Makefile:146: all] Error 2
+[21.562s] Invoked command in '/home/hae/robot_ws/src/build/dot_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/dot_pkg -- -j4 -l4

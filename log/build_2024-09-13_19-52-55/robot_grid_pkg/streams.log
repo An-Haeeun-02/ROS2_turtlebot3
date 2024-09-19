@@ -1,0 +1,21 @@
+[0.071s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[0.252s] [35m[1mConsolidate compiler generated dependencies of target grid_node[0m
+[0.348s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[13.001s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kbool is_turn(Point, Point, Point)[m[K’:
+[13.002s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:44:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.003s]    44 | bool is_turn(Point prev, [01;35m[KPoint current[m[K, Point next) {
+[13.004s]       |                          [01;35m[K~~~~~~^~~~~~~[m[K
+[13.021s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid right_turn()[m[K’:
+[13.022s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[13.023s]    61 |         [01;31m[Kcmd_publisher_[m[K->publish(message); // 회전 명령 발행
+[13.024s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[13.025s]       |         [32m[Krmw_publisher_t[m[K
+[13.040s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid left_turn()[m[K’:
+[13.041s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:73:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[13.041s]    73 |         [01;31m[Kcmd_publisher_[m[K->publish(message); // 회전 명령 발행
+[13.042s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[13.042s]       |         [32m[Krmw_publisher_t[m[K
+[21.891s] gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+[21.892s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+[21.893s] gmake: *** [Makefile:146: all] Error 2
+[21.899s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4

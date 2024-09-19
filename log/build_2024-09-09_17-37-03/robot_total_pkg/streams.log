@@ -1,0 +1,3 @@
+[0.077s] Invoking command in '/home/hae/robot_ws/src/build/robot_total_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_total_pkg -- -j4 -l4
+[0.808s] [ 25%] [32mBuilding CXX object CMakeFiles/scan_node.dir/src/scan.cpp.o[0m
+[0.819s] [ 50%] [32mBuilding CXX object CMakeFiles/drive_node.dir/src/total_drive.cpp.o[0m

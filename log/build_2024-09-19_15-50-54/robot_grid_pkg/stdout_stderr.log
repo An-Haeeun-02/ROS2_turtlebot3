@@ -1,0 +1,66 @@
+[35m[1mConsolidate compiler generated dependencies of target grid_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:246:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDirection[m[K’ does not name a type; did you mean ‘[01m[Ksigaction[m[K’?
+  246 |         [01;31m[KDirection[m[K dir;  // 방향
+      |         [01;31m[K^~~~~~~~~[m[K
+      |         [32m[Ksigaction[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:250:23:[m[K [01;31m[Kerror: [m[K‘[01m[KDirection[m[K’ has not been declared
+  250 |         Node(Point p, [01;31m[KDirection[m[K d, int g, int h, Node* parent = nullptr)
+      |                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::move_robot()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:108:38:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<std::vector<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  108 |         for(int i=2;[01;35m[KsetPoint.size()-1>i[m[K;i++ ){
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In constructor ‘[01m[KTurtlebotController::Node::Node(TurtlebotController::Point, int, int, int, TurtlebotController::Node*)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:251:25:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KTurtlebotController::Node[m[K’ does not have any field named ‘[01m[Kdir[m[K’
+  251 |             : point(p), [01;31m[Kdir[m[K(d), g(g), h(h), parent(parent) {}  // 생성자
+      |                         [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kstd::vector<TurtlebotController::Point> TurtlebotController::find_path()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:265:36:[m[K [01;31m[Kerror: [m[K‘[01m[KRIGHT[m[K’ was not declared in this scope
+  265 |         open_list.push(Node(start, [01;31m[KRIGHT[m[K, 0, heuristic(start, goal))); // 시작 노드 추가
+      |                                    [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:265:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kheuristic[m[K’ was not declared in this scope
+  265 |         open_list.push(Node(start, RIGHT, 0, [01;31m[Kheuristic[m[K(start, goal))); // 시작 노드 추가
+      |                                              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:277:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_turn[m[K’ was not declared in this scope; did you mean ‘[01m[Kright_turn[m[K’?
+  277 |                     if (current.parent && [01;31m[Kis_turn[m[K(current.parent->point, current.point, path.back())) {
+      |                                           [01;31m[K^~~~~~~[m[K
+      |                                           [32m[Kright_turn[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:300:42:[m[K [01;31m[Kerror: [m[K‘[01m[KDirection[m[K’ was not declared in this scope; did you mean ‘[01m[Ksigaction[m[K’?
+  300 |             std::vector<std::pair<Point, [01;31m[KDirection[m[K>> directions = {
+      |                                          [01;31m[K^~~~~~~~~[m[K
+      |                                          [32m[Ksigaction[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:300:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:300:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  300 |             std::vector<std::pair<Point, Direction[01;31m[K>>[m[K directions = {
+      |                                                   [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:300:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:302:26:[m[K [01;31m[Kerror: [m[K‘[01m[KDOWN[m[K’ was not declared in this scope
+  302 |                 {{0, 1}, [01;31m[KDOWN[m[K},
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:303:27:[m[K [01;31m[Kerror: [m[K‘[01m[KLEFT[m[K’ was not declared in this scope
+  303 |                 {{-1, 0}, [01;31m[KLEFT[m[K},
+      |                           [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:304:27:[m[K [01;31m[Kerror: [m[K‘[01m[KUP[m[K’ was not declared in this scope
+  304 |                 {{0, -1}, [01;31m[KUP[m[K}
+      |                           [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:300:54:[m[K [01;31m[Kerror: [m[Kscalar object ‘[01m[Kdirections[m[K’ requires one element in initializer
+  300 |             std::vector<std::pair<Point, Direction>> [01;31m[Kdirections[m[K = {
+      |                                                      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:315:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct TurtlebotController::Node[m[K’ has no member named ‘[01m[Kdir[m[K’
+  315 |                     int rotation_cost = (current.[01;31m[Kdir[m[K == direction) ? 0 : 1;  // 방향이 달라지면 회전 비용 추가
+      |                                                  [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::print_grid_with_path(const std::vector<TurtlebotController::Point>&)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:361:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_turn[m[K’ was not declared in this scope; did you mean ‘[01m[Kright_turn[m[K’?
+  361 |             if ([01;31m[Kis_turn[m[K(path[i - 1], path[i], path[i + 1])) {
+      |                 [01;31m[K^~~~~~~[m[K
+      |                 [32m[Kright_turn[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:396:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  396 |                 } else if ([01;35m[Ki == start.x[m[K && j == (grid_height - 1 - start.y)) {
+      |                            [01;35m[K~~^~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:398:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  398 |                 } else if ([01;35m[Ki == goal.x[m[K && j == (grid_height - 1 - goal.y)) {
+      |                            [01;35m[K~~^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

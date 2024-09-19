@@ -1,0 +1,3 @@
+Invoking command in '/home/hae/robot_ws/src/build/robot_drive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_drive_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_drive_pkg
+Invoked command in '/home/hae/robot_ws/src/build/robot_drive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_drive_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_drive_pkg
+Invoking command in '/home/hae/robot_ws/src/build/robot_drive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_drive_pkg -- -j4 -l4

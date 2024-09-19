@@ -1,0 +1,9 @@
+[0.070s] Invoking command in '/home/hae/robot_ws/src/build/robot_total_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_total_pkg -- -j4 -l4
+[0.865s] [ 25%] [32mBuilding CXX object CMakeFiles/scan_node.dir/src/scan.cpp.o[0m
+[0.885s] [ 50%] [32mBuilding CXX object CMakeFiles/drive_node.dir/src/total_drive.cpp.o[0m
+[185.992s] gmake[2]: *** [CMakeFiles/drive_node.dir/build.make:76: CMakeFiles/drive_node.dir/src/total_drive.cpp.o] Interrupt
+[186.029s] gmake[2]: *** [CMakeFiles/scan_node.dir/build.make:76: CMakeFiles/scan_node.dir/src/scan.cpp.o] Interrupt
+[186.030s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_node.dir/all] Interrupt
+[186.030s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/drive_node.dir/all] Interrupt
+[186.031s] gmake: *** [Makefile:146: all] Interrupt
+[186.046s] Invoked command in '/home/hae/robot_ws/src/build/robot_total_pkg' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_total_pkg -- -j4 -l4

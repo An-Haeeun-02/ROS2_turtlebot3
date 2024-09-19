@@ -1,0 +1,415 @@
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:249:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  249 |     }
+      |      [01;31m[K^[m[K
+      |      [32m[K;[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::make_root()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:68:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_obstacles[m[K’ was not declared in this scope; did you mean ‘[01m[Knum_obstacles[m[K’?
+   68 |         [01;31m[Kset_obstacles[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Knum_obstacles[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:71:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kfind_path[m[K’ was not declared in this scope
+   71 |         std::vector<Point> path = [01;31m[Kfind_path[m[K();
+      |                                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:76:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kprint_grid_with_path[m[K’ was not declared in this scope
+   76 |             [01;31m[Kprint_grid_with_path[m[K(path); // 경로를 포함한 그리드 출력
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:79:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kcalculate_path_distance[m[K’ was not declared in this scope
+   79 |             double total_distance = [01;31m[Kcalculate_path_distance[m[K(path);
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::move_robot()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:104:38:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<std::vector<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  104 |         for(int i=2;[01;35m[KsetPoint.size()-1>i[m[K;i++ ){
+      |                     [01;35m[K~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kbool TurtlebotController::is_turn(const TurtlebotController::Point&, const TurtlebotController::Point&, const TurtlebotController::Point&)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:225:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  225 |     bool is_turn(const Point& prev, [01;35m[Kconst Point& current[m[K, const Point& next) {
+      |                                     [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K At global scope:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:254:9:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ does not name a type
+  254 |         [01;31m[KPoint[m[K point;  // 좌표
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:255:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDirection[m[K’ does not name a type; did you mean ‘[01m[Ksigaction[m[K’?
+  255 |         [01;31m[KDirection[m[K dir;  // 방향
+      |         [01;31m[K^~~~~~~~~[m[K
+      |         [32m[Ksigaction[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:259:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kp[m[K’
+  259 |         Node[34m[K([m[KPoint[01;31m[K [m[K[32m[Kp[m[K, Direction d, int g, int h, Node* parent = nullptr)
+      |             [34m[K~[m[K     [01;31m[K^[m[K[32m[K~[m[K
+      |                   [32m[K)[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:270:25:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ does not name a type
+  270 |     int heuristic(const [01;31m[KPoint[m[K& a, const Point& b) {
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:270:41:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ does not name a type
+  270 |     int heuristic(const Point& a, const [01;31m[KPoint[m[K& b) {
+      |                                         [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kint heuristic(const int&, const int&)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:271:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kx[m[K’ in ‘[01m[Ka[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  271 |         return std::abs(a.[01;31m[Kx[m[K - b.x) + std::abs(a.y - b.y);
+      |                           [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:271:33:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kx[m[K’ in ‘[01m[Kb[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  271 |         return std::abs(a.x - b.[01;31m[Kx[m[K) + std::abs(a.y - b.y);
+      |                                 [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:271:49:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ky[m[K’ in ‘[01m[Ka[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  271 |         return std::abs(a.x - b.x) + std::abs(a.[01;31m[Ky[m[K - b.y);
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:271:55:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ky[m[K’ in ‘[01m[Kb[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  271 |         return std::abs(a.x - b.x) + std::abs(a.y - b.[01;31m[Ky[m[K);
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K At global scope:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:275:17:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::Point[m[K’?
+  275 |     std::vector<[01;31m[KPoint[m[K> find_path() {
+      |                 [01;31m[K^~~~~[m[K
+      |                 [32m[Kgeometry_msgs::msg::Point[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Point[m[K’ declared here
+  150 | using [01;36m[KPoint[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:275:22:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  275 |     std::vector<Point[01;31m[K>[m[K find_path() {
+      |                      [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:275:22:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kint find_path()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:277:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid_map[m[K’ was not declared in this scope
+  277 |         std::vector<std::vector<bool>> closed_list([01;31m[Kgrid_map[m[K.size(), std::vector<bool>(grid_map[0].size(), false)); // 닫힌 목록
+      |                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:279:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart[m[K’ was not declared in this scope
+  279 |         open_list.push(Node([01;31m[Kstart[m[K, RIGHT, 0, heuristic(start, goal))); // 시작 노드 추가
+      |                             [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:279:36:[m[K [01;31m[Kerror: [m[K‘[01m[KRIGHT[m[K’ was not declared in this scope
+  279 |         open_list.push(Node(start, [01;31m[KRIGHT[m[K, 0, heuristic(start, goal))); // 시작 노드 추가
+      |                                    [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:279:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+  279 |         open_list.push(Node(start, RIGHT, 0, heuristic(start, [01;31m[Kgoal[m[K))); // 시작 노드 추가
+      |                                                               [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:281:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::Point[m[K’?
+  281 |         std::vector<[01;31m[KPoint[m[K> turn_points; // 회전 지점 목록
+      |                     [01;31m[K^~~~~[m[K
+      |                     [32m[Kgeometry_msgs::msg::Point[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Point[m[K’ declared here
+  150 | using [01;36m[KPoint[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:281:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  281 |         std::vector<Point[01;31m[K>[m[K turn_points; // 회전 지점 목록
+      |                          [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:281:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:287:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Node[m[K’ has no member named ‘[01m[Kpoint[m[K’
+  287 |             if (current.[01;31m[Kpoint[m[K == goal) {  // 목표 지점에 도달하면
+      |                         [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:288:34:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+  288 |                 std::vector<Point[01;31m[K>[m[K path;
+      |                                  [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:290:26:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kpath[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  290 |                     path.[01;31m[Kpush_back[m[K(current.point);
+      |                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:290:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Node[m[K’ has no member named ‘[01m[Kpoint[m[K’
+  290 |                     path.push_back(current.[01;31m[Kpoint[m[K);
+      |                                            [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:291:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Node[m[K’ has no member named ‘[01m[Kpoint[m[K’
+  291 |                     if (current.parent && is_turn(current.parent->[01;31m[Kpoint[m[K, current.point, path.back())) {
+      |                                                                   [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:291:82:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Node[m[K’ has no member named ‘[01m[Kpoint[m[K’
+  291 |             if (current.parent && is_turn(current.parent->point, current.[01;31m[Kpoint[m[K, path.back())) {
+      |                                                                          [01;31m[K^~~~~[m[K
+
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:291:94:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kback[m[K’ in ‘[01m[Kpath[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  291 |  if (current.parent && is_turn(current.parent->point, current.point, path.[01;31m[Kback[m[K())) {
+      |                                                                           [01;31m[K^~~~[m[K
+
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:291:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_turn[m[K’ was not declared in this scope
+  291 |                     if (current.parent && [01;31m[Kis_turn[m[K(current.parent->point, current.point, path.back())) {
+      |                                           [01;31m[K^~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:292:37:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kturn_points[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  292 |                         turn_points.[01;31m[Kpush_back[m[K(current.point); // 회전 지점 저장
+      |                                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:292:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Node[m[K’ has no member named ‘[01m[Kpoint[m[K’
+  292 |                         turn_points.push_back(current.[01;31m[Kpoint[m[K); // 회전 지점 저장
+      |                                                       [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:296:22:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Kpath[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  296 |                 path.[01;31m[Kpush_back[m[K(start); // 시작점 추가
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:297:35:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kbegin[m[K’ in ‘[01m[Kpath[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  297 |                 std::reverse(path.[01;31m[Kbegin[m[K(), path.end()); // 경로를 역순으로 변환
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:297:49:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[Kpath[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  297 |                 std::reverse(path.begin(), path.[01;31m[Kend[m[K()); // 경로를 역순으로 변환
+      |                                                 [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:300:17:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoint[m[K’ was not declared in this scope
+  300 |                 [01;31m[KsetPoint[m[K.resize(2 + turn_points.size(), std::vector<int>(2));
+      |                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:300:49:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kturn_points[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  300 |                 setPoint.resize(2 + turn_points.[01;31m[Ksize[m[K(), std::vector<int>(2));
+      |                                                 [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:303:52:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kturn_points[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  303 |                 for (size_t i = 0; i < turn_points.[01;31m[Ksize[m[K(); ++i) {
+      |                                                    [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:304:53:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+  304 |                     setPoint[2 + i][0] = turn_points[01;31m[K[[m[Ki].x;
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:305:53:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+  305 |                     setPoint[2 + i][1] = turn_points[01;31m[K[[m[Ki].y;
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:311:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Node[m[K’ has no member named ‘[01m[Kpoint[m[K’
+  311 |             closed_list[current.[01;31m[Kpoint[m[K.x][current.point.y] = true; // 현재 노드 닫음
+      |                                 [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:311:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Node[m[K’ has no member named ‘[01m[Kpoint[m[K’
+  311 |             closed_list[current.point.x][current.[01;31m[Kpoint[m[K.y] = true; // 현재 노드 닫음
+      |                                                  [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:42:[m[K [01;31m[Kerror: [m[K‘[01m[KDirection[m[K’ was not declared in this scope; did you mean ‘[01m[Ksigaction[m[K’?
+  314 |             std::vector<std::pair<Point, [01;31m[KDirection[m[K>> directions = {
+      |                                          [01;31m[K^~~~~~~~~[m[K
+      |                                          [32m[Ksigaction[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  314 |             std::vector<std::pair<Point, Direction[01;31m[K>>[m[K directions = {
+      |                                                   [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:316:26:[m[K [01;31m[Kerror: [m[K‘[01m[KDOWN[m[K’ was not declared in this scope
+  316 |                 {{0, 1}, [01;31m[KDOWN[m[K},
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:317:27:[m[K [01;31m[Kerror: [m[K‘[01m[KLEFT[m[K’ was not declared in this scope
+  317 |                 {{-1, 0}, [01;31m[KLEFT[m[K},
+      |                           [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:318:27:[m[K [01;31m[Kerror: [m[K‘[01m[KUP[m[K’ was not declared in this scope
+  318 |                 {{0, -1}, [01;31m[KUP[m[K}
+      |                           [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:54:[m[K [01;31m[Kerror: [m[Kscalar object ‘[01m[Kdirections[m[K’ requires one element in initializer
+  314 |             std::vector<std::pair<Point, Direction>> [01;31m[Kdirections[m[K = {
+      |                                                      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:322:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Knext[m[K’
+  322 |                 Point[01;31m[K [m[K[32m[Knext[m[K(current.point.x + dir.x, current.point.y + dir.y); // 다음 좌표 계산
+      |                      [01;31m[K^[m[K[32m[K~~~~[m[K
+      |                      [32m[K;[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:325:26:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+  325 |                 if (next.[01;31m[Kx[m[K >= 0 && next.x < static_cast<int>(grid_map.size()) &&
+      |                          [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:325:41:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+  325 |                 if (next.x >= 0 && next.[01;31m[Kx[m[K < static_cast<int>(grid_map.size()) &&
+      |                                         [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:326:26:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+  326 |                     next.[01;31m[Ky[m[K >= 0 && next.y < static_cast<int>(grid_map[0].size()) &&
+      |                          [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:326:41:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+  326 |                     next.y >= 0 && next.[01;31m[Ky[m[K < static_cast<int>(grid_map[0].size()) &&
+      |                                         [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:327:35:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+  327 |                     grid_map[next.[01;31m[Kx[m[K][next.y] == 0 && !closed_list[next.x][next.y]) {
+      |                                   [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:327:43:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+  327 |                     grid_map[next.x][next.[01;31m[Ky[m[K] == 0 && !closed_list[next.x][next.y]) {
+      |                                           [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:327:72:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+  327 |                     grid_map[next.x][next.y] == 0 && !closed_list[next.[01;31m[Kx[m[K][next.y]) {
+      |                                                                        [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:327:80:[m[K [01;31m[Kerror: [m[Koverloaded function with no contextual type information
+  327 |                     grid_map[next.x][next.y] == 0 && !closed_list[next.x][next.[01;31m[Ky[m[K]) {
+      |                                                                                [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:329:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Node[m[K’ has no member named ‘[01m[Kdir[m[K’
+  329 |                     int rotation_cost = (current.[01;31m[Kdir[m[K == direction) ? 0 : 1;  // 방향이 달라지면 회전 비용 추가
+      |                                                  [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid set_obstacles()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:339:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kobstacles[m[K’ was not declared in this scope; did you mean ‘[01m[Kobstack[m[K’?
+  339 |         for (size_t i = 0; i < [01;31m[Kobstacles[m[K.size(); ++i) {
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [32m[Kobstack[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:340:13:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::Point[m[K’?
+  340 |             [01;31m[KPoint[m[K obs = obstacles[i]; // 장애물 좌표
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[Kgeometry_msgs::msg::Point[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Point[m[K’ declared here
+  150 | using [01;36m[KPoint[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:341:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kobstacle_sizes[m[K’ was not declared in this scope
+  341 |             int obs_width = [01;31m[Kobstacle_sizes[m[K[i][0]; // 장애물 너비
+      |                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:345:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs[m[K’ was not declared in this scope; did you mean ‘[01m[Kabs[m[K’?
+  345 |             for (size_t x = static_cast<size_t>([01;31m[Kobs[m[K.x); x < static_cast<size_t>(obs.x) + static_cast<size_t>(obs_width) && x < grid_map.size(); ++x) {
+      |                                                 [01;31m[K^~~[m[K
+      |                                                 [32m[Kabs[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:345:128:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid_map[m[K’ was not declared in this scope
+  345 | ; x < static_cast<size_t>(obs.x) + static_cast<size_t>(obs_width) && x < [01;31m[Kgrid_map[m[K.size(); ++x) {
+      |                                                                          [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K At global scope:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:354:49:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::Point[m[K’?
+  354 |     void print_grid_with_path(const std::vector<[01;31m[KPoint[m[K>& path) {
+      |                                                 [01;31m[K^~~~~[m[K
+      |                                                 [32m[Kgeometry_msgs::msg::Point[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Point[m[K’ declared here
+  150 | using [01;36m[KPoint[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:354:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  354 |     void print_grid_with_path(const std::vector<Point[01;31m[K>[m[K& path) {
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:354:54:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid print_grid_with_path(const int&)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:355:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid_map[m[K’ was not declared in this scope
+  355 |         std::vector<std::vector<char>> display_map([01;31m[Kgrid_map[m[K.size(), std::vector<char>(grid_map[0].size(), ' ')); // 시각화를 위한 맵 생성
+      |                                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:358:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kobstacles[m[K’ was not declared in this scope; did you mean ‘[01m[Kobstack[m[K’?
+  358 |         for (size_t i = 0; i < [01;31m[Kobstacles[m[K.size(); ++i) {
+      |                                [01;31m[K^~~~~~~~~[m[K
+      |                                [32m[Kobstack[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:359:13:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::Point[m[K’?
+  359 |             [01;31m[KPoint[m[K obs = obstacles[i];
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[Kgeometry_msgs::msg::Point[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Point[m[K’ declared here
+  150 | using [01;36m[KPoint[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:360:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kobstacle_sizes[m[K’ was not declared in this scope
+  360 |             int obs_width = [01;31m[Kobstacle_sizes[m[K[i][0];
+      |                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:363:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs[m[K’ was not declared in this scope; did you mean ‘[01m[Kabs[m[K’?
+  363 |             for (size_t x = static_cast<size_t>([01;31m[Kobs[m[K.x); x < static_cast<size_t>(obs.x) + static_cast<size_t>(obs_width) && x < display_map.size(); ++x) {
+      |                                                 [01;31m[K^~~[m[K
+      |                                                 [32m[Kabs[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:371:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::Point[m[K’?
+  371 |         std::vector<[01;31m[KPoint[m[K> new_turn_points;
+      |                     [01;31m[K^~~~~[m[K
+      |                     [32m[Kgeometry_msgs::msg::Point[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Point[m[K’ declared here
+  150 | using [01;36m[KPoint[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:371:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  371 |         std::vector<Point[01;31m[K>[m[K new_turn_points;
+      |                          [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:371:26:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:372:37:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kpath[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  372 |         for (size_t i = 1; i < path.[01;31m[Ksize[m[K() - 1; ++i) {
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:373:29:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kconst int[size_t {aka long unsigned int}][m[K’ for array subscript
+  373 |             if (is_turn(path[01;31m[K[[m[Ki - 1], path[i], path[i + 1])) {
+      |                             [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:373:42:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kconst int[size_t {aka long unsigned int}][m[K’ for array subscript
+  373 |             if (is_turn(path[i - 1], path[01;31m[K[[m[Ki], path[i + 1])) {
+      |                                          [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:373:51:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kconst int[size_t {aka long unsigned int}][m[K’ for array subscript
+  373 |             if (is_turn(path[i - 1], path[i], path[01;31m[K[[m[Ki + 1])) {
+      |                                                   [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:373:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_turn[m[K’ was not declared in this scope
+  373 |             if ([01;31m[Kis_turn[m[K(path[i - 1], path[i], path[i + 1])) {
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:374:33:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[Knew_turn_points[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  374 |                 new_turn_points.[01;31m[Kpush_back[m[K(path[i]);
+      |                                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:374:47:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kconst int[size_t {aka long unsigned int}][m[K’ for array subscript
+  374 |                 new_turn_points.push_back(path[01;31m[K[[m[Ki]);
+      |                                               [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:379:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsetPoint[m[K’ was not declared in this scope
+  379 |         [01;31m[KsetPoint[m[K.resize(2 + new_turn_points.size(), std::vector<int>(2));
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:379:45:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Knew_turn_points[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  379 |         setPoint.resize(2 + new_turn_points.[01;31m[Ksize[m[K(), std::vector<int>(2));
+      |                                             [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:380:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart[m[K’ was not declared in this scope
+  380 |         setPoint[0][0] = [01;31m[Kstart[m[K.x; setPoint[0][1] = start.y;
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:381:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+  381 |         setPoint[1][0] = [01;31m[Kgoal[m[K.x; setPoint[1][1] = goal.y;
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:382:48:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Knew_turn_points[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  382 |         for (size_t i = 0; i < new_turn_points.[01;31m[Ksize[m[K(); ++i) {
+      |                                                [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:383:49:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+  383 |             setPoint[2 + i][0] = new_turn_points[01;31m[K[[m[Ki].x;
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:384:49:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+  384 |             setPoint[2 + i][1] = new_turn_points[01;31m[K[[m[Ki].y;
+      |                                                 [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:388:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::begin[m[K’?
+  388 |         for (const auto& tp : [01;31m[Knew_turn_points[m[K) {
+      |                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                               [32m[Kstd::begin[m[K
+In file included from [01m[K/usr/include/c++/11/string:54[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/range_access.h:108:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::begin[m[K’ declared here
+  108 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&) noexcept;
+      |                                     [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:388:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+  388 |         for (const auto& tp : [01;31m[Knew_turn_points[m[K) {
+      |                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                               [32m[Kstd::end[m[K
+In file included from [01m[K/usr/include/c++/11/string:54[m[K,
+                 from [01m[K/usr/include/c++/11/bits/locale_classes.h:40[m[K,
+                 from [01m[K/usr/include/c++/11/bits/ios_base.h:41[m[K,
+                 from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/range_access.h:110:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+  110 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&) noexcept;
+      |                                     [01;36m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K At global scope:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:438:54:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs::msg::Point[m[K’?
+  438 |     double calculate_path_distance(const std::vector<[01;31m[KPoint[m[K>& path) {
+      |                                                      [01;31m[K^~~~~[m[K
+      |                                                      [32m[Kgeometry_msgs::msg::Point[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Point[m[K’ declared here
+  150 | using [01;36m[KPoint[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:438:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  438 |     double calculate_path_distance(const std::vector<Point[01;31m[K>[m[K& path) {
+      |                                                           [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:438:59:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kdouble calculate_path_distance(const int&)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:440:37:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[Kpath[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  440 |         for (size_t i = 1; i < path.[01;31m[Ksize[m[K(); ++i) {
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:441:29:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kconst int[size_t {aka long unsigned int}][m[K’ for array subscript
+  441 |             double dx = path[01;31m[K[[m[Ki].x - path[i - 1].x;
+      |                             [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:441:41:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kconst int[size_t {aka long unsigned int}][m[K’ for array subscript
+  441 |             double dx = path[i].x - path[01;31m[K[[m[Ki - 1].x;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:442:29:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kconst int[size_t {aka long unsigned int}][m[K’ for array subscript
+  442 |             double dy = path[01;31m[K[[m[Ki].y - path[i - 1].y;
+      |                             [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:442:41:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kconst int[size_t {aka long unsigned int}][m[K’ for array subscript
+  442 |             double dy = path[i].y - path[01;31m[K[[m[Ki - 1].y;
+      |                                         [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K At global scope:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:447:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  447 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

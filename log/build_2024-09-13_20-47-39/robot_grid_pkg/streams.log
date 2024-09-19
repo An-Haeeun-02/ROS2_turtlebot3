@@ -1,0 +1,52 @@
+[0.064s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target grid_node[0m
+[0.358s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[12.530s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[12.530s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:19:29:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[KTurtlebotController::Node[m[K’ is not a direct base of ‘[01m[KTurtlebotController[m[K’
+[12.531s]    19 |     TurtlebotController() : [01;31m[KNode[m[K("turtlebot_controller") {
+[12.532s]       |                             [01;31m[K^~~~[m[K
+[12.532s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:19:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[12.533s]    19 |     TurtlebotController() : Node("turtlebot_controller"[01;31m[K)[m[K {
+[12.533s]       |                                                        [01;31m[K^[m[K
+[12.534s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.534s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.535s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.536s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:5[m[K:
+[12.536s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[12.538s]  1294 |   [01;36m[KNode[m[K(
+[12.546s]       |   [01;36m[K^~~~[m[K
+[12.547s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[12.547s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[12.548s]   101 |   explicit [01;36m[KNode[m[K(
+[12.548s]       |            [01;36m[K^~~~[m[K
+[12.549s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[12.550s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[12.551s]    89 |   explicit [01;36m[KNode[m[K(
+[12.551s]       |            [01;36m[K^~~~[m[K
+[12.558s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[12.593s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kbool TurtlebotController::is_turn(const TurtlebotController::Point&, const TurtlebotController::Point&, const TurtlebotController::Point&)[m[K’:
+[12.594s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:91:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.595s]    91 |     bool is_turn(const Point& prev, [01;35m[Kconst Point& current[m[K, const Point& next) {
+[12.595s]       |                                     [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[12.705s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid signalHandler(int)[m[K’:
+[12.705s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:282:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::cout[m[K’?
+[12.707s]   282 |     [01;31m[Kcout[m[K << "Ctrl+C로 종료합니다." << endl; // 종료 메시지 출력
+[12.707s]       |     [01;31m[K^~~~[m[K
+[12.708s]       |     [32m[Kstd::cout[m[K
+[12.708s] In file included from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.709s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[12.709s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[12.710s]       |                  [01;36m[K^~~~[m[K
+[12.711s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:282:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::endl[m[K’?
+[12.718s]   282 |     cout << "Ctrl+C로 종료합니다." << [01;31m[Kendl[m[K; // 종료 메시지 출력
+[12.719s]       |                                       [01;31m[K^~~~[m[K
+[12.719s]       |                                       [32m[Kstd::endl[m[K
+[12.720s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[12.720s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.721s] [01m[K/usr/include/c++/11/ostream:684:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ declared here
+[12.721s]   684 |     [01;36m[Kendl[m[K(basic_ostream<_CharT, _Traits>& __os)
+[12.722s]       |     [01;36m[K^~~~[m[K
+[22.126s] gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+[22.127s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+[22.128s] gmake: *** [Makefile:146: all] Error 2
+[22.134s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4

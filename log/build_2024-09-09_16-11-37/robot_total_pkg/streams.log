@@ -1,0 +1,28 @@
+[0.058s] Invoking command in '/home/hae/robot_ws/src/build/robot_total_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_total_pkg -- -j4 -l4
+[0.555s] [35m[1mConsolidate compiler generated dependencies of target drive_node[0m
+[0.685s] [ 50%] Built target scan_node
+[0.704s] [ 75%] [32mBuilding CXX object CMakeFiles/drive_node.dir/src/total_drive.cpp.o[0m
+[56.466s] [100%] [32m[1mLinking CXX executable drive_node[0m
+[60.651s] [100%] Built target drive_node
+[60.765s] Invoked command in '/home/hae/robot_ws/src/build/robot_total_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_total_pkg -- -j4 -l4
+[61.036s] Invoking command in '/home/hae/robot_ws/src/build/robot_total_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_total_pkg
+[61.066s] -- Install configuration: ""
+[61.070s] -- Execute custom install script
+[61.073s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/lib/robot_total_pkg/drive_node
+[61.108s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/lib/robot_total_pkg/scan_node
+[61.143s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/ament_index/resource_index/package_run_dependencies/robot_total_pkg
+[61.180s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/ament_index/resource_index/parent_prefix_path/robot_total_pkg
+[61.216s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/environment/ament_prefix_path.sh
+[61.253s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/environment/ament_prefix_path.dsv
+[61.288s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/environment/path.sh
+[61.323s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/environment/path.dsv
+[61.359s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/local_setup.bash
+[61.393s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/local_setup.sh
+[61.426s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/local_setup.zsh
+[61.465s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/local_setup.dsv
+[61.498s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/package.dsv
+[61.538s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/ament_index/resource_index/packages/robot_total_pkg
+[61.572s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/cmake/robot_total_pkgConfig.cmake
+[61.606s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/cmake/robot_total_pkgConfig-version.cmake
+[61.644s] -- Symlinking: /home/hae/robot_ws/src/install/robot_total_pkg/share/robot_total_pkg/package.xml
+[61.698s] Invoked command in '/home/hae/robot_ws/src/build/robot_total_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_total_pkg

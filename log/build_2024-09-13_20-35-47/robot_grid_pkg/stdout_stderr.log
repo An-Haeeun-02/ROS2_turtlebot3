@@ -1,0 +1,111 @@
+[35m[1mConsolidate compiler generated dependencies of target grid_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:17:29:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[KTurtlebotController::Node[m[K’ is not a direct base of ‘[01m[KTurtlebotController[m[K’
+   17 |     TurtlebotController() : [01;31m[KNode[m[K("turtlebot_controller") {
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:17:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+   17 |     TurtlebotController() : Node("turtlebot_controller"[01;31m[K)[m[K {
+      |                                                        [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+ 1294 |   [01;36m[KNode[m[K(
+      |   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+  101 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+   89 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kbool TurtlebotController::is_turn(const TurtlebotController::Point&, const TurtlebotController::Point&, const TurtlebotController::Point&)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:47:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   47 |     bool is_turn(const Point& prev, [01;35m[Kconst Point& current[m[K, const Point& next) {
+      |                                     [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:251:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<std::vector<int> > TurtlebotController::grid_map[m[K’ is private within this context
+  251 |     node->[01;31m[Kgrid_map[m[K = std::vector<std::vector<int>>(width, std::vector<int>(height, 0));
+      |           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:38:35:[m[K [01;36m[Knote: [m[Kdeclared private here
+   38 |     std::vector<std::vector<int>> [01;36m[Kgrid_map[m[K;
+      |                                   [01;36m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:254:23:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlebotController::Point TurtlebotController::start[m[K’ is private within this context
+  254 |     std::cin >> node->[01;31m[Kstart[m[K.x >> node->start.y;
+      |                       [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:41:11:[m[K [01;36m[Knote: [m[Kdeclared private here
+   41 |     Point [01;36m[Kstart[m[K, goal;
+      |           [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:254:40:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlebotController::Point TurtlebotController::start[m[K’ is private within this context
+  254 |     std::cin >> node->start.x >> node->[01;31m[Kstart[m[K.y;
+      |                                        [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:41:11:[m[K [01;36m[Knote: [m[Kdeclared private here
+   41 |     Point [01;36m[Kstart[m[K, goal;
+      |           [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:256:23:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlebotController::Point TurtlebotController::goal[m[K’ is private within this context
+  256 |     std::cin >> node->[01;31m[Kgoal[m[K.x >> node->goal.y;
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:41:18:[m[K [01;36m[Knote: [m[Kdeclared private here
+   41 |     Point start, [01;36m[Kgoal[m[K;
+      |                  [01;36m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:256:39:[m[K [01;31m[Kerror: [m[K‘[01m[KTurtlebotController::Point TurtlebotController::goal[m[K’ is private within this context
+  256 |     std::cin >> node->goal.x >> node->[01;31m[Kgoal[m[K.y;
+      |                                       [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:41:18:[m[K [01;36m[Knote: [m[Kdeclared private here
+   41 |     Point start, [01;36m[Kgoal[m[K;
+      |                  [01;36m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:263:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct TurtlebotController::Point[m[K’ is private within this context
+  263 |         TurtlebotController::[01;31m[KPoint[m[K obstacle;
+      |                              [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:24:12:[m[K [01;36m[Knote: [m[Kdeclared private here
+   24 |     struct [01;36m[KPoint[m[K {
+      |            [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:270:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<TurtlebotController::Point> TurtlebotController::obstacles[m[K’ is private within this context
+  270 |         node->[01;31m[Kobstacles[m[K.push_back(obstacle);
+      |               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:40:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+   40 |     std::vector<Point> [01;36m[Kobstacles[m[K;
+      |                        [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:271:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<std::vector<int> > TurtlebotController::obstacle_sizes[m[K’ is private within this context
+  271 |         node->[01;31m[Kobstacle_sizes[m[K.push_back({obs_width, obs_height});
+      |               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:39:35:[m[K [01;36m[Knote: [m[Kdeclared private here
+   39 |     std::vector<std::vector<int>> [01;36m[Kobstacle_sizes[m[K;
+      |                                   [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:274:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid TurtlebotController::set_obstacles()[m[K’ is private within this context
+  274 |     [01;31m[Knode->set_obstacles()[m[K;
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:140:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+  140 |     void [01;36m[Kset_obstacles[m[K() {
+      |          [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:276:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct TurtlebotController::Point[m[K’ is private within this context
+  276 |     std::[01;31m[Kvector<TurtlebotController::Point>[m[K path = node->find_path();
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:24:12:[m[K [01;36m[Knote: [m[Kdeclared private here
+   24 |     struct [01;36m[KPoint[m[K {
+      |            [01;36m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:276:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<TurtlebotController::Point> TurtlebotController::find_path()[m[K’ is private within this context
+  276 |     std::vector<TurtlebotController::Point> path = [01;31m[Knode->find_path()[m[K;
+      |                                                    [01;31m[K~~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:80:24:[m[K [01;36m[Knote: [m[Kdeclared private here
+   80 |     std::vector<Point> [01;36m[Kfind_path[m[K() {
+      |                        [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:280:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid TurtlebotController::print_grid_with_path(const std::vector<TurtlebotController::Point>&)[m[K’ is private within this context
+  280 |         [01;31m[Knode->print_grid_with_path(path)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:155:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+  155 |     void [01;36m[Kprint_grid_with_path[m[K(const std::vector<Point>& path) {
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:282:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kdouble TurtlebotController::calculate_path_distance(const std::vector<TurtlebotController::Point>&)[m[K’ is private within this context
+  282 |         double total_distance = [01;31m[Knode->calculate_path_distance(path)[m[K;
+      |                                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:230:12:[m[K [01;36m[Knote: [m[Kdeclared private here
+  230 |     double [01;36m[Kcalculate_path_distance[m[K(const std::vector<Point>& path) {
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

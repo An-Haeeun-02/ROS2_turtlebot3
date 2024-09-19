@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target drive_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/scan_node.dir/src/scan.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/drive_node.dir/src/total_drive.cpp.o[0m
+gmake[2]: *** [CMakeFiles/drive_node.dir/build.make:76: CMakeFiles/drive_node.dir/src/total_drive.cpp.o] Interrupt
+gmake[2]: *** [CMakeFiles/scan_node.dir/build.make:76: CMakeFiles/scan_node.dir/src/scan.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/scan_node.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/drive_node.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

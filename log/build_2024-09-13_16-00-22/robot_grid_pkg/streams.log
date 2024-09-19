@@ -1,0 +1,255 @@
+[0.402s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[0.582s] [35m[1mConsolidate compiler generated dependencies of target grid_node[0m
+[0.702s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[2.583s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:62:34:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar-Wmultichar]8;;[m[K]
+[2.584s]    62 |                     grid[i][j] = [01;35m[K'ㅁ'[m[K; // 장애물 표시
+[2.585s]       |                                  [01;35m[K^~~~[m[K
+[2.585s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:81:87:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar-Wmultichar]8;;[m[K]
+[2.586s]    81 |         return x >= 0 && x < GRID_WIDTH && y >= 0 && y < GRID_HEIGHT && grid[y][x] != [01;35m[K'ㅁ'[m[K;
+[2.592s]       |                                                                                       [01;35m[K^~~~[m[K
+[2.593s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:76:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar-Wmultichar]8;;[m[K]
+[2.594s]   125 |             if (grid[node->y][node->x] != '*' && grid[node->y][node->x] != [01;35m[K'ㅁ'[m[K) {
+[2.595s]       |                                                                            [01;35m[K^~~~[m[K
+[11.747s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid GridNavigationNode::get_obstacles()[m[K’:
+[11.748s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:62:34:[m[K [01;35m[Kwarning: [m[Kunsigned conversion from ‘[01m[Kint[m[K’ to ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type[m[K’ {aka ‘[01m[Kchar[m[K’} changes value from ‘[01m[K14910849[m[K’ to ‘[01m[K129[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow-Woverflow]8;;[m[K]
+[11.748s]    62 |                     grid[i][j] = [01;35m[K'ㅁ'[m[K; // 장애물 표시
+[11.748s]       |                                  [01;35m[K^~~~[m[K
+[11.750s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kbool GridNavigationNode::is_valid(int, int)[m[K’:
+[11.750s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:81:84:[m[K [01;35m[Kwarning: [m[Kcomparison is always true due to limited range of data type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits-Wtype-limits]8;;[m[K]
+[11.751s]    81 |         return x >= 0 && x < GRID_WIDTH && y >= 0 && y < GRID_HEIGHT && grid[y][x] != 'ㅁ';
+[11.773s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kbool GridNavigationNode::calculate_path()[m[K’:
+[11.773s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:97:42:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[11.774s]    97 |             Node current = open_list.top([01;31m[K)[m[K;
+[11.774s]       |                                          [01;31m[K^[m[K
+[11.774s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[11.774s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[11.775s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.776s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.777s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.778s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[11.779s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.780s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[11.782s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[11.783s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:101:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[11.783s]   101 |             if (current.[01;31m[Kx[m[K == goal_x && current.y == goal_y) {
+[11.784s]       |                         [01;31m[K^[m[K
+[11.784s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:101:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[11.785s]   101 |             if (current.x == goal_x && current.[01;31m[Ky[m[K == goal_y) {
+[11.785s]       |                                                [01;31m[K^[m[K
+[11.786s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:106:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[11.786s]   106 |             closed_list[current.[01;31m[Ky[m[K][current.x] = true;
+[11.786s]       |                                 [01;31m[K^[m[K
+[11.787s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:106:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[11.787s]   106 |             closed_list[current.y][current.[01;31m[Kx[m[K] = true;
+[11.788s]       |                                            [01;31m[K^[m[K
+[11.788s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:110:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[11.789s]   110 |                 int new_x = current.[01;31m[Kx[m[K + dir.first;
+[11.789s]       |                                     [01;31m[K^[m[K
+[11.790s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:111:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[11.791s]   111 |                 int new_y = current.[01;31m[Ky[m[K + dir.second;
+[11.791s]       |                                     [01;31m[K^[m[K
+[11.792s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:114:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kcost[m[K’
+[11.793s]   114 |                     double new_cost = current.[01;31m[Kcost[m[K + 1.0;
+[11.793s]       |                                               [01;31m[K^~~~[m[K
+[11.794s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:115:120:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[11.794s]   115 |                     open_list.emplace(new_x, new_y, new_cost, heuristic(new_x, new_y, goal_x, goal_y), new Node(current[01;31m[K)[m[K);
+[11.794s]       |                                                                                                                        [01;31m[K^[m[K
+[11.795s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[11.795s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[11.796s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.796s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.796s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.797s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[11.797s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[11.798s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[11.798s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[11.799s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid GridNavigationNode::trace_path(rclcpp::Node*)[m[K’:
+[11.799s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[11.799s]   125 |             if (grid[node->[01;31m[Ky[m[K][node->x] != '*' && grid[node->y][node->x] != 'ㅁ') {
+[11.800s]       |                            [01;31m[K^[m[K
+[11.800s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[11.801s]   125 |             if (grid[node->y][node->[01;31m[Kx[m[K] != '*' && grid[node->y][node->x] != 'ㅁ') {
+[11.801s]       |                                     [01;31m[K^[m[K
+[11.802s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[11.802s]   125 |             if (grid[node->y][node->x] != '*' && grid[node->[01;31m[Ky[m[K][node->x] != 'ㅁ') {
+[11.803s]       |                                                             [01;31m[K^[m[K
+[11.803s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[11.803s]   125 |             if (grid[node->y][node->x] != '*' && grid[node->y][node->[01;31m[Kx[m[K] != 'ㅁ') {
+[11.804s]       |                                                                      [01;31m[K^[m[K
+[11.804s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ky[m[K’
+[11.805s]   126 |                 grid[node->[01;31m[Ky[m[K][node->x] = '0'; // 이동한 경로 표시
+[11.806s]       |                            [01;31m[K^[m[K
+[11.806s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kx[m[K’
+[11.806s]   126 |                 grid[node->y][node->[01;31m[Kx[m[K] = '0'; // 이동한 경로 표시
+[11.807s]       |                                     [01;31m[K^[m[K
+[11.807s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:128:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kparent[m[K’
+[11.808s]   128 |             node = node->[01;31m[Kparent[m[K;
+[11.808s]       |                          [01;31m[K^~~~~~[m[K
+[12.495s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[12.497s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[12.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.499s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.500s] /usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘[01m[Kvoid std::push_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = std::greater<rclcpp::Node>][m[K’:
+[12.500s] [01m[K/usr/include/c++/11/bits/stl_queue.h:659:18:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>][m[K’
+[12.501s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:94:26:[m[K   required from here
+[12.501s] [01m[K/usr/include/c++/11/bits/stl_heap.h:214:18:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[12.502s]   214 |       _ValueType [01;31m[K__value[m[K = _GLIBCXX_MOVE(*(__last - 1));
+[12.502s]       |                  [01;31m[K^~~~~~~[m[K
+[12.502s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[12.503s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[12.503s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.504s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.504s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.504s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.505s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.505s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[12.506s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.506s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[12.507s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[12.507s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.507s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.508s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.508s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.508s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.509s] [01m[K/usr/include/c++/11/bits/stl_heap.h:215:23:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[12.509s]   215 |       [01;31m[Kstd::__push_heap(__first, _DistanceType((__last - __first) - 1),[m[K
+[12.510s]       |       [01;31m[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.510s]   216 | [01;31m[K                       _DistanceType(0), _GLIBCXX_MOVE(__value), __cmp)[m[K;
+[12.511s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.511s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[12.511s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[12.512s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.512s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.513s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.513s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.514s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[12.514s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.515s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[12.515s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[12.515s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.516s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.516s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.517s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.517s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.517s] [01m[K/usr/include/c++/11/bits/stl_heap.h:135:66:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Distance = long int; _Tp = rclcpp::Node; _Compare = __gnu_cxx::__ops::_Iter_comp_val<std::greater<rclcpp::Node> >][m[K’
+[12.518s]   135 |                 _Distance __holeIndex, _Distance __topIndex, [01;36m[K_Tp __value[m[K,
+[12.518s]       |                                                              [01;36m[K~~~~^~~~~~~[m[K
+[12.776s] /usr/include/c++/11/bits/stl_heap.h: In instantiation of ‘[01m[Kvoid std::__pop_heap(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<std::greater<rclcpp::Node> >][m[K’:
+[12.777s] [01m[K/usr/include/c++/11/bits/stl_heap.h:332:19:[m[K   required from ‘[01m[Kvoid std::pop_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = std::greater<rclcpp::Node>][m[K’
+[12.778s] [01m[K/usr/include/c++/11/bits/stl_queue.h:678:15:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::pop() [with _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>][m[K’
+[12.778s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:98:26:[m[K   required from here
+[12.779s] [01m[K/usr/include/c++/11/bits/stl_heap.h:261:18:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[12.779s]   261 |       _ValueType [01;31m[K__value[m[K = _GLIBCXX_MOVE(*__result);
+[12.780s]       |                  [01;31m[K^~~~~~~[m[K
+[12.780s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[12.780s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[12.781s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.782s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.782s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.783s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.783s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.783s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[12.784s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.784s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[12.785s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[12.785s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.786s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.786s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.787s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.787s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.787s] [01m[K/usr/include/c++/11/bits/stl_heap.h:262:17:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node& rclcpp::Node::operator=(const rclcpp::Node&)[m[K’
+[12.788s]   262 |       *__result [01;31m[K=[m[K _GLIBCXX_MOVE(*__first);
+[12.788s]       |                 [01;31m[K^[m[K
+[12.789s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[12.789s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[12.789s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.791s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.791s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.791s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[12.792s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.792s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[12.793s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[12.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.794s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.794s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.795s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.795s] [01m[K/usr/include/c++/11/bits/stl_heap.h:263:25:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&)[m[K’
+[12.795s]   263 |       [01;31m[Kstd::__adjust_heap(__first, _DistanceType(0),[m[K
+[12.796s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.796s]   264 | [01;31m[K                         _DistanceType(__last - __first),[m[K
+[12.797s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.798s]   265 | [01;31m[K                         _GLIBCXX_MOVE(__value), __comp)[m[K;
+[12.798s]       |                          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.799s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35[m[K,
+[12.799s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34[m[K,
+[12.800s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.800s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.801s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.801s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.801s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[12.802s]  1299 |   [01;36m[KRCLCPP_DISABLE_COPY[m[K(Node)
+[12.802s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[12.803s] In file included from [01m[K/usr/include/c++/11/bits/stl_algo.h:61[m[K,
+[12.803s]                  from [01m[K/usr/include/c++/11/algorithm:62[m[K,
+[12.803s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[12.804s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[12.804s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[12.805s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.805s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.806s] [01m[K/usr/include/c++/11/bits/stl_heap.h:224:40:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Distance = long int; _Tp = rclcpp::Node; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<std::greater<rclcpp::Node> >][m[K’
+[12.807s]   224 |                   _Distance __len, [01;36m[K_Tp __value[m[K, _Compare __comp)
+[12.807s]       |                                    [01;36m[K~~~~^~~~~~~[m[K
+[12.946s] In file included from [01m[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[12.947s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[12.947s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[12.947s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[12.947s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.948s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = rclcpp::Node; _Args = {int&, int&, double, double}; _Tp = rclcpp::Node][m[K’:
+[12.948s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = rclcpp::Node; _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<rclcpp::Node>][m[K’
+[12.948s] [01m[K/usr/include/c++/11/bits/vector.tcc:115:30:[m[K   required from ‘[01m[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::reference = rclcpp::Node&][m[K’
+[12.949s] [01m[K/usr/include/c++/11/bits/stl_queue.h:658:18:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>][m[K’
+[12.949s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:94:26:[m[K   required from here
+[12.950s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node(int&, int&, double, double)[m[K’
+[12.950s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[12.951s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.951s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[12.952s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[12.952s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[12.952s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[12.953s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[12.954s]  1294 |   [01;36m[KNode[m[K(
+[12.954s]       |   [01;36m[K^~~~[m[K
+[12.955s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[12.955s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[12.955s]   101 |   explicit [01;36m[KNode[m[K(
+[12.956s]       |            [01;36m[K^~~~[m[K
+[12.956s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[12.957s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[12.958s]    89 |   explicit [01;36m[KNode[m[K(
+[12.959s]       |            [01;36m[K^~~~[m[K
+[12.959s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[13.140s] In file included from [01m[K/usr/include/c++/11/memory:66[m[K,
+[13.140s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[13.141s]                  from [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1[m[K:
+[13.141s] /usr/include/c++/11/bits/stl_uninitialized.h: In instantiation of ‘[01m[K_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<rclcpp::Node*>; _ForwardIterator = rclcpp::Node*][m[K’:
+[13.142s] [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:333:37:[m[K   required from ‘[01m[K_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<rclcpp::Node*>; _ForwardIterator = rclcpp::Node*; _Tp = rclcpp::Node][m[K’
+[13.142s] [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:355:2:[m[K   required from ‘[01m[K_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = rclcpp::Node*; _ForwardIterator = rclcpp::Node*; _Allocator = std::allocator<rclcpp::Node>][m[K’
+[13.143s] [01m[K/usr/include/c++/11/bits/vector.tcc:474:3:[m[K   required from ‘[01m[Kvoid std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::iterator = std::vector<rclcpp::Node>::iterator][m[K’
+[13.143s] [01m[K/usr/include/c++/11/bits/vector.tcc:121:21:[m[K   required from ‘[01m[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::reference = rclcpp::Node&][m[K’
+[13.144s] [01m[K/usr/include/c++/11/bits/stl_queue.h:658:18:[m[K   required from ‘[01m[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>][m[K’
+[13.144s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:94:26:[m[K   required from here
+[13.145s] [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: result type must be constructible from value type of input range
+[13.145s]   138 |       static_assert(is_constructible<_ValueType2, decltype(*__first)>::[01;31m[Kvalue[m[K,
+[13.145s]       |                                                                        [01;31m[K^~~~~[m[K
+[13.146s] [01m[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::integral_constant<bool, false>::value[m[K’ evaluates to false
+[13.515s] gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+[13.516s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+[13.517s] gmake: *** [Makefile:146: all] Error 2
+[13.524s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4

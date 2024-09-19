@@ -1,0 +1,172 @@
+[0.000000] (-) TimerEvent: {}
+[0.001619] (-) JobUnselected: {'identifier': 'action_test'}
+[0.002248] (-) JobUnselected: {'identifier': 'cgps_pkg'}
+[0.003127] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.003608] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.004148] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.004441] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.004609] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.004795] (robot_drive_pkg) JobQueued: {'identifier': 'robot_drive_pkg', 'dependencies': OrderedDict()}
+[0.004956] (robot_drive_pkg) JobStarted: {'identifier': 'robot_drive_pkg'}
+[0.056319] (robot_drive_pkg) JobProgress: {'identifier': 'robot_drive_pkg', 'progress': 'cmake'}
+[0.057697] (robot_drive_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/hae/robot_ws/src/robot_drive_pkg', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_drive_pkg'], 'cwd': '/home/hae/robot_ws/src/build/robot_drive_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 60574 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('TERM_PROGRAM_VERSION', '1.92.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a9bf4d60-bfa8-4092-a810-331708016480.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ab3660f3b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/robot_drive_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 60574 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099038] (-) TimerEvent: {}
+[0.200355] (-) TimerEvent: {}
+[0.301679] (-) TimerEvent: {}
+[0.402780] (-) TimerEvent: {}
+[0.503844] (-) TimerEvent: {}
+[0.605570] (-) TimerEvent: {}
+[0.706829] (-) TimerEvent: {}
+[0.808176] (-) TimerEvent: {}
+[0.909273] (-) TimerEvent: {}
+[1.010079] (-) TimerEvent: {}
+[1.111218] (-) TimerEvent: {}
+[1.159271] (robot_drive_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.211359] (-) TimerEvent: {}
+[1.312213] (-) TimerEvent: {}
+[1.413291] (-) TimerEvent: {}
+[1.514396] (-) TimerEvent: {}
+[1.615342] (-) TimerEvent: {}
+[1.716597] (-) TimerEvent: {}
+[1.817794] (-) TimerEvent: {}
+[1.856624] (robot_drive_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.904703] (robot_drive_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.918122] (-) TimerEvent: {}
+[2.019405] (-) TimerEvent: {}
+[2.120463] (-) TimerEvent: {}
+[2.221830] (-) TimerEvent: {}
+[2.323005] (-) TimerEvent: {}
+[2.352356] (robot_drive_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.379685] (robot_drive_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.381650] (robot_drive_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.384810] (robot_drive_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.402610] (robot_drive_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.423256] (-) TimerEvent: {}
+[2.524265] (-) TimerEvent: {}
+[2.625456] (-) TimerEvent: {}
+[2.726768] (-) TimerEvent: {}
+[2.806648] (robot_drive_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.827008] (-) TimerEvent: {}
+[2.835353] (robot_drive_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.838072] (robot_drive_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.843239] (robot_drive_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.876710] (robot_drive_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.927209] (-) TimerEvent: {}
+[3.028077] (-) TimerEvent: {}
+[3.129100] (-) TimerEvent: {}
+[3.230336] (-) TimerEvent: {}
+[3.331777] (-) TimerEvent: {}
+[3.433468] (-) TimerEvent: {}
+[3.534287] (-) TimerEvent: {}
+[3.634953] (-) TimerEvent: {}
+[3.710485] (robot_drive_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.735226] (-) TimerEvent: {}
+[3.836288] (-) TimerEvent: {}
+[3.936996] (-) TimerEvent: {}
+[4.020685] (robot_drive_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.037171] (-) TimerEvent: {}
+[4.137872] (-) TimerEvent: {}
+[4.238752] (-) TimerEvent: {}
+[4.329348] (robot_drive_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.338911] (-) TimerEvent: {}
+[4.439633] (-) TimerEvent: {}
+[4.540481] (-) TimerEvent: {}
+[4.641453] (-) TimerEvent: {}
+[4.742386] (-) TimerEvent: {}
+[4.843206] (-) TimerEvent: {}
+[4.944019] (-) TimerEvent: {}
+[5.011376] (robot_drive_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.044185] (-) TimerEvent: {}
+[5.057803] (robot_drive_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.128244] (robot_drive_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.144371] (-) TimerEvent: {}
+[5.226085] (robot_drive_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.244608] (-) TimerEvent: {}
+[5.345378] (-) TimerEvent: {}
+[5.364783] (robot_drive_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.445553] (-) TimerEvent: {}
+[5.546306] (-) TimerEvent: {}
+[5.647062] (-) TimerEvent: {}
+[5.747802] (-) TimerEvent: {}
+[5.799399] (robot_drive_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.824499] (robot_drive_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.847966] (-) TimerEvent: {}
+[5.948699] (-) TimerEvent: {}
+[6.049423] (-) TimerEvent: {}
+[6.150174] (-) TimerEvent: {}
+[6.250924] (-) TimerEvent: {}
+[6.351735] (-) TimerEvent: {}
+[6.452715] (-) TimerEvent: {}
+[6.519511] (robot_drive_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.552887] (-) TimerEvent: {}
+[6.653611] (-) TimerEvent: {}
+[6.754359] (-) TimerEvent: {}
+[6.792796] (robot_drive_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.854532] (-) TimerEvent: {}
+[6.955245] (-) TimerEvent: {}
+[7.055985] (-) TimerEvent: {}
+[7.156682] (-) TimerEvent: {}
+[7.246409] (robot_drive_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.256906] (-) TimerEvent: {}
+[7.335984] (robot_drive_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.357117] (-) TimerEvent: {}
+[7.457943] (-) TimerEvent: {}
+[7.558974] (-) TimerEvent: {}
+[7.660190] (-) TimerEvent: {}
+[7.743571] (robot_drive_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.745900] (robot_drive_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.760366] (-) TimerEvent: {}
+[7.861183] (-) TimerEvent: {}
+[7.962136] (-) TimerEvent: {}
+[8.063407] (-) TimerEvent: {}
+[8.108820] (robot_drive_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.112119] (robot_drive_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.163615] (-) TimerEvent: {}
+[8.264522] (-) TimerEvent: {}
+[8.365316] (-) TimerEvent: {}
+[8.466303] (-) TimerEvent: {}
+[8.567432] (-) TimerEvent: {}
+[8.668253] (-) TimerEvent: {}
+[8.769132] (-) TimerEvent: {}
+[8.870051] (-) TimerEvent: {}
+[8.970913] (-) TimerEvent: {}
+[9.019705] (robot_drive_pkg) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[9.071129] (-) TimerEvent: {}
+[9.171974] (-) TimerEvent: {}
+[9.272788] (-) TimerEvent: {}
+[9.373628] (-) TimerEvent: {}
+[9.474544] (-) TimerEvent: {}
+[9.575514] (-) TimerEvent: {}
+[9.676673] (-) TimerEvent: {}
+[9.777703] (-) TimerEvent: {}
+[9.879027] (-) TimerEvent: {}
+[9.980192] (-) TimerEvent: {}
+[10.081393] (-) TimerEvent: {}
+[10.182167] (-) TimerEvent: {}
+[10.283311] (-) TimerEvent: {}
+[10.384100] (-) TimerEvent: {}
+[10.484938] (-) TimerEvent: {}
+[10.579270] (robot_drive_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:13 (find_package):\n'}
+[10.580214] (robot_drive_pkg) StderrLine: {'line': b'  By not providing "Findgeometry_megs.cmake" in CMAKE_MODULE_PATH this\n'}
+[10.580759] (robot_drive_pkg) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[10.581222] (robot_drive_pkg) StderrLine: {'line': b'  "geometry_megs", but CMake did not find one.\n'}
+[10.581968] (robot_drive_pkg) StderrLine: {'line': b'\n'}
+[10.582908] (robot_drive_pkg) StderrLine: {'line': b'  Could not find a package configuration file provided by "geometry_megs"\n'}
+[10.583352] (robot_drive_pkg) StderrLine: {'line': b'  with any of the following names:\n'}
+[10.584084] (robot_drive_pkg) StderrLine: {'line': b'\n'}
+[10.584497] (robot_drive_pkg) StderrLine: {'line': b'    geometry_megsConfig.cmake\n'}
+[10.588340] (-) TimerEvent: {}
+[10.589411] (robot_drive_pkg) StderrLine: {'line': b'    geometry_megs-config.cmake\n'}
+[10.590283] (robot_drive_pkg) StderrLine: {'line': b'\n'}
+[10.593779] (robot_drive_pkg) StderrLine: {'line': b'  Add the installation prefix of "geometry_megs" to CMAKE_PREFIX_PATH or set\n'}
+[10.594547] (robot_drive_pkg) StderrLine: {'line': b'  "geometry_megs_DIR" to a directory containing one of the above files.  If\n'}
+[10.595345] (robot_drive_pkg) StderrLine: {'line': b'  "geometry_megs" provides a separate development package or SDK, be sure it\n'}
+[10.598875] (robot_drive_pkg) StderrLine: {'line': b'  has been installed.\n'}
+[10.604203] (robot_drive_pkg) StderrLine: {'line': b'\n'}
+[10.606630] (robot_drive_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[10.616571] (robot_drive_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[10.617424] (robot_drive_pkg) StdoutLine: {'line': b'See also "/home/hae/robot_ws/src/build/robot_drive_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[10.623649] (robot_drive_pkg) CommandEnded: {'returncode': 1}
+[10.685190] (-) TimerEvent: {}
+[10.771637] (robot_drive_pkg) JobEnded: {'identifier': 'robot_drive_pkg', 'rc': 1}
+[10.784321] (-) EventReactorShutdown: {}

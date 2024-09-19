@@ -1,0 +1,69 @@
+[0.045s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[0.284s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[11.541s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kcm[m[K’ has not been declared
+[11.541s]   124 |     void go_straight(int block, [01;31m[Kcm[m[K){
+[11.542s]       |                                 [01;31m[K^~[m[K
+[11.780s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::move_robot()[m[K’:
+[11.781s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:89:16:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint[m[K’ was not declared in this scope; did you mean ‘[01m[KsetPoint[m[K’?
+[11.781s]    89 |             if([01;31m[Ksetpoint[m[K[0][0] == setpoint[2][0]){ //x가 같을 때
+[11.781s]       |                [01;31m[K^~~~~~~~[m[K
+[11.781s]       |                [32m[KsetPoint[m[K
+[11.782s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:90:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::go_straight()[m[K’
+[11.782s]    90 |                 [01;31m[Kgo_straight()[m[K;
+[11.782s]       |                 [01;31m[K~~~~~~~~~~~^~[m[K
+[11.783s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid TurtlebotController::go_straight(int, int)[m[K’
+[11.783s]   124 |     void [01;36m[Kgo_straight[m[K(int block, cm){
+[11.783s]       |          [01;36m[K^~~~~~~~~~~[m[K
+[11.784s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[11.805s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:99:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint[m[K’ was not declared in this scope; did you mean ‘[01m[KsetPoint[m[K’?
+[11.806s]    99 |         for(int i=2;[01;31m[Ksetpoint[m[K.size()-1>i;i++ ){
+[11.806s]       |                     [01;31m[K^~~~~~~~[m[K
+[11.807s]       |                     [32m[KsetPoint[m[K
+[11.807s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:101:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::go_straight()[m[K’
+[11.808s]   101 |                 [01;31m[Kgo_straight()[m[K;
+[11.809s]       |                 [01;31m[K~~~~~~~~~~~^~[m[K
+[11.810s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid TurtlebotController::go_straight(int, int)[m[K’
+[11.811s]   124 |     void [01;36m[Kgo_straight[m[K(int block, cm){
+[11.811s]       |          [01;36m[K^~~~~~~~~~~[m[K
+[11.812s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[11.812s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:105:32:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::left_course(int&, int&)[m[K’
+[11.813s]   105 |                     [01;31m[Kleft_course(block, cm)[m[K//좌회전 후 직진
+[11.814s]       |                     [01;31m[K~~~~~~~~~~~^~~~~~~~~~~[m[K
+[11.814s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:136:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid TurtlebotController::left_course(int)[m[K’
+[11.815s]   136 |     void [01;36m[Kleft_course[m[K(int block){
+[11.815s]       |          [01;36m[K^~~~~~~~~~~[m[K
+[11.816s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:136:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[11.826s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:113:12:[m[K [01;31m[Kerror: [m[K‘[01m[Ksetpoint[m[K’ was not declared in this scope; did you mean ‘[01m[KsetPoint[m[K’?
+[11.827s]   113 |         if([01;31m[Ksetpoint[m[K[setpoint.size()-1][0] == setpoint[1][0]){ //x가 같을 때
+[11.828s]       |            [01;31m[K^~~~~~~~[m[K
+[11.828s]       |            [32m[KsetPoint[m[K
+[11.829s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:114:28:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTurtlebotController::go_straight()[m[K’
+[11.830s]   114 |                 [01;31m[Kgo_straight()[m[K;
+[11.830s]       |                 [01;31m[K~~~~~~~~~~~^~[m[K
+[11.831s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid TurtlebotController::go_straight(int, int)[m[K’
+[11.831s]   124 |     void [01;36m[Kgo_straight[m[K(int block, cm){
+[11.832s]       |          [01;36m[K^~~~~~~~~~~[m[K
+[11.833s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:10:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[11.833s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::go_straight(int, int)[m[K’:
+[11.834s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kblock[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.834s]   124 |     void go_straight([01;35m[Kint block[m[K, cm){
+[11.835s]       |                      [01;35m[K~~~~^~~~~[m[K
+[11.853s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::right_course(int)[m[K’:
+[11.854s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:131:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_trun[m[K’ was not declared in this scope
+[11.854s]   131 |         [01;31m[Kright_trun[m[K()
+[11.855s]       |         [01;31m[K^~~~~~~~~~[m[K
+[11.855s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:130:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kblock[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.855s]   130 |     void right_course([01;35m[Kint block[m[K){
+[11.856s]       |                       [01;35m[K~~~~^~~~~[m[K
+[11.856s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::left_course(int)[m[K’:
+[11.857s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:136:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kblock[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.857s]   136 |     void left_course([01;35m[Kint block[m[K){
+[11.858s]       |                      [01;35m[K~~~~^~~~~[m[K
+[11.858s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kbool TurtlebotController::is_turn(const TurtlebotController::Point&, const TurtlebotController::Point&, const TurtlebotController::Point&)[m[K’:
+[11.858s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:164:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.859s]   164 |     bool is_turn(const Point& prev, [01;35m[Kconst Point& current[m[K, const Point& next) {
+[11.859s]       |                                     [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[20.734s] gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+[20.735s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+[20.736s] gmake: *** [Makefile:146: all] Error 2
+[20.742s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
