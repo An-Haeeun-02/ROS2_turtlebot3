@@ -33,7 +33,7 @@ public:
         std::cout << "그리드 높이를 입력하세요: ";  // 높이를 나중에 입력 받음
         std::cin >> height;
 
-        // 그리드 맵 초기화 (width가 열, height가 행으로 설정)
+        // 그리드 맵 초기화 (width가 열, height가 행으로 설정) 2차원 벡터(height x width)
         grid_map = std::vector<std::vector<int>>(height, std::vector<int>(width, 0));
 
         // 시작점 입력
@@ -203,7 +203,7 @@ public:
     }
 
 private:
-    struct Point {
+    struct Point { // point는 좌표 저장하는 구조체
         int x, y;
         Point(int x = 0, int y = 0) : x(x), y(y) {}
         bool operator==(const Point& other) const {
@@ -224,6 +224,7 @@ private:
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_; // odom 토픽 구독자
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_publisher_;
 
+    // 회전 여부 판단
     bool is_turn(const Point& prev, const Point& current, const Point& next) {
         return (prev.x != next.x && prev.y != next.y);
     }
@@ -248,17 +249,18 @@ private:
         Point point;  // 좌표
         Direction dir;  // 방향
         int g, h;  // g: 시작점부터의 비용, h: 휴리스틱 비용
-        Node* parent;  // 부모 노드 포인터
+        Node* parent;  // 부모 노드 포인터(이전 좌표)
 
         Node(Point p, Direction d, int g, int h, Node* parent = nullptr) 
             : point(p), dir(d), g(g), h(h), parent(parent) {}
-        int f() const { return g + h; }  // 총 비용 계산
+        int f() const { return g + h; }  // f = 출발장애물거리 + 장애물목표거리
 
         bool operator>(const Node& other) const {
             return f() > other.f();
         }
     };
 
+    // 거리 계산
     int heuristic(const Point& a, const Point& b) {
         return std::abs(a.x - b.x) + std::abs(a.y - b.y);
     }
@@ -275,18 +277,27 @@ private:
             Node current = open_list.top(); 
             open_list.pop();
 
+            // 현재지점이 목표지점이면 path에 저장
             if (current.point == goal) {
                 std::vector<Point> path;
                 while (current.parent) {
+                    // 현재 노드를 경로에 추가
                     path.push_back(current.point);
-                    if (current.parent && is_turn(current.parent->point, current.point, path.back())) {
+                    // 세 노드가 직선상에 있지 않다면 회전이 필요하므로 회전 지점으로 기록
+                    if (current.parent && is_turn(current.parent->point, current.point, path.back()))  {
+                    // 회전 지점으로 판별된 노드롤 turn_points 벡터에 저장
                         turn_points.push_back(current.point);
-                    }
+                    } 
+                    // 현재 노드를 부모 노드로
                     current = *current.parent;
                 }
+
+                // 마지막으로 시작점도 경로에 추가
                 path.push_back(start); 
+                // 경로를 뒤집어 올바른 순서로 변환(..)
                 std::reverse(path.begin(), path.end());
 
+                //..
                 setPoint.resize(2 + turn_points.size(), std::vector<int>(2));
                 setPoint[0][0] = start.x; setPoint[0][1] = start.y;
                 setPoint[1][0] = goal.x; setPoint[1][1] = goal.y;
@@ -298,18 +309,22 @@ private:
                 return path;
             }
 
+            // 각 노드가 탐색되었는지 확인
             closed_list[current.point.y][current.point.x] = true; 
 
+            // 이동방향 정의
             std::vector<std::pair<Point, Direction>> directions = {
-                {{1, 0}, RIGHT},
-                {{0, 1}, DOWN},
-                {{-1, 0}, LEFT},
+                {{1, 0}, RIGHT}, // X축 방향으로 +1
+                {{0, 1}, DOWN}, 
+                {{-1, 0}, LEFT}, 
                 {{0, -1}, UP}
             };
 
+            // 방향 체크?
             for (const auto& [dir, direction] : directions) {
                 Point next(current.point.x + dir.x, current.point.y + dir.y); 
 
+                // 경계 및 장애물 체크(..)
                 if (next.x >= 0 && next.x < static_cast<int>(grid_map[0].size()) &&
                     next.y >= 0 && next.y < static_cast<int>(grid_map.size()) &&
                     grid_map[next.y][next.x] == 0 && !closed_list[next.y][next.x]) {
@@ -322,13 +337,17 @@ private:
         return {}; 
     }
 
+    // 장애물을 그리드 맵에 설정
     void set_obstacles() {
         for (size_t i = 0; i < obstacles.size(); ++i) {
             Point obs = obstacles[i]; 
             int obs_width = obstacle_sizes[i][0]; 
             int obs_height = obstacle_sizes[i][1]; 
 
+            // 장애물이 몇 칸의 공간을 차지하는지 확인 
+            // 장애물이 세로 방향에 얼마나 많은 칸 차지
             for (size_t x = static_cast<size_t>(obs.y); x < static_cast<size_t>(obs.y) + static_cast<size_t>(obs_height) && x < grid_map.size(); ++x) {
+                // 장애물이 가로 방향에 얼마나 많이 차지하는지
                 for (size_t y = static_cast<size_t>(obs.x); y < static_cast<size_t>(obs.x) + static_cast<size_t>(obs_width) && y < grid_map[0].size(); ++y) {
                     grid_map[x][y] = 1; 
                 }
@@ -376,29 +395,35 @@ private:
         size_t width = display_map[0].size();
         size_t height = display_map.size();
 
+        // 상단의 @ 출력
         for (size_t i = 0; i < width + 2; ++i) {
             std::cout << "@ ";
         }
         std::cout << std::endl;
 
         for (size_t i = 0; i < height; ++i) {
-            std::cout << "@ ";
+            std::cout << "@ "; // 왼쪽 테두리(행의 시작)
             for (size_t j = 0; j < width; ++j) {
-                if (display_map[i][j] == '#') {
+                if (display_map[i][j] == '#') { // 장애물 파란색
                     std::cout << BLUE << display_map[i][j] << RESET << ' '; 
-                } else if (display_map[i][j] == '+') {
+                } else if (display_map[i][j] == '+') { // 회전 지점 노란색
                     std::cout << YELLOW << display_map[i][j] << RESET << ' '; 
+                 // 시작점 발간색
                 } else if (i == static_cast<size_t>(start.y) && j == static_cast<size_t>(start.x)) {
                     std::cout << RED << display_map[i][j] << RESET << ' '; 
+                 // 목표점 초록색
                 } else if (i == static_cast<size_t>(goal.y) && j == static_cast<size_t>(goal.x)) {
                     std::cout << GREEN << display_map[i][j] << RESET << ' '; 
+                 // 빈 공간 기본 색상 공백
                 } else {
                     std::cout << display_map[i][j] << ' '; 
                 }
             }
+             // 오른쪽 테두리(행의 끝)
             std::cout << "@ " << std::endl;
         }
-
+        
+        // 하단의 @ 출력 태두리
         for (size_t i = 0; i < width + 2; ++i) {
             std::cout << "@ ";
         }
@@ -410,11 +435,13 @@ private:
         }
     }
 
+    // 이동거리 계산 함수
     double calculate_path_distance(const std::vector<Point>& path) {
         double total_distance = 0.0;
         for (size_t i = 1; i < path.size(); ++i) {
             double dx = path[i].x - path[i - 1].x;
             double dy = path[i].y - path[i - 1].y;
+            // 유클리드 거리 계산
             total_distance += std::sqrt(dx * dx + dy * dy) * 10; 
         }
         return total_distance; 
