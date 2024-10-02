@@ -1,0 +1,10 @@
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In constructor ‘[01m[KGridNavigator::GridNavigator(int, int, int)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:80:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KGridNavigator::step_count_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   80 |     int [01;35m[Kstep_count_[m[K;
+      |         [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:76:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble GridNavigator::distance_moved_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   76 |     double [01;35m[Kdistance_moved_[m[K = 0.0;
+      |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:15:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   15 |     [01;35m[KGridNavigator[m[K(int grid_width, int grid_height, int step_count)
+      |     [01;35m[K^~~~~~~~~~~~~[m[K

@@ -1,0 +1,24 @@
+[0.132s] Invoking command in '/home/hae/robot_ws/src/build/robot_total_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_total_pkg -- -j4 -l4
+[2.390s] [ 50%] Built target scan_node
+[2.606s] [ 75%] [32mBuilding CXX object CMakeFiles/drive_node.dir/src/total_drive.cpp.o[0m
+[24.731s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[24.773s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_service_[m[K’ was not declared in this scope
+[24.774s]   105 |         [01;31m[K    std::bind[m[K(&TurtlebotController::imuCallback, this, std::placeholders::_1));
+[24.774s]       |         [01;31m[K^[m[K   [01;31m[K~~~~~~~~~[m[K
+[24.775s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:105:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[24.775s]   105 |             std::bind(&TurtlebotController::i[01;31m[KmuCallba[m[Kck, this, std::placeholders::_1));
+[24.776s]       |                                              [01;31m[K^~~~~~~~[m[K
+[24.776s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:105:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[24.777s]   105 |             std::bind(&Turtleb[01;31m[KotController::imuCallback, this, std[m[K::placeholders::_1));
+[24.777s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[24.778s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:106:45:[m[K [01;31m[Kerror: [m[K‘[01m[KstopServiceCallback[m[K’ is not a member of ‘[01m[KTurtlebotController[m[K’
+[24.779s]   106 |         stop_service_ = this->create_service[01;31m[K<std_srvs::srv::Emp[m[Kty>("/stop_robot",
+[24.780s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[24.781s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::move_robot()[m[K’:
+[24.781s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:179:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcmd_publisher_[m[K’
+[24.782s]   179 |                 [01;31m[K//message.angu[m[Klar.z = 0.0; // 회전 없음
+[24.782s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[50.759s] gmake[2]: *** [CMakeFiles/drive_node.dir/build.make:76: CMakeFiles/drive_node.dir/src/total_drive.cpp.o] Error 1
+[50.782s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/drive_node.dir/all] Error 2
+[50.782s] gmake: *** [Makefile:146: all] Error 2
+[51.364s] Invoked command in '/home/hae/robot_ws/src/build/robot_total_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_total_pkg -- -j4 -l4

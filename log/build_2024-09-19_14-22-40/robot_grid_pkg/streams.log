@@ -1,0 +1,11 @@
+[0.063s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[0.763s] [35m[1mConsolidate compiler generated dependencies of target grid_node[0m
+[0.917s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[13.019s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kbool TurtlebotController::is_turn(const TurtlebotController::Point&, const TurtlebotController::Point&, const TurtlebotController::Point&)[m[K’:
+[13.019s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:93:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[13.020s]    93 |     bool is_turn(const Point& prev, [01;35m[Kconst Point& current[m[K, const Point& next) {
+[13.021s]       |                                     [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[27.727s] gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Interrupt
+[27.728s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Interrupt
+[27.729s] gmake: *** [Makefile:146: all] Interrupt
+[28.234s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4

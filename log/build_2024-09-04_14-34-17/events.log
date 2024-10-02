@@ -1,0 +1,302 @@
+[0.000000] (-) TimerEvent: {}
+[0.002409] (-) JobUnselected: {'identifier': 'action_test'}
+[0.003165] (-) JobUnselected: {'identifier': 'cgps_pkg'}
+[0.003967] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.004357] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.004535] (-) JobUnselected: {'identifier': 'robot_drive_pkg'}
+[0.004657] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.004769] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.005170] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.005716] (dot_pkg) JobQueued: {'identifier': 'dot_pkg', 'dependencies': OrderedDict()}
+[0.005897] (dot_pkg) JobStarted: {'identifier': 'dot_pkg'}
+[0.060650] (dot_pkg) JobProgress: {'identifier': 'dot_pkg', 'progress': 'cmake'}
+[0.065489] (dot_pkg) JobProgress: {'identifier': 'dot_pkg', 'progress': 'build'}
+[0.069189] (dot_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/dot_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/dot_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 63728 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('TERM_PROGRAM_VERSION', '1.92.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-6401126f-101c-4db5-b94d-46761753905c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hae/robot_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-fee1edb8d6d72a0ddff41e5f71a671c23ed924b9/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ab3660f3b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/dot_pkg:/home/hae/robot_ws/src/install/cgps_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/dot_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 63728 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/dot_pkg:/home/hae/robot_ws/src/install/cgps_pkg:/opt/ros/humble')]), 'shell': False}
+[0.098867] (-) TimerEvent: {}
+[0.199637] (-) TimerEvent: {}
+[0.300730] (-) TimerEvent: {}
+[0.393880] (dot_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dot_node\x1b[0m\n'}
+[0.400902] (-) TimerEvent: {}
+[0.501845] (-) TimerEvent: {}
+[0.532758] (dot_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dot_node.dir/src/dot.cpp.o\x1b[0m\n'}
+[0.602014] (-) TimerEvent: {}
+[0.702878] (-) TimerEvent: {}
+[0.803696] (-) TimerEvent: {}
+[0.904493] (-) TimerEvent: {}
+[1.005197] (-) TimerEvent: {}
+[1.105920] (-) TimerEvent: {}
+[1.206713] (-) TimerEvent: {}
+[1.307492] (-) TimerEvent: {}
+[1.408356] (-) TimerEvent: {}
+[1.509240] (-) TimerEvent: {}
+[1.610035] (-) TimerEvent: {}
+[1.710882] (-) TimerEvent: {}
+[1.811625] (-) TimerEvent: {}
+[1.912399] (-) TimerEvent: {}
+[2.013279] (-) TimerEvent: {}
+[2.114083] (-) TimerEvent: {}
+[2.215006] (-) TimerEvent: {}
+[2.315794] (-) TimerEvent: {}
+[2.416618] (-) TimerEvent: {}
+[2.517411] (-) TimerEvent: {}
+[2.618211] (-) TimerEvent: {}
+[2.718986] (-) TimerEvent: {}
+[2.819743] (-) TimerEvent: {}
+[2.920557] (-) TimerEvent: {}
+[3.021397] (-) TimerEvent: {}
+[3.122243] (-) TimerEvent: {}
+[3.223116] (-) TimerEvent: {}
+[3.323967] (-) TimerEvent: {}
+[3.424922] (-) TimerEvent: {}
+[3.525847] (-) TimerEvent: {}
+[3.626688] (-) TimerEvent: {}
+[3.727594] (-) TimerEvent: {}
+[3.828431] (-) TimerEvent: {}
+[3.929322] (-) TimerEvent: {}
+[4.030324] (-) TimerEvent: {}
+[4.131127] (-) TimerEvent: {}
+[4.232050] (-) TimerEvent: {}
+[4.332928] (-) TimerEvent: {}
+[4.433882] (-) TimerEvent: {}
+[4.534890] (-) TimerEvent: {}
+[4.635737] (-) TimerEvent: {}
+[4.736639] (-) TimerEvent: {}
+[4.837743] (-) TimerEvent: {}
+[4.938765] (-) TimerEvent: {}
+[5.039685] (-) TimerEvent: {}
+[5.140710] (-) TimerEvent: {}
+[5.241955] (-) TimerEvent: {}
+[5.342985] (-) TimerEvent: {}
+[5.444049] (-) TimerEvent: {}
+[5.545075] (-) TimerEvent: {}
+[5.646034] (-) TimerEvent: {}
+[5.747025] (-) TimerEvent: {}
+[5.848056] (-) TimerEvent: {}
+[5.948984] (-) TimerEvent: {}
+[6.050041] (-) TimerEvent: {}
+[6.151033] (-) TimerEvent: {}
+[6.251963] (-) TimerEvent: {}
+[6.352843] (-) TimerEvent: {}
+[6.453935] (-) TimerEvent: {}
+[6.554802] (-) TimerEvent: {}
+[6.655609] (-) TimerEvent: {}
+[6.756425] (-) TimerEvent: {}
+[6.857243] (-) TimerEvent: {}
+[6.958086] (-) TimerEvent: {}
+[7.059019] (-) TimerEvent: {}
+[7.159881] (-) TimerEvent: {}
+[7.260677] (-) TimerEvent: {}
+[7.361571] (-) TimerEvent: {}
+[7.462446] (-) TimerEvent: {}
+[7.563328] (-) TimerEvent: {}
+[7.664177] (-) TimerEvent: {}
+[7.765112] (-) TimerEvent: {}
+[7.865939] (-) TimerEvent: {}
+[7.966821] (-) TimerEvent: {}
+[8.067650] (-) TimerEvent: {}
+[8.168525] (-) TimerEvent: {}
+[8.269541] (-) TimerEvent: {}
+[8.370424] (-) TimerEvent: {}
+[8.471244] (-) TimerEvent: {}
+[8.572056] (-) TimerEvent: {}
+[8.672885] (-) TimerEvent: {}
+[8.773712] (-) TimerEvent: {}
+[8.874553] (-) TimerEvent: {}
+[8.975359] (-) TimerEvent: {}
+[9.076192] (-) TimerEvent: {}
+[9.177073] (-) TimerEvent: {}
+[9.277889] (-) TimerEvent: {}
+[9.378804] (-) TimerEvent: {}
+[9.479655] (-) TimerEvent: {}
+[9.580513] (-) TimerEvent: {}
+[9.681417] (-) TimerEvent: {}
+[9.782358] (-) TimerEvent: {}
+[9.883222] (-) TimerEvent: {}
+[9.984032] (-) TimerEvent: {}
+[10.085117] (-) TimerEvent: {}
+[10.186396] (-) TimerEvent: {}
+[10.287277] (-) TimerEvent: {}
+[10.388265] (-) TimerEvent: {}
+[10.489244] (-) TimerEvent: {}
+[10.590194] (-) TimerEvent: {}
+[10.691076] (-) TimerEvent: {}
+[10.791947] (-) TimerEvent: {}
+[10.892853] (-) TimerEvent: {}
+[10.993779] (-) TimerEvent: {}
+[11.094628] (-) TimerEvent: {}
+[11.195450] (-) TimerEvent: {}
+[11.296244] (-) TimerEvent: {}
+[11.397130] (-) TimerEvent: {}
+[11.497924] (-) TimerEvent: {}
+[11.598769] (-) TimerEvent: {}
+[11.699611] (-) TimerEvent: {}
+[11.764314] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:100:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.765233] (dot_pkg) StderrLine: {'line': b'  100 |             \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (range < msg->range_min * 100 || range > msg->range_max * 100) { // \xea\xb1\xb0\xeb\xa6\xac \xea\xb0\x92\xec\x9d\xb4 \xec\x9c\xa0\xed\x9a\xa8 \xeb\xb2\x94\xec\x9c\x84 \xeb\x82\xb4\xec\x97\x90 \xec\x9e\x88\xeb\x8a\x94\xec\xa7\x80 \xed\x99\x95\xec\x9d\xb8\n'}
+[11.765729] (dot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[11.781637] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:105:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krange\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.782928] (dot_pkg) StderrLine: {'line': b'  105 |             double x = \x1b[01;31m\x1b[Krange\x1b[m\x1b[K * cos(angle); // \xea\xb7\xb9\xec\xa2\x8c\xed\x91\x9c\xeb\xa5\xbc \xec\xa7\x81\xea\xb5\x90 \xec\xa2\x8c\xed\x91\x9c\xeb\xa1\x9c \xeb\xb3\x80\xed\x99\x98 (x \xec\xa2\x8c\xed\x91\x9c)\n'}
+[11.783601] (dot_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.793404] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:105:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.794237] (dot_pkg) StderrLine: {'line': b'  105 |             double x = range * cos(\x1b[01;31m\x1b[Kangle\x1b[m\x1b[K); // \xea\xb7\xb9\xec\xa2\x8c\xed\x91\x9c\xeb\xa5\xbc \xec\xa7\x81\xea\xb5\x90 \xec\xa2\x8c\xed\x91\x9c\xeb\xa1\x9c \xeb\xb3\x80\xed\x99\x98 (x \xec\xa2\x8c\xed\x91\x9c)\n'}
+[11.794817] (dot_pkg) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.799788] (-) TimerEvent: {}
+[11.804776] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:106:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krange\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.805508] (dot_pkg) StderrLine: {'line': b'  106 |             double y = \x1b[01;31m\x1b[Krange\x1b[m\x1b[K * sin(angle); // \xea\xb7\xb9\xec\xa2\x8c\xed\x91\x9c\xeb\xa5\xbc \xec\xa7\x81\xea\xb5\x90 \xec\xa2\x8c\xed\x91\x9c\xeb\xa1\x9c \xeb\xb3\x80\xed\x99\x98 (y \xec\xa2\x8c\xed\x91\x9c)\n'}
+[11.806090] (dot_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.816618] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:106:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.817520] (dot_pkg) StderrLine: {'line': b'  106 |             double y = range * sin(\x1b[01;31m\x1b[Kangle\x1b[m\x1b[K); // \xea\xb7\xb9\xec\xa2\x8c\xed\x91\x9c\xeb\xa5\xbc \xec\xa7\x81\xea\xb5\x90 \xec\xa2\x8c\xed\x91\x9c\xeb\xa1\x9c \xeb\xb3\x80\xed\x99\x98 (y \xec\xa2\x8c\xed\x91\x9c)\n'}
+[11.818101] (dot_pkg) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.829798] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:109:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcenter_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.830651] (dot_pkg) StderrLine: {'line': b'  109 |             int grid_x = static_cast<int>(\x1b[01;31m\x1b[Kcenter_x\x1b[m\x1b[K - y); // x \xec\xa2\x8c\xed\x91\x9c\xeb\xa5\xbc \xed\x99\x94\xeb\xa9\xb4 \xec\xa2\x8c\xed\x91\x9c\xea\xb3\x84\xeb\xa1\x9c \xeb\xb3\x80\xed\x99\x98\n'}
+[11.831177] (dot_pkg) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.842350] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:110:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcenter_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.843362] (dot_pkg) StderrLine: {'line': b'  110 |             int grid_y = static_cast<int>(\x1b[01;31m\x1b[Kcenter_y\x1b[m\x1b[K - x); // y \xec\xa2\x8c\xed\x91\x9c\xeb\xa5\xbc \xed\x99\x94\xeb\xa9\xb4 \xec\xa2\x8c\xed\x91\x9c\xea\xb3\x84\xeb\xa1\x9c \xeb\xb3\x80\xed\x99\x98\n'}
+[11.843907] (dot_pkg) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.844458] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:112:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.845083] (dot_pkg) StderrLine: {'line': b'  112 |             \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (grid_x >= 0 && grid_x < grid_width && grid_y >= 0 && grid_y < grid_height) // \xec\xa2\x8c\xed\x91\x9c\xea\xb0\x80 \xeb\xb0\xb0\xec\x97\xb4 \xeb\xb2\x94\xec\x9c\x84 \xeb\x82\xb4\xec\x97\x90 \xec\x9e\x88\xeb\x8a\x94\xec\xa7\x80 \xed\x99\x95\xec\x9d\xb8\n'}
+[11.845694] (dot_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[11.846608] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:116:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.847099] (dot_pkg) StderrLine: {'line': b'  116 |         \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[11.847694] (dot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.848327] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:118:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgrid\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[11.849018] (dot_pkg) StderrLine: {'line': b"  118 |         \x1b[01;31m\x1b[Kgrid\x1b[m\x1b[K[center_y][center_x] = 'O'; // \xea\xb7\xb8\xeb\xa6\xac\xeb\x93\x9c \xec\xa4\x91\xec\x8b\xac\xec\x97\x90 \xed\x84\xb0\xed\x8b\x80\xeb\xb4\x87\xec\x9d\x84 'O'\xeb\xa1\x9c \xed\x91\x9c\xec\x8b\x9c\n"}
+[11.849846] (dot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.850376] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:121:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kfor\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.850916] (dot_pkg) StderrLine: {'line': b'  121 |         \x1b[01;31m\x1b[Kfor\x1b[m\x1b[K (int i = 0; i < grid_width + 2; ++i) cout << "*"; // \xec\x9c\x97\xeb\xb3\x80 \xed\x85\x8c\xeb\x91\x90\xeb\xa6\xac\n'}
+[11.851633] (dot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.852251] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:121:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[11.853103] (dot_pkg) StderrLine: {'line': b'  121 |         for (int i = 0; \x1b[01;31m\x1b[Ki\x1b[m\x1b[K < grid_width + 2; ++i) cout << "*"; // \xec\x9c\x97\xeb\xb3\x80 \xed\x85\x8c\xeb\x91\x90\xeb\xa6\xac\n'}
+[11.853662] (dot_pkg) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.854117] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:121:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K++\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.855092] (dot_pkg) StderrLine: {'line': b'  121 |         for (int i = 0; i < grid_width + 2; \x1b[01;31m\x1b[K++\x1b[m\x1b[Ki) cout << "*"; // \xec\x9c\x97\xeb\xb3\x80 \xed\x85\x8c\xeb\x91\x90\xeb\xa6\xac\n'}
+[11.856272] (dot_pkg) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[11.856987] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:122:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcout\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[11.857715] (dot_pkg) StderrLine: {'line': b'  122 |         \x1b[01;31m\x1b[Kcout\x1b[m\x1b[K << endl;\n'}
+[11.858502] (dot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.859142] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:125:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kfor\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.859665] (dot_pkg) StderrLine: {'line': b'  125 |         \x1b[01;31m\x1b[Kfor\x1b[m\x1b[K (const auto& row : grid) // \xea\xb0\x81 \xed\x96\x89\xec\x97\x90 \xeb\x8c\x80\xed\x95\xb4 \xeb\xb0\x98\xeb\xb3\xb5\n'}
+[11.860493] (dot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.860914] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:135:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kfor\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.861368] (dot_pkg) StderrLine: {'line': b'  135 |         \x1b[01;31m\x1b[Kfor\x1b[m\x1b[K (int i = 0; i < grid_width + 2; ++i) cout << "*"; // \xec\x95\x84\xeb\x9e\xab\xeb\xb3\x80 \xed\x85\x8c\xeb\x91\x90\xeb\xa6\xac\n'}
+[11.862267] (dot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.862766] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:135:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[11.863404] (dot_pkg) StderrLine: {'line': b'  135 |         for (int i = 0; \x1b[01;31m\x1b[Ki\x1b[m\x1b[K < grid_width + 2; ++i) cout << "*"; // \xec\x95\x84\xeb\x9e\xab\xeb\xb3\x80 \xed\x85\x8c\xeb\x91\x90\xeb\xa6\xac\n'}
+[11.864023] (dot_pkg) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.864432] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:135:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K++\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.864845] (dot_pkg) StderrLine: {'line': b'  135 |         for (int i = 0; i < grid_width + 2; \x1b[01;31m\x1b[K++\x1b[m\x1b[Ki) cout << "*"; // \xec\x95\x84\xeb\x9e\xab\xeb\xb3\x80 \xed\x85\x8c\xeb\x91\x90\xeb\xa6\xac\n'}
+[11.865203] (dot_pkg) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[11.865895] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:136:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcout\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[11.866405] (dot_pkg) StderrLine: {'line': b'  136 |         \x1b[01;31m\x1b[Kcout\x1b[m\x1b[K << endl; // \xec\xa4\x84 \xeb\xb0\x94\xea\xbf\x88\n'}
+[11.866815] (dot_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.867186] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:139:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected constructor, destructor, or type conversion before \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.867576] (dot_pkg) StderrLine: {'line': b'  139 |         std::this_thread::sleep_for\x1b[01;31m\x1b[K(\x1b[m\x1b[Kstd::chrono::seconds(3)); // 3\xec\xb4\x88 \xeb\x8f\x99\xec\x95\x88 \xec\x8a\xa4\xeb\xa0\x88\xeb\x93\x9c\xeb\xa5\xbc \xec\x9d\xbc\xec\x8b\x9c \xec\xa0\x95\xec\xa7\x80\n'}
+[11.867980] (dot_pkg) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.868378] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:140:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.868765] (dot_pkg) StderrLine: {'line': b'  140 |     \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[11.869143] (dot_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.869515] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:144:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[11.869912] (dot_pkg) StderrLine: {'line': b'  144 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[11.870462] (dot_pkg) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.870876] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:146:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.871256] (dot_pkg) StderrLine: {'line': b'  146 | int \x1b[01;31m\x1b[Kmain\x1b[m\x1b[K(int argc, char *argv[])\n'}
+[11.871674] (dot_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.872037] (dot_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:91:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[11.872402] (dot_pkg) StderrLine: {'line': b'   91 | int \x1b[01;36m\x1b[Kmain\x1b[m\x1b[K(int argc, char *argv[])\n'}
+[11.872778] (dot_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.899997] (-) TimerEvent: {}
+[12.000872] (-) TimerEvent: {}
+[12.101834] (-) TimerEvent: {}
+[12.202677] (-) TimerEvent: {}
+[12.303533] (-) TimerEvent: {}
+[12.404386] (-) TimerEvent: {}
+[12.505273] (-) TimerEvent: {}
+[12.606067] (-) TimerEvent: {}
+[12.706954] (-) TimerEvent: {}
+[12.807748] (-) TimerEvent: {}
+[12.908605] (-) TimerEvent: {}
+[13.009555] (-) TimerEvent: {}
+[13.110412] (-) TimerEvent: {}
+[13.211238] (-) TimerEvent: {}
+[13.312170] (-) TimerEvent: {}
+[13.413122] (-) TimerEvent: {}
+[13.514037] (-) TimerEvent: {}
+[13.614909] (-) TimerEvent: {}
+[13.715735] (-) TimerEvent: {}
+[13.816536] (-) TimerEvent: {}
+[13.917380] (-) TimerEvent: {}
+[14.018308] (-) TimerEvent: {}
+[14.119125] (-) TimerEvent: {}
+[14.219961] (-) TimerEvent: {}
+[14.320844] (-) TimerEvent: {}
+[14.421796] (-) TimerEvent: {}
+[14.522745] (-) TimerEvent: {}
+[14.623634] (-) TimerEvent: {}
+[14.724612] (-) TimerEvent: {}
+[14.825546] (-) TimerEvent: {}
+[14.926979] (-) TimerEvent: {}
+[15.028298] (-) TimerEvent: {}
+[15.129644] (-) TimerEvent: {}
+[15.230770] (-) TimerEvent: {}
+[15.331655] (-) TimerEvent: {}
+[15.432490] (-) TimerEvent: {}
+[15.533306] (-) TimerEvent: {}
+[15.634254] (-) TimerEvent: {}
+[15.735280] (-) TimerEvent: {}
+[15.836102] (-) TimerEvent: {}
+[15.936968] (-) TimerEvent: {}
+[16.037831] (-) TimerEvent: {}
+[16.138765] (-) TimerEvent: {}
+[16.239616] (-) TimerEvent: {}
+[16.340578] (-) TimerEvent: {}
+[16.441414] (-) TimerEvent: {}
+[16.542392] (-) TimerEvent: {}
+[16.643217] (-) TimerEvent: {}
+[16.744044] (-) TimerEvent: {}
+[16.844922] (-) TimerEvent: {}
+[16.945851] (-) TimerEvent: {}
+[17.046793] (-) TimerEvent: {}
+[17.147672] (-) TimerEvent: {}
+[17.248483] (-) TimerEvent: {}
+[17.349295] (-) TimerEvent: {}
+[17.450185] (-) TimerEvent: {}
+[17.551016] (-) TimerEvent: {}
+[17.651903] (-) TimerEvent: {}
+[17.752754] (-) TimerEvent: {}
+[17.853630] (-) TimerEvent: {}
+[17.954575] (-) TimerEvent: {}
+[18.055553] (-) TimerEvent: {}
+[18.156412] (-) TimerEvent: {}
+[18.257238] (-) TimerEvent: {}
+[18.358177] (-) TimerEvent: {}
+[18.459012] (-) TimerEvent: {}
+[18.559851] (-) TimerEvent: {}
+[18.660695] (-) TimerEvent: {}
+[18.761589] (-) TimerEvent: {}
+[18.862446] (-) TimerEvent: {}
+[18.963276] (-) TimerEvent: {}
+[19.064088] (-) TimerEvent: {}
+[19.164926] (-) TimerEvent: {}
+[19.265742] (-) TimerEvent: {}
+[19.366616] (-) TimerEvent: {}
+[19.467521] (-) TimerEvent: {}
+[19.568523] (-) TimerEvent: {}
+[19.669312] (-) TimerEvent: {}
+[19.770118] (-) TimerEvent: {}
+[19.871238] (-) TimerEvent: {}
+[19.972030] (-) TimerEvent: {}
+[20.072956] (-) TimerEvent: {}
+[20.173798] (-) TimerEvent: {}
+[20.274684] (-) TimerEvent: {}
+[20.375591] (-) TimerEvent: {}
+[20.476488] (-) TimerEvent: {}
+[20.577490] (-) TimerEvent: {}
+[20.664461] (dot_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/dot_node.dir/build.make:76: CMakeFiles/dot_node.dir/src/dot.cpp.o] Error 1\n'}
+[20.665882] (dot_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dot_node.dir/all] Error 2\n'}
+[20.667138] (dot_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[20.677682] (-) TimerEvent: {}
+[20.712762] (dot_pkg) CommandEnded: {'returncode': 2}
+[20.777924] (-) TimerEvent: {}
+[20.878823] (-) TimerEvent: {}
+[20.981024] (-) TimerEvent: {}
+[21.005944] (dot_pkg) JobEnded: {'identifier': 'dot_pkg', 'rc': 2}
+[21.019249] (-) EventReactorShutdown: {}

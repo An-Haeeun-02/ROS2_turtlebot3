@@ -1,0 +1,30 @@
+[0.063s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[0.242s] [35m[1mConsolidate compiler generated dependencies of target grid_node[0m
+[0.346s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[10.894s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::move_robot()[m[K’:
+[10.894s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:104:38:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::vector<std::vector<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[10.895s]   104 |         for(int i=2;[01;35m[KsetPoint.size()-1>i[m[K;i++ ){
+[10.895s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~^~[m[K
+[10.905s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::right_course(int, int)[m[K’:
+[10.905s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:160:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kmessage[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[10.906s]   160 |         auto [01;35m[Kmessage[m[K = geometry_msgs::msg::Twist(); // 메시지 객체 생성
+[10.906s]       |              [01;35m[K^~~~~~~[m[K
+[10.907s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::left_course(int, int)[m[K’:
+[10.908s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:167:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kmessage[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[10.908s]   167 |         auto [01;35m[Kmessage[m[K = geometry_msgs::msg::Twist();
+[10.908s]       |              [01;35m[K^~~~~~~[m[K
+[10.909s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kbool TurtlebotController::is_turn(const TurtlebotController::Point&, const TurtlebotController::Point&, const TurtlebotController::Point&)[m[K’:
+[10.910s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:225:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.910s]   225 |     bool is_turn(const Point& prev, [01;35m[Kconst Point& current[m[K, const Point& next) {
+[10.911s]       |                                     [01;35m[K~~~~~~~~~~~~~^~~~~~~[m[K
+[10.918s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[10.919s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:231:74:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[10.920s]   231 |         void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) [01;31m[K{[m[K
+[10.920s]       |                                                                          [01;31m[K^[m[K
+[10.921s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:230:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.921s]   230 |     void odom_callback([01;35m[Kconst nav_msgs::msg::Odometry::SharedPtr msg[m[K) {
+[10.922s]       |                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[20.073s] gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+[20.074s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+[20.075s] gmake: *** [Makefile:146: all] Error 2
+[20.082s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4

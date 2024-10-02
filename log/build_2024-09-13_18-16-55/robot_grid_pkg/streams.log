@@ -1,0 +1,30 @@
+[0.062s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[0.239s] [35m[1mConsolidate compiler generated dependencies of target grid_node[0m
+[0.339s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[11.504s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kbool is_turn(Point, Point, Point)[m[K’:
+[11.505s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:41:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.505s]    41 | bool is_turn(Point prev, [01;35m[KPoint current[m[K, Point next) {
+[11.506s]       |                          [01;35m[K~~~~~~^~~~~~~[m[K
+[34.956s] [100%] [32m[1mLinking CXX executable grid_node[0m
+[37.082s] [100%] Built target grid_node
+[37.123s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[37.297s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_grid_pkg
+[37.324s] -- Install configuration: ""
+[37.326s] -- Execute custom install script
+[37.328s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/lib/robot_grid_pkg/grid_node
+[37.330s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/ament_index/resource_index/package_run_dependencies/robot_grid_pkg
+[37.331s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/ament_index/resource_index/parent_prefix_path/robot_grid_pkg
+[37.332s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/ament_prefix_path.sh
+[37.334s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/ament_prefix_path.dsv
+[37.336s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/path.sh
+[37.338s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/path.dsv
+[37.339s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.bash
+[37.340s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.sh
+[37.341s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.zsh
+[37.342s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.dsv
+[37.343s] -- Symlinking: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/package.dsv
+[37.377s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/ament_index/resource_index/packages/robot_grid_pkg
+[37.378s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/cmake/robot_grid_pkgConfig.cmake
+[37.379s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/cmake/robot_grid_pkgConfig-version.cmake
+[37.380s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/package.xml
+[37.387s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_grid_pkg

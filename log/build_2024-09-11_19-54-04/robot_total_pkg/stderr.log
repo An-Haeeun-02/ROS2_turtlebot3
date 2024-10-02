@@ -1,0 +1,10 @@
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:39:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KTurtlebotController::stair_detected_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   39 |     bool [01;35m[Kstair_detected_[m[K; // 계단 감지 플래그
+      |          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:34:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble TurtlebotController::previous_left_value_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   34 |     double [01;35m[Kprevious_left_value_[m[K; // 이전 왼쪽 센서 값 저장
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:90:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   90 |     [01;35m[KTurtlebotController[m[K() : Node("robot_cleaner"),
+      |     [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K

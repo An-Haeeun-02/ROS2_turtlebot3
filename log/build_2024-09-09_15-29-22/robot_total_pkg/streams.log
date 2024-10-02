@@ -1,0 +1,60 @@
+[0.053s] Invoking command in '/home/hae/robot_ws/src/build/robot_total_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_total_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_total_pkg
+[0.268s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.611s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.590s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[2.832s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.849s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.885s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.948s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.028s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.329s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.340s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.447s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.236s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[5.556s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[6.037s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[6.431s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[6.468s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[6.477s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[8.003s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.452s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.453s] -- Configured cppcheck include dirs: 
+[8.454s] -- Configured cppcheck exclude dirs and/or files: 
+[8.458s] -- Added test 'lint_cmake' to check CMake code style
+[8.467s] -- Added test 'uncrustify' to check C / C++ code style
+[8.468s] -- Configured uncrustify additional arguments: 
+[8.470s] -- Added test 'xmllint' to check XML markup files
+[8.478s] -- Configuring done
+[8.589s] -- Generating done
+[8.598s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_total_pkg
+[8.657s] Invoked command in '/home/hae/robot_ws/src/build/robot_total_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hae/robot_ws/src/robot_total_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/hae/robot_ws/src/install/robot_total_pkg
+[8.667s] Invoking command in '/home/hae/robot_ws/src/build/robot_total_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_total_pkg -- -j4 -l4
+[8.904s] [ 25%] [32mBuilding CXX object CMakeFiles/drive_node.dir/src/total_drive.cpp.o[0m
+[8.905s] [ 50%] [32mBuilding CXX object CMakeFiles/scan_node.dir/src/scan.cpp.o[0m
+[35.202s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:[m[K In constructor ‘[01m[KTurtlebotController::TurtlebotController()[m[K’:
+[35.403s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:104:24:[m[K [01;31m[Kerror: [m[K‘[01m[KDirectNode[m[K’ has not been declared
+[35.403s]   104 |             std::bind(&[01;31m[KDirectNode[m[K::imuCallback, this, std::placeholders::_1));
+[35.404s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[36.233s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_service_[m[K’ was not declared in this scope
+[36.234s]   105 |         [01;31m[Kstop_service_[m[K = this->create_service<std_srvs::srv::Empty>("/stop_robot",
+[36.235s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[36.235s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:105:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[36.236s]   105 |         stop_service_ = this->create_service<[01;31m[Kstd_srvs[m[K::srv::Empty>("/stop_robot",
+[36.236s]       |                                              [01;31m[K^~~~~~~~[m[K
+[36.237s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:105:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[36.237s]   105 |         stop_service_ = this->[01;31m[Kcreate_service<std_srvs::srv::Empty>[m[K("/stop_robot",
+[36.238s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[36.238s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:106:24:[m[K [01;31m[Kerror: [m[K‘[01m[KDirectNode[m[K’ has not been declared
+[36.239s]   106 |             std::bind(&[01;31m[KDirectNode[m[K::stopServiceCallback, this, std::placeholders::_1, std::placeholders::_2));
+[36.239s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[36.240s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:[m[K In member function ‘[01m[Kvoid TurtlebotController::move_robot()[m[K’:
+[36.240s] [01m[K/home/hae/robot_ws/src/robot_total_pkg/src/total_drive.cpp:179:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcmd_publisher_[m[K’
+[36.241s]   179 |                 [01;31m[Kcmd_publisher_[m[K->publish(message); // cmd_vel 토픽에 전진 명령 발행
+[36.242s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[1751.571s] gmake[2]: *** [CMakeFiles/drive_node.dir/build.make:76: CMakeFiles/drive_node.dir/src/total_drive.cpp.o] Error 1
+[1751.627s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/drive_node.dir/all] Error 2
+[1751.628s] gmake[1]: *** Waiting for unfinished jobs....
+[1751.630s] [ 75%] [32m[1mLinking CXX executable scan_node[0m
+[1751.632s] [ 75%] Built target scan_node
+[1751.633s] gmake: *** [Makefile:146: all] Error 2
+[1751.640s] Invoked command in '/home/hae/robot_ws/src/build/robot_total_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_total_pkg -- -j4 -l4

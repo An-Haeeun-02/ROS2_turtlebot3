@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target drive_node[0m
+[35m[1mConsolidate compiler generated dependencies of target scan_node[0m
+[ 50%] Built target scan_node
+[ 75%] [32mBuilding CXX object CMakeFiles/drive_node.dir/src/total_drive.cpp.o[0m

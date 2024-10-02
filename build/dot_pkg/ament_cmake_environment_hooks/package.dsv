@@ -1,0 +1,4 @@
+source;share/dot_pkg/local_setup.bash
+source;share/dot_pkg/local_setup.dsv
+source;share/dot_pkg/local_setup.sh
+source;share/dot_pkg/local_setup.zsh

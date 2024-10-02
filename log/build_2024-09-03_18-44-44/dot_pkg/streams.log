@@ -1,0 +1,15 @@
+[0.068s] Invoking command in '/home/hae/robot_ws/src/build/dot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/dot_pkg -- -j4 -l4
+[0.375s] [35m[1mConsolidate compiler generated dependencies of target dot_node[0m
+[0.526s] [ 50%] [32mBuilding CXX object CMakeFiles/dot_node.dir/src/dot.cpp.o[0m
+[13.071s] [01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:[m[K In constructor ‘[01m[KLidarVisualizer::LidarVisualizer()[m[K’:
+[13.071s] [01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:15:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kqos[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+[13.072s]    15 |             "/scan", [01;31m[Kqos[m[K, std::bind(&DistanceNode::topic_callback, this, std::placeholders::_1));
+[13.072s]       |                      [01;31m[K^~~[m[K
+[13.073s]       |                      [32m[Kcos[m[K
+[13.073s] [01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:15:38:[m[K [01;31m[Kerror: [m[K‘[01m[KDistanceNode[m[K’ has not been declared
+[13.073s]    15 |             "/scan", qos, std::bind(&[01;31m[KDistanceNode[m[K::topic_callback, this, std::placeholders::_1));
+[13.074s]       |                                      [01;31m[K^~~~~~~~~~~~[m[K
+[14.866s] gmake[2]: *** [CMakeFiles/dot_node.dir/build.make:76: CMakeFiles/dot_node.dir/src/dot.cpp.o] Error 1
+[14.869s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dot_node.dir/all] Error 2
+[14.871s] gmake: *** [Makefile:146: all] Error 2
+[14.969s] Invoked command in '/home/hae/robot_ws/src/build/dot_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/dot_pkg -- -j4 -l4

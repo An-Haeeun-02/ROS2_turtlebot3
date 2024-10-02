@@ -1,0 +1,639 @@
+[0.000000] (-) TimerEvent: {}
+[0.000825] (-) JobUnselected: {'identifier': 'action_test'}
+[0.001845] (-) JobUnselected: {'identifier': 'cgps_pkg'}
+[0.002441] (-) JobUnselected: {'identifier': 'dot_pkg'}
+[0.003255] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.003456] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.003765] (-) JobUnselected: {'identifier': 'robot_drive_pkg'}
+[0.003939] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.004036] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.004125] (-) JobUnselected: {'identifier': 'robot_total_pkg'}
+[0.004244] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.004349] (robot_grid_pkg) JobQueued: {'identifier': 'robot_grid_pkg', 'dependencies': OrderedDict()}
+[0.004449] (robot_grid_pkg) JobStarted: {'identifier': 'robot_grid_pkg'}
+[0.047808] (robot_grid_pkg) JobProgress: {'identifier': 'robot_grid_pkg', 'progress': 'cmake'}
+[0.051898] (robot_grid_pkg) JobProgress: {'identifier': 'robot_grid_pkg', 'progress': 'build'}
+[0.055372] (robot_grid_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/robot_grid_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/robot_grid_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 60025 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae/robot_ws'), ('TERM_PROGRAM_VERSION', '1.93.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-306fff9c-0f7f-43ce-9de7-7146b90cb96c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hae/robot_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_total_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_grid_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_drive_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/dot_pkg:/home/hae/robot_ws/src/install/cgps_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/robot_grid_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 60025 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_total_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_grid_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_drive_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/dot_pkg:/home/hae/robot_ws/src/install/cgps_pkg:/opt/ros/humble')]), 'shell': False}
+[0.098986] (-) TimerEvent: {}
+[0.200172] (-) TimerEvent: {}
+[0.248610] (robot_grid_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grid_node\x1b[0m\n'}
+[0.300399] (-) TimerEvent: {}
+[0.350534] (robot_grid_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o\x1b[0m\n'}
+[0.400591] (-) TimerEvent: {}
+[0.501378] (-) TimerEvent: {}
+[0.602181] (-) TimerEvent: {}
+[0.703097] (-) TimerEvent: {}
+[0.803959] (-) TimerEvent: {}
+[0.904797] (-) TimerEvent: {}
+[1.006408] (-) TimerEvent: {}
+[1.107184] (-) TimerEvent: {}
+[1.207890] (-) TimerEvent: {}
+[1.308625] (-) TimerEvent: {}
+[1.409421] (-) TimerEvent: {}
+[1.510177] (-) TimerEvent: {}
+[1.610939] (-) TimerEvent: {}
+[1.711655] (-) TimerEvent: {}
+[1.812376] (-) TimerEvent: {}
+[1.913095] (-) TimerEvent: {}
+[2.013872] (-) TimerEvent: {}
+[2.114749] (-) TimerEvent: {}
+[2.215620] (-) TimerEvent: {}
+[2.316450] (-) TimerEvent: {}
+[2.417299] (-) TimerEvent: {}
+[2.518206] (-) TimerEvent: {}
+[2.619007] (-) TimerEvent: {}
+[2.719829] (-) TimerEvent: {}
+[2.820620] (-) TimerEvent: {}
+[2.921405] (-) TimerEvent: {}
+[3.022266] (-) TimerEvent: {}
+[3.123101] (-) TimerEvent: {}
+[3.223931] (-) TimerEvent: {}
+[3.324978] (-) TimerEvent: {}
+[3.425986] (-) TimerEvent: {}
+[3.526868] (-) TimerEvent: {}
+[3.627730] (-) TimerEvent: {}
+[3.728778] (-) TimerEvent: {}
+[3.829739] (-) TimerEvent: {}
+[3.930621] (-) TimerEvent: {}
+[4.031446] (-) TimerEvent: {}
+[4.132283] (-) TimerEvent: {}
+[4.233180] (-) TimerEvent: {}
+[4.334041] (-) TimerEvent: {}
+[4.434974] (-) TimerEvent: {}
+[4.535828] (-) TimerEvent: {}
+[4.636711] (-) TimerEvent: {}
+[4.737588] (-) TimerEvent: {}
+[4.838409] (-) TimerEvent: {}
+[4.939298] (-) TimerEvent: {}
+[5.040140] (-) TimerEvent: {}
+[5.141092] (-) TimerEvent: {}
+[5.241958] (-) TimerEvent: {}
+[5.342918] (-) TimerEvent: {}
+[5.443881] (-) TimerEvent: {}
+[5.544763] (-) TimerEvent: {}
+[5.645607] (-) TimerEvent: {}
+[5.746393] (-) TimerEvent: {}
+[5.847246] (-) TimerEvent: {}
+[5.948127] (-) TimerEvent: {}
+[6.049200] (-) TimerEvent: {}
+[6.150281] (-) TimerEvent: {}
+[6.251399] (-) TimerEvent: {}
+[6.352391] (-) TimerEvent: {}
+[6.453331] (-) TimerEvent: {}
+[6.554330] (-) TimerEvent: {}
+[6.655456] (-) TimerEvent: {}
+[6.756323] (-) TimerEvent: {}
+[6.857152] (-) TimerEvent: {}
+[6.958042] (-) TimerEvent: {}
+[7.058850] (-) TimerEvent: {}
+[7.159692] (-) TimerEvent: {}
+[7.260514] (-) TimerEvent: {}
+[7.361359] (-) TimerEvent: {}
+[7.462178] (-) TimerEvent: {}
+[7.563070] (-) TimerEvent: {}
+[7.663869] (-) TimerEvent: {}
+[7.764658] (-) TimerEvent: {}
+[7.865472] (-) TimerEvent: {}
+[7.966282] (-) TimerEvent: {}
+[8.067230] (-) TimerEvent: {}
+[8.168068] (-) TimerEvent: {}
+[8.268971] (-) TimerEvent: {}
+[8.369791] (-) TimerEvent: {}
+[8.470609] (-) TimerEvent: {}
+[8.571482] (-) TimerEvent: {}
+[8.672296] (-) TimerEvent: {}
+[8.773078] (-) TimerEvent: {}
+[8.873860] (-) TimerEvent: {}
+[8.974661] (-) TimerEvent: {}
+[9.075524] (-) TimerEvent: {}
+[9.176305] (-) TimerEvent: {}
+[9.277097] (-) TimerEvent: {}
+[9.377970] (-) TimerEvent: {}
+[9.478946] (-) TimerEvent: {}
+[9.579745] (-) TimerEvent: {}
+[9.680559] (-) TimerEvent: {}
+[9.781383] (-) TimerEvent: {}
+[9.882355] (-) TimerEvent: {}
+[9.983375] (-) TimerEvent: {}
+[10.084215] (-) TimerEvent: {}
+[10.185036] (-) TimerEvent: {}
+[10.285879] (-) TimerEvent: {}
+[10.386757] (-) TimerEvent: {}
+[10.487566] (-) TimerEvent: {}
+[10.588369] (-) TimerEvent: {}
+[10.689170] (-) TimerEvent: {}
+[10.790020] (-) TimerEvent: {}
+[10.890863] (-) TimerEvent: {}
+[10.954410] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:249:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[10.955321] (robot_grid_pkg) StderrLine: {'line': b'  249 |     }\n'}
+[10.955827] (robot_grid_pkg) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[10.956283] (robot_grid_pkg) StderrLine: {'line': b'      |      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[10.991048] (-) TimerEvent: {}
+[11.020662] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtlebotController::make_root()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.021519] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:68:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_obstacles\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Knum_obstacles\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.022087] (robot_grid_pkg) StderrLine: {'line': b'   68 |         \x1b[01;31m\x1b[Kset_obstacles\x1b[m\x1b[K();\n'}
+[11.022547] (robot_grid_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.023171] (robot_grid_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Knum_obstacles\x1b[m\x1b[K\n'}
+[11.043280] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:71:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfind_path\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.044045] (robot_grid_pkg) StderrLine: {'line': b'   71 |         std::vector<Point> path = \x1b[01;31m\x1b[Kfind_path\x1b[m\x1b[K();\n'}
+[11.044723] (robot_grid_pkg) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.080456] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:76:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kprint_grid_with_path\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.081271] (robot_grid_pkg) StderrLine: {'line': b'   76 |             \x1b[01;31m\x1b[Kprint_grid_with_path\x1b[m\x1b[K(path); // \xea\xb2\xbd\xeb\xa1\x9c\xeb\xa5\xbc \xed\x8f\xac\xed\x95\xa8\xed\x95\x9c \xea\xb7\xb8\xeb\xa6\xac\xeb\x93\x9c \xec\xb6\x9c\xeb\xa0\xa5\n'}
+[11.081932] (robot_grid_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.091255] (-) TimerEvent: {}
+[11.119755] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:79:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcalculate_path_distance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.121900] (robot_grid_pkg) StderrLine: {'line': b'   79 |             double total_distance = \x1b[01;31m\x1b[Kcalculate_path_distance\x1b[m\x1b[K(path);\n'}
+[11.122640] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.127389] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtlebotController::move_robot()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.128189] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:104:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<int> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.128697] (robot_grid_pkg) StderrLine: {'line': b'  104 |         for(int i=2;\x1b[01;35m\x1b[KsetPoint.size()-1>i\x1b[m\x1b[K;i++ ){\n'}
+[11.129098] (robot_grid_pkg) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[11.140425] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool TurtlebotController::is_turn(const TurtlebotController::Point&, const TurtlebotController::Point&, const TurtlebotController::Point&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.141248] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:225:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcurrent\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.141718] (robot_grid_pkg) StderrLine: {'line': b'  225 |     bool is_turn(const Point& prev, \x1b[01;35m\x1b[Kconst Point& current\x1b[m\x1b[K, const Point& next) {\n'}
+[11.142162] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[11.153755] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[11.154627] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:254:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[11.155202] (robot_grid_pkg) StderrLine: {'line': b'  254 |         \x1b[01;31m\x1b[KPoint\x1b[m\x1b[K point;  // \xec\xa2\x8c\xed\x91\x9c\n'}
+[11.155711] (robot_grid_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.159517] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:255:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDirection\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksigaction\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.160266] (robot_grid_pkg) StderrLine: {'line': b'  255 |         \x1b[01;31m\x1b[KDirection\x1b[m\x1b[K dir;  // \xeb\xb0\xa9\xed\x96\xa5\n'}
+[11.160765] (robot_grid_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.161208] (robot_grid_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ksigaction\x1b[m\x1b[K\n'}
+[11.161627] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:259:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.162156] (robot_grid_pkg) StderrLine: {'line': b'  259 |         Node\x1b[34m\x1b[K(\x1b[m\x1b[KPoint\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Kp\x1b[m\x1b[K, Direction d, int g, int h, Node* parent = nullptr)\n'}
+[11.162905] (robot_grid_pkg) StderrLine: {'line': b'      |             \x1b[34m\x1b[K~\x1b[m\x1b[K     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[11.163615] (robot_grid_pkg) StderrLine: {'line': b'      |                   \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[11.164355] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:270:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[11.164871] (robot_grid_pkg) StderrLine: {'line': b'  270 |     int heuristic(const \x1b[01;31m\x1b[KPoint\x1b[m\x1b[K& a, const Point& b) {\n'}
+[11.165300] (robot_grid_pkg) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.167456] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:270:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[11.168658] (robot_grid_pkg) StderrLine: {'line': b'  270 |     int heuristic(const Point& a, const \x1b[01;31m\x1b[KPoint\x1b[m\x1b[K& b) {\n'}
+[11.169185] (robot_grid_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.170207] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint heuristic(const int&, const int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.170918] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:271:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Ka\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kconst int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.171609] (robot_grid_pkg) StderrLine: {'line': b'  271 |         return std::abs(a.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K - b.x) + std::abs(a.y - b.y);\n'}
+[11.172203] (robot_grid_pkg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.172636] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:271:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kb\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kconst int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.173044] (robot_grid_pkg) StderrLine: {'line': b'  271 |         return std::abs(a.x - b.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K) + std::abs(a.y - b.y);\n'}
+[11.173422] (robot_grid_pkg) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.173790] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:271:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Ka\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kconst int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.174236] (robot_grid_pkg) StderrLine: {'line': b'  271 |         return std::abs(a.x - b.x) + std::abs(a.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K - b.y);\n'}
+[11.174717] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.175161] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:271:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kb\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kconst int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.175546] (robot_grid_pkg) StderrLine: {'line': b'  271 |         return std::abs(a.x - b.x) + std::abs(a.y - b.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K);\n'}
+[11.175955] (robot_grid_pkg) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.176345] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[11.176688] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:275:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.177058] (robot_grid_pkg) StderrLine: {'line': b'  275 |     std::vector<\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K> find_path() {\n'}
+[11.177445] (robot_grid_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.177816] (robot_grid_pkg) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\n'}
+[11.178205] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.178614] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.179127] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22\x1b[m\x1b[K,\n'}
+[11.179635] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.180044] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6\x1b[m\x1b[K:\n'}
+[11.180450] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.180855] (robot_grid_pkg) StderrLine: {'line': b'  150 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[11.181241] (robot_grid_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.181627] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:275:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.182015] (robot_grid_pkg) StderrLine: {'line': b'  275 |     std::vector<Point\x1b[01;31m\x1b[K>\x1b[m\x1b[K find_path() {\n'}
+[11.182419] (robot_grid_pkg) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.182913] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:275:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[11.191452] (-) TimerEvent: {}
+[11.208134] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint find_path()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.209118] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:277:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgrid_map\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.209753] (robot_grid_pkg) StderrLine: {'line': b'  277 |         std::vector<std::vector<bool>> closed_list(\x1b[01;31m\x1b[Kgrid_map\x1b[m\x1b[K.size(), std::vector<bool>(grid_map[0].size(), false)); // \xeb\x8b\xab\xed\x9e\x8c \xeb\xaa\xa9\xeb\xa1\x9d\n'}
+[11.210254] (robot_grid_pkg) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.219916] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:279:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstart\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.221381] (robot_grid_pkg) StderrLine: {'line': b'  279 |         open_list.push(Node(\x1b[01;31m\x1b[Kstart\x1b[m\x1b[K, RIGHT, 0, heuristic(start, goal))); // \xec\x8b\x9c\xec\x9e\x91 \xeb\x85\xb8\xeb\x93\x9c \xec\xb6\x94\xea\xb0\x80\n'}
+[11.221907] (robot_grid_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.232043] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:279:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRIGHT\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.232812] (robot_grid_pkg) StderrLine: {'line': b'  279 |         open_list.push(Node(start, \x1b[01;31m\x1b[KRIGHT\x1b[m\x1b[K, 0, heuristic(start, goal))); // \xec\x8b\x9c\xec\x9e\x91 \xeb\x85\xb8\xeb\x93\x9c \xec\xb6\x94\xea\xb0\x80\n'}
+[11.233392] (robot_grid_pkg) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.242791] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:279:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.243693] (robot_grid_pkg) StderrLine: {'line': b'  279 |         open_list.push(Node(start, RIGHT, 0, heuristic(start, \x1b[01;31m\x1b[Kgoal\x1b[m\x1b[K))); // \xec\x8b\x9c\xec\x9e\x91 \xeb\x85\xb8\xeb\x93\x9c \xec\xb6\x94\xea\xb0\x80\n'}
+[11.244250] (robot_grid_pkg) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.245189] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:281:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.246632] (robot_grid_pkg) StderrLine: {'line': b'  281 |         std::vector<\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K> turn_points; // \xed\x9a\x8c\xec\xa0\x84 \xec\xa7\x80\xec\xa0\x90 \xeb\xaa\xa9\xeb\xa1\x9d\n'}
+[11.247273] (robot_grid_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.247838] (robot_grid_pkg) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\n'}
+[11.248304] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.248750] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.249206] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22\x1b[m\x1b[K,\n'}
+[11.249736] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.250220] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6\x1b[m\x1b[K:\n'}
+[11.250748] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.251392] (robot_grid_pkg) StderrLine: {'line': b'  150 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[11.252093] (robot_grid_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.252587] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:281:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.253202] (robot_grid_pkg) StderrLine: {'line': b'  281 |         std::vector<Point\x1b[01;31m\x1b[K>\x1b[m\x1b[K turn_points; // \xed\x9a\x8c\xec\xa0\x84 \xec\xa7\x80\xec\xa0\x90 \xeb\xaa\xa9\xeb\xa1\x9d\n'}
+[11.253701] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.254185] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:281:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[11.265971] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:287:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpoint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.266666] (robot_grid_pkg) StderrLine: {'line': b'  287 |             if (current.\x1b[01;31m\x1b[Kpoint\x1b[m\x1b[K == goal) {  // \xeb\xaa\xa9\xed\x91\x9c \xec\xa7\x80\xec\xa0\x90\xec\x97\x90 \xeb\x8f\x84\xeb\x8b\xac\xed\x95\x98\xeb\xa9\xb4\n'}
+[11.268703] (robot_grid_pkg) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.269469] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:288:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[11.270099] (robot_grid_pkg) StderrLine: {'line': b'  288 |                 std::vector<Point\x1b[01;31m\x1b[K>\x1b[m\x1b[K path;\n'}
+[11.270535] (robot_grid_pkg) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.271013] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:290:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kpush_back\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kpath\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.271393] (robot_grid_pkg) StderrLine: {'line': b'  290 |                     path.\x1b[01;31m\x1b[Kpush_back\x1b[m\x1b[K(current.point);\n'}
+[11.271710] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.272094] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:290:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpoint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.272868] (robot_grid_pkg) StderrLine: {'line': b'  290 |                     path.push_back(current.\x1b[01;31m\x1b[Kpoint\x1b[m\x1b[K);\n'}
+[11.273413] (robot_grid_pkg) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.274011] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:291:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpoint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.274555] (robot_grid_pkg) StderrLine: {'line': b'  291 |                     if (current.parent && is_turn(current.parent->\x1b[01;31m\x1b[Kpoint\x1b[m\x1b[K, current.point, path.back())) {\n'}
+[11.275148] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.276050] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:291:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpoint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.277564] (robot_grid_pkg) StderrLine: {'line': b'  291 |             if (current.parent && is_turn(current.parent->point, current.\x1b[01;31m\x1b[Kpoint\x1b[m\x1b[K, path.back())) {\n'}
+[11.278141] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.278667] (robot_grid_pkg) StderrLine: {'line': b'\n'}
+[11.279248] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:291:94:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kback\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kpath\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.279748] (robot_grid_pkg) StderrLine: {'line': b'  291 |  if (current.parent && is_turn(current.parent->point, current.point, path.\x1b[01;31m\x1b[Kback\x1b[m\x1b[K())) {\n'}
+[11.280213] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.280669] (robot_grid_pkg) StderrLine: {'line': b'\n'}
+[11.281162] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:291:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kis_turn\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.281712] (robot_grid_pkg) StderrLine: {'line': b'  291 |                     if (current.parent && \x1b[01;31m\x1b[Kis_turn\x1b[m\x1b[K(current.parent->point, current.point, path.back())) {\n'}
+[11.282392] (robot_grid_pkg) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[11.283266] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:292:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kpush_back\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kturn_points\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.283951] (robot_grid_pkg) StderrLine: {'line': b'  292 |                         turn_points.\x1b[01;31m\x1b[Kpush_back\x1b[m\x1b[K(current.point); // \xed\x9a\x8c\xec\xa0\x84 \xec\xa7\x80\xec\xa0\x90 \xec\xa0\x80\xec\x9e\xa5\n'}
+[11.284491] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.286091] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:292:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpoint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.288182] (robot_grid_pkg) StderrLine: {'line': b'  292 |                         turn_points.push_back(current.\x1b[01;31m\x1b[Kpoint\x1b[m\x1b[K); // \xed\x9a\x8c\xec\xa0\x84 \xec\xa7\x80\xec\xa0\x90 \xec\xa0\x80\xec\x9e\xa5\n'}
+[11.288953] (robot_grid_pkg) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.289419] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:296:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kpush_back\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kpath\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.290056] (robot_grid_pkg) StderrLine: {'line': b'  296 |                 path.\x1b[01;31m\x1b[Kpush_back\x1b[m\x1b[K(start); // \xec\x8b\x9c\xec\x9e\x91\xec\xa0\x90 \xec\xb6\x94\xea\xb0\x80\n'}
+[11.290572] (robot_grid_pkg) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.291173] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:297:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kbegin\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kpath\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.291692] (-) TimerEvent: {}
+[11.293188] (robot_grid_pkg) StderrLine: {'line': b'  297 |                 std::reverse(path.\x1b[01;31m\x1b[Kbegin\x1b[m\x1b[K(), path.end()); // \xea\xb2\xbd\xeb\xa1\x9c\xeb\xa5\xbc \xec\x97\xad\xec\x88\x9c\xec\x9c\xbc\xeb\xa1\x9c \xeb\xb3\x80\xed\x99\x98\n'}
+[11.293923] (robot_grid_pkg) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.294467] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:297:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kend\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kpath\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.295063] (robot_grid_pkg) StderrLine: {'line': b'  297 |                 std::reverse(path.begin(), path.\x1b[01;31m\x1b[Kend\x1b[m\x1b[K()); // \xea\xb2\xbd\xeb\xa1\x9c\xeb\xa5\xbc \xec\x97\xad\xec\x88\x9c\xec\x9c\xbc\xeb\xa1\x9c \xeb\xb3\x80\xed\x99\x98\n'}
+[11.295573] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.296041] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:300:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsetPoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.296517] (robot_grid_pkg) StderrLine: {'line': b'  300 |                 \x1b[01;31m\x1b[KsetPoint\x1b[m\x1b[K.resize(2 + turn_points.size(), std::vector<int>(2));\n'}
+[11.298800] (robot_grid_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.300747] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:300:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kturn_points\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.301424] (robot_grid_pkg) StderrLine: {'line': b'  300 |                 setPoint.resize(2 + turn_points.\x1b[01;31m\x1b[Ksize\x1b[m\x1b[K(), std::vector<int>(2));\n'}
+[11.302134] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.302815] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:303:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kturn_points\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.303414] (robot_grid_pkg) StderrLine: {'line': b'  303 |                 for (size_t i = 0; i < turn_points.\x1b[01;31m\x1b[Ksize\x1b[m\x1b[K(); ++i) {\n'}
+[11.303797] (robot_grid_pkg) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.304269] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:304:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kint[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.304896] (robot_grid_pkg) StderrLine: {'line': b'  304 |                     setPoint[2 + i][0] = turn_points\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki].x;\n'}
+[11.305496] (robot_grid_pkg) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.306060] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:305:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kint[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.306776] (robot_grid_pkg) StderrLine: {'line': b'  305 |                     setPoint[2 + i][1] = turn_points\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki].y;\n'}
+[11.307817] (robot_grid_pkg) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.308355] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:311:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpoint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.309496] (robot_grid_pkg) StderrLine: {'line': b'  311 |             closed_list[current.\x1b[01;31m\x1b[Kpoint\x1b[m\x1b[K.x][current.point.y] = true; // \xed\x98\x84\xec\x9e\xac \xeb\x85\xb8\xeb\x93\x9c \xeb\x8b\xab\xec\x9d\x8c\n'}
+[11.310026] (robot_grid_pkg) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.310511] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:311:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpoint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.311130] (robot_grid_pkg) StderrLine: {'line': b'  311 |             closed_list[current.point.x][current.\x1b[01;31m\x1b[Kpoint\x1b[m\x1b[K.y] = true; // \xed\x98\x84\xec\x9e\xac \xeb\x85\xb8\xeb\x93\x9c \xeb\x8b\xab\xec\x9d\x8c\n'}
+[11.311786] (robot_grid_pkg) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.312332] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDirection\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksigaction\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.312937] (robot_grid_pkg) StderrLine: {'line': b'  314 |             std::vector<std::pair<Point, \x1b[01;31m\x1b[KDirection\x1b[m\x1b[K>> directions = {\n'}
+[11.313436] (robot_grid_pkg) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.313948] (robot_grid_pkg) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[Ksigaction\x1b[m\x1b[K\n'}
+[11.314449] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[11.315076] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.315776] (robot_grid_pkg) StderrLine: {'line': b'  314 |             std::vector<std::pair<Point, Direction\x1b[01;31m\x1b[K>>\x1b[m\x1b[K directions = {\n'}
+[11.316436] (robot_grid_pkg) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[11.316924] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[11.317294] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:316:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDOWN\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.317638] (robot_grid_pkg) StderrLine: {'line': b'  316 |                 {{0, 1}, \x1b[01;31m\x1b[KDOWN\x1b[m\x1b[K},\n'}
+[11.318269] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.320703] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:317:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLEFT\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.321468] (robot_grid_pkg) StderrLine: {'line': b'  317 |                 {{-1, 0}, \x1b[01;31m\x1b[KLEFT\x1b[m\x1b[K},\n'}
+[11.322016] (robot_grid_pkg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.332023] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:318:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KUP\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.334236] (robot_grid_pkg) StderrLine: {'line': b'  318 |                 {{0, -1}, \x1b[01;31m\x1b[KUP\x1b[m\x1b[K}\n'}
+[11.334906] (robot_grid_pkg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[11.336631] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:314:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kscalar object \xe2\x80\x98\x1b[01m\x1b[Kdirections\x1b[m\x1b[K\xe2\x80\x99 requires one element in initializer\n'}
+[11.337216] (robot_grid_pkg) StderrLine: {'line': b'  314 |             std::vector<std::pair<Point, Direction>> \x1b[01;31m\x1b[Kdirections\x1b[m\x1b[K = {\n'}
+[11.337693] (robot_grid_pkg) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.338170] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:322:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Knext\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.338646] (robot_grid_pkg) StderrLine: {'line': b'  322 |                 Point\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[Knext\x1b[m\x1b[K(current.point.x + dir.x, current.point.y + dir.y); // \xeb\x8b\xa4\xec\x9d\x8c \xec\xa2\x8c\xed\x91\x9c \xea\xb3\x84\xec\x82\xb0\n'}
+[11.339294] (robot_grid_pkg) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~~~~\x1b[m\x1b[K\n'}
+[11.339805] (robot_grid_pkg) StderrLine: {'line': b'      |                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[11.340312] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:325:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Koverloaded function with no contextual type information\n'}
+[11.340974] (robot_grid_pkg) StderrLine: {'line': b'  325 |                 if (next.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K >= 0 && next.x < static_cast<int>(grid_map.size()) &&\n'}
+[11.341495] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.342097] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:325:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Koverloaded function with no contextual type information\n'}
+[11.342602] (robot_grid_pkg) StderrLine: {'line': b'  325 |                 if (next.x >= 0 && next.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K < static_cast<int>(grid_map.size()) &&\n'}
+[11.343218] (robot_grid_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.343818] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:326:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Koverloaded function with no contextual type information\n'}
+[11.344422] (robot_grid_pkg) StderrLine: {'line': b'  326 |                     next.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K >= 0 && next.y < static_cast<int>(grid_map[0].size()) &&\n'}
+[11.344919] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.345329] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:326:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Koverloaded function with no contextual type information\n'}
+[11.345733] (robot_grid_pkg) StderrLine: {'line': b'  326 |                     next.y >= 0 && next.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K < static_cast<int>(grid_map[0].size()) &&\n'}
+[11.346081] (robot_grid_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.346383] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:327:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Koverloaded function with no contextual type information\n'}
+[11.346709] (robot_grid_pkg) StderrLine: {'line': b'  327 |                     grid_map[next.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K][next.y] == 0 && !closed_list[next.x][next.y]) {\n'}
+[11.347141] (robot_grid_pkg) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.347727] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:327:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Koverloaded function with no contextual type information\n'}
+[11.348241] (robot_grid_pkg) StderrLine: {'line': b'  327 |                     grid_map[next.x][next.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K] == 0 && !closed_list[next.x][next.y]) {\n'}
+[11.348753] (robot_grid_pkg) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.349242] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:327:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Koverloaded function with no contextual type information\n'}
+[11.349751] (robot_grid_pkg) StderrLine: {'line': b'  327 |                     grid_map[next.x][next.y] == 0 && !closed_list[next.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K][next.y]) {\n'}
+[11.350298] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.351628] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:327:80:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Koverloaded function with no contextual type information\n'}
+[11.352222] (robot_grid_pkg) StderrLine: {'line': b'  327 |                     grid_map[next.x][next.y] == 0 && !closed_list[next.x][next.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K]) {\n'}
+[11.353450] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.354010] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:329:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kdir\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.354607] (robot_grid_pkg) StderrLine: {'line': b'  329 |                     int rotation_cost = (current.\x1b[01;31m\x1b[Kdir\x1b[m\x1b[K == direction) ? 0 : 1;  // \xeb\xb0\xa9\xed\x96\xa5\xec\x9d\xb4 \xeb\x8b\xac\xeb\x9d\xbc\xec\xa7\x80\xeb\xa9\xb4 \xed\x9a\x8c\xec\xa0\x84 \xeb\xb9\x84\xec\x9a\xa9 \xec\xb6\x94\xea\xb0\x80\n'}
+[11.355195] (robot_grid_pkg) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.355742] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid set_obstacles()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.356223] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:339:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobstacles\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kobstack\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.356794] (robot_grid_pkg) StderrLine: {'line': b'  339 |         for (size_t i = 0; i < \x1b[01;31m\x1b[Kobstacles\x1b[m\x1b[K.size(); ++i) {\n'}
+[11.357413] (robot_grid_pkg) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.357913] (robot_grid_pkg) StderrLine: {'line': b'      |                                \x1b[32m\x1b[Kobstack\x1b[m\x1b[K\n'}
+[11.358453] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:340:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.359113] (robot_grid_pkg) StderrLine: {'line': b'  340 |             \x1b[01;31m\x1b[KPoint\x1b[m\x1b[K obs = obstacles[i]; // \xec\x9e\xa5\xec\x95\xa0\xeb\xac\xbc \xec\xa2\x8c\xed\x91\x9c\n'}
+[11.361172] (robot_grid_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.361828] (robot_grid_pkg) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\n'}
+[11.362437] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.362957] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.363284] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22\x1b[m\x1b[K,\n'}
+[11.363580] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.363857] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6\x1b[m\x1b[K:\n'}
+[11.364136] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.364427] (robot_grid_pkg) StderrLine: {'line': b'  150 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[11.364704] (robot_grid_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.372188] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:341:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobstacle_sizes\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.373035] (robot_grid_pkg) StderrLine: {'line': b'  341 |             int obs_width = \x1b[01;31m\x1b[Kobstacle_sizes\x1b[m\x1b[K[i][0]; // \xec\x9e\xa5\xec\x95\xa0\xeb\xac\xbc \xeb\x84\x88\xeb\xb9\x84\n'}
+[11.373651] (robot_grid_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.383333] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:345:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kabs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.385670] (robot_grid_pkg) StderrLine: {'line': b'  345 |             for (size_t x = static_cast<size_t>(\x1b[01;31m\x1b[Kobs\x1b[m\x1b[K.x); x < static_cast<size_t>(obs.x) + static_cast<size_t>(obs_width) && x < grid_map.size(); ++x) {\n'}
+[11.386331] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.387408] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[Kabs\x1b[m\x1b[K\n'}
+[11.391925] (-) TimerEvent: {}
+[11.398033] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:345:128:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgrid_map\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.401696] (robot_grid_pkg) StderrLine: {'line': b'  345 | ; x < static_cast<size_t>(obs.x) + static_cast<size_t>(obs_width) && x < \x1b[01;31m\x1b[Kgrid_map\x1b[m\x1b[K.size(); ++x) {\n'}
+[11.402398] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.408829] (robot_grid_pkg) StderrLine: {'line': b'\n'}
+[11.410072] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[11.410643] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:354:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.411264] (robot_grid_pkg) StderrLine: {'line': b'  354 |     void print_grid_with_path(const std::vector<\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K>& path) {\n'}
+[11.411755] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.412229] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\n'}
+[11.412721] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.413234] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.413782] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22\x1b[m\x1b[K,\n'}
+[11.414348] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.415041] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6\x1b[m\x1b[K:\n'}
+[11.415606] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.416120] (robot_grid_pkg) StderrLine: {'line': b'  150 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[11.416723] (robot_grid_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.417300] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:354:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.417984] (robot_grid_pkg) StderrLine: {'line': b'  354 |     void print_grid_with_path(const std::vector<Point\x1b[01;31m\x1b[K>\x1b[m\x1b[K& path) {\n'}
+[11.418616] (robot_grid_pkg) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.419248] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:354:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[11.424356] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid print_grid_with_path(const int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.425234] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:355:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgrid_map\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.425743] (robot_grid_pkg) StderrLine: {'line': b"  355 |         std::vector<std::vector<char>> display_map(\x1b[01;31m\x1b[Kgrid_map\x1b[m\x1b[K.size(), std::vector<char>(grid_map[0].size(), ' ')); // \xec\x8b\x9c\xea\xb0\x81\xed\x99\x94\xeb\xa5\xbc \xec\x9c\x84\xed\x95\x9c \xeb\xa7\xb5 \xec\x83\x9d\xec\x84\xb1\n"}
+[11.426182] (robot_grid_pkg) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.442415] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:358:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobstacles\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kobstack\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.443479] (robot_grid_pkg) StderrLine: {'line': b'  358 |         for (size_t i = 0; i < \x1b[01;31m\x1b[Kobstacles\x1b[m\x1b[K.size(); ++i) {\n'}
+[11.444754] (robot_grid_pkg) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.445526] (robot_grid_pkg) StderrLine: {'line': b'      |                                \x1b[32m\x1b[Kobstack\x1b[m\x1b[K\n'}
+[11.446057] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:359:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.446554] (robot_grid_pkg) StderrLine: {'line': b'  359 |             \x1b[01;31m\x1b[KPoint\x1b[m\x1b[K obs = obstacles[i];\n'}
+[11.447118] (robot_grid_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.447587] (robot_grid_pkg) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\n'}
+[11.448090] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.448667] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.449170] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22\x1b[m\x1b[K,\n'}
+[11.449694] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.450278] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6\x1b[m\x1b[K:\n'}
+[11.450911] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.452097] (robot_grid_pkg) StderrLine: {'line': b'  150 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[11.452750] (robot_grid_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.463279] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:360:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobstacle_sizes\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.464208] (robot_grid_pkg) StderrLine: {'line': b'  360 |             int obs_width = \x1b[01;31m\x1b[Kobstacle_sizes\x1b[m\x1b[K[i][0];\n'}
+[11.464770] (robot_grid_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.473903] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:363:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kobs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kabs\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.474924] (robot_grid_pkg) StderrLine: {'line': b'  363 |             for (size_t x = static_cast<size_t>(\x1b[01;31m\x1b[Kobs\x1b[m\x1b[K.x); x < static_cast<size_t>(obs.x) + static_cast<size_t>(obs_width) && x < display_map.size(); ++x) {\n'}
+[11.475477] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.478474] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[Kabs\x1b[m\x1b[K\n'}
+[11.479207] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:371:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.479743] (robot_grid_pkg) StderrLine: {'line': b'  371 |         std::vector<\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K> new_turn_points;\n'}
+[11.480224] (robot_grid_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.480686] (robot_grid_pkg) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\n'}
+[11.481174] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.481700] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.482271] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22\x1b[m\x1b[K,\n'}
+[11.482877] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.483558] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6\x1b[m\x1b[K:\n'}
+[11.484065] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.484600] (robot_grid_pkg) StderrLine: {'line': b'  150 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[11.485078] (robot_grid_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.485670] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:371:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.486271] (robot_grid_pkg) StderrLine: {'line': b'  371 |         std::vector<Point\x1b[01;31m\x1b[K>\x1b[m\x1b[K new_turn_points;\n'}
+[11.486920] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.487435] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:371:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[11.487868] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:372:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kpath\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kconst int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.488221] (robot_grid_pkg) StderrLine: {'line': b'  372 |         for (size_t i = 1; i < path.\x1b[01;31m\x1b[Ksize\x1b[m\x1b[K() - 1; ++i) {\n'}
+[11.488533] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.488937] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:373:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kconst int[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.489543] (robot_grid_pkg) StderrLine: {'line': b'  373 |             if (is_turn(path\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki - 1], path[i], path[i + 1])) {\n'}
+[11.490096] (robot_grid_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.490609] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:373:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kconst int[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.491231] (robot_grid_pkg) StderrLine: {'line': b'  373 |             if (is_turn(path[i - 1], path\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki], path[i + 1])) {\n'}
+[11.491779] (robot_grid_pkg) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.492974] (-) TimerEvent: {}
+[11.493891] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:373:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kconst int[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.494555] (robot_grid_pkg) StderrLine: {'line': b'  373 |             if (is_turn(path[i - 1], path[i], path\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki + 1])) {\n'}
+[11.495122] (robot_grid_pkg) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.495596] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:373:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kis_turn\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.496088] (robot_grid_pkg) StderrLine: {'line': b'  373 |             if (\x1b[01;31m\x1b[Kis_turn\x1b[m\x1b[K(path[i - 1], path[i], path[i + 1])) {\n'}
+[11.496632] (robot_grid_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[11.497136] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:374:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kpush_back\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Knew_turn_points\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.499083] (robot_grid_pkg) StderrLine: {'line': b'  374 |                 new_turn_points.\x1b[01;31m\x1b[Kpush_back\x1b[m\x1b[K(path[i]);\n'}
+[11.501386] (robot_grid_pkg) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[11.502026] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:374:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kconst int[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.502469] (robot_grid_pkg) StderrLine: {'line': b'  374 |                 new_turn_points.push_back(path\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki]);\n'}
+[11.502872] (robot_grid_pkg) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.507112] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:379:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsetPoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.507979] (robot_grid_pkg) StderrLine: {'line': b'  379 |         \x1b[01;31m\x1b[KsetPoint\x1b[m\x1b[K.resize(2 + new_turn_points.size(), std::vector<int>(2));\n'}
+[11.508549] (robot_grid_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[11.509053] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:379:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Knew_turn_points\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.509554] (robot_grid_pkg) StderrLine: {'line': b'  379 |         setPoint.resize(2 + new_turn_points.\x1b[01;31m\x1b[Ksize\x1b[m\x1b[K(), std::vector<int>(2));\n'}
+[11.510018] (robot_grid_pkg) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.518931] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:380:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstart\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.519772] (robot_grid_pkg) StderrLine: {'line': b'  380 |         setPoint[0][0] = \x1b[01;31m\x1b[Kstart\x1b[m\x1b[K.x; setPoint[0][1] = start.y;\n'}
+[11.520369] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.529703] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:381:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[11.530904] (robot_grid_pkg) StderrLine: {'line': b'  381 |         setPoint[1][0] = \x1b[01;31m\x1b[Kgoal\x1b[m\x1b[K.x; setPoint[1][1] = goal.y;\n'}
+[11.531591] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.532956] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:382:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Knew_turn_points\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.533551] (robot_grid_pkg) StderrLine: {'line': b'  382 |         for (size_t i = 0; i < new_turn_points.\x1b[01;31m\x1b[Ksize\x1b[m\x1b[K(); ++i) {\n'}
+[11.534445] (robot_grid_pkg) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.535066] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:383:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kint[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.535612] (robot_grid_pkg) StderrLine: {'line': b'  383 |             setPoint[2 + i][0] = new_turn_points\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki].x;\n'}
+[11.536057] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.536534] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:384:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kint[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.536971] (robot_grid_pkg) StderrLine: {'line': b'  384 |             setPoint[2 + i][1] = new_turn_points\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki].y;\n'}
+[11.537420] (robot_grid_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.537859] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:388:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbegin\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::begin\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.538289] (robot_grid_pkg) StderrLine: {'line': b'  388 |         for (const auto& tp : \x1b[01;31m\x1b[Knew_turn_points\x1b[m\x1b[K) {\n'}
+[11.538782] (robot_grid_pkg) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.539296] (robot_grid_pkg) StderrLine: {'line': b'      |                               \x1b[32m\x1b[Kstd::begin\x1b[m\x1b[K\n'}
+[11.539737] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:54\x1b[m\x1b[K,\n'}
+[11.540152] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/locale_classes.h:40\x1b[m\x1b[K,\n'}
+[11.540595] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/ios_base.h:41\x1b[m\x1b[K,\n'}
+[11.541032] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ios:42\x1b[m\x1b[K,\n'}
+[11.541489] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ostream:38\x1b[m\x1b[K,\n'}
+[11.541909] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/iostream:39\x1b[m\x1b[K,\n'}
+[11.542348] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[11.542923] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/range_access.h:108:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::begin\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.543443] (robot_grid_pkg) StderrLine: {'line': b'  108 |   template<typename _Tp> const _Tp* \x1b[01;36m\x1b[Kbegin\x1b[m\x1b[K(const valarray<_Tp>&) noexcept;\n'}
+[11.543905] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.544346] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:388:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kend\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::end\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.544789] (robot_grid_pkg) StderrLine: {'line': b'  388 |         for (const auto& tp : \x1b[01;31m\x1b[Knew_turn_points\x1b[m\x1b[K) {\n'}
+[11.545220] (robot_grid_pkg) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.545654] (robot_grid_pkg) StderrLine: {'line': b'      |                               \x1b[32m\x1b[Kstd::end\x1b[m\x1b[K\n'}
+[11.546176] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/string:54\x1b[m\x1b[K,\n'}
+[11.546650] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/locale_classes.h:40\x1b[m\x1b[K,\n'}
+[11.547216] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/ios_base.h:41\x1b[m\x1b[K,\n'}
+[11.547862] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ios:42\x1b[m\x1b[K,\n'}
+[11.548481] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/ostream:38\x1b[m\x1b[K,\n'}
+[11.549109] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/iostream:39\x1b[m\x1b[K,\n'}
+[11.550795] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[11.551389] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/range_access.h:110:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::end\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.551856] (robot_grid_pkg) StderrLine: {'line': b'  110 |   template<typename _Tp> const _Tp* \x1b[01;36m\x1b[Kend\x1b[m\x1b[K(const valarray<_Tp>&) noexcept;\n'}
+[11.552301] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[11.552728] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K At global scope:\n'}
+[11.553227] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:438:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.553761] (robot_grid_pkg) StderrLine: {'line': b'  438 |     double calculate_path_distance(const std::vector<\x1b[01;31m\x1b[KPoint\x1b[m\x1b[K>& path) {\n'}
+[11.554185] (robot_grid_pkg) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.554610] (robot_grid_pkg) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\n'}
+[11.555135] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.555580] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:20\x1b[m\x1b[K,\n'}
+[11.556043] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:22\x1b[m\x1b[K,\n'}
+[11.556471] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[11.556936] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:6\x1b[m\x1b[K:\n'}
+[11.557416] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:150:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Point\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.557876] (robot_grid_pkg) StderrLine: {'line': b'  150 | using \x1b[01;36m\x1b[KPoint\x1b[m\x1b[K =\n'}
+[11.558289] (robot_grid_pkg) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.558797] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:438:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[11.559372] (robot_grid_pkg) StderrLine: {'line': b'  438 |     double calculate_path_distance(const std::vector<Point\x1b[01;31m\x1b[K>\x1b[m\x1b[K& path) {\n'}
+[11.559787] (robot_grid_pkg) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.560206] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:438:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[11.560624] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kdouble calculate_path_distance(const int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.561059] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:440:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kpath\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kconst int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.561535] (robot_grid_pkg) StderrLine: {'line': b'  440 |         for (size_t i = 1; i < path.\x1b[01;31m\x1b[Ksize\x1b[m\x1b[K(); ++i) {\n'}
+[11.561932] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.562342] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:441:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kconst int[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.562860] (robot_grid_pkg) StderrLine: {'line': b'  441 |             double dx = path\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki].x - path[i - 1].x;\n'}
+[11.563355] (robot_grid_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.563796] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:441:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kconst int[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.564235] (robot_grid_pkg) StderrLine: {'line': b'  441 |             double dx = path[i].x - path\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki - 1].x;\n'}
+[11.564668] (robot_grid_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.565117] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:442:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kconst int[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.565551] (robot_grid_pkg) StderrLine: {'line': b'  442 |             double dy = path\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki].y - path[i - 1].y;\n'}
+[11.566031] (robot_grid_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.566486] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:442:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid types \xe2\x80\x98\x1b[01m\x1b[Kconst int[size_t {aka long unsigned int}]\x1b[m\x1b[K\xe2\x80\x99 for array subscript\n'}
+[11.566971] (robot_grid_pkg) StderrLine: {'line': b'  442 |             double dy = path[i].y - path\x1b[01;31m\x1b[K[\x1b[m\x1b[Ki - 1].y;\n'}
+[11.568490] (robot_grid_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.593208] (-) TimerEvent: {}
+[11.694350] (-) TimerEvent: {}
+[11.795174] (-) TimerEvent: {}
+[11.896036] (-) TimerEvent: {}
+[11.996836] (-) TimerEvent: {}
+[12.097636] (-) TimerEvent: {}
+[12.198496] (-) TimerEvent: {}
+[12.299336] (-) TimerEvent: {}
+[12.400200] (-) TimerEvent: {}
+[12.501039] (-) TimerEvent: {}
+[12.601897] (-) TimerEvent: {}
+[12.702752] (-) TimerEvent: {}
+[12.803536] (-) TimerEvent: {}
+[12.904396] (-) TimerEvent: {}
+[13.005204] (-) TimerEvent: {}
+[13.106024] (-) TimerEvent: {}
+[13.206853] (-) TimerEvent: {}
+[13.307652] (-) TimerEvent: {}
+[13.408552] (-) TimerEvent: {}
+[13.509371] (-) TimerEvent: {}
+[13.610197] (-) TimerEvent: {}
+[13.711027] (-) TimerEvent: {}
+[13.811918] (-) TimerEvent: {}
+[13.912793] (-) TimerEvent: {}
+[14.013606] (-) TimerEvent: {}
+[14.114435] (-) TimerEvent: {}
+[14.215264] (-) TimerEvent: {}
+[14.316052] (-) TimerEvent: {}
+[14.416845] (-) TimerEvent: {}
+[14.517657] (-) TimerEvent: {}
+[14.618496] (-) TimerEvent: {}
+[14.719423] (-) TimerEvent: {}
+[14.820219] (-) TimerEvent: {}
+[14.921019] (-) TimerEvent: {}
+[15.021807] (-) TimerEvent: {}
+[15.122618] (-) TimerEvent: {}
+[15.223565] (-) TimerEvent: {}
+[15.324436] (-) TimerEvent: {}
+[15.425385] (-) TimerEvent: {}
+[15.526290] (-) TimerEvent: {}
+[15.627173] (-) TimerEvent: {}
+[15.728053] (-) TimerEvent: {}
+[15.828939] (-) TimerEvent: {}
+[15.929752] (-) TimerEvent: {}
+[16.030549] (-) TimerEvent: {}
+[16.131421] (-) TimerEvent: {}
+[16.232251] (-) TimerEvent: {}
+[16.333138] (-) TimerEvent: {}
+[16.434035] (-) TimerEvent: {}
+[16.535071] (-) TimerEvent: {}
+[16.635877] (-) TimerEvent: {}
+[16.736675] (-) TimerEvent: {}
+[16.837496] (-) TimerEvent: {}
+[16.938345] (-) TimerEvent: {}
+[17.039278] (-) TimerEvent: {}
+[17.140098] (-) TimerEvent: {}
+[17.241020] (-) TimerEvent: {}
+[17.341917] (-) TimerEvent: {}
+[17.442864] (-) TimerEvent: {}
+[17.543675] (-) TimerEvent: {}
+[17.644484] (-) TimerEvent: {}
+[17.745304] (-) TimerEvent: {}
+[17.846103] (-) TimerEvent: {}
+[17.946948] (-) TimerEvent: {}
+[18.047750] (-) TimerEvent: {}
+[18.148614] (-) TimerEvent: {}
+[18.249416] (-) TimerEvent: {}
+[18.350216] (-) TimerEvent: {}
+[18.451030] (-) TimerEvent: {}
+[18.551786] (-) TimerEvent: {}
+[18.652554] (-) TimerEvent: {}
+[18.753345] (-) TimerEvent: {}
+[18.854227] (-) TimerEvent: {}
+[18.955059] (-) TimerEvent: {}
+[19.055858] (-) TimerEvent: {}
+[19.156670] (-) TimerEvent: {}
+[19.257513] (-) TimerEvent: {}
+[19.358293] (-) TimerEvent: {}
+[19.459173] (-) TimerEvent: {}
+[19.559900] (-) TimerEvent: {}
+[19.660638] (-) TimerEvent: {}
+[19.761358] (-) TimerEvent: {}
+[19.862103] (-) TimerEvent: {}
+[19.962965] (-) TimerEvent: {}
+[20.063750] (-) TimerEvent: {}
+[20.164565] (-) TimerEvent: {}
+[20.265381] (-) TimerEvent: {}
+[20.366224] (-) TimerEvent: {}
+[20.467081] (-) TimerEvent: {}
+[20.568088] (-) TimerEvent: {}
+[20.668283] (robot_grid_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1\n'}
+[20.668945] (-) TimerEvent: {}
+[20.669634] (robot_grid_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2\n'}
+[20.670491] (robot_grid_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[20.676852] (robot_grid_pkg) CommandEnded: {'returncode': 2}
+[20.769227] (-) TimerEvent: {}
+[20.865619] (robot_grid_pkg) JobEnded: {'identifier': 'robot_grid_pkg', 'rc': 2}
+[20.870158] (-) TimerEvent: {}
+[20.879805] (-) EventReactorShutdown: {}

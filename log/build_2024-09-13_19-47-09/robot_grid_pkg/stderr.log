@@ -1,0 +1,11 @@
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kstd::vector<Point> find_path()[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:144:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_turn[m[K’ was not declared in this scope
+  144 |                 if (current.parent && [01;31m[Kis_turn[m[K(current.parent->point, current.point, path.back())) {
+      |                                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid print_grid_with_path(const std::vector<Point>&)[m[K’:
+[01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:220:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_turn[m[K’ was not declared in this scope
+  220 |         if ([01;31m[Kis_turn[m[K(path[i - 1], path[i], path[i + 1])) {
+      |             [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

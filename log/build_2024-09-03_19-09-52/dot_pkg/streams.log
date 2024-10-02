@@ -1,0 +1,26 @@
+[0.064s] Invoking command in '/home/hae/robot_ws/src/build/dot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/dot_pkg -- -j4 -l4
+[0.363s] [35m[1mConsolidate compiler generated dependencies of target dot_node[0m
+[0.501s] [ 50%] [32mBuilding CXX object CMakeFiles/dot_node.dir/src/dot.cpp.o[0m
+[37.713s] [100%] [32m[1mLinking CXX executable dot_node[0m
+[40.344s] [100%] Built target dot_node
+[40.431s] Invoked command in '/home/hae/robot_ws/src/build/dot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/dot_pkg -- -j4 -l4
+[40.669s] Invoking command in '/home/hae/robot_ws/src/build/dot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/dot_pkg
+[40.715s] -- Install configuration: ""
+[40.723s] -- Execute custom install script
+[40.738s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/lib/dot_pkg/dot_node
+[40.752s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/ament_index/resource_index/package_run_dependencies/dot_pkg
+[40.756s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/ament_index/resource_index/parent_prefix_path/dot_pkg
+[40.767s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/environment/ament_prefix_path.sh
+[40.770s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/environment/ament_prefix_path.dsv
+[40.774s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/environment/path.sh
+[40.775s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/environment/path.dsv
+[40.777s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/local_setup.bash
+[40.779s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/local_setup.sh
+[40.782s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/local_setup.zsh
+[40.784s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/local_setup.dsv
+[40.785s] -- Symlinking: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/package.dsv
+[40.824s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/ament_index/resource_index/packages/dot_pkg
+[40.829s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/cmake/dot_pkgConfig.cmake
+[40.830s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/cmake/dot_pkgConfig-version.cmake
+[40.832s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/dot_pkg/share/dot_pkg/package.xml
+[40.841s] Invoked command in '/home/hae/robot_ws/src/build/dot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/dot_pkg

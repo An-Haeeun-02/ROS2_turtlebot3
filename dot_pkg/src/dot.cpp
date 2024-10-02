@@ -12,8 +12,7 @@ class LidarVisualizer : public rclcpp::Node // ROS2 노드 클래스를 정의
 {
 public:
     LidarVisualizer() : Node("lidar_visualizer") // 생성자: 노드 이름을 'lidar_visualizer'로 설정
-    {
-        // QoS 설정을 SensorDataQoS로 설정
+    {        // QoS 설정을 SensorDataQoS로 설정
         auto qos = rclcpp::QoS(rclcpp::KeepLast(10)).best_effort(); // 최근 10개의 메시지를 유지하고, best_effort 전송 모드 설정
         subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
             "/scan", qos, std::bind(&LidarVisualizer::topic_callback, this, std::placeholders::_1));
@@ -23,7 +22,7 @@ public:
 private:
     void topic_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) // /scan 토픽의 콜백 함수
     {
-        const int grid_width = 200;  // 2D 배열의 가로 크기를 100으로 설정
+        const int grid_width = 300;  // 2D 배열의 가로 크기를 100으로 설정
         const int grid_height = 100;  // 2D 배열의 세로 크기를 50으로 설정
         const int center_x = grid_width / 2;  // 2D 배열의 가로 중심점 계산
         const int center_y = grid_height / 2; // 2D 배열의 세로 중심점 계산

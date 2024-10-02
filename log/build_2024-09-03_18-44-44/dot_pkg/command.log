@@ -1,0 +1,2 @@
+Invoking command in '/home/hae/robot_ws/src/build/dot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/dot_pkg -- -j4 -l4
+Invoked command in '/home/hae/robot_ws/src/build/dot_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/dot_pkg -- -j4 -l4

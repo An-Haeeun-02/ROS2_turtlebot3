@@ -1,0 +1,75 @@
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:100:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  100 |             [01;31m[Kif[m[K (range < msg->range_min * 100 || range > msg->range_max * 100) { // 거리 값이 유효 범위 내에 있는지 확인
+      |             [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:105:24:[m[K [01;31m[Kerror: [m[K‘[01m[Krange[m[K’ was not declared in this scope
+  105 |             double x = [01;31m[Krange[m[K * cos(angle); // 극좌표를 직교 좌표로 변환 (x 좌표)
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:105:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle[m[K’ was not declared in this scope
+  105 |             double x = range * cos([01;31m[Kangle[m[K); // 극좌표를 직교 좌표로 변환 (x 좌표)
+      |                                    [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:106:24:[m[K [01;31m[Kerror: [m[K‘[01m[Krange[m[K’ was not declared in this scope
+  106 |             double y = [01;31m[Krange[m[K * sin(angle); // 극좌표를 직교 좌표로 변환 (y 좌표)
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:106:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle[m[K’ was not declared in this scope
+  106 |             double y = range * sin([01;31m[Kangle[m[K); // 극좌표를 직교 좌표로 변환 (y 좌표)
+      |                                    [01;31m[K^~~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:109:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kcenter_x[m[K’ was not declared in this scope
+  109 |             int grid_x = static_cast<int>([01;31m[Kcenter_x[m[K - y); // x 좌표를 화면 좌표계로 변환
+      |                                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:110:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kcenter_y[m[K’ was not declared in this scope
+  110 |             int grid_y = static_cast<int>([01;31m[Kcenter_y[m[K - x); // y 좌표를 화면 좌표계로 변환
+      |                                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:112:13:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  112 |             [01;31m[Kif[m[K (grid_x >= 0 && grid_x < grid_width && grid_y >= 0 && grid_y < grid_height) // 좌표가 배열 범위 내에 있는지 확인
+      |             [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:116:9:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  116 |         [01;31m[K}[m[K
+      |         [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:118:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid[m[K’ does not name a type
+  118 |         [01;31m[Kgrid[m[K[center_y][center_x] = 'O'; // 그리드 중심에 터틀봇을 'O'로 표시
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:121:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+  121 |         [01;31m[Kfor[m[K (int i = 0; i < grid_width + 2; ++i) cout << "*"; // 윗변 테두리
+      |         [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:121:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ does not name a type
+  121 |         for (int i = 0; [01;31m[Ki[m[K < grid_width + 2; ++i) cout << "*"; // 윗변 테두리
+      |                         [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:121:45:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K++[m[K’ token
+  121 |         for (int i = 0; i < grid_width + 2; [01;31m[K++[m[Ki) cout << "*"; // 윗변 테두리
+      |                                             [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:122:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ does not name a type
+  122 |         [01;31m[Kcout[m[K << endl;
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:125:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+  125 |         [01;31m[Kfor[m[K (const auto& row : grid) // 각 행에 대해 반복
+      |         [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:135:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+  135 |         [01;31m[Kfor[m[K (int i = 0; i < grid_width + 2; ++i) cout << "*"; // 아랫변 테두리
+      |         [01;31m[K^~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:135:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ does not name a type
+  135 |         for (int i = 0; [01;31m[Ki[m[K < grid_width + 2; ++i) cout << "*"; // 아랫변 테두리
+      |                         [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:135:45:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K++[m[K’ token
+  135 |         for (int i = 0; i < grid_width + 2; [01;31m[K++[m[Ki) cout << "*"; // 아랫변 테두리
+      |                                             [01;31m[K^~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:136:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ does not name a type
+  136 |         [01;31m[Kcout[m[K << endl; // 줄 바꿈
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:139:36:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+  139 |         std::this_thread::sleep_for[01;31m[K([m[Kstd::chrono::seconds(3)); // 3초 동안 스레드를 일시 정지
+      |                                    [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:140:5:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  140 |     [01;31m[K}[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:144:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  144 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:146:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint main(int, char**)[m[K’
+  146 | int [01;31m[Kmain[m[K(int argc, char *argv[])
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:91:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint main(int, char**)[m[K’ previously defined here
+   91 | int [01;36m[Kmain[m[K(int argc, char *argv[])
+      |     [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/dot_node.dir/build.make:76: CMakeFiles/dot_node.dir/src/dot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dot_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

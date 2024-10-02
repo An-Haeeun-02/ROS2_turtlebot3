@@ -1,0 +1,58 @@
+[0.095s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[0.251s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.066s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.125s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.391s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.411s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.458s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.527s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.613s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.958s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.967s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.236s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.983s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.530s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.982s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.983s] -- Configured cppcheck include dirs: 
+[4.983s] -- Configured cppcheck exclude dirs and/or files: 
+[4.986s] -- Added test 'lint_cmake' to check CMake code style
+[4.998s] -- Added test 'uncrustify' to check C / C++ code style
+[5.001s] -- Configured uncrustify additional arguments: 
+[5.003s] -- Added test 'xmllint' to check XML markup files
+[5.012s] -- Configuring done
+[5.084s] -- Generating done
+[5.097s] -- Build files have been written to: /home/hae/robot_ws/src/build/robot_grid_pkg
+[5.293s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[19.425s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In constructor ‘[01m[KGridNavigator::GridNavigator(int, int, int)[m[K’:
+[19.426s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:80:9:[m[K [01;35m[Kwarning: [m[K‘[01m[KGridNavigator::step_count_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[19.427s]    80 |     int [01;35m[Kstep_count_[m[K;
+[19.428s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[19.429s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:76:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble GridNavigator::distance_moved_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[19.429s]    76 |     double [01;35m[Kdistance_moved_[m[K = 0.0;
+[19.430s]       |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+[19.431s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:15:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[19.431s]    15 |     [01;35m[KGridNavigator[m[K(int grid_width, int grid_height, int step_count)
+[19.431s]       |     [01;35m[K^~~~~~~~~~~~~[m[K
+[48.754s] [100%] [32m[1mLinking CXX executable grid_node[0m
+[51.074s] [100%] Built target grid_node
+[51.129s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[51.326s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_grid_pkg
+[51.363s] -- Install configuration: ""
+[51.366s] -- Execute custom install script
+[51.367s] -- Symlinking: /home/hae/robot_ws/src/install/robot_grid_pkg/lib/robot_grid_pkg/grid_node
+[51.404s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/ament_index/resource_index/package_run_dependencies/robot_grid_pkg
+[51.406s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/ament_index/resource_index/parent_prefix_path/robot_grid_pkg
+[51.409s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/ament_prefix_path.sh
+[51.411s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/ament_prefix_path.dsv
+[51.413s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/path.sh
+[51.415s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/path.dsv
+[51.416s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.bash
+[51.417s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.sh
+[51.417s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.zsh
+[51.418s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.dsv
+[51.418s] -- Symlinking: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/package.dsv
+[51.456s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/ament_index/resource_index/packages/robot_grid_pkg
+[51.457s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/cmake/robot_grid_pkgConfig.cmake
+[51.458s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/cmake/robot_grid_pkgConfig-version.cmake
+[51.459s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/package.xml
+[51.481s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_grid_pkg

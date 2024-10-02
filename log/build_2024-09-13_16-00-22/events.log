@@ -1,0 +1,401 @@
+[0.000000] (-) TimerEvent: {}
+[0.001677] (-) JobUnselected: {'identifier': 'action_test'}
+[0.002422] (-) JobUnselected: {'identifier': 'cgps_pkg'}
+[0.003066] (-) JobUnselected: {'identifier': 'dot_pkg'}
+[0.003465] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.003636] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.003729] (-) JobUnselected: {'identifier': 'robot_drive_pkg'}
+[0.003822] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.003944] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.004040] (-) JobUnselected: {'identifier': 'robot_total_pkg'}
+[0.004167] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.004814] (robot_grid_pkg) JobQueued: {'identifier': 'robot_grid_pkg', 'dependencies': OrderedDict()}
+[0.005004] (robot_grid_pkg) JobStarted: {'identifier': 'robot_grid_pkg'}
+[0.098986] (-) TimerEvent: {}
+[0.199994] (-) TimerEvent: {}
+[0.301075] (-) TimerEvent: {}
+[0.391419] (robot_grid_pkg) JobProgress: {'identifier': 'robot_grid_pkg', 'progress': 'cmake'}
+[0.396851] (robot_grid_pkg) JobProgress: {'identifier': 'robot_grid_pkg', 'progress': 'build'}
+[0.402053] (robot_grid_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/robot_grid_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/robot_grid_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 64657 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-4849ca9bdf9666755eb463db297b69e5385090e3/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hae/robot_ws/src/install/robot_action/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-4849ca9bdf9666755eb463db297b69e5385090e3/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('TERM_PROGRAM_VERSION', '1.93.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-9e896b6c-5552-4d30-85cc-d35f72972551.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-4849ca9bdf9666755eb463db297b69e5385090e3/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-4849ca9bdf9666755eb463db297b69e5385090e3/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/hae/robot_ws/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-4849ca9bdf9666755eb463db297b69e5385090e3/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-6ab3660f3b.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_total_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_grid_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_drive_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/dot_pkg:/home/hae/robot_ws/src/install/cgps_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/robot_grid_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 64657 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hae/robot_ws/src/install/robot_action/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hae/robot_ws/src/install/test_pkg:/home/hae/robot_ws/src/install/robot_total_pkg:/home/hae/robot_ws/src/install/robot_move_pkg:/home/hae/robot_ws/src/install/robot_grid_pkg:/home/hae/robot_ws/src/install/robot_go_pkg:/home/hae/robot_ws/src/install/robot_drive_pkg:/home/hae/robot_ws/src/install/robot_cleaner_pkg:/home/hae/robot_ws/src/install/action_test:/home/hae/robot_ws/src/install/robot_action:/home/hae/robot_ws/src/install/dot_pkg:/home/hae/robot_ws/src/install/cgps_pkg:/opt/ros/humble')]), 'shell': False}
+[0.415126] (-) TimerEvent: {}
+[0.516233] (-) TimerEvent: {}
+[0.586417] (robot_grid_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grid_node\x1b[0m\n'}
+[0.616380] (-) TimerEvent: {}
+[0.706662] (robot_grid_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o\x1b[0m\n'}
+[0.716624] (-) TimerEvent: {}
+[0.817509] (-) TimerEvent: {}
+[0.918378] (-) TimerEvent: {}
+[1.019176] (-) TimerEvent: {}
+[1.120269] (-) TimerEvent: {}
+[1.221536] (-) TimerEvent: {}
+[1.322349] (-) TimerEvent: {}
+[1.423123] (-) TimerEvent: {}
+[1.523882] (-) TimerEvent: {}
+[1.624658] (-) TimerEvent: {}
+[1.725401] (-) TimerEvent: {}
+[1.826153] (-) TimerEvent: {}
+[2.587088] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:62:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmulti-character character constant [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar\x07-Wmultichar\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.588029] (-) TimerEvent: {}
+[2.588518] (robot_grid_pkg) StderrLine: {'line': b"   62 |                     grid[i][j] = \x1b[01;35m\x1b[K'\xe3\x85\x81'\x1b[m\x1b[K; // \xec\x9e\xa5\xec\x95\xa0\xeb\xac\xbc \xed\x91\x9c\xec\x8b\x9c\n"}
+[2.589321] (robot_grid_pkg) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.589910] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:81:87:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmulti-character character constant [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar\x07-Wmultichar\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.590815] (robot_grid_pkg) StderrLine: {'line': b"   81 |         return x >= 0 && x < GRID_WIDTH && y >= 0 && y < GRID_HEIGHT && grid[y][x] != \x1b[01;35m\x1b[K'\xe3\x85\x81'\x1b[m\x1b[K;\n"}
+[2.591432] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                                       \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.597759] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:76:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmulti-character character constant [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar\x07-Wmultichar\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.598636] (robot_grid_pkg) StderrLine: {'line': b"  125 |             if (grid[node->y][node->x] != '*' && grid[node->y][node->x] != \x1b[01;35m\x1b[K'\xe3\x85\x81'\x1b[m\x1b[K) {\n"}
+[2.599451] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.688259] (-) TimerEvent: {}
+[2.789127] (-) TimerEvent: {}
+[2.890037] (-) TimerEvent: {}
+[2.990996] (-) TimerEvent: {}
+[3.091945] (-) TimerEvent: {}
+[3.192791] (-) TimerEvent: {}
+[3.293786] (-) TimerEvent: {}
+[3.394738] (-) TimerEvent: {}
+[3.495553] (-) TimerEvent: {}
+[3.596411] (-) TimerEvent: {}
+[3.697319] (-) TimerEvent: {}
+[3.798150] (-) TimerEvent: {}
+[3.899095] (-) TimerEvent: {}
+[4.000030] (-) TimerEvent: {}
+[4.100986] (-) TimerEvent: {}
+[4.201916] (-) TimerEvent: {}
+[4.303016] (-) TimerEvent: {}
+[4.403914] (-) TimerEvent: {}
+[4.504966] (-) TimerEvent: {}
+[4.605828] (-) TimerEvent: {}
+[4.706676] (-) TimerEvent: {}
+[4.807505] (-) TimerEvent: {}
+[4.908323] (-) TimerEvent: {}
+[5.009233] (-) TimerEvent: {}
+[5.110239] (-) TimerEvent: {}
+[5.211255] (-) TimerEvent: {}
+[5.312200] (-) TimerEvent: {}
+[5.413084] (-) TimerEvent: {}
+[5.514250] (-) TimerEvent: {}
+[5.615119] (-) TimerEvent: {}
+[5.716040] (-) TimerEvent: {}
+[5.817006] (-) TimerEvent: {}
+[5.917949] (-) TimerEvent: {}
+[6.018904] (-) TimerEvent: {}
+[6.119791] (-) TimerEvent: {}
+[6.220761] (-) TimerEvent: {}
+[6.321775] (-) TimerEvent: {}
+[6.422685] (-) TimerEvent: {}
+[6.523719] (-) TimerEvent: {}
+[6.624610] (-) TimerEvent: {}
+[6.725393] (-) TimerEvent: {}
+[6.826241] (-) TimerEvent: {}
+[6.927211] (-) TimerEvent: {}
+[7.028288] (-) TimerEvent: {}
+[7.129350] (-) TimerEvent: {}
+[7.230226] (-) TimerEvent: {}
+[7.331086] (-) TimerEvent: {}
+[7.431930] (-) TimerEvent: {}
+[7.532729] (-) TimerEvent: {}
+[7.633760] (-) TimerEvent: {}
+[7.734753] (-) TimerEvent: {}
+[7.835662] (-) TimerEvent: {}
+[7.936549] (-) TimerEvent: {}
+[8.037434] (-) TimerEvent: {}
+[8.138425] (-) TimerEvent: {}
+[8.239305] (-) TimerEvent: {}
+[8.340175] (-) TimerEvent: {}
+[8.441059] (-) TimerEvent: {}
+[8.541960] (-) TimerEvent: {}
+[8.642869] (-) TimerEvent: {}
+[8.743726] (-) TimerEvent: {}
+[8.844628] (-) TimerEvent: {}
+[8.945512] (-) TimerEvent: {}
+[9.046438] (-) TimerEvent: {}
+[9.147337] (-) TimerEvent: {}
+[9.248198] (-) TimerEvent: {}
+[9.349002] (-) TimerEvent: {}
+[9.449862] (-) TimerEvent: {}
+[9.550768] (-) TimerEvent: {}
+[9.651542] (-) TimerEvent: {}
+[9.752319] (-) TimerEvent: {}
+[9.853115] (-) TimerEvent: {}
+[9.953929] (-) TimerEvent: {}
+[10.054815] (-) TimerEvent: {}
+[10.155621] (-) TimerEvent: {}
+[10.256434] (-) TimerEvent: {}
+[10.357251] (-) TimerEvent: {}
+[10.458057] (-) TimerEvent: {}
+[10.558863] (-) TimerEvent: {}
+[10.659692] (-) TimerEvent: {}
+[10.760519] (-) TimerEvent: {}
+[10.861434] (-) TimerEvent: {}
+[10.962327] (-) TimerEvent: {}
+[11.063107] (-) TimerEvent: {}
+[11.163957] (-) TimerEvent: {}
+[11.265008] (-) TimerEvent: {}
+[11.365952] (-) TimerEvent: {}
+[11.466813] (-) TimerEvent: {}
+[11.567589] (-) TimerEvent: {}
+[11.668366] (-) TimerEvent: {}
+[11.751602] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GridNavigationNode::get_obstacles()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.752305] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:62:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunsigned conversion from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kchar\x1b[m\x1b[K\xe2\x80\x99} changes value from \xe2\x80\x98\x1b[01m\x1b[K14910849\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[K129\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Woverflow\x07-Woverflow\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.752868] (robot_grid_pkg) StderrLine: {'line': b"   62 |                     grid[i][j] = \x1b[01;35m\x1b[K'\xe3\x85\x81'\x1b[m\x1b[K; // \xec\x9e\xa5\xec\x95\xa0\xeb\xac\xbc \xed\x91\x9c\xec\x8b\x9c\n"}
+[11.753292] (robot_grid_pkg) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.754686] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool GridNavigationNode::is_valid(int, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.755318] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:81:84:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison is always true due to limited range of data type [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wtype-limits\x07-Wtype-limits\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.755775] (robot_grid_pkg) StderrLine: {'line': b"   81 |         return x >= 0 && x < GRID_WIDTH && y >= 0 && y < GRID_HEIGHT && grid[y][x] != '\xe3\x85\x81';\n"}
+[11.768587] (-) TimerEvent: {}
+[11.777195] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool GridNavigationNode::calculate_path()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.778297] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:97:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.778645] (robot_grid_pkg) StderrLine: {'line': b'   97 |             Node current = open_list.top(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[11.778969] (robot_grid_pkg) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.779234] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[11.779497] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[11.779757] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.780627] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.781451] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.782472] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[11.783212] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.784543] (robot_grid_pkg) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[11.786044] (robot_grid_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.787426] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:101:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.788026] (robot_grid_pkg) StderrLine: {'line': b'  101 |             if (current.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K == goal_x && current.y == goal_y) {\n'}
+[11.788547] (robot_grid_pkg) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.789056] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:101:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.789512] (robot_grid_pkg) StderrLine: {'line': b'  101 |             if (current.x == goal_x && current.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K == goal_y) {\n'}
+[11.789928] (robot_grid_pkg) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.790421] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:106:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.790928] (robot_grid_pkg) StderrLine: {'line': b'  106 |             closed_list[current.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K][current.x] = true;\n'}
+[11.791373] (robot_grid_pkg) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.791806] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:106:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.792241] (robot_grid_pkg) StderrLine: {'line': b'  106 |             closed_list[current.y][current.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K] = true;\n'}
+[11.792690] (robot_grid_pkg) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.793117] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:110:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.793525] (robot_grid_pkg) StderrLine: {'line': b'  110 |                 int new_x = current.\x1b[01;31m\x1b[Kx\x1b[m\x1b[K + dir.first;\n'}
+[11.793926] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.794397] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:111:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.795681] (robot_grid_pkg) StderrLine: {'line': b'  111 |                 int new_y = current.\x1b[01;31m\x1b[Ky\x1b[m\x1b[K + dir.second;\n'}
+[11.796246] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.796745] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:114:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kcost\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.797461] (robot_grid_pkg) StderrLine: {'line': b'  114 |                     double new_cost = current.\x1b[01;31m\x1b[Kcost\x1b[m\x1b[K + 1.0;\n'}
+[11.797898] (robot_grid_pkg) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[11.798517] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:115:120:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.798975] (robot_grid_pkg) StderrLine: {'line': b'  115 |                     open_list.emplace(new_x, new_y, new_cost, heuristic(new_x, new_y, goal_x, goal_y), new Node(current\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[11.799385] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.799845] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[11.800269] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[11.800646] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.801022] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.801390] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.801763] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[11.802141] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[11.802696] (robot_grid_pkg) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[11.803147] (robot_grid_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.803624] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GridNavigationNode::trace_path(rclcpp::Node*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.804019] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.804393] (robot_grid_pkg) StderrLine: {'line': b"  125 |             if (grid[node->\x1b[01;31m\x1b[Ky\x1b[m\x1b[K][node->x] != '*' && grid[node->y][node->x] != '\xe3\x85\x81') {\n"}
+[11.804780] (robot_grid_pkg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.805175] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.805657] (robot_grid_pkg) StderrLine: {'line': b"  125 |             if (grid[node->y][node->\x1b[01;31m\x1b[Kx\x1b[m\x1b[K] != '*' && grid[node->y][node->x] != '\xe3\x85\x81') {\n"}
+[11.806084] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.806650] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.807076] (robot_grid_pkg) StderrLine: {'line': b"  125 |             if (grid[node->y][node->x] != '*' && grid[node->\x1b[01;31m\x1b[Ky\x1b[m\x1b[K][node->x] != '\xe3\x85\x81') {\n"}
+[11.807549] (robot_grid_pkg) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.807962] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:125:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.808426] (robot_grid_pkg) StderrLine: {'line': b"  125 |             if (grid[node->y][node->x] != '*' && grid[node->y][node->\x1b[01;31m\x1b[Kx\x1b[m\x1b[K] != '\xe3\x85\x81') {\n"}
+[11.808821] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.809216] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.809666] (robot_grid_pkg) StderrLine: {'line': b"  126 |                 grid[node->\x1b[01;31m\x1b[Ky\x1b[m\x1b[K][node->x] = '0'; // \xec\x9d\xb4\xeb\x8f\x99\xed\x95\x9c \xea\xb2\xbd\xeb\xa1\x9c \xed\x91\x9c\xec\x8b\x9c\n"}
+[11.810320] (robot_grid_pkg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.810856] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.811272] (robot_grid_pkg) StderrLine: {'line': b"  126 |                 grid[node->y][node->\x1b[01;31m\x1b[Kx\x1b[m\x1b[K] = '0'; // \xec\x9d\xb4\xeb\x8f\x99\xed\x95\x9c \xea\xb2\xbd\xeb\xa1\x9c \xed\x91\x9c\xec\x8b\x9c\n"}
+[11.811668] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[11.812052] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:128:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kparent\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.812595] (robot_grid_pkg) StderrLine: {'line': b'  128 |             node = node->\x1b[01;31m\x1b[Kparent\x1b[m\x1b[K;\n'}
+[11.812961] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[11.868791] (-) TimerEvent: {}
+[11.969672] (-) TimerEvent: {}
+[12.070547] (-) TimerEvent: {}
+[12.171371] (-) TimerEvent: {}
+[12.272162] (-) TimerEvent: {}
+[12.372941] (-) TimerEvent: {}
+[12.473799] (-) TimerEvent: {}
+[12.499903] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[12.500810] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[12.502507] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.503016] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.503498] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.503922] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.504317] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.504768] (robot_grid_pkg) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_heap.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::push_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.505192] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:659:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.505667] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:94:26:\x1b[m\x1b[K   required from here\n'}
+[12.506084] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:214:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.506553] (robot_grid_pkg) StderrLine: {'line': b'  214 |       _ValueType \x1b[01;31m\x1b[K__value\x1b[m\x1b[K = _GLIBCXX_MOVE(*(__last - 1));\n'}
+[12.506956] (robot_grid_pkg) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.507327] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[12.507726] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[12.508162] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.508542] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.508913] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.509279] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.509661] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.510119] (robot_grid_pkg) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[12.510616] (robot_grid_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.511089] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[12.511483] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[12.511861] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.512240] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.512608] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.513010] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.513394] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.513770] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:215:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.514277] (robot_grid_pkg) StderrLine: {'line': b'  215 |       \x1b[01;31m\x1b[Kstd::__push_heap(__first, _DistanceType((__last - __first) - 1),\x1b[m\x1b[K\n'}
+[12.514733] (robot_grid_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.515128] (robot_grid_pkg) StderrLine: {'line': b'  216 | \x1b[01;31m\x1b[K                       _DistanceType(0), _GLIBCXX_MOVE(__value), __cmp)\x1b[m\x1b[K;\n'}
+[12.515517] (robot_grid_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.515902] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[12.516296] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[12.516686] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.517073] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.517447] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.517876] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.518310] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.518759] (robot_grid_pkg) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[12.519147] (robot_grid_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.519541] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[12.519931] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[12.520320] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.520723] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.521099] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.521513] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.521900] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.522338] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:135:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Distance = long int; _Tp = rclcpp::Node; _Compare = __gnu_cxx::__ops::_Iter_comp_val<std::greater<rclcpp::Node> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.522834] (robot_grid_pkg) StderrLine: {'line': b'  135 |                 _Distance __holeIndex, _Distance __topIndex, \x1b[01;36m\x1b[K_Tp __value\x1b[m\x1b[K,\n'}
+[12.523223] (robot_grid_pkg) StderrLine: {'line': b'      |                                                              \x1b[01;36m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[12.573959] (-) TimerEvent: {}
+[12.674790] (-) TimerEvent: {}
+[12.775571] (-) TimerEvent: {}
+[12.779693] (robot_grid_pkg) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_heap.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::__pop_heap(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<std::greater<rclcpp::Node> >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.781323] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:332:19:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::pop_heap(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.782093] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:678:15:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::pop() [with _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.782905] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:98:26:\x1b[m\x1b[K   required from here\n'}
+[12.783441] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:261:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.783946] (robot_grid_pkg) StderrLine: {'line': b'  261 |       _ValueType \x1b[01;31m\x1b[K__value\x1b[m\x1b[K = _GLIBCXX_MOVE(*__result);\n'}
+[12.784503] (robot_grid_pkg) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.784939] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[12.785345] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[12.785739] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.786129] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.787065] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.787523] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.787924] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.788308] (robot_grid_pkg) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[12.788692] (robot_grid_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.789074] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[12.789459] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[12.790221] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.790692] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.791150] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.791537] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.791980] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.792371] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:262:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node& rclcpp::Node::operator=(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.792768] (robot_grid_pkg) StderrLine: {'line': b'  262 |       *__result \x1b[01;31m\x1b[K=\x1b[m\x1b[K _GLIBCXX_MOVE(*__first);\n'}
+[12.793140] (robot_grid_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[12.793553] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[12.793936] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[12.794374] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.794774] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.795151] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.795523] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.795901] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.796306] (robot_grid_pkg) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[12.796691] (robot_grid_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.797107] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[12.797490] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[12.797881] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.798289] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.798720] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.799116] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.799506] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.799898] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:263:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.800302] (robot_grid_pkg) StderrLine: {'line': b'  263 |       \x1b[01;31m\x1b[Kstd::__adjust_heap(__first, _DistanceType(0),\x1b[m\x1b[K\n'}
+[12.800693] (robot_grid_pkg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.801249] (robot_grid_pkg) StderrLine: {'line': b'  264 | \x1b[01;31m\x1b[K                         _DistanceType(__last - __first),\x1b[m\x1b[K\n'}
+[12.801880] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.802557] (robot_grid_pkg) StderrLine: {'line': b'  265 | \x1b[01;31m\x1b[K                         _GLIBCXX_MOVE(__value), __comp)\x1b[m\x1b[K;\n'}
+[12.803002] (robot_grid_pkg) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.803535] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/context.hpp:35\x1b[m\x1b[K,\n'}
+[12.804139] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:34\x1b[m\x1b[K,\n'}
+[12.804674] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.805086] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.805486] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.805867] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.806302] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[12.806801] (robot_grid_pkg) StderrLine: {'line': b' 1299 |   \x1b[01;36m\x1b[KRCLCPP_DISABLE_COPY\x1b[m\x1b[K(Node)\n'}
+[12.807192] (robot_grid_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.807580] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/stl_algo.h:61\x1b[m\x1b[K,\n'}
+[12.807967] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:62\x1b[m\x1b[K,\n'}
+[12.808358] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.808750] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.809129] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.809522] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.809939] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.810412] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_heap.h:224:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<rclcpp::Node*, std::vector<rclcpp::Node> >; _Distance = long int; _Tp = rclcpp::Node; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<std::greater<rclcpp::Node> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.811196] (robot_grid_pkg) StderrLine: {'line': b'  224 |                   _Distance __len, \x1b[01;36m\x1b[K_Tp __value\x1b[m\x1b[K, _Compare __comp)\n'}
+[12.811916] (robot_grid_pkg) StderrLine: {'line': b'      |                                    \x1b[01;36m\x1b[K~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[12.875785] (-) TimerEvent: {}
+[12.950908] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[12.951574] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[12.951883] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[12.952159] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[12.952423] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.952684] (robot_grid_pkg) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = rclcpp::Node; _Args = {int&, int&, double, double}; _Tp = rclcpp::Node]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.952953] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = rclcpp::Node; _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.953257] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:115:30:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::reference = rclcpp::Node&]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.953559] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:658:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.953827] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:94:26:\x1b[m\x1b[K   required from here\n'}
+[12.954141] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(int&, int&, double, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.954987] (robot_grid_pkg) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[12.955491] (robot_grid_pkg) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.955963] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[12.956450] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[12.956922] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.957376] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[12.957819] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const rclcpp::Node&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.958389] (robot_grid_pkg) StderrLine: {'line': b' 1294 |   \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[12.958958] (robot_grid_pkg) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.959417] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[12.959889] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.960363] (robot_grid_pkg) StderrLine: {'line': b'  101 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[12.960800] (robot_grid_pkg) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.961245] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 4 provided\n'}
+[12.961684] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.962662] (robot_grid_pkg) StderrLine: {'line': b'   89 |   explicit \x1b[01;36m\x1b[KNode\x1b[m\x1b[K(\n'}
+[12.963490] (robot_grid_pkg) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.964154] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 4 provided\n'}
+[12.976006] (-) TimerEvent: {}
+[13.076776] (-) TimerEvent: {}
+[13.144735] (robot_grid_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:66\x1b[m\x1b[K,\n'}
+[13.145391] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[13.145824] (robot_grid_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:1\x1b[m\x1b[K:\n'}
+[13.146285] (robot_grid_pkg) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_uninitialized.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<rclcpp::Node*>; _ForwardIterator = rclcpp::Node*]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.146768] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:333:37:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<rclcpp::Node*>; _ForwardIterator = rclcpp::Node*; _Tp = rclcpp::Node]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.147197] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:355:2:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = rclcpp::Node*; _ForwardIterator = rclcpp::Node*; _Allocator = std::allocator<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.147636] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:474:3:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::iterator = std::vector<rclcpp::Node>::iterator]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.148057] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:121:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Alloc = std::allocator<rclcpp::Node>; std::vector<_Tp, _Alloc>::reference = rclcpp::Node&]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.148517] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_queue.h:658:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::priority_queue<_Tp, _Sequence, _Compare>::emplace(_Args&& ...) [with _Args = {int&, int&, double, double}; _Tp = rclcpp::Node; _Sequence = std::vector<rclcpp::Node>; _Compare = std::greater<rclcpp::Node>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.148914] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:94:26:\x1b[m\x1b[K   required from here\n'}
+[13.149411] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: result type must be constructible from value type of input range\n'}
+[13.149879] (robot_grid_pkg) StderrLine: {'line': b'  138 |       static_assert(is_constructible<_ValueType2, decltype(*__first)>::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K,\n'}
+[13.150366] (robot_grid_pkg) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[13.150840] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::integral_constant<bool, false>::value\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[13.176984] (-) TimerEvent: {}
+[13.278272] (-) TimerEvent: {}
+[13.379239] (-) TimerEvent: {}
+[13.480045] (-) TimerEvent: {}
+[13.519929] (robot_grid_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1\n'}
+[13.521255] (robot_grid_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2\n'}
+[13.522270] (robot_grid_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.528777] (robot_grid_pkg) CommandEnded: {'returncode': 2}
+[13.580271] (-) TimerEvent: {}
+[13.681767] (-) TimerEvent: {}
+[13.713314] (robot_grid_pkg) JobEnded: {'identifier': 'robot_grid_pkg', 'rc': 2}
+[13.727337] (-) EventReactorShutdown: {}

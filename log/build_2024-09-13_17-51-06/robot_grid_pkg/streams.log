@@ -1,0 +1,44 @@
+[0.061s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[0.238s] [35m[1mConsolidate compiler generated dependencies of target grid_node[0m
+[0.337s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o[0m
+[11.439s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid set_obstacles()[m[K’:
+[11.440s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:123:56:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[11.441s]   123 |         for (int x = obs.x; x < obs.x + obs_width && [01;35m[Kx < grid_map.size()[m[K; ++x) {
+[11.441s]       |                                                      [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[11.441s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:124:61:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[11.442s]   124 |             for (int y = obs.y; y < obs.y + obs_height && [01;35m[Ky < grid_map[0].size()[m[K; ++y) {
+[11.442s]       |                                                           [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[11.443s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kbool is_turn(Point, Point, Point)[m[K’:
+[11.444s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:132:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcurrent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[11.444s]   132 | bool is_turn(Point prev, [01;35m[KPoint current[m[K, Point next) {
+[11.445s]       |                          [01;35m[K~~~~~~^~~~~~~[m[K
+[11.455s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:[m[K In function ‘[01m[Kvoid print_grid_with_path(const std::vector<Point>&)[m[K’:
+[11.455s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:146:56:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[11.456s]   146 |         for (int x = obs.x; x < obs.x + obs_width && [01;35m[Kx < grid_map.size()[m[K; ++x) {
+[11.456s]       |                                                      [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[11.456s] [01m[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:147:61:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[11.457s]   147 |             for (int y = obs.y; y < obs.y + obs_height && [01;35m[Ky < grid_map[0].size()[m[K; ++y) {
+[11.457s]       |                                                           [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[34.121s] [100%] [32m[1mLinking CXX executable grid_node[0m
+[36.237s] [100%] Built target grid_node
+[36.285s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_grid_pkg -- -j4 -l4
+[36.461s] Invoking command in '/home/hae/robot_ws/src/build/robot_grid_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_grid_pkg
+[36.488s] -- Install configuration: ""
+[36.490s] -- Execute custom install script
+[36.491s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/lib/robot_grid_pkg/grid_node
+[36.493s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/ament_index/resource_index/package_run_dependencies/robot_grid_pkg
+[36.494s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/ament_index/resource_index/parent_prefix_path/robot_grid_pkg
+[36.496s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/ament_prefix_path.sh
+[36.497s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/ament_prefix_path.dsv
+[36.498s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/path.sh
+[36.499s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/environment/path.dsv
+[36.500s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.bash
+[36.501s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.sh
+[36.502s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.zsh
+[36.504s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/local_setup.dsv
+[36.504s] -- Symlinking: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/package.dsv
+[36.541s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/ament_index/resource_index/packages/robot_grid_pkg
+[36.542s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/cmake/robot_grid_pkgConfig.cmake
+[36.543s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/cmake/robot_grid_pkgConfig-version.cmake
+[36.544s] -- Up-to-date symlink: /home/hae/robot_ws/src/install/robot_grid_pkg/share/robot_grid_pkg/package.xml
+[36.551s] Invoked command in '/home/hae/robot_ws/src/build/robot_grid_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_grid_pkg

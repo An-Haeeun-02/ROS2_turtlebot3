@@ -1,0 +1,288 @@
+[0.000000] (-) TimerEvent: {}
+[0.001427] (-) JobUnselected: {'identifier': 'action_test'}
+[0.001672] (-) JobUnselected: {'identifier': 'cgps_pkg'}
+[0.001980] (-) JobUnselected: {'identifier': 'dot_pkg'}
+[0.002150] (-) JobUnselected: {'identifier': 'robot_action'}
+[0.002241] (-) JobUnselected: {'identifier': 'robot_cleaner_pkg'}
+[0.002332] (-) JobUnselected: {'identifier': 'robot_drive_pkg'}
+[0.002445] (-) JobUnselected: {'identifier': 'robot_go_pkg'}
+[0.002538] (-) JobUnselected: {'identifier': 'robot_move_pkg'}
+[0.002625] (-) JobUnselected: {'identifier': 'robot_total_pkg'}
+[0.002741] (-) JobUnselected: {'identifier': 'test_pkg'}
+[0.003388] (robot_grid_pkg) JobQueued: {'identifier': 'robot_grid_pkg', 'dependencies': OrderedDict()}
+[0.003588] (robot_grid_pkg) JobStarted: {'identifier': 'robot_grid_pkg'}
+[0.038047] (robot_grid_pkg) JobProgress: {'identifier': 'robot_grid_pkg', 'progress': 'cmake'}
+[0.041788] (robot_grid_pkg) JobProgress: {'identifier': 'robot_grid_pkg', 'progress': 'build'}
+[0.045448] (robot_grid_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hae/robot_ws/src/build/robot_grid_pkg', '--', '-j4', '-l4'], 'cwd': '/home/hae/robot_ws/src/build/robot_grid_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hae'), ('SSH_CLIENT', '192.168.1.2 60025 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/hae'), ('OLDPWD', '/home/hae/robot_ws'), ('TERM_PROGRAM_VERSION', '1.93.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-306fff9c-0f7f-43ce-9de7-7146b90cb96c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hae'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hae/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-340b3690c6.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/hae/robot_ws/src/build/robot_grid_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.2 60025 192.168.1.3 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.097911] (-) TimerEvent: {}
+[0.198752] (-) TimerEvent: {}
+[0.226529] (robot_grid_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grid_node\x1b[0m\n'}
+[0.298969] (-) TimerEvent: {}
+[0.319949] (robot_grid_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/grid_node.dir/src/grid.cpp.o\x1b[0m\n'}
+[0.399195] (-) TimerEvent: {}
+[0.500245] (-) TimerEvent: {}
+[0.600961] (-) TimerEvent: {}
+[0.701762] (-) TimerEvent: {}
+[0.802535] (-) TimerEvent: {}
+[0.903380] (-) TimerEvent: {}
+[1.004318] (-) TimerEvent: {}
+[1.105016] (-) TimerEvent: {}
+[1.205758] (-) TimerEvent: {}
+[1.306479] (-) TimerEvent: {}
+[1.407302] (-) TimerEvent: {}
+[1.508072] (-) TimerEvent: {}
+[1.608899] (-) TimerEvent: {}
+[1.709721] (-) TimerEvent: {}
+[1.810502] (-) TimerEvent: {}
+[1.911283] (-) TimerEvent: {}
+[2.012090] (-) TimerEvent: {}
+[2.112991] (-) TimerEvent: {}
+[2.213930] (-) TimerEvent: {}
+[2.314804] (-) TimerEvent: {}
+[2.415721] (-) TimerEvent: {}
+[2.516657] (-) TimerEvent: {}
+[2.617540] (-) TimerEvent: {}
+[2.718454] (-) TimerEvent: {}
+[2.819298] (-) TimerEvent: {}
+[2.920219] (-) TimerEvent: {}
+[3.021283] (-) TimerEvent: {}
+[3.122479] (-) TimerEvent: {}
+[3.223450] (-) TimerEvent: {}
+[3.324764] (-) TimerEvent: {}
+[3.425710] (-) TimerEvent: {}
+[3.527093] (-) TimerEvent: {}
+[3.628510] (-) TimerEvent: {}
+[3.729688] (-) TimerEvent: {}
+[3.830651] (-) TimerEvent: {}
+[3.931991] (-) TimerEvent: {}
+[4.032933] (-) TimerEvent: {}
+[4.134060] (-) TimerEvent: {}
+[4.234962] (-) TimerEvent: {}
+[4.335913] (-) TimerEvent: {}
+[4.436789] (-) TimerEvent: {}
+[4.537656] (-) TimerEvent: {}
+[4.638631] (-) TimerEvent: {}
+[4.739526] (-) TimerEvent: {}
+[4.840433] (-) TimerEvent: {}
+[4.941365] (-) TimerEvent: {}
+[5.042239] (-) TimerEvent: {}
+[5.143142] (-) TimerEvent: {}
+[5.244159] (-) TimerEvent: {}
+[5.345145] (-) TimerEvent: {}
+[5.446089] (-) TimerEvent: {}
+[5.546939] (-) TimerEvent: {}
+[5.647865] (-) TimerEvent: {}
+[5.748887] (-) TimerEvent: {}
+[5.849751] (-) TimerEvent: {}
+[5.950680] (-) TimerEvent: {}
+[6.051741] (-) TimerEvent: {}
+[6.152734] (-) TimerEvent: {}
+[6.253825] (-) TimerEvent: {}
+[6.354727] (-) TimerEvent: {}
+[6.455722] (-) TimerEvent: {}
+[6.556824] (-) TimerEvent: {}
+[6.657763] (-) TimerEvent: {}
+[6.759015] (-) TimerEvent: {}
+[6.860290] (-) TimerEvent: {}
+[6.961750] (-) TimerEvent: {}
+[7.062864] (-) TimerEvent: {}
+[7.163674] (-) TimerEvent: {}
+[7.264553] (-) TimerEvent: {}
+[7.365368] (-) TimerEvent: {}
+[7.466223] (-) TimerEvent: {}
+[7.567105] (-) TimerEvent: {}
+[7.667983] (-) TimerEvent: {}
+[7.770506] (-) TimerEvent: {}
+[7.871374] (-) TimerEvent: {}
+[7.972296] (-) TimerEvent: {}
+[8.073204] (-) TimerEvent: {}
+[8.174020] (-) TimerEvent: {}
+[8.274856] (-) TimerEvent: {}
+[8.375861] (-) TimerEvent: {}
+[8.476776] (-) TimerEvent: {}
+[8.577587] (-) TimerEvent: {}
+[8.678517] (-) TimerEvent: {}
+[8.779384] (-) TimerEvent: {}
+[8.880386] (-) TimerEvent: {}
+[8.981319] (-) TimerEvent: {}
+[9.082262] (-) TimerEvent: {}
+[9.183131] (-) TimerEvent: {}
+[9.284064] (-) TimerEvent: {}
+[9.385027] (-) TimerEvent: {}
+[9.485969] (-) TimerEvent: {}
+[9.586944] (-) TimerEvent: {}
+[9.687897] (-) TimerEvent: {}
+[9.788772] (-) TimerEvent: {}
+[9.889656] (-) TimerEvent: {}
+[9.990464] (-) TimerEvent: {}
+[10.091266] (-) TimerEvent: {}
+[10.192151] (-) TimerEvent: {}
+[10.293023] (-) TimerEvent: {}
+[10.393831] (-) TimerEvent: {}
+[10.494639] (-) TimerEvent: {}
+[10.595461] (-) TimerEvent: {}
+[10.696395] (-) TimerEvent: {}
+[10.797241] (-) TimerEvent: {}
+[10.898123] (-) TimerEvent: {}
+[10.998942] (-) TimerEvent: {}
+[11.099804] (-) TimerEvent: {}
+[11.200692] (-) TimerEvent: {}
+[11.301506] (-) TimerEvent: {}
+[11.402308] (-) TimerEvent: {}
+[11.503144] (-) TimerEvent: {}
+[11.603983] (-) TimerEvent: {}
+[11.704757] (-) TimerEvent: {}
+[11.805549] (-) TimerEvent: {}
+[11.906356] (-) TimerEvent: {}
+[11.991684] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtlebotController::move_robot()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.992855] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:91:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTurtlebotController::go_straight()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.993598] (robot_grid_pkg) StderrLine: {'line': b'   91 |                 \x1b[01;31m\x1b[Kgo_straight()\x1b[m\x1b[K;\n'}
+[11.994512] (robot_grid_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[11.995228] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtlebotController::go_straight(int, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.995643] (robot_grid_pkg) StderrLine: {'line': b'  126 |     void \x1b[01;36m\x1b[Kgo_straight\x1b[m\x1b[K(int block, double cm) {\n'}
+[11.996135] (robot_grid_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.996581] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[11.996975] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:100:38:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::vector<int> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.997436] (robot_grid_pkg) StderrLine: {'line': b'  100 |         for(int i=2;\x1b[01;35m\x1b[KsetPoint.size()-1>i\x1b[m\x1b[K;i++ ){\n'}
+[11.997829] (robot_grid_pkg) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[11.998213] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:102:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTurtlebotController::go_straight()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.998619] (robot_grid_pkg) StderrLine: {'line': b'  102 |                 \x1b[01;31m\x1b[Kgo_straight()\x1b[m\x1b[K;\n'}
+[11.999021] (robot_grid_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[11.999408] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtlebotController::go_straight(int, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.000176] (robot_grid_pkg) StderrLine: {'line': b'  126 |     void \x1b[01;36m\x1b[Kgo_straight\x1b[m\x1b[K(int block, double cm) {\n'}
+[12.000698] (robot_grid_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.001153] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[12.001531] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:106:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTurtlebotController::left_course(int&, int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.001989] (robot_grid_pkg) StderrLine: {'line': b'  106 |                     \x1b[01;31m\x1b[Kleft_course(block, cm)\x1b[m\x1b[K//\xec\xa2\x8c\xed\x9a\x8c\xec\xa0\x84 \xed\x9b\x84 \xec\xa7\x81\xec\xa7\x84\n'}
+[12.002409] (robot_grid_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.002814] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:156:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtlebotController::left_course(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.003224] (robot_grid_pkg) StderrLine: {'line': b'  156 |     void \x1b[01;36m\x1b[Kleft_course\x1b[m\x1b[K(int block){\n'}
+[12.003635] (robot_grid_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.004262] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:156:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 2 provided\n'}
+[12.004773] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:109:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kright_course\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.005219] (robot_grid_pkg) StderrLine: {'line': b'  109 |                     \x1b[01;31m\x1b[Kright_course\x1b[m\x1b[K(block, cm)//\xec\x9a\xb0\xed\x9a\x8c\xec\xa0\x84 \xed\x9b\x84 \xec\xa7\x81\xec\xa7\x84\n'}
+[12.005770] (robot_grid_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.006286] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:108:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvalue computed is not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.006780] (-) TimerEvent: {}
+[12.007330] (robot_grid_pkg) StderrLine: {'line': b'  108 |                     block == setPoint[i+1][1] - setPoint[i][1]\n'}
+[12.008239] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:115:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTurtlebotController::go_straight()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.008959] (robot_grid_pkg) StderrLine: {'line': b'  115 |                 \x1b[01;31m\x1b[Kgo_straight()\x1b[m\x1b[K;\n'}
+[12.009556] (robot_grid_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[12.010068] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtlebotController::go_straight(int, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.010444] (robot_grid_pkg) StderrLine: {'line': b'  126 |     void \x1b[01;36m\x1b[Kgo_straight\x1b[m\x1b[K(int block, double cm) {\n'}
+[12.010767] (robot_grid_pkg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.011095] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:126:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 0 provided\n'}
+[12.025728] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtlebotController::right_course(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.026543] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:151:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kright_trun\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[12.027238] (robot_grid_pkg) StderrLine: {'line': b'  151 |         \x1b[01;31m\x1b[Kright_trun\x1b[m\x1b[K()\n'}
+[12.027652] (robot_grid_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.028123] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:150:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kblock\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.028573] (robot_grid_pkg) StderrLine: {'line': b'  150 |     void right_course(\x1b[01;35m\x1b[Kint block\x1b[m\x1b[K){\n'}
+[12.028972] (robot_grid_pkg) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.029379] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TurtlebotController::left_course(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.029794] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:156:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kblock\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.030203] (robot_grid_pkg) StderrLine: {'line': b'  156 |     void left_course(\x1b[01;35m\x1b[Kint block\x1b[m\x1b[K){\n'}
+[12.030666] (robot_grid_pkg) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~~~^~~~~\x1b[m\x1b[K\n'}
+[12.031081] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool TurtlebotController::is_turn(const TurtlebotController::Point&, const TurtlebotController::Point&, const TurtlebotController::Point&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.031502] (robot_grid_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hae/robot_ws/src/robot_grid_pkg/src/grid.cpp:185:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcurrent\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.031863] (robot_grid_pkg) StderrLine: {'line': b'  185 |     bool is_turn(const Point& prev, \x1b[01;35m\x1b[Kconst Point& current\x1b[m\x1b[K, const Point& next) {\n'}
+[12.032338] (robot_grid_pkg) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[12.107007] (-) TimerEvent: {}
+[12.207799] (-) TimerEvent: {}
+[12.308640] (-) TimerEvent: {}
+[12.409453] (-) TimerEvent: {}
+[12.510311] (-) TimerEvent: {}
+[12.611186] (-) TimerEvent: {}
+[12.712072] (-) TimerEvent: {}
+[12.812903] (-) TimerEvent: {}
+[12.913776] (-) TimerEvent: {}
+[13.014643] (-) TimerEvent: {}
+[13.115433] (-) TimerEvent: {}
+[13.216367] (-) TimerEvent: {}
+[13.317169] (-) TimerEvent: {}
+[13.417979] (-) TimerEvent: {}
+[13.518767] (-) TimerEvent: {}
+[13.619568] (-) TimerEvent: {}
+[13.720460] (-) TimerEvent: {}
+[13.821243] (-) TimerEvent: {}
+[13.922092] (-) TimerEvent: {}
+[14.022923] (-) TimerEvent: {}
+[14.123750] (-) TimerEvent: {}
+[14.224578] (-) TimerEvent: {}
+[14.325355] (-) TimerEvent: {}
+[14.426156] (-) TimerEvent: {}
+[14.527025] (-) TimerEvent: {}
+[14.627849] (-) TimerEvent: {}
+[14.728721] (-) TimerEvent: {}
+[14.829526] (-) TimerEvent: {}
+[14.930319] (-) TimerEvent: {}
+[15.031120] (-) TimerEvent: {}
+[15.131948] (-) TimerEvent: {}
+[15.232807] (-) TimerEvent: {}
+[15.333608] (-) TimerEvent: {}
+[15.434389] (-) TimerEvent: {}
+[15.535217] (-) TimerEvent: {}
+[15.636096] (-) TimerEvent: {}
+[15.736892] (-) TimerEvent: {}
+[15.837664] (-) TimerEvent: {}
+[15.938453] (-) TimerEvent: {}
+[16.039292] (-) TimerEvent: {}
+[16.141288] (-) TimerEvent: {}
+[16.242106] (-) TimerEvent: {}
+[16.342939] (-) TimerEvent: {}
+[16.443701] (-) TimerEvent: {}
+[16.544521] (-) TimerEvent: {}
+[16.645316] (-) TimerEvent: {}
+[16.746153] (-) TimerEvent: {}
+[16.846961] (-) TimerEvent: {}
+[16.947771] (-) TimerEvent: {}
+[17.048621] (-) TimerEvent: {}
+[17.149443] (-) TimerEvent: {}
+[17.250238] (-) TimerEvent: {}
+[17.351031] (-) TimerEvent: {}
+[17.451823] (-) TimerEvent: {}
+[17.552732] (-) TimerEvent: {}
+[17.653651] (-) TimerEvent: {}
+[17.754534] (-) TimerEvent: {}
+[17.855396] (-) TimerEvent: {}
+[17.956210] (-) TimerEvent: {}
+[18.057048] (-) TimerEvent: {}
+[18.157887] (-) TimerEvent: {}
+[18.258747] (-) TimerEvent: {}
+[18.359530] (-) TimerEvent: {}
+[18.460436] (-) TimerEvent: {}
+[18.561208] (-) TimerEvent: {}
+[18.662035] (-) TimerEvent: {}
+[18.762823] (-) TimerEvent: {}
+[18.863658] (-) TimerEvent: {}
+[18.964624] (-) TimerEvent: {}
+[19.065405] (-) TimerEvent: {}
+[19.166191] (-) TimerEvent: {}
+[19.266992] (-) TimerEvent: {}
+[19.367809] (-) TimerEvent: {}
+[19.468654] (-) TimerEvent: {}
+[19.569489] (-) TimerEvent: {}
+[19.670270] (-) TimerEvent: {}
+[19.771047] (-) TimerEvent: {}
+[19.871822] (-) TimerEvent: {}
+[19.972724] (-) TimerEvent: {}
+[20.074008] (-) TimerEvent: {}
+[20.174753] (-) TimerEvent: {}
+[20.275455] (-) TimerEvent: {}
+[20.376193] (-) TimerEvent: {}
+[20.476942] (-) TimerEvent: {}
+[20.577749] (-) TimerEvent: {}
+[20.678606] (-) TimerEvent: {}
+[20.779406] (-) TimerEvent: {}
+[20.880324] (-) TimerEvent: {}
+[20.981126] (-) TimerEvent: {}
+[21.081980] (-) TimerEvent: {}
+[21.182871] (-) TimerEvent: {}
+[21.241351] (robot_grid_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/grid_node.dir/build.make:76: CMakeFiles/grid_node.dir/src/grid.cpp.o] Error 1\n'}
+[21.242396] (robot_grid_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/grid_node.dir/all] Error 2\n'}
+[21.243224] (robot_grid_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[21.249361] (robot_grid_pkg) CommandEnded: {'returncode': 2}
+[21.283072] (-) TimerEvent: {}
+[21.384362] (-) TimerEvent: {}
+[21.423331] (robot_grid_pkg) JobEnded: {'identifier': 'robot_grid_pkg', 'rc': 2}
+[21.435767] (-) EventReactorShutdown: {}

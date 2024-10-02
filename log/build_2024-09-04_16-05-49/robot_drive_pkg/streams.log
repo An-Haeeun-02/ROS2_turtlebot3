@@ -1,0 +1,29 @@
+[0.087s] Invoking command in '/home/hae/robot_ws/src/build/robot_drive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_drive_pkg -- -j4 -l4
+[1.178s] [ 25%] [32mBuilding CXX object CMakeFiles/scan_node.dir/src/scan.cpp.o[0m
+[51.336s] [ 50%] [32m[1mLinking CXX executable scan_node[0m
+[54.403s] [ 50%] Built target scan_node
+[54.606s] [ 75%] [32mBuilding CXX object CMakeFiles/drive_node.dir/src/drive.cpp.o[0m
+[95.289s] [100%] [32m[1mLinking CXX executable drive_node[0m
+[97.832s] [100%] Built target drive_node
+[98.471s] Invoked command in '/home/hae/robot_ws/src/build/robot_drive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hae/robot_ws/src/build/robot_drive_pkg -- -j4 -l4
+[99.248s] Invoking command in '/home/hae/robot_ws/src/build/robot_drive_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_drive_pkg
+[99.295s] -- Install configuration: ""
+[99.296s] -- Execute custom install script
+[99.297s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/lib/robot_drive_pkg/drive_node
+[99.329s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/lib/robot_drive_pkg/scan_node
+[99.361s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/ament_index/resource_index/package_run_dependencies/robot_drive_pkg
+[99.396s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/ament_index/resource_index/parent_prefix_path/robot_drive_pkg
+[99.436s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/environment/ament_prefix_path.sh
+[99.473s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/environment/ament_prefix_path.dsv
+[99.507s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/environment/path.sh
+[99.541s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/environment/path.dsv
+[99.579s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/local_setup.bash
+[99.613s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/local_setup.sh
+[99.648s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/local_setup.zsh
+[99.687s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/local_setup.dsv
+[99.720s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/package.dsv
+[99.755s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/ament_index/resource_index/packages/robot_drive_pkg
+[99.792s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/cmake/robot_drive_pkgConfig.cmake
+[99.824s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/cmake/robot_drive_pkgConfig-version.cmake
+[99.858s] -- Symlinking: /home/hae/robot_ws/src/install/robot_drive_pkg/share/robot_drive_pkg/package.xml
+[99.997s] Invoked command in '/home/hae/robot_ws/src/build/robot_drive_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hae/robot_ws/src/build/robot_drive_pkg

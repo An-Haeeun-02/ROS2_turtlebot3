@@ -1,0 +1,7 @@
+[01m[K/home/hae/robot_ws/src/dot_pkg/src/dot.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kwindows.h: No such file or directory
+    8 | #include [01;31m[K<windows.h>[m[K // 팝업을 위한 헤더 파일 추가
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/dot_node.dir/build.make:76: CMakeFiles/dot_node.dir/src/dot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dot_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
