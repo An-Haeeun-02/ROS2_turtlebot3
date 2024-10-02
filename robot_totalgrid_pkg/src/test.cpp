@@ -28,9 +28,13 @@ public :
     // 생성자에서 Odometry 토픽을 구독하고, cmd_vel 퍼블리셔 생성
     TurtlebotController() : rclcpp::Node("turtlebot_controller"),
         obstacle_detected_(false),
-        stair_detected_(false), 
+        stair_detected_(false),
+        is_new_obstacle(false),
+        robot_x_(0),  // 로봇의 초기 x 좌표
+        robot_y_(0),  // 로봇의 초기 y 좌표
         previous_left_value_(0.0), 
-        previous_right_value_(0.0) {
+        previous_right_value_(0.0),
+        robot_direction_(UP) {
 
         // Odometry 메시지 구독 설정
         odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
@@ -52,19 +56,25 @@ public :
         // 전방 센서 데이터 구독
         sensor_front_subscriber_ = this->create_subscription<geometry_msgs::msg::Vector3>("/haeeun", 10,
             std::bind(&TurtlebotController::sensor_front_callback, this, std::placeholders::_1));
+            // 좌표 저장을 위한 구조체
     }
-    // 좌표 저장을 위한 구조체
-    struct GridPoint { 
+    struct Grid { 
         int x, y;
-        GridPoint(int x = 0, int y = 0) : x(x), y(y) {}
+        Grid(int x = 0, int y = 0) : x(x), y(y) {}
         // 좌표 비교를 위한 연산자 오버로딩
-        bool operator==(const GridPoint& other) const {
+        bool operator==(const Grid& other) const {
             return x == other.x && y == other.y;
         }
     };
+        // 방향을 나타내는 열거형
+    enum Direction {
+        UP, RIGHT, DOWN, LEFT
+    };
+
     // 경로 설정 및 장애물 처리 함수
     void make_root() {
         int width, height;
+        
         std::cout << "그리드 너비를 입력하세요: ";  // 사용자로부터 그리드 맵의 너비 입력받음
         std::cin >> width;
         std::cout << "그리드 높이를 입력하세요: ";  // 사용자로부터 그리드 맵의 높이 입력받음
@@ -72,10 +82,12 @@ public :
 
         // 그리드 맵 초기화 (width가 열, height가 행으로 설정) 2차원 벡터(height x width)로 0으로 초기화
         grid_map = std::vector<std::vector<int>>(height, std::vector<int>(width, 0));
-
+        
         // 시작점 입력
         std::cout << "시작 점 (x y)을 입력하세요: "; // 사용자로부터 시작 지점의 좌표 입력 받음
         std::cin >> start.x >> start.y;
+        robot_x_ = start.x;
+        robot_y_ = start.y;
 
         // 목표점 입력
         std::cout << "목표 점 (x y)을 입력하세요: "; // 사용자로부터 목표 지점의 좌표 입력 받음
@@ -88,7 +100,7 @@ public :
 
         // 사용자로부터 장애물의 위치와 크기 입력받아 벡터에 저장
         for (int i = 0; i < num_obstacles; ++i) {
-            GridPoint obstacle;
+            Grid obstacle;
             int obs_width, obs_height;
             std::cout << "장애물 " << i + 1 << "의 위치 (x y)를 입력하세요: "; // 장애물의 좌표 입력 받음
             std::cin >> obstacle.x >> obstacle.y;
@@ -102,8 +114,11 @@ public :
         // 장애물을 그리드 맵에 반영
         set_obstacles();
 
+        input_completed_ = true;  // 입력 완료
+        std::cout << "입력이 완료되었습니다. 경로를 탐색하고 이동을 시작합니다." << std::endl;
+
         // 경로 탐색 알고리즘 실행
-        std::vector<GridPoint> path = find_path();
+        std::vector<Grid> path = find_path();
 
         // 경로가 발견되었을 때
         if (!path.empty()) {
@@ -120,60 +135,66 @@ public :
         }
     }
 
-    // 로봇 이동 처리 함수
+// 로봇 이동 처리 함수
     void move_robot() {
         geometry_msgs::msg::Twist message;
-        int cm = 10;  // 1 블록 당 거리 10cm로 설정
         cout << "로봇을 움직입니다." << endl;
 
         // 시작 지점부터 마지막 중간 지점까지 경로 처리
-        for (int i = 1; i < setGridPoint.size() - 1; i++) {
-            if (obstacle_detected_) {
-            cout << "장애물 감지. 로봇을 멈춥니다." << endl;
-            message.linear.x = 0.0; // 전진
-            message.angular.z = 0.0; // 회전 없음
-            cmd_publisher_->publish(message); // 명령 메시지 발행
+        for (int i = 1; i < setGrid.size() - 1; i++) {
+            if (is_new_obstacle && obstacle_detected_) {
+            // 새로운 장애물이 감지되면 로봇을 정지시킴
+            std::cout << "새로운 장애물이 감지되어 로봇을 정지하고 다시 장애물을 탐색합니다." << std::endl;
+            is_new_obstacle = false;
+            stop_robot(); // 정지 함수 호출
             return;  // 함수 종료
-            } else{
+        } else {
+            // 기존 장애물일 경우에는 계속 이동
             cout << i - 1 << "번째 지점 -> " << i << "번째 지점" << endl;
-            cout << setGridPoint[i][0] << "," << setGridPoint[i][1] << " -> " << setGridPoint[i + 1][0] << "," << setGridPoint[i + 1][1] << endl;
+            cout << setGrid[i][0] << "," << setGrid[i][1] << " -> " << setGrid[i + 1][0] << "," << setGrid[i + 1][1] << endl;
             // 경로 이동 처리
-            process_path(setGridPoint[i][0], setGridPoint[i][1], setGridPoint[i + 1][0], setGridPoint[i + 1][1], cm);            
+            process_path(setGrid[i][0], setGrid[i][1], setGrid[i + 1][0], setGrid[i + 1][1]);            
             }
         }
 
         // 마지막 중간 지점부터 도착 지점까지 경로 처리
-        if (obstacle_detected_) {
-            cout << "장애물 감지. 로봇을 멈춥니다." << endl;
-            message.linear.x = 0.0; // 전진
-            message.angular.z = 0.0; // 회전 없음
-            cmd_publisher_->publish(message); // 명령 메시지 발행
+        if (is_new_obstacle == true && obstacle_detected_ == true) {
+            // 새로운 장애물이 감지되면 로봇을 정지시킴
+            std::cout << "새로운 장애물이 감지되어 로봇을 정지하고 다시 장애물을 탐색합니다." << std::endl;
+            is_new_obstacle = false;
+            stop_robot(); // 정지 함수 호출
             return;  // 함수 종료
-        }else{
-        cout << setGridPoint.size() - 2 << "번째 지점 -> " << "도착지" << endl;
-        cout << setGridPoint[setGridPoint.size() - 1][0] << "," << setGridPoint[setGridPoint.size() - 1][1] << " -> " << setGridPoint[0][0] << "," << setGridPoint[0][1] << endl;
-        // 경로 이동 처리
-        process_path(setGridPoint[setGridPoint.size() - 1][0], setGridPoint[setGridPoint.size() - 1][1], setGridPoint[0][0], setGridPoint[0][1], cm);                    
+        } else {
+            // 기존 장애물일 경우에는 계속 이동
+            cout << setGrid.size() - 2 << "번째 지점 -> " << "도착지" << endl;
+            cout << setGrid[setGrid.size() - 1][0] << "," << setGrid[setGrid.size() - 1][1] << " -> " << setGrid[0][0] << "," << setGrid[0][1] << endl;
+            // 경로 이동 처리
+            process_path(setGrid[setGrid.size() - 1][0], setGrid[setGrid.size() - 1][1], setGrid[0][0], setGrid[0][1]);
+            not_reached_goal = false;                    
         }
 
         cout << "도착했습니다." << endl;  // 도착 메시지 출력
     }
 
-    // 로봇 제어 함수
+    // 로봇 제어 루프
     void robot_controller() {
-        make_root(); // 경로 설정
-        move_robot(); // 로봇 이동 처리
+            make_root();  // 경로 설정
+            move_robot();  // 로봇 이동
+            while (not_reached_goal)
+            {
+                cout<< "새로운 이동을 시작합니다."<<endl;
+                move_robot();  // 로봇 이동
+            }
     }
-
 
 private :
      // 멤버 변수 선언
     std::vector<std::vector<int>> grid_map; // 그리드 맵을 저장할 벡터
     std::vector<std::vector<int>> obstacle_sizes; // 장애물 크기를 저장할 벡터
-    std::vector<GridPoint> obstacles;  // 장애물 위치를 저장할 벡터
-    GridPoint start, goal;  // 시작점과 목표점
+    std::vector<Grid> obstacles;  // 장애물 위치를 저장할 벡터
+    Grid start, goal;  // 시작점과 목표점
     double distance_traveled = 0.0;  // 누적 이동 거리
-    std::vector<std::vector<int>> setGridPoint; // 회전 지점 저장
+    std::vector<std::vector<int>> setGrid; // 회전 지점 저장
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_; // odom 토픽 구독자
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_publisher_;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_; // IMU 센서 데이터 구독
@@ -195,29 +216,52 @@ private :
     double previous_right_value_; // 이전 오른쪽 센서 값 저장
     double initial_orientation_; // 초기 방향(로봇의 처음 방향)
     double current_orientation_; // 현재 방향(회전 값을 포함한 방향)
+    bool is_new_obstacle = false; //새로운 장애물 여부
+    bool not_reached_goal = true; //도착지 도착 여부
     
     double tfmini_range_;  // tfmini 거리 측정값 저장
     bool stair_detected_;  // 계단 감지 여부 플래그
     
     bool is_initialized_ = false; // 초기화 여부 체크 플래그
     bool stop_requested_ = false; // 중지 요청 플래그
+    bool input_completed_ = false;
+
+    // 로봇의 현재 좌표
+    int robot_x_;
+    int robot_y_;
+    
+    Direction robot_direction_;    // 로봇의 현재 방향
 
     std::map<int, double> sensor_thresholds_; // 각도별 센서값 임계값
+    // 로봇의 좌표 및 방향을 한 칸씩 업데이트
+    void update_position() {
+        switch (robot_direction_) {
+            case UP:
+                robot_y_--;  // 로봇이 위쪽으로 한 칸 이동
+                break;
+            case RIGHT:
+                robot_x_++;  // 로봇이 오른쪽으로 한 칸 이동
+                break;
+            case DOWN:
+                robot_y_++;  // 로봇이 아래쪽으로 한 칸 이동
+                break;
+            case LEFT:
+                robot_x_--;  // 로봇이 왼쪽으로 한 칸 이동
+                break;
+        }
+        cout<< "로봇의 현재 좌표: (" <<robot_x_<<","<<robot_y_<<")" << endl;
+    }
 
 
-    // 방향을 나타내는 열거형
-    enum Direction {
-        UP, RIGHT, DOWN, LEFT
-    };
      // A* 알고리즘을 위한 노드 구조체
     struct Node {
-        GridPoint point;  // 좌표
+        Grid grid;  // 좌표
         Direction dir;  // 방향
         int g, h;  // g: 시작점부터의 비용, h: 휴리스틱 비용
         Node* parent;  // 부모 노드 포인터(이전 좌표)
 
-        Node(GridPoint p, Direction d, int g, int h, Node* parent = nullptr) 
-            : point(p), dir(d), g(g), h(h), parent(parent) {}
+        Node(Grid p, Direction d, int g, int h, Node* parent = nullptr) 
+            : grid(p), dir(d), g(g), h(h), parent(parent) {}
         int f() const { return g + h; }  // f = 출발장애물거리 + 장애물목표거리
 
         bool operator>(const Node& other) const { // 우선순위 큐에서 사용하기 위한 연산자
@@ -225,12 +269,12 @@ private :
         }
     };
     // 휴리스틱 함수 (두 점 사이의 맨해튼 거리 계산)
-    int heuristic(const GridPoint& a, const GridPoint& b) {
+    int heuristic(const Grid& a, const Grid& b) {
         return std::abs(a.x - b.x) + std::abs(a.y - b.y);
     }
 
 // A* 알고리즘으로 경로 탐색하는 함수
-    std::vector<GridPoint> find_path() {
+    std::vector<Grid> find_path() {
         // 우선순위 큐 (A* 알고리즘에서 사용)
         std::priority_queue<Node, std::vector<Node>, std::greater<Node>> open_list; 
         // 탐색된 노드를 저장하는 리스트
@@ -239,7 +283,7 @@ private :
         // 시작점을 우선순위 큐에 넣음
         open_list.push(Node(start, RIGHT, 0, heuristic(start, goal)));
 
-        std::vector<GridPoint> turn_GridPoints; // 회전 지점을 저장할 벡터
+        std::vector<Grid> turn_Grids; // 회전 지점을 저장할 벡터
 
         // 경로 탐색 루프
         while (!open_list.empty()) {
@@ -247,15 +291,15 @@ private :
             open_list.pop();
 
             // 목표 지점에 도달하면 경로를 반환
-            if (current.point == goal) {
-                std::vector<GridPoint> path;
+            if (current.grid == goal) {
+                std::vector<Grid> path;
                 while (current.parent) {
                     // 현재 노드를 경로에 추가
-                    path.push_back(current.point);
+                    path.push_back(current.grid);
                     // 세 노드가 직선상에 있지 않다면 회전이 필요하므로 회전 지점으로 기록
-                    if (current.parent && is_turn(current.parent->point, current.point, path.back()))  {
-                        // 회전 지점으로 판별된 노드롤 turn_GridPoints 벡터에 저장
-                        turn_GridPoints.push_back(current.point);
+                    if (current.parent && is_turn(current.parent->grid, current.grid, path.back()))  {
+                        // 회전 지점으로 판별된 노드롤 turn_grids 벡터에 저장
+                        turn_Grids.push_back(current.grid);
                     } 
                     // 현재 노드를 부모 노드로
                     current = *current.parent;
@@ -267,22 +311,22 @@ private :
                 std::reverse(path.begin(), path.end());
 
                 // 회전 지점 설정
-                setGridPoint.resize(2 + turn_GridPoints.size(), std::vector<int>(2));
-                setGridPoint[1][0] = start.x; setGridPoint[1][1] = start.y;
-                setGridPoint[0][0] = goal.x; setGridPoint[0][1] = goal.y;
-                for (size_t i = 0; i < turn_GridPoints.size(); ++i) {
-                    setGridPoint[2 + i][0] = turn_GridPoints[i].x;
-                    setGridPoint[2 + i][1] = turn_GridPoints[i].y;
+                setGrid.resize(2 + turn_Grids.size(), std::vector<int>(2));
+                setGrid[1][0] = start.x; setGrid[1][1] = start.y;
+                setGrid[0][0] = goal.x; setGrid[0][1] = goal.y;
+                for (size_t i = 0; i < turn_Grids.size(); ++i) {
+                    setGrid[2 + i][0] = turn_Grids[i].x;
+                    setGrid[2 + i][1] = turn_Grids[i].y;
                 }
 
                 return path;  // 경로 반환
             }
 
             // 현재 노드를 탐색 완료로 표시
-            closed_list[current.point.y][current.point.x] = true; 
+            closed_list[current.grid.y][current.grid.x] = true; 
 
             // 이동 가능한 방향 정의
-            std::vector<std::pair<GridPoint, Direction>> directions = {
+            std::vector<std::pair<Grid, Direction>> directions = {
                 {{1, 0}, RIGHT}, // X축 방향으로 +1
                 {{0, 1}, DOWN}, 
                 {{-1, 0}, LEFT}, 
@@ -291,7 +335,7 @@ private :
 
             // 각 방향으로 이동 가능한지 확인
             for (const auto& [dir, direction] : directions) {
-                GridPoint next(current.point.x + dir.x, current.point.y + dir.y); 
+                Grid next(current.grid.x + dir.x, current.grid.y + dir.y); 
 
                 // 경계 및 장애물 체크
                 if (next.x >= 0 && next.x < static_cast<int>(grid_map[0].size()) &&
@@ -310,7 +354,7 @@ private :
     void set_obstacles() {
         // 각 장애물을 그리드 맵에 반영
         for (size_t i = 0; i < obstacles.size(); ++i) {
-            GridPoint obs = obstacles[i]; 
+            Grid obs = obstacles[i]; 
             int obs_width = obstacle_sizes[i][0]; 
             int obs_height = obstacle_sizes[i][1]; 
 
@@ -321,16 +365,17 @@ private :
                 }
             }
         }
+        cout<<"장애물 추가 완료" <<endl;
     }
 
     // 경로를 그리드 맵에 출력하는 함수
-    void print_grid_with_path(const std::vector<GridPoint>& path) {
+    void print_grid_with_path(const std::vector<Grid>& path) {
         // 표시용 그리드 맵 초기화 (빈 칸은 ' ')
         std::vector<std::vector<char>> display_map(grid_map.size(), std::vector<char>(grid_map[0].size(), ' ')); 
 
         // 장애물을 표시
         for (size_t i = 0; i < obstacles.size(); ++i) {
-            GridPoint obs = obstacles[i];
+            Grid obs = obstacles[i];
             int obs_width = obstacle_sizes[i][0];
             int obs_height = obstacle_sizes[i][1];
 
@@ -342,24 +387,24 @@ private :
         }
 
         // 경로 중 회전 지점을 추가적으로 표시
-        std::vector<GridPoint> new_turn_GridPoints;
+        std::vector<Grid> new_turn_Grids;
         for (size_t i = 1; i < path.size() - 1; ++i) {
             if (is_turn(path[i - 1], path[i], path[i + 1])) {
-                new_turn_GridPoints.push_back(path[i]);
+                new_turn_Grids.push_back(path[i]);
             }
         }
 
-        // 회전 지점을 표시할 setGridPoint 배열 설정
-        setGridPoint.resize(2 + new_turn_GridPoints.size(), std::vector<int>(2));
-        setGridPoint[1][0] = start.x; setGridPoint[1][1] = start.y;
-        setGridPoint[0][0] = goal.x; setGridPoint[0][1] = goal.y;
-        for (size_t i = 0; i < new_turn_GridPoints.size(); ++i) {
-            setGridPoint[2 + i][0] = new_turn_GridPoints[i].x;
-            setGridPoint[2 + i][1] = new_turn_GridPoints[i].y;
+        // 회전 지점을 표시할 setGrid 배열 설정
+        setGrid.resize(2 + new_turn_Grids.size(), std::vector<int>(2));
+        setGrid[1][0] = start.x; setGrid[1][1] = start.y;
+        setGrid[0][0] = goal.x; setGrid[0][1] = goal.y;
+        for (size_t i = 0; i < new_turn_Grids.size(); ++i) {
+            setGrid[2 + i][0] = new_turn_Grids[i].x;
+            setGrid[2 + i][1] = new_turn_Grids[i].y;
         }
 
         // 회전 지점을 표시
-        for (const auto& tp : new_turn_GridPoints) {
+        for (const auto& tp : new_turn_Grids) {
             display_map[tp.y][tp.x] = '+'; // 회전 지점은 '+'로 표시
         }
 
@@ -403,13 +448,13 @@ private :
 
         // 회전 지점 좌표 출력
         std::cout << "회전 지점 좌표들:" << std::endl;
-        for (const auto& row : setGridPoint) {
+        for (const auto& row : setGrid) {
             std::cout << "(" << row[0] << ", " << row[1] << ")" << std::endl;
         }
     }
 
     // 경로의 총 이동 거리 계산
-    double calculate_path_distance(const std::vector<GridPoint>& path) {
+    double calculate_path_distance(const std::vector<Grid>& path) {
         double total_distance = 0.0; // 총 거리
         for (size_t i = 1; i < path.size(); ++i) {
             double dx = path[i].x - path[i - 1].x;
@@ -421,72 +466,53 @@ private :
     };
 
     // 회전 여부 판단 함수 (세 점이 직선상에 있는지 확인)
-    bool is_turn(const GridPoint& prev, const GridPoint& , const GridPoint& next) {
+    bool is_turn(const Grid& prev, const Grid& current, const Grid& next) {
         return (prev.x != next.x && prev.y != next.y);
     }
 
 /*이동 함수*/
-// 경로 이동 처리 함수 (x 또는 y 좌표가 같을 때)
-    void process_path(int x1, int y1, int x2, int y2, int cm) {
+    // 경로 이동 처리 함수 (x 또는 y 좌표가 같을 때)
+    void process_path(int x1, int y1, int x2, int y2) {
         int block;
-        
         // x 좌표가 같은 경우
         if (x1 == x2) {
-            block = abs(y2 - y1);  // y 좌표 차이 계산
-            go_straight(block, cm);  // 직진
+            block = std::abs(y2 - y1);  // y 좌표 차이 계산
+            go_straight(block);  // 직진
         }
         // y 좌표가 같은 경우
         else if (y1 == y2) {
             if (x1 > x2) {
-                block = abs(x1-x2);  // x 좌표 차이 계산
-                left_course(block, cm);  // 좌회전 후 직진
+                block = std::abs(x1 - x2);
+                left_course(block);  // 좌회전 후 직진
             } else {
-                block = abs(x2 - x1);  // x 좌표 차이 계산
-                right_course(block, cm);  // 우회전 후 직진
+                block = std::abs(x2 - x1);
+                right_course(block);  // 우회전 후 직진
             }
         }
     }
     // 우회전 후 직진 함수
-    void right_course(int block, int cm) {
+    void right_course(int block) {
         cout << "Turning right" << endl;
         right_turn();  // 우회전
-        go_straight(block, cm);  // 직진
+        go_straight(block);  // 직진
+        if (obstacle_detected_) {
+            cout<<"장애물 감지. 이동 중지." <<endl;
+            return;
+        }
         left_turn();  // 좌회전으로 방향 복귀
     }
     // 좌회전 후 직진 함수
-    void left_course(int block, int cm) {
+    void left_course(int block) {
         cout << "Turning left" << endl;
         left_turn();  // 좌회전
-        go_straight(block, cm);  // 직진
+        go_straight(block);  // 직진
+        if (obstacle_detected_) {
+            cout<<"장애물 감지. 이동 중지." <<endl;
+            return;
+        }
         right_turn();  // 우회전으로 방향 복귀
     }
-    // 우회전 함수 (IMU 기반)
-    void right_turn() {
-        double target_orientation = current_orientation_ - M_PI / 2.0; // 목표 방향: 현재 방향에서 -90도 (라디안)
-        
-        // 목표 각도가 -π 이하로 내려가면 +2π 해서 범위 내로 설정
-        if (target_orientation < -M_PI) {
-            target_orientation += 2 * M_PI;
-        }
-
-        auto message = geometry_msgs::msg::Twist();
-        message.angular.z = -0.2; // 우회전 속도 설정
-
-        // 목표 각도에 도달할 때까지 회전
-        while (rclcpp::ok() && std::fabs(current_orientation_ - target_orientation) > 0.05) {
-            cmd_publisher_->publish(message); // 회전 명령 퍼블리시
-            std::this_thread::sleep_for(0.1s); // 0.1초 대기
-        }
-
-        // 정지 명령
-        message.angular.z = 0.0;
-        cmd_publisher_->publish(message);
-
-        // 새로운 방향을 초기화
-        initial_orientation_ = current_orientation_; // 회전 후 새로운 방향을 초기화
-    }
-
-    // 좌회전 함수 (IMU 기반)
+    // 좌회전 함수 (방향만 바꾸고 위치는 변하지 않음)
     void left_turn() {
         double target_orientation = current_orientation_ + M_PI / 2.0; // 목표 방향: 현재 방향에서 +90도 (라디안)
         
@@ -496,7 +522,7 @@ private :
         }
 
         auto message = geometry_msgs::msg::Twist();
-        message.angular.z = 0.2; // 좌회전 속도 설정
+        message.angular.z = 0.7; // 좌회전 속도 설정
 
         // 목표 각도에 도달할 때까지 회전
         while (rclcpp::ok() && std::fabs(current_orientation_ - target_orientation) > 0.05) {
@@ -510,13 +536,69 @@ private :
 
         // 새로운 방향을 초기화
         initial_orientation_ = current_orientation_; // 회전 후 새로운 방향을 초기화
-    }
 
-    // 직진 함수 (주어진 거리만큼 직진)
-    void go_straight(int block, double cm) {
-        cout << "직진"  << endl;
-        double target_distance = block * cm; // 블록 수에 따라 이동해야 할 거리 계산
-        RCLCPP_INFO(this->get_logger(), "이동해야할 거리= %.2f cm", target_distance);
+        // 방향 업데이트
+        switch (robot_direction_) {
+            case UP:
+                robot_direction_ = LEFT;
+                break;
+            case LEFT:
+                robot_direction_ = DOWN;
+                break;
+            case DOWN:
+                robot_direction_ = RIGHT;
+                break;
+            case RIGHT:
+                robot_direction_ = UP;
+                break;
+        }
+        RCLCPP_INFO(this->get_logger(), "좌회전 완료. 현재 방향: %d", robot_direction_);
+    }
+    // 우회전 함수 (방향만 바꾸고 위치는 변하지 않음)
+    void right_turn() {
+        double target_orientation = current_orientation_ - M_PI / 2.0; // 목표 방향: 현재 방향에서 -90도 (라디안)
+        
+        // 목표 각도가 -π 이하로 내려가면 +2π 해서 범위 내로 설정
+        if (target_orientation < -M_PI) {
+            target_orientation += 2 * M_PI;
+        }
+
+        auto message = geometry_msgs::msg::Twist();
+        message.angular.z = -0.7; // 우회전 속도 설정
+
+        // 목표 각도에 도달할 때까지 회전
+        while (rclcpp::ok() && std::fabs(current_orientation_ - target_orientation) > 0.05) {
+            cmd_publisher_->publish(message); // 회전 명령 퍼블리시
+            std::this_thread::sleep_for(0.1s); // 0.1초 대기
+        }
+
+        // 정지 명령
+        message.angular.z = 0.0;
+        cmd_publisher_->publish(message);
+
+        // 새로운 방향을 초기화
+        initial_orientation_ = current_orientation_; // 회전 후 새로운 방향을 초기화
+
+        // 우회전 시 방향 업데이트
+    switch (robot_direction_) {
+        case UP:
+            robot_direction_ = RIGHT;  // 위쪽에서 오른쪽으로 회전
+            break;
+        case RIGHT:
+            robot_direction_ = DOWN;    // 오른쪽에서 아래쪽으로 회전
+            break;
+        case DOWN:
+            robot_direction_ = LEFT;    // 아래쪽에서 왼쪽으로 회전
+            break;
+        case LEFT:
+            robot_direction_ = UP;      // 왼쪽에서 위쪽으로 회전
+            break;
+    }
+        RCLCPP_INFO(this->get_logger(), "우회전 완료. 현재 방향: %d", robot_direction_);
+    }
+    // 한 칸씩 직진하는 함수
+    void go_one_step() {
+        double target_distance = 10; // 블록 수에 따라 이동해야 할 거리 계산
         
         distance_traveled = 0.0; // 이동 거리 초기화
 
@@ -527,25 +609,48 @@ private :
 
         // 이동 중 거리 비교
         while (rclcpp::ok() && distance_traveled < target_distance) {
-            if (obstacle_detected_) { // 장애물 감지 시
-                cout << "장애물을 감지 했습니다. 전진을 정지 합니다." << endl;
-                message.linear.x = 0.0; // 전진 멈춤
-                cmd_publisher_->publish(message); // 정지 명령 발행
-                this_thread::sleep_for(0.1s);
-                break;
-            } else { // 장애물 감지되지 않으면 계속 전진
-            //RCLCPP_INFO(this->get_logger(), "이동해야할 거리= %.2f cm / 이동 한 거리 = %.2f / 남은거리 = %.2f", 
-                                            //target_distance, distance_traveled * 100.0, target_distance - distance_traveled);
-            cmd_publisher_->publish(message);  // 속도 명령을 퍼블리시
-            controlLoop();//직진 각도 보정
-            this_thread::sleep_for(0.5s); // 0.5초 대기
+            if (is_new_obstacle == true && obstacle_detected_ == true) {
+            // 새로운 장애물이 감지되면 로봇을 정지시킴
+            std::cout << "한 칸 직진 중 새로운 장애물이 감지되어 로봇을 정지합니다." << std::endl;
+            stop_robot(); // 정지 함수 호출
+            break;
+            } else {
+                // 기존 장애물일 경우에는 계속 이동
+                cmd_publisher_->publish(message);  // 속도 명령을 퍼블리시
+                controlLoop();//직진 각도 보정
+                this_thread::sleep_for(0.1s); // 0.5초 대기
             }
         }
-
-        // 정지 명령
-        message.linear.x = 0.0;  // 정지
-        cmd_publisher_->publish(message);  // 정지 명령 퍼블리시
+        // 로봇의 좌표 업데이트
+        update_position();
     }
+    // 여러 칸을 이동하는 함수 (매번 한 칸씩 이동)
+    void go_straight(int block) {
+        cout << "직진"  << endl;
+        for (int i = 0; i < block; ++i) {
+        if (obstacle_detected_) {
+
+        if (is_new_obstacle && obstacle_detected_) {
+            // 새로운 장애물이 감지되면 로봇을 정지시킴
+            std::cout << "직진 중 새로운 장애물이 감지되어 로봇을 정지합니다." << std::endl;
+            stop_robot(); // 정지 함수 호출
+            break;
+        } else {
+        }
+    }
+            RCLCPP_INFO(this->get_logger(), "%d칸 중 %d칸 이동 중", block, i + 1);
+            go_one_step();  // 한 칸씩 이동
+        }
+    }
+    /* 로봇 정지 함수 */
+    void stop_robot() {
+        auto message = geometry_msgs::msg::Twist();
+        message.linear.x = 0.0;  // 전진 멈춤
+        message.angular.z = 0.0; // 회전 멈춤
+        cmd_publisher_->publish(message); // 정지 명령 퍼블리시
+        std::cout << "로봇이 정지했습니다." << std::endl;
+    }
+
 
 /*콜백함수*/
     // Odometry 콜백 함수 (로봇의 현재 위치를 이용해 이동 거리를 계산)
@@ -601,66 +706,123 @@ private :
     }
 
 /*장애물 감지*/
-    // 장애물 확인 함수: 정면 센서 값이 특정 값 이하일 때 장애물 감지
-    void check_obstacle() {
-        obstacle_detected_ = sensor_data_.x < 30.0; // 장애물 감지 여부 확인
-    }
-    /* 장애물 좌표 계산 및 판단 */
-void detect_obstacle_position() {
-    // 로봇이 장애물을 감지한 좌표를 구하기 위해 현재 위치와 방향을 기준으로 장애물 좌표를 계산합니다.
-    int obstacle_x = robot_x_;
-    int obstacle_y = robot_y_;
-    int obstacle_distance = 1;  // 장애물 감지 거리를 1칸으로 가정합니다. 실제 센서 데이터에 따라 조정하세요.
+// 장애물 확인 함수: 정면 센서 값이 특정 값 이하일 때 장애물 감지
+void check_obstacle() {
+    if (input_completed_ && !is_new_obstacle) { // 입력 완료 확인
+        if (sensor_data_.x > 0.0) {
+            // 장애물 감지 여부 확인 (sensor_data_.x가 0보다 클 때만)
+            obstacle_detected_ = sensor_data_.x < 30.0;
 
-    // 로봇의 현재 방향에 따라 장애물 좌표 계산
-    switch (robot_direction_) {
-        case UP:
-            obstacle_y -= obstacle_distance; // 위쪽으로 한 칸 이동한 곳에 장애물
-            break;
-        case DOWN:
-            obstacle_y += obstacle_distance; // 아래쪽으로 한 칸 이동한 곳에 장애물
-            break;
-        case LEFT:
-            obstacle_x -= obstacle_distance; // 왼쪽으로 한 칸 이동한 곳에 장애물
-            break;
-        case RIGHT:
-            obstacle_x += obstacle_distance; // 오른쪽으로 한 칸 이동한 곳에 장애물
-            break;
-    }
-
-    // 장애물 좌표 출력
-    std::cout << "장애물 감지 위치: (" << obstacle_x << ", " << obstacle_y << ")" << std::endl;
-
-    // 미리 입력된 장애물인지 확인
-    bool is_existing_obstacle = false;
-    for (size_t i = 0; i < obstacles.size(); ++i) {
-        int obs_x = obstacles[i].x;
-        int obs_y = obstacles[i].y;
-        int obs_width = obstacle_sizes[i][0];
-        int obs_height = obstacle_sizes[i][1];
-
-        // 장애물이 그리드의 여러 칸을 차지하므로 범위 내에 있는지 확인
-        if (obstacle_x >= obs_x && obstacle_x < obs_x + obs_width &&
-            obstacle_y >= obs_y && obstacle_y < obs_y + obs_height) {
-            is_existing_obstacle = true;
-            break;
+        } else {
+            // sensor_data_.x가 0 이하일 경우 장애물 감지하지 않음
+            obstacle_detected_ = false;
         }
+        if (obstacle_detected_ == true){
+             cout << "장애물 감지" << sensor_data_.x << endl;   }
     }
 
-    // 기존 장애물인지 새로운 장애물인지 출력
-    if (is_existing_obstacle) {
-        std::cout << "기존 장애물입니다." << std::endl;
-    } else {
-        std::cout << "새로운 장애물입니다." << std::endl;
+    if (obstacle_detected_) {
+        // 장애물이 감지되면 좌표 계산 및 판별
+        is_new_obstacle = detect_obstacle_position();
+
     }
 }
 
+// 장애물 좌표 계산 및 판단 
+    bool detect_obstacle_position() {
+        // 로봇이 장애물을 감지한 좌표를 구하기 위해 현재 위치와 방향을 기준으로 장애물 좌표를 계산합니다.
+        int obstacle_x = robot_x_;
+        int obstacle_y = robot_y_;
+        int obstacle_distance = 1;  // 장애물 감지 거리를 1칸으로 가정합니다. 실제 센서 데이터에 따라 조정하세요.
 
-/*로봇 제어 관련 함수*/
+        // 로봇의 현재 방향에 따라 장애물 좌표 계산
+        switch (robot_direction_) {
+            case UP:
+                obstacle_y -= obstacle_distance; // 위쪽으로 한 칸 이동한 곳에 장애물 (기존 코드에서는 -= 로 반대로 설정됨)
+                break;
+            case DOWN:
+                obstacle_y += obstacle_distance; // 아래쪽으로 한 칸 이동한 곳에 장애물 (기존 코드에서는 += 로 반대로 설정됨)
+                break;
+            case LEFT:
+                obstacle_x += obstacle_distance; // 왼쪽으로 한 칸 이동한 곳에 장애물
+                break;
+            case RIGHT:
+                obstacle_x -= obstacle_distance; // 오른쪽으로 한 칸 이동한 곳에 장애물
+                break;
+        }
+
+        // 장애물 좌표 출력
+        std::cout << "장애물 감지 위치: (" << obstacle_x << ", " << obstacle_y << ")" << std::endl;
+        
+        // 그리드 범위를 확인하여 유효한 좌표인지 체크
+        if (obstacle_x < 0 || obstacle_x >= static_cast<int>(grid_map[0].size()) || 
+            obstacle_y < 0 || obstacle_y >= static_cast<int>(grid_map.size())) {
+            std::cout << "경고: 그리드 범위를 벗어난 좌표입니다." << std::endl;
+            return false; // 잘못된 좌표로 처리
+        }
+
+        // 미리 입력된 장애물인지 확인
+        bool is_existing_obstacle = false;
+        for (size_t i = 0; i < obstacles.size(); ++i) {
+            int obs_x = obstacles[i].x;
+            int obs_y = obstacles[i].y;
+            int obs_width = obstacle_sizes[i][0];
+            int obs_height = obstacle_sizes[i][1];
+
+            // 장애물이 그리드의 여러 칸을 차지하므로 범위 내에 있는지 확인
+            if (obstacle_x >= obs_x && obstacle_x < obs_x + obs_width &&
+                obstacle_y >= obs_y && obstacle_y < obs_y + obs_height) {
+                is_existing_obstacle = true;
+                break;
+            }
+        }
+
+        // 기존 장애물인지 새로운 장애물인지 출력
+        if (is_existing_obstacle) {
+            std::cout << "기존 장애물입니다." << std::endl;
+            return false;
+        } else {
+            std::cout << "새로운 장애물입니다." << std::endl;
+            stop_robot();
+            is_existing_obstacle = true;
+            handle_new_obstacle();
+            return true;
+        }
+    }
+
+
+
+    // 새로운 장애물이 감지되었을 때, 그리드에 추가하고 경로 재탐색 및 로봇 재이동을 수행
+    void handle_new_obstacle() {
+        std::cout << "새로운 장애물이 발견되었습니다. 장애물을 그리드에 추가하고 경로를 다시 계산합니다." << std::endl;
+        
+        // 현재 로봇의 위치를 새로운 시작점으로 설정
+        start.x = robot_x_;
+        start.y = robot_y_;
+
+        // 새로운 장애물을 그리드에 추가
+        Grid new_obstacle(robot_x_, robot_y_);
+        obstacles.push_back(new_obstacle);
+        obstacle_sizes.push_back({1, 1});  // 장애물 크기를 1x1로 설정
+        set_obstacles();  // 그리드에 장애물 반영
+
+        // 새로운 경로를 찾음
+        std::vector<Grid> new_path = find_path();
+        
+        if (!new_path.empty()) {
+            std::cout << "새로운 경로가 발견되었습니다:\n";
+            print_grid_with_path(new_path);
+            std::this_thread::sleep_for(1s); // 0.1초 대기
+            
+        } else {
+            std::cout << "새로운 경로를 찾을 수 없습니다. 로봇이 정지합니다." << std::endl;
+            stop_robot();
+        }
+    }
     // 로봇 제어 루프: 각도를 조정하여 로봇을 직진시킴
     void controlLoop(){
         double angle_diff = current_orientation_ - initial_orientation_; // 현재 각도와 초기 각도의 차이 계산
-        cout << "직진 각도를 수정합니다." << endl; 
+        //cout << "직진 각도를 수정합니다." << endl; 
 
         // 각도 차이를 [-π, π] 범위로 정규화
         while (angle_diff > M_PI)
@@ -669,10 +831,10 @@ void detect_obstacle_position() {
             angle_diff += 2 * M_PI;
 
         auto message = geometry_msgs::msg::Twist(); // Twist 메시지 생성
-        message.linear.x = 0.2;  // 기본 직진 속도 설정
+        message.linear.x = 0.1;  // 기본 직진 속도 설정
 
         // 각도 차이가 0.05 라디안 이상일 때 보정 회전
-        if (std::fabs(angle_diff) > 0.05) {
+        if (std::fabs(angle_diff) > 0.01) {
             message.angular.z = -angle_diff * 1.0;  // 각도 차이에 비례하여 회전 속도 설정
             message.linear.x = 0.1;  // 회전 중일 때는 직진 속도 줄임
         } else {
@@ -695,11 +857,14 @@ void signalHandler(int /*signum*/) {
     message.linear.x = 0.0; 
     message.angular.z = 0.0; 
 
+
+
     auto node = rclcpp::Node::make_shared("stop_publisher"); // 퍼블리셔 노드 생성
     auto pub = node->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10); // cmd_vel 퍼블리셔 생성
     pub->publish(message); // 정지 명령 퍼블리시
 
     rclcpp::shutdown(); // ROS2 시스템 종료
+    std::cout.setstate(std::ios_base::failbit);  
 }
 
 // 메인 함수

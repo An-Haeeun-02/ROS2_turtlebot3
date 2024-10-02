@@ -44,11 +44,10 @@ private:
         float distance_300_cm = msg->ranges[index_300] * 100.0;
         float distance_330_cm = msg->ranges[index_330] * 100.0;
 
-        // aeeun 토픽 메시지 생성 및 퍼블리시
-        if (std::isnan(distance_0_cm) || distance_0_cm == 0.00 ||
-            std::isnan(distance_90_cm) || distance_90_cm == 0.00 ||
-            std::isnan(distance_270_cm) || distance_270_cm == 0.00) {
-                RCLCPP_WARN(this->get_logger(), "값이 이상합니다.");
+        if (std::isnan(distance_0_cm) || distance_0_cm == 0.00 || std::abs(distance_0_cm) < 1e-10 ||
+            std::isnan(distance_90_cm) || distance_90_cm == 0.00 || std::abs(distance_90_cm) < 1e-10 ||
+            std::isnan(distance_270_cm) || distance_270_cm == 0.00 || std::abs(distance_270_cm) < 1e-10) {
+                RCLCPP_WARN(this->get_logger(), "비정상적인 센서 값이 감지되었습니다.");
         } else {
             // 모든 값이 유효할 때만 퍼블리시
             RCLCPP_INFO(this->get_logger(), "Distance to obstacle at 0 degrees: %.2f cm", distance_0_cm);
@@ -61,7 +60,8 @@ private:
             message_aeeun.z = distance_270_cm;
 
             publisher_aeeun_->publish(message_aeeun);
-        }
+}
+
 
         // hyewon 토픽 메시지 생성 및 퍼블리시
         if (!std::isnan(distance_30_cm) && distance_30_cm != 0.00 &&
