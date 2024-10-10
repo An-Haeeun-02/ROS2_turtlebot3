@@ -22,7 +22,7 @@ using namespace std;        // std 네임스페이스 사용
 #define RED "\033[31m"      
 #define GREEN "\033[32m"    
 #define YELLOW "\033[33m" 
-
+c
 class TurtlebotController : public rclcpp::Node {
 public :
     // 생성자에서 Odometry 토픽을 구독하고, cmd_vel 퍼블리셔 생성
@@ -172,7 +172,7 @@ public :
             cout << setGrid[i][0] << "," << setGrid[i][1] << " -> " << setGrid[i + 1][0] << "," << setGrid[i + 1][1] << endl;
             // 경로 이동 처리
             process_path(setGrid[i][0], setGrid[i][1], setGrid[i + 1][0], setGrid[i + 1][1]);
-            std::this_thread::sleep_for(1s);            
+            std::this_thread::sleep_for(100s);            
             }
         }
 
@@ -189,6 +189,7 @@ public :
         }
 
         cout << "도착했습니다." << endl;  // 도착 메시지 출력
+        stop_robot();
     }
 
     // 로봇 제어 함수
@@ -619,7 +620,6 @@ private :
             } else { // 장애물 감지되지 않으면 계속 전진
             cmd_publisher_->publish(message);  // 속도 명령을 퍼블리시
             controlLoop();//직진 각도 보정
-            this_thread::sleep_for(0.1s); // 0.5초 대기
             }
         }
         // 로봇의 좌표 업데이트
@@ -709,8 +709,8 @@ private :
             velocity_y_ += ay * dt;
 
             // 속도를 적분하여 위치를 추정
-            robot_x_ += velocity_x_ * dt;
-            robot_y_ += velocity_y_ * dt;
+            //robot_x_ += velocity_x_ * dt;
+            //robot_y_ += velocity_y_ * dt;
 
             if (!is_initialized_) {
                 initial_orientation_ = yaw;
