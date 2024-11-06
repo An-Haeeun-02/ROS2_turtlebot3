@@ -159,37 +159,55 @@ public :
 // 로봇 이동 처리 함수
     void move_robot() {
         geometry_msgs::msg::Twist message;
-        cout << "로봇을 움직입니다." << endl;
+        std::cout << "로봇을 움직입니다." << std::endl;
 
         // 시작 지점부터 마지막 중간 지점까지 경로 처리
         for (int i = 1; i < setGrid.size() - 1; i++) {
-            if (obstacle_detected_ == true && is_new_obstacle==true) {//새로운 장애물
-                cout << "새로운 장애물 입니다! 현재 이동을 정지하고 새로운 경로를 탐색합니다.(move_robot)" << endl;
+            // 장애물 대기 상태가 활성화되면, 대기 상태 해제가 될 때까지 반복하여 기다림
+            if(waiting_for_obstacle_clear_){
+                std::cout << "장애물 대기 중입니다. 로봇이 멈춰 있습니다." << std::endl;
                 stop_robot();
-                return; // move_robot함수 종료
-            } else{
+                while (waiting_for_obstacle_clear_) {
+                    std::this_thread::sleep_for(0.1s); // 100ms 대기 후 상태 확인
+                }
+            }
+
+            // 이동 중 새로운 장애물이 감지된 경우 이동 중지
+            if (is_new_obstacle) {
+                std::cout << "새로운 장애물입니다. 이동을 정지하고 새로운 경로를 탐색합니다." << std::endl;
+                stop_robot();
+                return; // 장애물 감지 시 함수 종료 및 새로운 경로 탐색 시작
+            }
+
             cout << i - 1 << "번째 지점 -> " << i << "번째 지점" << endl;
             cout << setGrid[i][0] << "," << setGrid[i][1] << " -> " << setGrid[i + 1][0] << "," << setGrid[i + 1][1] << endl;
             // 경로 이동 처리
             process_path(setGrid[i][0], setGrid[i][1], setGrid[i + 1][0], setGrid[i + 1][1]);
-            std::this_thread::sleep_for(1s);            
-            }
+            std::this_thread::sleep_for(1s); 
         }
 
         // 마지막 중간 지점부터 도착 지점까지 경로 처리
-        if (obstacle_detected_ == true && is_new_obstacle==true) {//새로운 장애물
-                cout << "새로운 장애물 입니다! 현재 이동을 정지하고 새로운 경로를 탐색합니다.(move_robot)" << endl;
+            if(waiting_for_obstacle_clear_){
+                std::cout << "장애물 대기 중입니다. 로봇이 멈춰 있습니다." << std::endl;
                 stop_robot();
-                return; // move_robot함수 종료
-            } else{
-            cout << setGrid.size() - 2 << "번째 지점 -> " << "도착지" << endl;
+                while (waiting_for_obstacle_clear_) {
+                    std::this_thread::sleep_for(0.1s); // 100ms 대기 후 상태 확인
+                }
+            }
+
+        if (is_new_obstacle) {
+            std::cout << "새로운 장애물입니다. 이동을 정지하고 새로운 경로를 탐색합니다." << std::endl;
+            stop_robot();
+            return; // 장애물 감지 시 함수 종료 및 새로운 경로 탐색 시작
+        }
+
+        cout << setGrid.size() - 2 << "번째 지점 -> " << "도착지" << endl;
             cout << setGrid[setGrid.size() - 1][0] << "," << setGrid[setGrid.size() - 1][1] << " -> " << setGrid[0][0] << "," << setGrid[0][1] << endl;
             process_path(setGrid[setGrid.size() - 1][0], setGrid[setGrid.size() - 1][1], setGrid[0][0], setGrid[0][1]);
             goal_ =true; // 도착                  
-        }
-
         cout << "도착했습니다." << endl;  // 도착 메시지 출력
     }
+
 
     // 로봇 제어 함수
     void robot_controller() {
@@ -244,6 +262,10 @@ private :
     bool goal_ = false;
     bool input_completed_ = false; // 입력 완료 여부
     bool new_root_start_ = false;
+    bool waiting_for_obstacle_clear_ = false; // 장애물 클리어 대기 상태 플래그
+    bool obstacle_processing_ = false;  // 장애물 처리 중인지 확인하는 플래그
+    rclcpp::TimerBase::SharedPtr obstacle_timer_; // 비동기 타이머를 위한 포인터
+
 
     // 로봇의 현재 좌표
     int robot_x_;
@@ -504,7 +526,7 @@ private :
         cout << "Turning right" << endl;
         right_turn();  // 우회전
         go_straight(block);  // 직진
-        if (obstacle_detected_) {
+        if ((obstacle_detected_ && is_new_obstacle) || waiting_for_obstacle_clear_) {
             RCLCPP_WARN(this->get_logger(), "장애물 감지. 이동 중지.");
             return;
         }
@@ -515,7 +537,7 @@ private :
         cout << "Turning left" << endl;
         left_turn();  // 좌회전
         go_straight(block);  // 직진
-        if (obstacle_detected_) {
+        if ((obstacle_detected_ && is_new_obstacle) || waiting_for_obstacle_clear_) {
             RCLCPP_WARN(this->get_logger(), "장애물 감지. 이동 중지.");
             return;
         }
@@ -599,45 +621,43 @@ private :
     }
         RCLCPP_INFO(this->get_logger(), "우회전 완료. 현재 방향: %d", robot_direction_);
     }
-    // 한 칸씩 직진하는 함수
+    // 한 칸 이동 중 장애물 상태 확인
     void go_one_step() {
-        double target_distance = 10; // 블록 수에 따라 이동해야 할 거리 계산
-        
-        distance_traveled = 0.0; // 이동 거리 초기화
+        double target_distance = 10; 
+        distance_traveled = 0.0;
 
-        // cmd_vel 메시지 생성 (직진 속도 설정)
         geometry_msgs::msg::Twist message;
-        message.linear.x = 0.1;  // 직진 속도 설정
-        message.angular.z = 0.0; // 회전 속도는 0
+        message.linear.x = 0.1;
 
-        // 이동 중 거리 비교
         while (rclcpp::ok() && distance_traveled < target_distance) {
-            if (obstacle_detected_ == true && is_new_obstacle==true) {//새로운 장애물
-                cout << "새로운 장애물 입니다! 현재 이동을 정지하고 새로운 경로를 탐색합니다.(go_one_step)" << endl;
+            if (waiting_for_obstacle_clear_ || (obstacle_detected_ && is_new_obstacle)) {
+                std::cout << "장애물 대기 상태 또는 새로운 장애물 감지됨. 이동 중지." << std::endl;
                 stop_robot();
-                return; // move_robot함수 종료
-            } else { // 장애물 감지되지 않으면 계속 전진
-            cmd_publisher_->publish(message);  // 속도 명령을 퍼블리시
-            controlLoop();//직진 각도 보정
-            this_thread::sleep_for(0.1s); // 0.5초 대기
+                return;
             }
+
+            cmd_publisher_->publish(message);
+            controlLoop(); 
+            std::this_thread::sleep_for(0.1s);
         }
-        // 로봇의 좌표 업데이트
         update_position();
     }
     // 여러 칸을 이동하는 함수 (매번 한 칸씩 이동)
     void go_straight(int block) {
-        cout << "직진"  << endl;
+        std::cout << "직진 중 (" << block << "칸)" << std::endl;
+
         for (int i = 0; i < block; ++i) {
-            if (obstacle_detected_ == true && is_new_obstacle==true) {
-                cout << "새로운 장애물 입니다! 현재 이동을 정지하고 새로운 경로를 탐색합니다.(go_straight)" << endl;
+            if (waiting_for_obstacle_clear_ || (obstacle_detected_ && is_new_obstacle)) {
+                std::cout << "장애물 대기 상태 또는 새로운 장애물 감지됨. 이동 중지." << std::endl;
                 stop_robot();
-                return; // move_robot함수 종료
+                return; // 직진 함수 종료
             }
+
             RCLCPP_INFO(this->get_logger(), "%d칸 중 %d칸 이동 중", block, i + 1);
-            go_one_step();  // 한 칸씩 이동
+            go_one_step();  // 한 칸씩 이동, 각 칸마다 장애물 확인
         }
     }
+
 
 /*콜백함수*/
     // 기존의 odom_callback 함수 수정: IMU와 오도메트리를 함께 사용
@@ -721,18 +741,60 @@ private :
         }
     }
 
-/*장애물 감지*/
-        // 장애물 확인 함수: 정면 센서 값이 특정 값 이하일 때 장애물 감지
+    // 장애물 확인 및 대기 처리 함수 수정
     void check_obstacle() {
-        if (input_completed_ == true){
-           obstacle_detected_ = sensor_data_.x < 30.0; // 장애물 감지 여부 확인
-            if (obstacle_detected_ == true && is_new_obstacle == false) {// 장애물이 감지되고, 새로운 장애물 판단중이 아닐때
-                // 장애물이 감지되면 좌표 계산 및 판별
+        if (input_completed_) {
+            obstacle_detected_ = sensor_data_.x < 30.0;  // 특정 거리 이하 시 장애물 감지
+
+            if (obstacle_detected_ && !obstacle_processing_ && !waiting_for_obstacle_clear_) {
                 is_new_obstacle = detect_obstacle_position();
-            } 
+
+                if (is_new_obstacle) {
+                    std::cout <<sensor_data_.x<< "새로운 장애물 감지, 3초 대기 중..." << std::endl;
+                    waiting_for_obstacle_clear_ = true;
+                    obstacle_processing_ = true;
+
+                    obstacle_timer_ = this->create_wall_timer(
+                        std::chrono::seconds(3),
+                        [this]() {
+                            obstacle_timer_->cancel();  // 타이머 중지
+                            if (sensor_data_.x >= 30.0) {  // 장애물 사라진 경우
+                                std::cout <<sensor_data_.x<< "3초 내에 장애물이 사라졌습니다. 원래 경로를 따라갑니다." << std::endl;
+                                is_new_obstacle = false;
+                                waiting_for_obstacle_clear_ = false;
+                            } else {  // 장애물이 그대로 있는 경우
+                                std::cout <<sensor_data_.x<< "장애물이 3초 동안 사라지지 않았습니다. 장애물을 추가하고 새로운 경로를 설정합니다." << std::endl;
+                                int obstacle_x = robot_x_;
+                                int obstacle_y = robot_y_;
+                                int obstacle_distance = 1;  // 장애물 감지 거리를 1칸으로 가정합니다. 실제 센서 데이터에 따라 조정하세요.
+
+                                // 로봇의 현재 방향에 따라 장애물 좌표 계산
+                                switch (robot_direction_) {
+                                    case UP:
+                                        obstacle_y -= obstacle_distance; // 위쪽으로 한 칸 이동한 곳에 장애물
+                                        break;
+                                    case DOWN:
+                                        obstacle_y += obstacle_distance; // 아래쪽으로 한 칸 이동한 곳에 장애물
+                                        break;
+                                    case LEFT:
+                                        obstacle_x -= obstacle_distance; // 왼쪽으로 한 칸 이동한 곳에 장애물
+                                        break;
+                                    case RIGHT:
+                                        obstacle_x += obstacle_distance; // 오른쪽으로 한 칸 이동한 곳에 장애물
+                                        break;
+                                }
+                                add_obstacle(obstacle_x, obstacle_y);
+                                //make_new_root();
+                                waiting_for_obstacle_clear_ = false;
+                            }
+                            obstacle_processing_ = false;  // 장애물 처리 완료
+                        }
+                    );
+                }
+            }
         }
-        
     }
+
 
 /* 장애물 좌표 계산 및 판단 */
     bool detect_obstacle_position() {
@@ -757,7 +819,6 @@ private :
                 break;
         }
 
-        
 
         // 미리 입력된 장애물인지 확인
         bool is_existing_obstacle = false;
@@ -783,7 +844,7 @@ private :
             std::cout << "새로운 장애물입니다." << std::endl;
             // 장애물 좌표 출력
             std::cout << "장애물 감지 위치: (" << obstacle_x << ", " << obstacle_y << ")" << std::endl;
-            add_obstacle(obstacle_x, obstacle_y);
+            //add_obstacle(obstacle_x, obstacle_y);
             return true;
         }
     }
