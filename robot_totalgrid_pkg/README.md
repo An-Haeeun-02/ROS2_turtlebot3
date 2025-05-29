@@ -136,9 +136,3 @@ ros2 run robot_totalgrid_pkg drive_node
 | `robot_total_pkg`     | 실시간 회피 기반 | LIDAR + IMU | 없음    | 있음          |
 | `robot_totalgrid_pkg` | 경로 계획 기반  | LIDAR + IMU | 있음    | 있음          |
 
----
-
-## 라이선스 및 문의
-
-* Maintainer: hae ([godma531@naver.com](mailto:godma531@naver.com))
-* License: TODO (향후 추가 예정)
