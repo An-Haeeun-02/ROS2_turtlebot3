@@ -1,79 +1,86 @@
-# cgps_pkg
+# cgps\_pkg
 
-gps 센서를 usb로 연결하여 제공하는 데이터 중 필요한 데이터만 추출하여 토픽으로 출력하
+`cgps_pkg`·는 USB·로 연결된 GPS 센서에서 필요한 데이터(위도, 경도)만 추출하여 ROS 2 토픽으로 출력하는 패키지입니다.
 
 ---
 
-## 패키지 설명
+## 🏦 패키지 설명
 
 ### 사용한 패키지
-- 노드를 위한 패키지
 
-  ``#include "rclcpp/rclcpp.hpp" ``
+* **노드 생성을 위한 패키지**
 
-- 메시지 타입을 위한 패키지
+  ```cpp
+  #include "rclcpp/rclcpp.hpp"
   ```
+
+* **메시지 타입 사용을 위한 패키지**
+
+  ```cpp
   #include "geometry_msgs/msg/vector3.hpp"
   ```
-- gps 사용을 위한 외부 라이브러리
 
-    ``#include <libgpsmm.h>``
+* **GPS 사용을 위한 외부 라이브러리**
 
-    .libgpsmm 는 gpsd 패키지에 포함된 libgps 라이브러리
+  ```cpp
+  #include <libgpsmm.h>
+  ```
+
+  > `libgpsmm`·은 `gpsd` 패키지에 포함된 `libgps` 라이브러리입니다.
+
+---
 
 ### 통신 방식
--  액션과 토픽을 통한 통신
 
-    - ``/gps`` : 정제된 gps 값 전달을 위한 토픽
+* **통신을 이용한 토픽**
 
+  * `/gps`: 정제된 GPS 위도 및 경도 데이터를 퍼블리시한다.
 
-## 코드 설명
-### CMakeList.txt
+---
 
->사용한 패키지 추가
-  ```
+## 🧾 코드 설명
+
+### CMakeLists.txt
+
+* **사용 패키지 추가**
+
+  ```cmake
   find_package(ament_cmake REQUIRED)
   find_package(rclcpp REQUIRED)
   find_package(sensor_msgs REQUIRED)
   find_package(geometry_msgs REQUIRED)
-D)
   ```
 
-> 외부 라이브러리 사용을 위한 설정
-  ```
-  # GPSD 라이브러리를 찾기 위한 pkg-config 사용
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(GPSD REQUIRED libgps)
+* **외부 라이브러리 설정**
 
-  ```
-> 노드 생성
-   - gps_node
-
-  액션 서버 노드. gps.cpp 실행
-   - cli_node
-
-액션 클라이언트 노드. cli.cpp 실행
-  - scan_node
-
-    정면, 좌측, 우측 거리 측정 스케너. scan.cpp 실행
+  ```cmake
+  find_package(PkgConfig REQUIRED)
+  pkg_check_modules(GPSD REQUIRED libgps)
   ```
 
-add_executable(gps_node src/gps.cpp)
-ament_target_dependencies(gps_node rclcpp sensor_msgs geometry_msgs)
+* **노드 설정**
 
-# 타겟에 ROS2 의존성과 gpsd 라이브러리 링크
-target_include_directories(gps_node PRIVATE ${GPSD_INCLUDE_DIRS})
-target_link_libraries(gps_node ${GPSD_LIBRARIES})
+  ```cmake
+  add_executable(gps_node src/gps.cpp)
+  ament_target_dependencies(gps_node rclcpp sensor_msgs geometry_msgs)
 
-install(TARGETS
-  gps_node
-  DESTINATION lib/${PROJECT_NAME}
-)
-ament_package()
+  target_include_directories(gps_node PRIVATE ${GPSD_INCLUDE_DIRS})
+  target_link_libraries(gps_node ${GPSD_LIBRARIES})
+
+  install(TARGETS
+    gps_node
+    DESTINATION lib/${PROJECT_NAME}
+  )
+  ament_package()
   ```
-### pakage.xml
-> 사용한 패키지 접근성 추가
-  ```
+
+---
+
+### package.xml
+
+* **의존 패키지**
+
+  ```xml
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
   <depend>nav_msgs</depend>
@@ -82,40 +89,57 @@ ament_package()
   <depend>robot_action</depend>
   ```
 
+---
+
 ### gps.cpp
-  - /gps 토픽의 퍼블리셔
 
-  - gps의 데이터 중 위도와 경도 데이터만 출력한다.
+* `/gps` 토픽 퍼블리시어 노드입니다.
+* GPS의 위도(`latitude`)와 경도(`longitude`) 값만 추출하여 퍼블리시합니다.
+* 높이(`altitude`)는 사용하지 않으며 `0.0`으로 고정합니다.
 
+---
 
-## 작동방법
+## 🚀 작동 방법
 
-### gps 사용법
-```
-//gpsd 서비스를 부팅 시 자동으로 시작
+### 1. GPS 서비스 시작
+
+```bash
+# 부팅 시 gpsd 자동 시행
 sudo systemctl enable gpsd.socket
 
-//gpsd 소켓 서비스를 즉시 시작합니다.
+# 즉시 gpsd 시행
 sudo systemctl start gpsd.socket
 
-
-//코드 확인
+# GPS 연결 확인
 cgps -s
 
-//상태확인
+# 서비스 상태 확인
 sudo systemctl status gpsd.socket
+```
 
-//코드 실행
+> 상세 설정은 다음 링크를 참고하세요:
+> 🔗 [https://wiki.52pi.com/index.php/EZ-0048](https://wiki.52pi.com/index.php/EZ-0048)
+
+---
+
+### 2. 코드 실행 (단독 실행 시)
+
+```bash
 g++ -o gps gps.cpp -lgps -lm
-
+./gps
 ```
-자세한 사용법은 아래의 링크를 참고해주세요
-<https://wiki.52pi.com/index.php/EZ-0048>
 
-### gps 노드(gps_node)
-```
+---
+
+### 3. ROS 2 노드 실행
+
+```bash
+# 빌드
 colcon build --symlink-install --packages-select cgps_pkg
+
+# 환경 설정
 . install/local_setup.bash
+
+# gps_node 실행
 ros2 run cgps_pkg gps_node
 ```
-
