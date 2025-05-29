@@ -1,6 +1,6 @@
 # ROS2기반 turtlebot3 프로그래밍
----
-<img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"><img src="https://img.shields.io/badge/ros-22314E?style=for-the-badge&logo=ros&logoColor=white"> 
+<img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"><img src="https://img.shields.io/badge/ros-22314E?style=for-the-badge&logo=ros&logoColor=white">
+
 이 프로젝트는 ROS2 기반으로 TurtleBot3의 움직임을 제어하기 위한 패키지 모음입니다.
 기본적인 이동부터 로봇의 다양한 이동방법과 장애물 감지 및 회피 로직을 담고 있습니다.
 TurtleBot3내의 센서및 ROS2의 기능을 활용하여 GPS통신과 새로운 센서 추가 등의 기능을 실습하고 개발하였습니다.
@@ -55,15 +55,15 @@ ROS2_turtlebot3/
   - 그리드 범위 내에서 시작점과 도착점의 경로를 계산하여 A 알고리즘을 바탕으로 최적화 된 경로대로 움직임
     
 6. ### robot_total_pkg
-   - IMU를 사용하여 방향 정확도 개선 및 계단 등의 장애물을 감지하고 회피함.
+  - IMU를 사용하여 방향 정확도 개선 및 계단 등의 장애물을 감지하고 회피함.
      
 7. ### robot_totalgrid_pkg
-    - 사용자로부터 맵정보, 시작과 목표지점, 장애물 위치를 입력받음
-    - A*알고리즘을 사용해 최적 경로를 계싼하고 회전 지점을 추출함.
-    - 경로를 따라 주행하며 기존의 장애물을 피하거나, 새로운장애물을 인식하여 맵에 반영하고 경로를 재탐색하여 목적지에 도착
+  - 사용자로부터 맵정보, 시작과 목표지점, 장애물 위치를 입력받음
+  - A*알고리즘을 사용해 최적 경로를 계싼하고 회전 지점을 추출함.
+  - 경로를 따라 주행하며 기존의 장애물을 피하거나, 새로운장애물을 인식하여 맵에 반영하고 경로를 재탐색하여 목적지에 도착
   
 8. ### robot_totalgrid_pkg_v2
-    - robot_totalgrid_pkg에서 가독성과 유지보수성을 보완함
+  - robot_totalgrid_pkg에서 가독성과 유지보수성을 보완함
     
 9. ### robot_action
   - 액션 형식이 담겨 있는 패키지
